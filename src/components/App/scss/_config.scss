@@ -15,18 +15,21 @@ $color-danger: $mdc-red-500 !default;
 $color-success: $mdc-green-500 !default;
 $color-info: $mdc-cyan-500 !default;
 $color-royal: $mdc-purple-500 !default;
+$color-caution: $mdc-yellow-500 !default;
 
 $color-warning-light: $mdc-orange-400 !default;
 $color-danger-light: $mdc-red-400 !default;
 $color-success-light: $mdc-green-400 !default;
 $color-info-light: $mdc-cyan-400 !default;
 $color-royal-light: $mdc-purple-400 !default;
+$color-caution-light: $mdc-yellow-400 !default;
 
 $color-warning-dark: $mdc-orange-600 !default;
 $color-danger-dark: $mdc-red-600 !default;
 $color-success-dark: $mdc-green-600 !default;
 $color-info-dark: $mdc-cyan-600 !default;
 $color-royal-dark: $mdc-purple-600 !default;
+$color-caution-dark: $mdc-yellow-600 !default;
 
 $color-light-light: $mdc-grey-50 !default;
 $color-light: $mdc-grey-100 !default;
@@ -71,4 +74,4 @@ $vertical-margin: 20px;
 $vertical-margin-lg: 40px;
 $vertical-margin-sm: 10px;
 
-$color-list: (light: $color-light, dark: $color-dark, primary: $color-primary, info: $color-info, royal: $color-royal, warning: $color-warning, danger: $color-danger, success: $color-success);
+$color-list: (light: $color-light, dark: $color-dark-light, primary: $color-primary, info: $color-info, royal: $color-royal, warning: $color-warning, danger: $color-danger, success: $color-success, caution: $color-caution);
