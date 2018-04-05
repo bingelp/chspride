@@ -6,7 +6,7 @@ const App = ({ children }) => {
   return (
     <div className="ms-site-container">
       <Header />
-      <div className="container container-full">
+      <div className="">
         {children}
       </div>
     </div>
