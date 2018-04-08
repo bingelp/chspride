@@ -21,9 +21,9 @@ export default class BoardMember extends React.Component {
                 <div role="tabpanel" className="tab-pane fade active show" id={"profile-" + this.props.id}>
                     <h3 className="color-success animated fadeInUp animation-delay-2">{this.props.firstName} {this.props.lastName}</h3>
                     <h4 className="animated zoomInDown fadeInUp-delay-3">{this.props.title}</h4>
-                    <p><i class="zmdi zmdi-email mr-1 color-primary"></i> <a href={'mailto:' +this.props.email + "@charlestonpride.org"}>{this.props.email}@charlestonpride.com</a></p>
-                    <p><i class="zmdi zmdi-calendar mr-1 color-info"></i> Elected {this.props.elected} </p>
-                    <em><i class="zmdi zmdi-account mr-1 color-royal"></i> {this.props.pronouns}</em>
+                    <p><i className="zmdi zmdi-email mr-1 color-primary"></i> <a href={'mailto:' +this.props.email + "@charlestonpride.org"}>{this.props.email}@charlestonpride.com</a></p>
+                    <p><i className="zmdi zmdi-calendar mr-1 color-info"></i> Elected {this.props.elected} </p>
+                    <em><i className="zmdi zmdi-account mr-1 color-royal"></i> {this.props.pronouns}</em>
                 </div>
                 <div role="tabpanel" className="tab-pane fade" id={"bio-" + this.props.id}>
                     <p>{this.props.bio}</p>

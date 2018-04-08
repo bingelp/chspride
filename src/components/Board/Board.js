@@ -68,7 +68,7 @@ class Board extends React.Component {
 
         </div>
         <h2 className="text-center">Vacancies</h2>
-            <div class="row">
+            <div className="row">
                     <VacantBoardMember id="3" title="Chief Financial Officer"/>
                     <VacantBoardMember id="14" title="Director At-Large"/>
                     <VacantBoardMember id="15" title="Director At-Large"/>
@@ -81,22 +81,3 @@ class Board extends React.Component {
 
 
 export default Board;
-
-
-//{
-//
-//            "firstName": "Tony",
-//            "lastName": "Williams",
-//            "suffix": "",
-//            "position": {
-//                "title": "Chair / Chief Executive Officer",
-//                "executive": true,
-//                "order": 0
-//            },
-//            "electedMonth": 2,
-//            "electedYear": 2016,
-//            "pronouns": "he/him/his",
-//            "photoUrl": "",
-//            "email": "tony.williams@charlestonpride.org",
-//            "bio": " Tony is a native Charlestonian, College of Charleston graduate, holds a Master’s Degree in Public Administration and an employee at Blackbaud, Inc. Tony began his work with Charleston Pride at its inception, when he served as the Logistics/Park Coordinator. He joined the board in an official capacity, serving as the Treasurer, Vice Chair and Chair. Tony was elected to a third term as Chair in 2017."
-//        }
