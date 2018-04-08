@@ -4,6 +4,7 @@ import Typed from 'typed.js'
 import './home.css';
 import { NavLink } from 'react-router-dom';
 import Sponsors from '../Sponsors/SponsorHero';
+import UpcomingEvents from '../Events/UpcomingEvents';
 
 
 class Home extends React.Component {
@@ -41,6 +42,7 @@ class Home extends React.Component {
             </div>
         </div>
         <Sponsors/>
+        <UpcomingEvents/>
        </div>
       );
     }
