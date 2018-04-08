@@ -247,4 +247,12 @@
     ));
     @include call-variations-content-mixin($args-extra);
   }
+  &#{$component}-caution#{$selector-suffix} {
+
+      $args-extra: map-merge($args, (
+              variation-color: $color-caution,
+              variation-color-text: $mdb-text-color-light
+      ));
+      @include call-variations-content-mixin($args-extra);
+   }
 }

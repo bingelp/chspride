@@ -140,6 +140,18 @@
                 color: #fff;
             }
         }
+
+        &.panel-caution {
+            .panel-heading,
+            .panel-footer {
+                background-color: darken($color-caution, 5%);
+            }
+
+            .panel-body {
+                background-color: $color-caution;
+                color: #fff;
+            }
+        }
     }
 
     &.panel-default {
@@ -172,7 +184,7 @@
         }
     }
 
-    &.panel-succ {
+    &.panel-success {
         .panel-footer {
             background-color: $color-success;
             color: #fff;
@@ -196,6 +208,13 @@
     &.panel-danger {
         .panel-footer {
             background-color: $color-danger;
+            color: #fff;
+        }
+    }
+
+    &.panel-caution {
+        .panel-footer {
+            background-color: $color-caution;
             color: #fff;
         }
     }
