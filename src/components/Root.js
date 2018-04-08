@@ -3,7 +3,6 @@ import { BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
 
 import App from './App/App';
 import Home from './Home/Home';
-import About from './About/About';
 import Sponsorships from './Sponsorships/Sponsorships';
 import Sponsors from './Sponsors/Sponsors';
 import GetInvolved from './GetInvolved/GetInvolved';

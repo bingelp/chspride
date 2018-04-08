@@ -3,6 +3,7 @@ import './css/App.css';
 import $ from 'jquery';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
+import Footer from '../Footer'
 
 
 const App = ({ children }) => {
@@ -11,6 +12,7 @@ const App = ({ children }) => {
       <Header/>
       <Nav/>
       {children}
+      <Footer/>
     </div>
   );
 };
