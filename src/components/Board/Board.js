@@ -23,18 +23,12 @@ class Board extends React.Component {
       <div className="ms-hero-page-override ms-hero-img-city ms-hero-bg-primary">
         <div className="container">
           <div className="text-center">
-            <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">About
-              <span> Us</span>
-              </h1>
-            <p className="lead lead-lg color-white text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">
-              Our mission is to promote the visibility of the <span className="color-warning">LGBTQ community</span> by educating society, honoring our heritage, advocating for our culture, and celebrating our diverse society</p>
+            <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Board of Directors</h1>
+            <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">The Board of Directors is formed from four permanent positions, including Chief Executive, Chief Operating Officer, Secretary of the Board, and Chief Financial Officer, which form the Executive Committee, and up to nine additional directorship positions which are created and removed at the discretion of the Executive Committee. Elections are held at the beginning of every fiscal year to fill the Executive Committee. The newly elected Executive Committee is then responsible for creating the additional director-level positions to assist in the management and administration of the <strong>Charleston Pride Festival</strong>.</p>
           </div>
         </div>
       </div>
       <div className="container">
-        <h1>Board of Directors</h1>
-
-        <p>The Board of Directors is formed from four permanent positions, including Chief Executive, Chief Operating Officer, Secretary of the Board, and Chief Financial Officer, which form the Executive Committee, and up to nine additional directorship positions which are created and removed at the discretion of the Executive Committee. Elections are held at the beginning of every fiscal year to fill the Executive Committee. The newly elected Executive Committee is then responsible for creating the additional director-level positions to assist in the management and administration of the <strong>Charleston Pride Festival</strong>.</p>
         <h2 className="text-center">Executive Committee</h2>
         <div className="row">
           <BoardMember id="1" firstName="Tony" lastName="Williams" elected="February 2016" email="tony.williams" title="Chair / Chief Executive Officer" photoSrc={tony} pronouns="He/Him/His" bio="Tony is a native Charlestonian, College of Charleston graduate, holds a Master’s Degree in Public Administration and an employee at Blackbaud, Inc. Tony began his work with Charleston Pride at its inception, when he served as the Logistics/Park Coordinator. He joined the board in an official capacity, serving as the Treasurer, Vice Chair and Chair. Tony was elected to a third term as Chair in 2017."
