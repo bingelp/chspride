@@ -33,7 +33,7 @@ class Home extends React.Component {
              <span className="ms-hero-logo"></span>
              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">#IAmCharlestonPride</h2>
              <h1 className="animated fadeInUp animation-delay-12 small-caps">Charleston Prides For: <span className="typed-class typed-block color-primary"></span><span className="typed-cursor color-warning">|</span></h1>
-             <h2 class="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">September 22, 2018</h2>
+             <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">September 22, 2018</h2>
              <NavLink className="btn btn-warning btn-xlg btn-raised animated flipInX animation-delay-16" to="/about"><i className="zmdi zmdi-flag"></i> Get Involved<div className="ripple-container"></div></NavLink>
          </div>
      </div>
