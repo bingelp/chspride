@@ -6,15 +6,14 @@ export default class SponsorsList extends React.Component {
 
     render(props) {
     return (
-    <div className={"panel panel-"+helper(this.props.level)}>
-        <div className="panel-heading">
-            <h2 className="panel-title">{this.props.level} Level Sponsors</h2>
+    <div className={"card card-"+helper(this.props.level)}>
+        <div className="card-header">
+            <h2 className="card-title">{this.props.level} Level Sponsors</h2>
         </div>
-        <div className="panel-body">
+        <div className="card-body">
             <div className="row">
             {this.props.children}
             </div>
-
         </div>
     </div>)
     }
