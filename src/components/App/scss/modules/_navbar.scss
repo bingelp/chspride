@@ -15,7 +15,10 @@
     .navbar-header {
         display: none;
         height: 50px;
-
+        span {
+            font-family: 'Gotham Bold', 'Roboto', sans-serif;
+            font-weight: bold;
+        }
 
         .navbar-brand {
             align-items: center;
