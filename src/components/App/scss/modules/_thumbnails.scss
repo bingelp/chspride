@@ -427,13 +427,13 @@ a.img-thumbnail {
         }
     }
 
-    &.ms-thumbnail-danger {
+    &.ms-thumbnail-caution {
         .ms-thumbnail-caption {
-
-            background-color: transparentize(darken($color-danger-dark, 15%), 0.4);
+            text-shadow: 1px 1px 1px black;
+            background-color: transparentize(darken($color-caution-dark, 15%), 0.4);
 
             &:before {
-                background-color: transparentize(darken($color-danger-dark, 15%), 0.4);
+                background-color: transparentize(darken($color-caution-dark, 15%), 0.4);
             }
         }
     }

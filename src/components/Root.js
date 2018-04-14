@@ -8,6 +8,7 @@ import Sponsors from './Sponsors/Sponsors';
 import GetInvolved from './GetInvolved/GetInvolved';
 import Board from './Board/Board';
 import Bylaws from './Bylaws/Bylaws'
+import Donate from './Donate/Donate';
 
 const Root = (props) => {
     return (
@@ -17,9 +18,11 @@ const Root = (props) => {
             <Route exact path="/" component={Home} />
             <Route path="/sponsorships" component={Sponsorships} />
             <Route path="/sponsors" component={Sponsors} />
+            <Route path="/get-involved/donate" component={Donate}/>
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="/about/board" component={Board} />
             <Route path="/about/bylaws" component={Bylaws}/>
+
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

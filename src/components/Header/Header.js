@@ -21,6 +21,7 @@ class Header extends React.Component {
                     <a target="_blank" href="https://www.facebook.com/charlestonpride" className="btn-circle btn-facebook animated zoomInDown animation-delay-5"><i className="zmdi zmdi-facebook"></i></a>
                     <a target="_blank" href="https://twitter.com/charlestonpride" className="btn-circle btn-twitter animated zoomInDown animation-delay-6"><i className="zmdi zmdi-twitter"></i></a>
                     <a target="_blank" href="https://www.instagram.com/charlestonpride/" className="btn-circle btn-instagram animated zoomInDown animation-delay-7"><i className="zmdi zmdi-instagram"></i></a>
+                    <Link to='/donate' className="btn-circle btn-success animated zoomInDown animation-delay-7"><i className="zmdi zmdi-money-box"></i></Link>
                 </div>
             </div>
         </header>

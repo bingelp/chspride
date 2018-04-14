@@ -1,6 +1,9 @@
 import React from "react";
+import CountUp from 'react-countup';
 import './sponsors.scss';
 import LevelTable from "./LevelTable";
+
+
 
 const levels = [
   {
@@ -107,11 +110,68 @@ const levels = [
   }
 ];
 
+function Stats(props){
+return (
+  <div className="container ">
+    <h2 className="text-center mb-4 wow fadeInUp animation-delay-2">Some Numerical Data</h2>
+    <div className="row">
+      <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="card card-warning card-body text-center wow zoomInUp animation-delay-3">
+          <h2 className="counter"><CountUp start={0} end={6000} duration={6} />+</h2>
+          <i className="color-warning fa fa-4x fa-group"></i>
+          <p className="mt-2 no-mb lead small-caps">Pride Festival Attendees</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
+          <h2 className="counter"><CountUp start={0} end={9945} duration={6} /></h2>
+          <i className="color-info fa fa-4x fa-facebook"></i>
+          <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="card card-success card-body text-center wow zoomInUp animation-delay-5">
+          <h2 className="counter"><CountUp start={0} end={14} duration={6} /></h2>
+          <i className="color-success fa fa-4x fa-calendar"></i>
+          <p className="mt-2 no-mb lead small-caps">Events During Pride Week</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="card card-danger card-body text-center wow zoomInUp animation-delay-4">
+          <h2 className="counter"><CountUp start={0} end={21} duration={6} /></h2>
+          <i className="color-danger fa fa-4x fa-comments-o"></i>
+          <p className="mt-2 no-mb lead small-caps">Sponsors</p>
+        </div>
+      </div>
+
+    </div>
+  </div>);
+}
+
 class Sponsorships extends React.Component {
   render(){
       return(
-    <div className="container">
-      <LevelTable levels={levels}/>
+      <div>
+          <div className="ms-hero-page-override ms-hero-bg-info">
+            <div className="container">
+              <div className="text-center">
+                <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Become a Sponsor</h1>
+                <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">A sponsorship is a great way to promote your organization/company’s commitment to equal rights for all people. Additionally, a sponsorship will promote your organization among a deeply diverse group of individuals. <strong>Charleston Pride</strong> is the Lowcountry’s biggest organization that celebrates the LGBTQ community throughout the year and holds an annual Parade and Festival in downtown Charleston. Throughout the main week of Pride events, participants can attend various events all focused on educating the community and promoting equality.</p>
+              </div>
+            </div>
+          </div>
+           <Stats/>
+        <div className="container">
+          <LevelTable levels={levels}/>
+        </div>
+        <div className="container">
+        <div className="card">
+            <div className="card-body">
+                <iframe id="etapIframe" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/sponsorship.html"></iframe>
+                <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
+            </div>
+        </div>
+       </div>
     </div>)
   }
 }

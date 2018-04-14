@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export default class BoardMember extends React.Component {
 
@@ -26,7 +27,7 @@ export default class BoardMember extends React.Component {
                     <em><i className="zmdi zmdi-account mr-1 color-royal"></i> {this.props.pronouns}</em>
                 </div>
                 <div role="tabpanel" className="tab-pane fade" id={"bio-" + this.props.id}>
-                    <p>{this.props.bio}</p>
+                    <ReactMarkdown source={this.props.bio}/>
                 </div>
             </div>
         </div>

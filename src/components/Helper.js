@@ -1,19 +1,19 @@
 
 export default function convertLevelToColor(level){
-    switch (level.toLowerCase()) {
-                case 'red':
+    switch (level) {
+                case 1:
                     return 'danger';
                     break;
-                case 'orange':
+                case 2:
                     return 'warning';
                     break;
-                case 'yellow':
+                case 3:
                     return "caution";
                     break;
-                case 'green':
+                case 4:
                     return "success";
                     break;
-                case 'blue':
+                case 5:
                     return "info";
                     break;
                 default:

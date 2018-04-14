@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class UpcomingEvents extends React.Component {
     render() {
     return (
-        <div className="wrap bg-warning color-dark">
+        <div className="wrap bg-primary color-dark">
         <div className="container text-center">
             <h2>Upcoming Events</h2>
             <div className="row">
@@ -14,7 +14,7 @@ class UpcomingEvents extends React.Component {
             <Event/>
             <Event/>
             </div>
-            <Link to="/events" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Events</Link>
+            <Link to="/events" className="btn btn-warning btn-raised" > <i className="zmdi zmdi-eye"></i>View All Events</Link>
         </div>
         </div>)
     }
