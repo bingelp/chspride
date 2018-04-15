@@ -11,12 +11,11 @@ export default class SponsorHero extends React.Component {
             sponsors: [],
             isLoaded: false
         }
-
     }
 
     componentDidMount() {
         const itemsRef = firebase.database().ref('sponsors').orderByChild("level");
-        itemsRef.on('value', (snapshot) => {
+        itemsRef.once('value', (snapshot) => {
             snapshot.forEach(childSnapShot => {
                 let sponsor = { id: childSnapShot.key, details: childSnapShot.val() };
                 this.state.sponsors.push(sponsor);
@@ -30,26 +29,14 @@ export default class SponsorHero extends React.Component {
 
     render() {
         const { isLoaded, sponsors } = this.state;
-        if (isLoaded) {
             return (
                 <div className="container text-center">
                     <h2>Thank You to Our Sponsors</h2>
                     <div className="row">
-                        {sponsors.map(s => <Sponsor key={s.id} name={s.details.name} level={s.details.level} url={s.details.url} logo={s.details.logo} description={s.details.description} />)}
+                        {isLoaded && sponsors.map(s => <Sponsor key={s.id} name={s.details.name} level={s.details.level} url={s.details.url} logo={s.details.logo} description={s.details.description} />)}
                     </div>
                     <Link to="/sponsorships" className="btn btn-success btn-raised" > <i className="zmdi zmdi-thumb-up"></i>Become a sponsor</Link>
                     <Link to="/sponsors" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Sponsors</Link>
                 </div>)
-        }
-        else {
-            return (
-                <div className="container text-center">
-                    <h2>Thank You to Our Sponsors</h2>
-                    <div className="row">
-                    </div>
-                    <Link to="/sponsorships" className="btn btn-success btn-raised" > <i className="zmdi zmdi-thumb-up"></i>Become a sponsor</Link>
-                    <Link to="/sponsors" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Sponsors</Link>
-                </div>)
-        }
     }
 }
