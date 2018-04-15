@@ -27,5 +27,10 @@ yarn-error.log*
 .sass-cache/
 *.css.map
 src/**/*.css
+
+# Intellij
 .idea/*
 *.iml
+
+#VSCode
+.vscode/*
