@@ -1,0 +1,15 @@
+.ms-hero-img-crowd {
+  background-image: url('crowd.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.ms-hero-logo {
+  background-image: url('rainbowRoad_150.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  display: block;
+}

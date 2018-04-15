@@ -1,7 +1,7 @@
 import React from 'react';
 import WOW from 'wowjs';
 import Typed from 'typed.js'
-import './home.css';
+import './Home.css';
 import { NavLink } from 'react-router-dom';
 import Sponsors from '../Sponsors/SponsorHero';
 import UpcomingEvents from '../Events/UpcomingEvents';
@@ -13,7 +13,7 @@ class Home extends React.Component {
             live: false
         }).init();
 
-        var options = {
+        let options = {
             strings: ["Love", "Peace", "Equality", "Acceptance", "Respect", "Family", "Community"],
             typeSpeed: 80,
             startDelay: 2000,
@@ -46,5 +46,5 @@ class Home extends React.Component {
        </div>
       );
     }
-  };
+  }
 export default Home;

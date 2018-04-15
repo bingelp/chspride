@@ -1,7 +1,7 @@
 import React from "react";
 import Sponsor from "./Sponsor";
 import SponsorsList from "./SponsorsList";
-import "./Sponsors.css"
+import "./Sponsors.css";
 
 export default class Sponsors extends React.Component {
 

@@ -26,7 +26,8 @@ yarn-error.log*
 # sass
 .sass-cache/
 *.css.map
-src/**/*.css
+
+src/components/App/css/*
 
 # Intellij
 .idea/*
