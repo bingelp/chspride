@@ -9,7 +9,8 @@ export default class SponsorHeroItem extends React.Component {
         win.focus();
     }
     handleClick() {
-        SponsorHeroItem.openInNewTab(this.props.meta.url);
+        const campaign = "?utm_source=charleston_pride&utm_medium=website&utm_campaign=sponsors";
+        SponsorHeroItem.openInNewTab(this.props.meta.url+campaign);
     }
     render(props) {
         return <div className={"card col card-" + helper(this.props.meta.level)}>

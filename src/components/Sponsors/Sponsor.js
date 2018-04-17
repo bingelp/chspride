@@ -4,24 +4,26 @@ import helper from "../Helper"
 
 export default class Sponsor extends React.Component {
 
-    openInNewTab(url) {
-      var win = window.open(url, '_blank');
+    static openInNewTab(url) {
+      let win = window.open(url, '_blank');
       win.focus();
     }
+
     handleClick() {
-        console.log('this is:', this);
-        this.openInNewTab(this.props.url);
+        const campaign = "?utm_source=charleston_pride&utm_medium=website&utm_campaign=sponsors";
+        Sponsor.openInNewTab(this.props.url + campaign);
     }
+
     render(props) {
     return (
     <div className="ms-thumbnail-container">
-        <figure className={"ms-thumbnail ms-thumbnail-bottom ms-thumbnail-"+ helper(this.props.level)}>
-            <img src={"https://placehold.it/"+this.props.size+"?text="+this.props.name} alt="" className="img-fluid"></img>
+        <figure className={"ms-thumbnail ms-thumbnail-bottom ms-thumbnail-"+ helper(this.props.meta.level)}>
+            <img src={this.props.meta.logoPath} alt={this.props.meta.name} className="img-fluid"></img>
             <figcaption className="ms-thumbnail-caption text-center">
                 <div className="ms-thumbnail-caption-content">
-                    <h4 className="ms-thumbnail-caption-title">{this.props.name}</h4>
-                    <p>{this.props.description}</p>
-                    <button onClick={(e) => this.handleClick(e)} className={"btn-circle btn-circle-raised btn-circle-" +helper(this.props.level)}>
+                    <h4 className="ms-thumbnail-caption-title">{this.props.meta.name}</h4>
+                    <p>{this.props.meta.description}</p>
+                    <button onClick={(e) => this.handleClick(e)} className={"btn-circle btn-circle-raised btn-circle-" +helper(this.props.meta.level)}>
                     <i className="zmdi zmdi-globe"></i><div className="ripple-container"></div></button>
                 </div>
             </figcaption>

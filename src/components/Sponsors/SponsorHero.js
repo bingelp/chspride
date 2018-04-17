@@ -18,8 +18,8 @@ export default class SponsorHero extends React.Component {
         itemsRef.once('value', (snapshot) => {
             snapshot.forEach(childSnapShot => {
                 let sponsor = { id: childSnapShot.key, meta: childSnapShot.val() };
-                var storageRef = firebase.storage().ref();
-                var logoRef = storageRef.child('sponsors/' + sponsor.meta.logo);
+                let storageRef = firebase.storage().ref();
+                let logoRef = storageRef.child('sponsors/' + sponsor.meta.logo);
                 logoRef.getDownloadURL().then(url => {
                     sponsor.meta.logoPath = url;
                     this.state.sponsors.push(sponsor);

@@ -1,18 +1,17 @@
 import React from "react";
-import helper from "../Helper"
-import { Link } from 'react-router-dom';
+import Sponsor from "./Sponsor";
 
 export default class SponsorsList extends React.Component {
 
     render(props) {
     return (
-    <div className={"card card-"+helper(this.props.level)}>
+    <div className={"card card-"+this.props.class+"-inverse"}>
         <div className="card-header">
-            <h2 className="card-title">{this.props.level} Level Sponsors</h2>
+            <h2 className="card-title">{this.props.sponsorshipLevel} Level Sponsors</h2>
         </div>
         <div className="card-body">
             <div className="row">
-            {this.props.children}
+                {this.props.sponsors.map(s => <Sponsor key={s.id} meta={s.meta} />)}
             </div>
         </div>
     </div>)
