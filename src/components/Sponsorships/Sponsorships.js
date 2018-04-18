@@ -167,7 +167,7 @@ class Sponsorships extends React.Component {
         <div className="container">
         <div className="card">
             <div className="card-body">
-                <iframe id="etapIframe" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/sponsorship.html"></iframe>
+                <iframe id="etapIframe" title="sponsorships" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/sponsorship.html"></iframe>
                 <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
             </div>
         </div>

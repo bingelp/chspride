@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Level from "./Level";
 
 class LevelTable extends React.Component {

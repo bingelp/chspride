@@ -17,7 +17,7 @@ const Donate = (props) => {
     <div className="container card-hero">
         <div className="card">
             <div className="card-body">
-                <iframe id="etapIframe" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/donate.html"></iframe>
+                <iframe id="etapIframe" title="donate" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/donate.html"></iframe>
                 <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
             </div>
         </div>
