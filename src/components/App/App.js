@@ -3,7 +3,7 @@ import './css/App.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer';
-import Sidebar from '../Sidebar';
+import Sidebar from '../Sidebar/Sidebar';
 
 
 const App = ({ children }) => {

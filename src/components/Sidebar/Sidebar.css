@@ -1,0 +1,5 @@
+    .ms-slidebar-header {
+        min-height: 150px;
+        background-image: url('sidebar-bg.jpg');
+        position: relative;
+    }
