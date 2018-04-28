@@ -35,12 +35,12 @@ export default class SponsorHero extends React.Component {
                     )
                 })
 
-            })
+            });
+            this.timerID = setInterval(
+                () => this.tick(),
+                3000
+            );
         });
-        this.timerID = setInterval(
-            () => this.tick(),
-            3000
-        );
     }
 
 
@@ -56,12 +56,11 @@ export default class SponsorHero extends React.Component {
     }
 
     render() {
-        const { sponsors } = this.state;
         return (
             <div className="container text-center">
                 <h2>Thank You to Our Sponsors</h2>
                 <div className="row">
-                    {sponsors && sponsors.slice(0, 6).map(s => <Sponsor key={s.id} meta={s.meta} />)}
+                    {this.state.sponsors && this.state.sponsors.slice(0, 6).map(s => <Sponsor key={s.id} meta={s.meta} />)}
                 </div>
                 <Link to="/sponsorships" className="btn btn-success btn-raised" > <i className="zmdi zmdi-thumb-up"></i>Become a sponsor</Link>
                 <Link to="/sponsors" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Sponsors</Link>
