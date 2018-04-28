@@ -63,6 +63,11 @@
             .nav-item {
                 display: flex;
 
+                i {
+                    margin-right: 15px;
+                    transition: background 0.3s;
+                }
+
                 & > a {
                     padding: 0;
                     //min-width: 100px;
