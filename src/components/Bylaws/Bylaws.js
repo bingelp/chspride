@@ -13,16 +13,16 @@ export default class Bylaws extends React.Component {
         </div>
       </div>
       <div className="container">
-        <a className="btn btn-info pull-right btn-raised" download href={bylawsDocx}><i class="fa fa-download"></i> Download</a>
-        <div class="border-box card-hero">
-          <div class="card-body">
-          <a className="btn btn-info pull-right btn-raised" download href={bylawsDocx}><i class="fa fa-download"></i> Download</a>
+        <a className="btn btn-info pull-right btn-raised" download href={bylawsDocx}><i className="fa fa-download"></i> Download</a>
+        <div className="border-box card-hero">
+          <div className="card-body">
+          <a className="btn btn-info pull-right btn-raised" download href={bylawsDocx}><i className="fa fa-download"></i> Download</a>
             <h2>ARTICLE I: ORGANIZATION AND MISSION</h2>
 
             <h3>Section 1. Name and Charter</h3> The name of this organization shall be Charleston Pride Festival, Inc., hereinafter referred to as “CPF.” The CPF is a non-profit corporation organized under the laws of the State of South Carolina exclusively for charitable, educational and
             social purposes. It may hold property and hold title to property.
 
-            <h3>Section 2. Mission & Purpose</h3> Our mission is to promote the visibility of the LGBTQ community by educating society, honoring our heritage, advocating for our culture, and celebrating our diverse society. Our purpose is to highlight the uniqueness and diversity of our community
+            <h3>Section 2. Mission &amp; Purpose</h3> Our mission is to promote the visibility of the LGBTQ community by educating society, honoring our heritage, advocating for our culture, and celebrating our diverse society. Our purpose is to highlight the uniqueness and diversity of our community
             through distinct events throughout the year promoting our history and culture, including the annual Charleston Pride Parade and Festival, henceforth referred to as the “Annual Pride Event.”
 
             <h3>Section 3. Records, Minutes and Books</h3> The CPF shall keep correct and complete books and records of account; keep minutes of the proceedings of the Board of Directors and of committees having any of the authority of the Board of Directors; and keep at its registered or principal office
