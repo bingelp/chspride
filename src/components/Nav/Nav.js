@@ -17,13 +17,12 @@ class Nav extends React.Component {
 
                     <div className="collapse navbar-collapse" id="ms-navbar">
                         <ul className="navbar-nav">
+                            <NavItem to="/sponsors" title="Sponsors" icon="fa-heart" />
+                            <NavItem to="/sponsorships" title="Sponsorships" icon="fa-handshake-o" />
                             <NavDropdown title="About Us">
-                                <NavDropdownItem to="/somewhere" title="Something" icon="zmdi-file-text"/>
+                                <NavDropdownItem to="/about/board" title="Board Of Directors" icon="fa-group"/>
+                                <NavDropdownItem to="/about/bylaws" title="Bylaws" icon="fa-legal"/>
                             </NavDropdown>
-                            <NavItem to="/events" title="Events" icon="zmdi-file-text" />
-                            <NavItem to="/sponsors" title="Sponsors" icon="zmdi-file-text"/>
-                            <NavItem to="/sponsors" title="Sponsors" icon="zmdi-file-text" />
-                            <NavItem to="/sponsors" title="Sponsors" icon="zmdi-file-text" />
                         </ul>
                     </div>
                     <a className="ms-toggle-left btn-navbar-menu"><i className="zmdi zmdi-menu"></i></a>
