@@ -17,8 +17,8 @@ class Nav extends React.Component {
 
                     <div className="collapse navbar-collapse" id="ms-navbar">
                         <ul className="navbar-nav">
-                            <NavItem to="/sponsors" title="Sponsors" icon="fa-heart" />
-                            <NavItem to="/sponsorships" title="Sponsorships" icon="fa-handshake-o" />
+                            <NavItem to="/sponsors" title="Our Sponsors" icon="fa-heart" />
+                            <NavItem to="/sponsorships" title="Become a Sponsor" icon="fa-handshake-o" />
                             <NavDropdown title="About Us">
                                 <NavDropdownItem to="/about/board" title="Board Of Directors" icon="fa-group"/>
                                 <NavDropdownItem to="/about/bylaws" title="Bylaws" icon="fa-legal"/>
