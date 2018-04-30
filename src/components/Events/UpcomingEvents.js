@@ -16,6 +16,9 @@ class UpcomingEvents extends React.Component {
         const itemsRef = firebase.database().ref('events').orderByKey();
         itemsRef.once('value', (snapshot) => {
             snapshot.forEach(childSnapShot => {
+                if(new Date(childSnapShot.val().date) < new Date()){
+                    return;
+                }
                 let event = {id: childSnapShot.key, meta: childSnapShot.val()};
                 let storageRef = firebase.storage().ref();
                 let graphicRef = storageRef.child('events/' + event.meta.graphic);
