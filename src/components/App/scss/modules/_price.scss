@@ -241,10 +241,7 @@
 .pricing-table-container {
     background-color: #fff;
     @include shadow-2dp;
-}
-
-.pricing-table {
-
+    padding: 4rem 0;
 }
 
 .pricing-table-content {
@@ -259,11 +256,6 @@
     margin: 0;
 }
 
-.border-fix-pricing {
-}
-
-.pricing-table-description {
-}
 
 .pricing-desc-title {
     font-size: 24px;
@@ -360,10 +352,9 @@
         @include shadow-3dp();
 
         .price-table-body {
-            //padding-bottom: 4rem;
+
 
             .btn {
-                //transform: translateY(15px);
                 margin-top: 3rem;
             }
         }
@@ -379,10 +370,8 @@
         @include shadow-3dp();
 
         .price-table-body {
-            //padding-bottom: 4rem;
 
             .btn {
-                //transform: translateY(15px);
                 margin-top: 3rem;
             }
         }
