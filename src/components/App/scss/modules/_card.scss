@@ -106,6 +106,13 @@
         }
     }
 
+    &.card-caution-inverse
+    {
+        .card-header{
+            color: $color-dark-light;
+        }
+    }
+
     &.card-light {
         .card-header,
         .card-footer {

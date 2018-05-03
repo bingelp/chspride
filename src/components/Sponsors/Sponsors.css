@@ -19,3 +19,12 @@
 .card-body{
   min-height: 212px;
 }
+
+.ms-thumbnail-container{
+  width: 220px;
+  height: 220px;
+}
+
+.ms-icon.ms-icon-xxlg{
+  margin-top: 25px;
+}

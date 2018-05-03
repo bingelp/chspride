@@ -55,6 +55,11 @@
         background-color: #000;
     }
 
+    &.color-caution {
+        color: #fff !important;
+        background-color: $color-caution;
+    }
+
     &.ms-icon-inverse {
         background-color: transparent;
         color: $color-primary;

@@ -8,14 +8,12 @@
 
 @import './material-design/ripples';
 @import './material-design/bootstrap-material-design';
-
 @import './base/material-shadows';
 @import './base/mixins';
 @import './base/animations';
 @import './base/utilities';
 @import './base/main';
 @import './base/typography';
-
 @import './modules/logo';
 @import './modules/header';
 @import './modules/navbar';
@@ -33,15 +31,12 @@
 @import './modules/paper';
 @import './modules/collapses';
 @import './modules/tabs';
-//@import './modules/glyphicons';
 @import './modules/thumbnails';
 @import './modules/tooltip';
 @import './modules/progressbar';
 @import './modules/pagination';
 @import './modules/charts';
-//@import './modules/bxSlider';
 @import './modules/heros';
-//@import './modules/lightbox';
 @import './modules/modals';
 @import './modules/carousels';
 @import './modules/revolution';
@@ -51,12 +46,5 @@
 @import './modules/footer';
 
 @import './modules/slidebar';
-
-@import './modules/configurator';
-
-@import './pages/page-login';
-@import './pages/page-coming';
-@import './pages/page-portfolio';
-//@import "/pages/pages-lead";
 
 @import './base/responsive';
