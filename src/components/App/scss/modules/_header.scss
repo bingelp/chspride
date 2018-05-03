@@ -25,20 +25,20 @@
             span {
                 font-family: 'Gotham Bold', 'Roboto', sans-serif;
                 font-weight: bold;
-                &.p:hover{
+                &.p{
                     color: $color-danger;
                 }
-                &.r:hover{
+                &.r{
                     color: $color-warning;
                 }
-                &.i:hover{
+                &.i{
                     color: $color-caution;
                 }
-                &.d:hover{
+                &.d{
                     color: $color-success;
                 }
-                &.e:hover{
-                    color: $color-info;
+                &.e{
+                    color: $color-royal;
                 }
             }
         }
