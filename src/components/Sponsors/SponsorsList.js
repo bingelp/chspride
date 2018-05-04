@@ -13,7 +13,7 @@ export default class SponsorsList extends React.Component {
         <div className="card-body">
             <div className="row">
                 {this.props.sponsors.map(s => <Sponsor key={s.id} meta={s.meta} />)}
-                {this.props.sponsors.length == 0 && 
+                {this.props.sponsors.length === 0 && 
                 <SponsorDefault class={this.props.class}/>}
             </div>
         </div>

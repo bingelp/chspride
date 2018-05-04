@@ -3,7 +3,7 @@ import React from 'react';
 class UpcomingEvent extends React.Component {
     render(props) {
     return (
-    <div className="col-sm-6 col-lg-3">
+    <div className="col-6 col-lg-3">
        <div className="ms-thumbnail-container">
         <figure className="ms-thumbnail ms-thumbnail-light">
           <img src={this.props.meta.graphicPath} alt={this.props.meta.name} className="img-fluid"></img>

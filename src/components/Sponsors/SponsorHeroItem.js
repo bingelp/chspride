@@ -13,7 +13,7 @@ export default class SponsorHeroItem extends React.Component {
         SponsorHeroItem.openInNewTab(this.props.meta.url+campaign);
     }
     render(props) {
-        return <div className={"card col-sm-4 col-md-2 card-" + helper(this.props.meta.level)}>
+        return <div className={"card col-4 col-md-2 card-" + helper(this.props.meta.level)}>
             <div className="ms-thumbnail-container">
                 <figure className={"ms-thumbnail ms-thumbnail-bottom ms-thumbnail-" + helper(this.props.meta.level)}>
                     <img src={this.props.meta.logoPath} alt={this.props.meta.logo} className="img-fluid"/>

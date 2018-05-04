@@ -72,7 +72,7 @@ class Level extends React.Component {
                         </li>
                         <li>
                         <BooleanIndicator value={this.props.level.marketing}/>
-                        <span className="d-block d-lg-none">Use of “Official Charleston Pride Sponsor *”</span>
+                        <span className="d-block d-lg-none">Use of “Official Charleston Pride Sponsor ” *</span>
                         </li>
                         <li>
                         <BooleanIndicator value={this.props.level.paradeEntryFeeWaived}/>
