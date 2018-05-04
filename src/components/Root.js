@@ -9,6 +9,7 @@ import GetInvolved from './GetInvolved/GetInvolved';
 import Board from './Board/Board';
 import Bylaws from './Bylaws/Bylaws'
 import Donate from './Donate/Donate';
+import ParadeRegistration from './ParadeRegistration/ParadeRegistration'
 
 const Root = (props) => {
     return (
@@ -22,7 +23,7 @@ const Root = (props) => {
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="/about/board" component={Board} />
             <Route path="/about/bylaws" component={Bylaws}/>
-
+            <Route path="/parade-registration" component={ParadeRegistration}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>
