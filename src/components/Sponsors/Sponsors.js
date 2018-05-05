@@ -48,23 +48,23 @@ export default class Sponsors extends React.Component {
                         <div className="text-center">
                             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Our
                                 Sponsors Make It Possible</h1>
-                            <Link to="/sponsorships" class="btn btn-raised btn-info animated fadeInUp animation-delay-10">
-                                <i class="fa fa-heart"></i> Become a Sponsor</Link>
+                            <Link to="/sponsorships" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                                <i className="fa fa-heart"></i> Become a Sponsor</Link>
                         </div>
                     </div>
                 </div>
                 <div id="sponsors" className="container">
-                    <SponsorsList sponsorshipLevel="Red" class={helper(1)}
+                    <SponsorsList sponsorshipLevel="Red" cardColor={helper(1)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 1)}/>
-                    <SponsorsList sponsorshipLevel="Orange" class={helper(2)}
+                    <SponsorsList sponsorshipLevel="Orange" cardColor={helper(2)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 2)}/>
-                    <SponsorsList sponsorshipLevel="Yellow" class={helper(3)}
+                    <SponsorsList sponsorshipLevel="Yellow" cardColor={helper(3)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 3)}/>
-                    <SponsorsList sponsorshipLevel="Green" class={helper(4)}
+                    <SponsorsList sponsorshipLevel="Green" cardColor={helper(4)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 4)}/>
-                    <SponsorsList sponsorshipLevel="Blue" class={helper(5)}
+                    <SponsorsList sponsorshipLevel="Blue" cardColor={helper(5)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 5)}/>
-                    <SponsorsList sponsorshipLevel="Purple" class={helper(6)}
+                    <SponsorsList sponsorshipLevel="Purple" cardColor={helper(6)}
                                     sponsors={this.state.sponsors.filter(s => s.meta.level === 6)}/>
                 </div>
             </div>)

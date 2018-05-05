@@ -6,7 +6,7 @@ export default class SponsorsList extends React.Component {
 
     render(props) {
     return (
-    <div className={"card card-"+this.props.class+"-inverse"}>
+    <div className={"card card-"+this.props.cardColor+"-inverse"}>
         <div className="card-header">
             <h2 className="card-title">{this.props.sponsorshipLevel} Level Sponsors</h2>
         </div>
@@ -14,7 +14,7 @@ export default class SponsorsList extends React.Component {
             <div className="row">
                 {this.props.sponsors.map(s => <Sponsor key={s.id} meta={s.meta} />)}
                 {this.props.sponsors.length === 0 && 
-                <SponsorDefault class={this.props.class}/>}
+                <SponsorDefault cardColor={this.props.cardColor}/>}
             </div>
         </div>
     </div>)

@@ -157,10 +157,10 @@ class Sponsorships extends React.Component {
               <div className="text-center">
                 <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Become a Sponsor</h1>
                 <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-6">A sponsorship is a great way to promote your organization/company’s commitment to equal rights for all people. Additionally, a sponsorship will promote your organization among a deeply diverse group of individuals. <strong>Charleston Pride</strong> is the Lowcountry’s biggest organization that celebrates the LGBTQ community throughout the year and holds an annual Parade and Festival in downtown Charleston. Throughout the main week of Pride events, participants can attend various events all focused on educating the community and promoting equality.</p>
-                <a href="#levels" class="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
-                  <i class="fa fa-list-ul"></i>Review Packages</a>
-                <a href="#register" class="btn btn-raised btn-info animated fadeInUp animation-delay-10">
-                  <i class="fa fa-heart"></i> Become a Sponsor</a>
+                <a href="#levels" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
+                  <i className="fa fa-list-ul"></i>Review Packages</a>
+                <a href="#register" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                  <i className="fa fa-heart"></i> Become a Sponsor</a>
               </div>
             </div>
           </div>

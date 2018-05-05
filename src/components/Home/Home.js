@@ -5,6 +5,7 @@ import './Home.css';
 import { NavLink } from 'react-router-dom';
 import Sponsors from '../Sponsors/SponsorHero';
 import UpcomingEvents from '../Events/UpcomingEvents';
+import CountdownClock from '../CountdownClock'
 
 
 class Home extends React.Component {
@@ -42,6 +43,13 @@ class Home extends React.Component {
             </div>
         </div>
         <Sponsors/>
+              <div className="wrap bg-warning color-dark">
+                  <div className="container">
+                      <h1 className="color-white text-center mb-1">Charleston Pride 2018</h1>
+                      <h2 className="color-white text-center mb-1">September 22 2018</h2>
+                      <CountdownClock eventTime="2018-09-22T09:00:00" color="white" />
+                  </div>
+              </div>
         <UpcomingEvents/>
        </div>
       );

@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
                     <ul className="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
                         <SidebarLink to="/sponsors" title="Our Sponsors" icon="fa-heart" />
                         <SidebarLink to="/sponsorships" title="Become a Sponsor" icon="fa-handshake-o" />
-                        <SidebarTab title="About Us" icon="fa-user-circle" key="1">
+                        <SidebarTab title="About Us" icon="fa-user-circle" tabkey="1">
                             <SidebarTabLink to="/about/board" title="Board Of Directors" icon="fa-group" />
                             <SidebarTabLink to="/about/bylaws" title="Bylaws" icon="fa-legal" />
                         </SidebarTab>
@@ -22,7 +22,6 @@ class Sidebar extends React.Component {
                     <SidebarSocial/>
                 </div>
             </div>
-
         );
     }
 }

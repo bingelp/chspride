@@ -9,7 +9,7 @@ import GetInvolved from './GetInvolved/GetInvolved';
 import Board from './Board/Board';
 import Bylaws from './Bylaws/Bylaws'
 import Donate from './Donate/Donate';
-import ParadeRegistration from './ParadeRegistration/ParadeRegistration'
+import Parade from './Parade/Parade'
 
 const Root = (props) => {
     return (
@@ -23,7 +23,7 @@ const Root = (props) => {
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="/about/board" component={Board} />
             <Route path="/about/bylaws" component={Bylaws}/>
-            <Route path="/parade-registration" component={ParadeRegistration}/>
+            <Route path="/pride-2018/parade" component={Parade}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>
@@ -41,7 +41,7 @@ const Root = (props) => {
                         <h2>Page Not Found</h2>
                         <p className="lead lead-sm">This is a new site and apparently we missed something.</p>
                         <p>If you wouldn&apos;t mind please, send an email to <a href="mailto:support@charlestonpride.org">support@charlestonpride.org</a>. Thanks!</p>
-                        <Link to="/" class="btn btn-primary btn-raised"><i class="zmdi zmdi-home"></i> Go Home</Link>
+                        <Link to="/" className="btn btn-primary btn-raised"><i className="zmdi zmdi-home"></i> Go Home</Link>
                     </div>
                 </div>
             </div>
