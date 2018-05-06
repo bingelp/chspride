@@ -40,7 +40,7 @@ export default class Parade extends Component {
                                 <li>Best Walking Entry</li>
                             </ul>
 
-                            <h4 className="text-center"><span className="color-warning">NEW</span> Parade registration is included with all <Link to="/sponsorships">Sponsorships </Link>!</h4>
+                            <h4><span className="color-warning">NEW</span> Parade registration is included with all <Link to="/sponsorships">Sponsorships</Link>!</h4>
                         </div>
                         <div className="col-12 col-md-6">
                             <img src={paradeRoute} alt="Parade Route" className="img-fluid my-3"></img>

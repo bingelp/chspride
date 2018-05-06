@@ -11,7 +11,7 @@ export default class SponsorsList extends React.Component {
             <h2 className="card-title">{this.props.sponsorshipLevel} Level Sponsors</h2>
         </div>
         <div className="card-body">
-            <div className="row">
+                <div className="row justify-content-center">
                 {this.props.sponsors.map(s => <Sponsor key={s.id} meta={s.meta} />)}
                 {this.props.sponsors.length === 0 && 
                 <SponsorDefault cardColor={this.props.cardColor}/>}

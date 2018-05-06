@@ -23,6 +23,10 @@ class Nav extends React.Component {
                                 <NavDropdownItem to="/about/board" title="Board Of Directors" icon="fa-group"/>
                                 <NavDropdownItem to="/about/bylaws" title="Bylaws" icon="fa-legal"/>
                             </NavDropdown>
+                            <NavDropdown title="Pride 2018">
+                                <NavDropdownItem to="/pride-2018/vendors" title="Vendor Registation" icon="fa-map-marker" />
+                                <NavDropdownItem to="/pride-2018/parade" title="Parade Registration" icon="fa-flag" />
+                            </NavDropdown>
                         </ul>
                     </div>
                     <a className="ms-toggle-left btn-navbar-menu"><i className="zmdi zmdi-menu"></i></a>
