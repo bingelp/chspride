@@ -1,0 +1,4 @@
+.header-right a:hover i{
+    transition: all ease 0.4s;
+    transform: rotate(360deg);
+}

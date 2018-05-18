@@ -7,10 +7,23 @@ import Sponsorships from './Sponsorships/Sponsorships';
 import Sponsors from './Sponsors/Sponsors';
 import GetInvolved from './GetInvolved/GetInvolved';
 import Board from './Board/Board';
+import BoardRoles from './Board/BoardRoles'
+import ServeOnBoard from './Board/ServeOnBoard'
 import Bylaws from './Bylaws/Bylaws'
 import Donate from './Donate/Donate';
 import Parade from './Parade/Parade'
-import Vendor from './Festival/Vendor/Vendor';
+import ParadeRegistration from './Parade/ParadeRegistration'
+import Festival from './Festival/Festival'
+import Vendor from './Festival/Vendor/Vendor'
+import Volunteer from './Volunteer/Volunteer';
+import Cruise from './Events/Cruise';
+import Friends from './Friends/Friends'
+import MailingList from "./MailingList/MailingList";
+import PrideGuideAd from './PrideGuide/Ad'
+import PreviousPrideGuide from './PrideGuide/Previous'
+import Pride from './Pride/Pride'
+import Events from './Events/Events'
+import Contact from './Contact'
 
 const Root = (props) => {
     return (
@@ -18,14 +31,27 @@ const Root = (props) => {
         <App>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/sponsorships" component={Sponsorships} />
-            <Route path="/sponsors" component={Sponsors} />
-            <Route path="/get-involved/donate" component={Donate}/>
+            <Route path="/board-of-directors" component={Board} />
+            <Route path="/bylaws" component={Bylaws} />
+            <Route path="/board-roles" component={BoardRoles} />
+            <Route path="/our-sponsors" component={Sponsors} />
+            <Route path="/become-a-sponsor" component={Sponsorships} />
+            <Route path="/friends-of-pride" component={Friends} />
+            <Route path="/join-our-mailing-list" component={MailingList} />
+            <Route path="/volunteer" component={Volunteer} />
+            <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
+            <Route path="/2017-pride-guide" component={PreviousPrideGuide}/>
+            <Route path="/vendor-registration" component={Vendor} />
+            <Route path="/participate-in-parade" component={ParadeRegistration} />
+            <Route path="/serve-on-the-board" component={ServeOnBoard} />
+            <Route path="/events/pride-on-the-harbor" component={Cruise} />
+            <Route path="/events/pride/festival" component={Festival} />
+            <Route path="/events/pride/parade" component={Parade} />
+            <Route path="/events/pride" component={Pride} />
+            <Route path="/events" component={Events} />
+            <Route path="/donate" component={Donate} />
+            <Route path="/contact-us" component={Contact} />
             <Route path="/get-involved" component={GetInvolved} />
-            <Route path="/about/board" component={Board} />
-            <Route path="/about/bylaws" component={Bylaws}/>
-            <Route path="/pride-2018/parade" component={Parade}/>
-            <Route path="/pride-2018/vendors" component={Vendor}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

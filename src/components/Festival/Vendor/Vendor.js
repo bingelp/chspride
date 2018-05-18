@@ -14,9 +14,10 @@ export default class Vendors extends Component {
           <div className="container">
             <div className="text-center">
               <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                Charleston Pride <span>Festival</span></h1>
-              <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-                Saturday, September 22nd 2018 @ 10:00am-3:00pm</h2>
+                Vendor Information</h1>
+              <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Charleston Pride Festival</h2>
+              <h3 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+                Saturday, September 22nd 2018 @ 10:00am-3:00pm</h3>
               <CountdownClock eventTime="2018-09-22T10:00:00" color="warning" />
             </div>
           </div>

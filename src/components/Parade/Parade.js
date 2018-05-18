@@ -24,10 +24,17 @@ export default class Parade extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <h3 className="color-primary wow fadeInUp animation-delay-2">Parade Details</h3>
-                            <p className="wow fadeInUp animation-delay-3" >Register to participate in the <strong>2018 Charleston Pride Parade! </strong>
+                            <h3 className="color-primary wow fadeInUp animation-delay-2">Parade Information</h3>
+                            <p className="wow fadeInUp animation-delay-3" >
                                 Thousands will line the streets of historic downtown Charleston to come out to celebrate diversity and to support equal rights for all citizens.</p>
-                            <p className="wow fadeInUp animation-delay-4">The <strong>1.8 mile</strong> parade route begins at Wragg Mall on the corners of Ann and Meeting Streets. Immediately the parade processes to King Street and heads south on King, traveling past Marion Square, the heart of downtown Charleston.Once the parade hits Broad Street, the procession takes a right and continues until Colonial Lake. Viewing of the parade is encouraged on King Street.</p>
+                            
+                            <ol className="service-list list-unstyled">
+                                <li>The <strong>1.8 mile</strong> parade route begins at <strong>Wragg Mall</strong> on the corners of <strong>Ann Street</strong> and <strong>Meeting Street</strong>.</li>
+                                <li>Immediately, the parade proceeds to <strong>King Street</strong> and heads south on King, traveling past <strong>Marion Square</strong>, the heart of downtown Charleston.</li>
+                                <li>Once the parade hits <strong>Broad Street</strong>, the procession takes a right and continues until reaching <strong>Colonial Lake</strong>.</li>
+                            </ol>
+                            <h4>Viewing of the parade is encouraged on King Street</h4>
+                            <h3 className="color-primary wow fadeInUp animation-delay-2">Participate in the Parade</h3>
                             <h4>Entries are Automatically Entered to Compete in These Award Categories:</h4>
                             <ul>
                                 <li>Best Use of Pride Colors</li>
