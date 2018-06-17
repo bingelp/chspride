@@ -8,11 +8,11 @@ import tony from './Tony.jpg';
 import devon from './Devon1.jpg';
 import vanity from './Vanity.jpg';
 import regina from './Gina.jpg';
-import daniel from './Daniel.jpg';
 import mollie from './Mollie.jpg';
 import carson from './Carson.jpg';
 import clark from './Clark.jpg';
 import joseph from './Joseph.jpg';
+import evan from './Evan.jpg';
 
 
 
@@ -35,9 +35,9 @@ class Board extends React.Component {
           />
           <BoardMember id="2" firstName="Devon" lastName="Turner" elected="May 2014" email="devon.turner" title="Vice Chair / Chief Operating Officer" photoSrc={devon} pronouns="He/Him/His" bio="Originally from Pennsylvania, Devon has lived in Charleston for 10 years and has been involved in the nonprofit sector ever since high school. He is passionate about board service and advancing the visibility and acceptance of the LGBTQ community. When he’s not volunteering on the Pride board, you can find him at Omatic Software where he works with nonprofits to better manage their data, at the beach soaking up the sun and enjoying a good book, or in class getting a Master’s in Public Administration at the College of Charleston. His greatest achievement will be learning how to successfully pull off a death drop without breaking any bones."
           />
+          <BoardMember id="3" firstName="Evan" lastName="Nowell" elected="May 2018" email="evan.nowell" title="Chief Financial Officer" photoSrc={evan} pronouns="He/Him/His" bio="Bio coming soon."/>
           <BoardMember id="4" firstName="Regina" lastName="Duggins" elected="July 2017" email="regina.duggins" title="Secretary of the Board" photoSrc={regina} pronouns="She/Her/Hers" bio="Originally from Coney Island-Brooklyn, NY. Regina has lived in Charleston, SC for 7 years. Regina has a Master’s in Special Education and is currently mid- way completion of her Doctoral Degree in Educational Leadership from Grand Canyon University. She came to the board as a willing participant in support of adding diversity awareness to the community at-large. She hopes to reach out to the LGBTQ of Color community of Charleston and to provide them with support and love. My greatest achievements are my family and being a local poet and author. I enjoy spreading my messages in all arenas. Regina is a lover of people and supporter for positive change being made in marginalized communities."
           />
-
         </div>
         <h2 className="text-center">Board Members</h2>
         <div className="row">
@@ -51,8 +51,6 @@ class Board extends React.Component {
             />
             <BoardMember id="9" firstName="Pete" lastName="Bingel" elected="November 2017" email="peter.bingel" title="Director of Technology" photoSrc={pete} pronouns="He/Him/His" bio="Pete is a Charleston native and grew up in Mount Pleasant. After graduating from the University of South Carolina in 2008 with a BS in Computer Science, he returned to Charleston to work in Charleston’s growing tech industry. In his free time, he can be found sipping on a Bloody Mary while enjoying a wonderful brunch or relaxing at home with his fiancé Ben. As the first-ever Director of Technology, his goal is to help Charleston Pride by designing and implementing software solutions in order to support its mission and business objectives."
             />
-            <BoardMember id="10" firstName="Daniel" lastName="Strait" elected="November 2017" email="daniel.strait" title="Director of Sponsorships" photoSrc={daniel} pronouns="He/Him/His" bio="Bio coming soon."
-            />
             <BoardMember id="11" firstName="Carson" lastName="Lance" elected="November 2017" email="carson.lance" title="Director of Outreach" photoSrc={carson} pronouns="He/Him/His" bio="Carson is a 2010 bachelor’s graduate from Ball State University and 2013 master’s graduate from Bowling Green State University. Originally from Southern Indiana by route of Boston, Carson moved to Charleston in July 2017 and has been eating shrimp and grits ever since. Carson currently serves as the Assistant Director for Fraternity & Sorority Life at the College of Charleston. When not at work, Carson is in the dance studio thinking he’s a professional dancer and traveling more than he should. Carson serves with a keen interest in engaging queer high school and collegiate students in queer advocacy and equity efforts, as well as creating opportunities for learning to support our most marginalized queer communities."
             />
             <BoardMember id="12" firstName="Joseph" lastName="Kaiser" elected="November 2016" email="jospeh.kaiser" title="Director of At-Large" photoSrc={joseph} pronouns="He/Him/His" bio="Joseph is from Mount Pleasant, SC but currently resides in downtown Charleston, SC. He graduated from Clemson University in 2008 and the Charleston School of Law in 2011. After law school, Joseph worked as a prosecutor for a local municipality. In August 2016, Joseph opened his own law firm in Charleston, SC focusing primarily on criminal defense and personal injury. When he’s not at work, Joseph can be found either in Clemson cheering for the Tigers or traveling around the country especially in the Pacific Northwest. Joseph serves as a member at large on the Board of Directors and looks forward to helping other Board members accomplish their goals."
@@ -63,9 +61,9 @@ class Board extends React.Component {
         </div>
         <h2 className="text-center">Vacancies</h2>
             <div className="row">
-                    <VacantBoardMember id="3" title="Chief Financial Officer"/>
-                    <VacantBoardMember id="14" title="Director At-Large"/>
-                    <VacantBoardMember id="15" title="Director At-Large"/>
+              <VacantBoardMember id="10" title="Director of Sponsorships"/>
+              <VacantBoardMember id="14" title="Director At-Large"/>
+              <VacantBoardMember id="15" title="Director At-Large"/>
             </div>
       </div>
     </div>
