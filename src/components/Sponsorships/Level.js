@@ -30,6 +30,11 @@ class Level extends React.Component {
         } 
         this.state = {"headerClass": headerClass, "headerWidth": "col-md-6 pricing-col col-lg-" + props.level.columns};
     }
+
+    PositiveIndicator(props) {
+        return (<i className={"fa fa-"+ props.value >=1 ? "check" : "minus"}></i>)
+    }
+
     render(props){
         return(
                 <div className={this.state.headerWidth}>
@@ -43,24 +48,24 @@ class Level extends React.Component {
                         <li> <NumberIndicator value={this.props.level.namingRights}/>
                         <span className="d-block d-lg-none">Naming Rights to Pride Event</span>
                         </li>
-                        <li> <NumberIndicator value={this.props.level.mediaPosts}/>
+                        <li> <BooleanIndicator value={this.props.level.mediaPosts}/>
                         <span className="d-block d-lg-none"> Custom Media Post </span>
                         </li>
                         <li><BooleanIndicator value={this.props.level.tShirt}/>
                         <span className="d-block d-lg-none">Recognition on Pride T-shirt</span>
                         </li>
                         <li><NumberIndicator value={this.props.level.prismParty}/>
-                        <span className="d-block d-lg-none">Tickets to the Prism Party</span>
+                        <span className="d-block d-lg-none">Complimentary Tickets to the Prism Party</span>
                         </li>
                         <li> <BooleanIndicator value={this.props.level.boothDiscount}/>
-                        <span className="d-block d-lg-none"> Discount on Booth at Festival</span>
+                            <span className="d-block d-lg-none"> Complimentary Booth at Festival</span>
                         </li>
                         <li> <AdSpaceIndicator value={this.props.level.adSpace}/>
-                        <span className="d-block d-lg-none">Ad Space in Pride Guide</span>
+                            <span className="d-block d-lg-none">Complimentary Ad Space in Pride Guide</span>
                         </li>
                         <li>
-                        <BooleanIndicator value={this.props.level.festivalRecognition}/>
-                        <span className="d-block d-lg-none">Sponsor Recognition at Pride Festival</span>
+                        <BooleanIndicator value={this.props.level.vipTent}/>
+                            <span className="d-block d-lg-none">Access to VIP Tent at Pride Festival</span>
                         </li>
                         <li>
                         <BooleanIndicator value={this.props.level.website}/>
