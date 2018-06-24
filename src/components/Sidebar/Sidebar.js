@@ -16,7 +16,7 @@ class Sidebar extends React.Component {
                             <SidebarTabLink to="/bylaws" title="Bylaws" icon="fa-legal" />
                             <SidebarTabLink to="/serve-on-the-board" title="Serve on the Board" icon="fa-user-plus" />
                             <SidebarTabLink to="/board-roles" title="Board Roles" icon="fa-puzzle-piece" />
-                            <SidebarTabLink to="/contact-us" title="Contact Us" icon="fa-envelope-o" />
+                            {/* <SidebarTabLink to="/contact-us" title="Contact Us" icon="fa-envelope-o" /> */}
                         </SidebarTab>
                         <SidebarTab title="Sponsors" icon="fa-heart-o" tabkey="sponsors">
                             <SidebarTabLink to="/our-sponsors" title="2018 Sponsors" icon="fa-heart" />
@@ -32,9 +32,9 @@ class Sidebar extends React.Component {
                             <SidebarTabLink to="/participate-in-parade" title="Partcipate in Parade" icon="fa-flag" />
                         </SidebarTab>
                         <SidebarTab title="Events" icon="fa-calendar-o" tabkey="events">
-                            <SidebarTabLink to="events/pride-on-the-harbor" title="Pride on the Harbor" icon="fa-ship" />
-                            <SidebarTabLink to="events/toast-to-equality" title="Toast to Equality" icon="fa-glass" />
-                            <SidebarTabLink to="/events/pride/festival" title="Festival Information" icon="fa-map-marker" />
+                            <SidebarTabLink to="http://toasttoequality.com/?utm_source=charleston_pride" title="Toast to Equality" icon="fa-glass" />
+                            <SidebarTabLink to="https://www.facebook.com/events/263957781007924/?utm_source=charleston_pride" title="Rainbows Pride Night" icon="fa-trophy" />
+                            {/* <SidebarTabLink to="/events/pride/festival" title="Festival Information" icon="fa-map-marker" /> */}
                             <SidebarTabLink to="/events/pride/parade" title="Parade Information" icon="fa-flag" />
                         </SidebarTab>
                     </ul>

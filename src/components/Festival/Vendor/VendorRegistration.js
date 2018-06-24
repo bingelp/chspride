@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import ETap from '../../ETapestryForm'
 export default class VendorRegistration extends Component {
 
     render() {
         return (
             <div className="row">
                 <div className="bg-info">
-                    <div classname="card-body-big">
+                    <div className="card-body-big">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <h2 className="color-white text-center mb-4">How to register?</h2>
@@ -24,10 +25,7 @@ export default class VendorRegistration extends Component {
                                 <p className="ml-3 text-center"><em>All sales are final.</em></p>
                             </div>
                         </div>
-                        <div className="row">
-                            <iframe id="etapIframe" title="parade-registration" src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/VendorRegistration.html"></iframe>
-                            <script src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js" type="text/JavaScript"></script>
-                        </div>
+                        <ETap form="VendorRegistration" title="parade-registration" />
                     </div>
                 </div>
             </div>

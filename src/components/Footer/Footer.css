@@ -1,0 +1,36 @@
+.footer-chs{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+}
+.footer-pride{
+    font-family: 'Gotham Bold', 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 5.75em;
+}
+
+.footer-pride .p {
+    color: #F44336;
+}
+
+.footer-pride .r {
+    color: #FF9800;
+}
+
+.footer-pride .i {
+    color: #FFEB3B;
+}
+
+.footer-pride .d {
+    color: #4CAF50;
+}
+
+.footer-pride .e {
+    color: #9C27B0;
+}
+
+footer address {
+    text-align: left;
+}

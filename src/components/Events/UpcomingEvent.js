@@ -13,7 +13,7 @@ class UpcomingEvent extends React.Component {
                 <h4>{this.props.meta.location}</h4>
                 <h4>{this.props.meta.date}</h4>
                 <a href={this.props.meta.url} className="btn-circle btn-circle-raised btn-circle-sm ml-1 mr-1 btn-facebook">
-                  <i className="zmdi zmdi-facebook"></i>
+                  {this.props.meta.url.includes("facebook.com") ? <i className="zmdi zmdi-facebook"></i> : <i className="zmdi zmdi-globe"></i> }
                 </a>
               </div>
             </figcaption>

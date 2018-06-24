@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+import Section from '../Section/Section'
+import BoardApplication from '../Board/BoardApplication'
 
 export default class ServeOnBoard extends Component {
+  Subtitle(props) {
+    return (<span></span>)
+  }
   render() {
     return (
-      <div>
-        <div className="ms-hero-page-override ms-hero-img-parade ms-hero-bg-primary">
-            <div className="container">
-                <div className="text-center">
-                    <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                        Serve on the Board of Directors</h1>
-                </div>
-            </div>
+      <Section title="Apply to Serve on the Board of Directors" >
+        <div className="text-center">
+        <h2>Step 1: Reviews the Bylaws</h2>
+        <Link to="/bylaws" className="btn btn-raised btn-primary">Bylaws</Link>
+        <h2>Step 2: Review the Board Roles &amp; Responsibilitites</h2>
+        <Link to="/board-roles" className="btn btn-raised btn-primary">Board Roles &amp; Responsibilitites</Link>
+        <h2>Step 3: Apply</h2>
+        <BoardApplication/>
         </div>
-      </div>
+      </Section>
     )
   }
 }

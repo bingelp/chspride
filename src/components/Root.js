@@ -12,7 +12,6 @@ import ServeOnBoard from './Board/ServeOnBoard'
 import Bylaws from './Bylaws/Bylaws'
 import Donate from './Donate/Donate';
 import Parade from './Parade/Parade'
-import ParadeRegistration from './Parade/ParadeRegistration'
 import Festival from './Festival/Festival'
 import Vendor from './Festival/Vendor/Vendor'
 import Volunteer from './Volunteer/Volunteer';
@@ -42,15 +41,15 @@ const Root = (props) => {
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
             <Route path="/2017-pride-guide" component={PreviousPrideGuide}/>
             <Route path="/vendor-registration" component={Vendor} />
-            <Route path="/participate-in-parade" component={ParadeRegistration} />
+            <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />
             <Route path="/events/pride-on-the-harbor" component={Cruise} />
-            <Route path="/events/pride/festival" component={Festival} />
+            {/* <Route path="/events/pride/festival" component={Festival} /> */}
             <Route path="/events/pride/parade" component={Parade} />
-            <Route path="/events/pride" component={Pride} />
+            {/* <Route path="/events/pride" component={Pride} /> */}
             <Route path="/events" component={Events} />
             <Route path="/donate" component={Donate} />
-            <Route path="/contact-us" component={Contact} />
+            {/* <Route path="/contact-us" component={Contact} /> */}
             <Route path="/get-involved" component={GetInvolved} />
             <Route path="*" component={NoMatch} />
           </Switch>

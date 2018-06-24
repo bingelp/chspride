@@ -5,7 +5,7 @@ export default class BoardMember extends React.Component {
 
     render(props) {
         return (
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 ">
                 <div className="card">
                     <div className="withripple zoom-img">
                         <img src={this.props.photoSrc} alt={this.props.firstName + " " + this.props.lastName} className="img-fluid"></img>

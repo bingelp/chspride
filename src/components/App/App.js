@@ -2,7 +2,7 @@ import React from 'react';
 import './css/App.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 import Sidebar from '../Sidebar/Sidebar';
 
 

@@ -6,7 +6,7 @@ export default class ParadeRegistration extends Component {
         return (
         <div className="row">
             <div className="bg-info">
-                <div classname="card-body-big">
+                <div className="card-body-big">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <h2 className="color-white text-center mb-4">How to register?</h2>
