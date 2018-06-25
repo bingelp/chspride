@@ -1,0 +1,19 @@
+.ms-hero-img-board {
+    background-image: url(board.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.ms-hero-img-serve {
+    background-image: url(apply.jpg);
+    background-size: cover;
+    background-position: center center; 
+    height: 300px;
+}
+
+.ms-hero-img-roles {
+    background-image: url(roles.jpg);
+    background-size: cover;
+    background-position: center center; 
+    height: 300px;
+}

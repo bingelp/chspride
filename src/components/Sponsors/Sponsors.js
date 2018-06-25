@@ -43,12 +43,12 @@ export default class Sponsors extends React.Component {
     render(props) {
         return (
             <div>
-                <div className="ms-hero-sponsors ms-hero-bg-royal">
+                <div className="ms-hero-sponsors ms-hero-img-sponsor ms-hero-bg-royal">
                     <div className="container">
                         <div className="text-center">
                             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Our
                                 Sponsors Make It Possible</h1>
-                            <Link to="/sponsorships" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                            <Link to="/become-a-sponsor" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
                                 <i className="fa fa-heart"></i> Become a Sponsor</Link>
                         </div>
                     </div>

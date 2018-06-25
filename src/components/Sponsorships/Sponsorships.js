@@ -1,9 +1,7 @@
 import React from "react";
 import CountUp from 'react-countup';
-import './sponsors.scss';
+import './sponsorships.css';
 import LevelTable from "./LevelTable";
-
-
 
 const levels = [
   {
@@ -152,7 +150,7 @@ class Sponsorships extends React.Component {
   render(){
       return(
       <div>
-          <div className="ms-hero-page-override ms-hero-bg-info">
+          <div className="ms-hero-page-override ms-hero-img-sponsorships ms-hero-bg-info">
             <div className="container">
               <div className="text-center">
                 <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Become a Sponsor</h1>

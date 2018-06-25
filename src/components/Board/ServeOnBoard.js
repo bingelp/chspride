@@ -9,7 +9,7 @@ export default class ServeOnBoard extends Component {
   }
   render() {
     return (
-      <Section title="Apply to Serve on the Board of Directors" >
+      <Section cover="ms-hero-img-serve" title="Apply to Serve on the Board of Directors" >
         <div className="text-center">
         <h2>Step 1: Reviews the Bylaws</h2>
         <Link to="/bylaws" className="btn btn-raised btn-primary">Bylaws</Link>

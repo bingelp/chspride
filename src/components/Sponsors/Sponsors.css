@@ -26,3 +26,10 @@
 .ms-icon.ms-icon-xxlg{
   margin-top: 25px;
 }
+
+.ms-hero-img-sponsor {
+    background-image: url(prism.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}

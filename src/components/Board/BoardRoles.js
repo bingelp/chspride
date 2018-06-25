@@ -1,11 +1,12 @@
 import React from 'react'
 import rolesPdf from './CPF-Board-Roles.pdf'
+import './Board.css'
 
 export default class BoardRoles extends React.Component {
     render() {
         return (
             <div>
-                <div className="ms-hero-page-override ms-hero-img-city ms-hero-bg-info">
+                <div className="ms-hero-page-override ms-hero-img-roles ms-hero-bg-info">
                     <div className="container">
                         <div className="text-center">
                             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">

@@ -1,11 +1,11 @@
 import React from 'react';
 import Section from '../Section/Section'
 import bylawsDocx from './CPF Bylaws.docx';
-
+import './Bylaws.css'
 export default class Bylaws extends React.Component {
     render() {
     return (
-      <Section title="Bylaws" subtitle="Our mission is to promote the visibility of the LGBTQ community by educating society, honoring our heritage, advocating for our culture, and celebrating our diverse society. Our purpose is to highlight the uniqueness and diversity of our community
+      <Section cover="ms-hero-img-bylaws" title="Bylaws" subtitle="Our mission is to promote the visibility of the LGBTQ community by educating society, honoring our heritage, advocating for our culture, and celebrating our diverse society. Our purpose is to highlight the uniqueness and diversity of our community
             through distinct events throughout the year promoting our history and culture, including the annual Charleston Pride Parade and Festival">
         <a className="btn btn-info pull-right btn-raised" download href={bylawsDocx}><i className="fa fa-download"></i> Download</a>
         <div className="border-box card-hero">
