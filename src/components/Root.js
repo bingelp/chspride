@@ -23,6 +23,7 @@ import PreviousPrideGuide from './PrideGuide/Previous'
 import Pride from './Pride/Pride'
 import Events from './Events/Events'
 import Contact from './Contact'
+import Pageant from './Pageant/Pageant'
 
 const Root = (props) => {
     return (
@@ -51,6 +52,7 @@ const Root = (props) => {
             <Route path="/donate" component={Donate} />
             {/* <Route path="/contact-us" component={Contact} /> */}
             <Route path="/get-involved" component={GetInvolved} />
+            <Route path="/pageant" component={Pageant}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>
