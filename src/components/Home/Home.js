@@ -2,10 +2,10 @@ import React from 'react';
 import WOW from 'wowjs';
 import Typed from 'typed.js'
 import './Home.css';
-import { NavLink } from 'react-router-dom';
 import Sponsors from '../Sponsors/SponsorHero';
 import UpcomingEvents from '../Events/UpcomingEvents';
 import CountdownClock from '../CountdownClock'
+import GetInvoved from '../GetInvolved/GetInvolved'
 
 
 class Home extends React.Component {
@@ -34,10 +34,10 @@ class Home extends React.Component {
                 <div className="intro-hero-full-content">
                     <div className="container text-center">
                         <span className="ms-hero-logo"></span>
-                        <h1 className="animated fadeInUp animation-delay-12 small-caps">Charleston Prides For:</h1>
+                        <h1 className="animated fadeInUp animation-delay-12 small-caps">Charleston Pride</h1>
                         <h1><span className="typed-class typed-block color-primary"></span><span className="typed-cursor color-warning">|</span></h1>
-                        <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">September 22, 2018</h2>
-                        <NavLink className="btn btn-warning btn-xlg btn-raised animated flipInX animation-delay-16" to="/about"><i className="zmdi zmdi-flag"></i> Get Involved<div className="ripple-container"></div></NavLink>
+                        <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">September 15-22, 2018</h2>
+                        <a className="btn btn-warning btn-xlg btn-raised animated flipInX animation-delay-16" href="#getInvolved"><i className="zmdi zmdi-flag"></i> Get Involved<div className="ripple-container"></div></a>
                     </div>
                 </div>
             </div>
@@ -45,12 +45,13 @@ class Home extends React.Component {
         <Sponsors/>
               <div className="wrap bg-warning color-dark">
                   <div className="container">
-                      <h1 className="color-white text-center mb-1">Charleston Pride 2018</h1>
-                      <h2 className="color-white text-center mb-1">September 22 2018</h2>
-                      <CountdownClock eventTime="2018-09-22T09:00:00" color="white" />
+                      <h1 className="color-white text-center mb-1">Charleston Pride Week 2018</h1>
+                      <h2 className="color-white text-center mb-1">September 15-22, 2018</h2>
+                      <CountdownClock eventTime="2018-09-15T09:00:00" color="white" />
                   </div>
               </div>
         <UpcomingEvents/>
+        <GetInvoved/>
        </div>
       );
     }

@@ -1,17 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class GetInvolved extends React.Component {
-    render() {
-        return (<div>
-            <div className="ms-hero-page-override ms-hero-img-parade ms-hero-bg-primary">
-                <div className="container">
-                    <div className="text-center">
-                        <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                            Get Involved</h1>
-                    </div>
+
+    Item(props) {
+        return (
+            <div className="ms-feature col-12 col-md-6 col-lg-3 card flipInX animation-delay-4">
+                <div className="text-center card-body">
+                    <span className={"ms-icon ms-icon-circle ms-icon-xxlg color-" + props.color}>
+                        <i className={"fa fa-" + props.icon}></i>
+                    </span>
+                    <h4 className={"color-" + props.color}>{props.title}</h4>
+                    <Link to={props.dest} className={"btn btn-raised btn-" + props.color}>Go!</Link>
                 </div>
-            </div>
-        </div>)
+            </div>)
+    }
+
+    render() {
+        return (
+            <div id="getInvolved" className="container mt-4">
+                <h2 className="text-center color-primary mb-2  fadeInDown animation-delay-4">Get Involved</h2>
+                <div className="row">
+                    <this.Item icon="heart-o" color="royal" dest="/donate" title="Make a Donation"/>
+                    <this.Item icon="star" color="info" dest="/friends-of-pride" title="Become a Friend of Pride" />
+                    <this.Item icon="envelope" color="warning" dest="/join-our-mailing-list" title="Join Our Mailing List" />
+                    <this.Item icon="smile-o" color="success" dest="/volunteer" title="Volunteer with Pride" />
+                    {/* <this.Item icon="user-plus" color="danger" dest="/serve-on-the-board" title="Serve on the Board" />
+                    <this.Item icon="book" color="royal" dest="/purchase-pride-guide-ad" title="Purchase Pride Guide Ad"/>
+                    <this.Item icon="map-marker" color="info" dest="/vendor-registration" title="Register to be a Vendor"/>
+                    <this.Item icon="flag" color="danger" dest="participate-in-parage" title="Participate in Parade" /> */}
+                </div>
+            </div>)
     }
 }
 

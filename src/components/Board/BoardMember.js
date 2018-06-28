@@ -11,7 +11,7 @@ export default class BoardMember extends React.Component {
                         <img src={this.props.photoSrc} alt={this.props.firstName + " " + this.props.lastName} className="img-fluid"></img>
                     
                     </div>
-                    {this.props.exec ? <span class="ml-auto badge badge-warning">Executive Committee</span> : <span class="ml-auto badge badge-default">Board Member</span>}
+                    {this.props.exec ? <span className="ml-auto badge badge-warning">Executive Committee</span> : <span className="ml-auto badge badge-default">Board Member</span>}
 
                     <ul className="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-12" role="tablist">
                         <li className="nav-item"><a className="nav-link withoutripple active" href={"#profile-" + this.props.id} aria-controls="profile" role="tab" data-toggle="tab"><i className="zmdi zmdi-home"></i> <span className="d-none d-sm-inline">Profile</span></a></li>

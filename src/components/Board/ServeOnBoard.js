@@ -16,7 +16,8 @@ export default class ServeOnBoard extends Component {
         <h2>Step 2: Review the Board Roles &amp; Responsibilitites</h2>
         <Link to="/board-roles" className="btn btn-raised btn-primary">Board Roles &amp; Responsibilitites</Link>
         <h2>Step 3: Apply</h2>
-        <BoardApplication/>
+        <p>Todo: Create Form</p>
+        {/* <BoardApplication/> */}
         </div>
       </Section>
     )

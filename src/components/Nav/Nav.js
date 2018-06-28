@@ -42,7 +42,8 @@ class Nav extends React.Component {
                             <NavDropdown title="Events">
                                 {/* <NavDropdownItem to="events/pride-on-the-harbor" title="Pride on the Harbor" icon="fa-ship" /> */}
                                 <NavDropdownItem to="http://toasttoequality.com/?utm_source=charleston_pride" title="Toast to Equality" icon="fa-glass"/>
-                                <NavDropdownItem to="https://www.facebook.com/events/263957781007924/?utm_source=charleston_pride" title="Rainbows Pride Night" icon="fa-trophy" />
+                                <NavDropdownItem to="/events/rainbows" title="Rainbows Pride Night" icon="fa-bullhorn" />
+                                <NavDropdownItem to="/events/pageant" title="Empress and Emperor Pageant" icon="fa-trophy" />
                                 <DropdownDivider />
                                 {/* <NavDropdownItem to="/events/pride/festival" title="Festival Information" icon="fa-map-marker" todo="New" /> */}
                                 <NavDropdownItem to="/events/pride/parade" title="Parade Information" icon="fa-flag" />
@@ -51,6 +52,7 @@ class Nav extends React.Component {
                         </ul>
                         <ul className="navbar-nav ml-auto">
                             {/* <NavItem background="bg-warning" title="Pride 2018" to="/pride" icon="fa-flag" todo="new"/> */}
+                            <NavItem background="bg-warning" title="Toast To Equality" to="http://toasttoequality.com/?utm_source=charleston_pride" icon="fa-glass"/>
                             <NavItem background="bg-royal" title="Donate" to="/donate" icon="fa-heart-o" />
                         </ul>
                     </div>
