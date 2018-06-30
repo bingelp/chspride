@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    document.addEventListener("touchstart", function(){}, true);
+    document.addEventListener("touchend", function(){}, true);
 
     $.material.init();
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
     //     });
     // })(jQuery);
 
-    $('.navbar').on('click mousedown mouseup touchstart', 'a.has_children', function () {
+    $('.navbar').on('click mousedown mouseup touchend', 'a.has_children', function () {
         if ( $(this).next('ul').hasClass('open_t') && !$(this).parents('ul').hasClass('open_t')) {
             $('.open_t').removeClass('open_t');
             return false;

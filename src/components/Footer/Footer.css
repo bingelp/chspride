@@ -2,6 +2,7 @@
     text-transform: uppercase;
     margin-bottom: 0;
     color: #fff;
+    line-height: 0.8em;
 }
 .footer-pride{
     font-family: 'Gotham Bold', 'Roboto', sans-serif;
@@ -9,6 +10,7 @@
     text-transform: uppercase;
     margin-top: 0;
     font-size: 5.75em;
+    line-height: 0.8em;
 }
 
 .footer-pride .p {
@@ -29,8 +31,4 @@
 
 .footer-pride .e {
     color: #9C27B0;
-}
-
-footer address {
-    text-align: left;
 }
