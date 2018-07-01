@@ -14,3 +14,10 @@
   min-height: 100px;
   display: block;
 }
+
+.ms-hero-img-stage {
+  background-image: url('stage.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

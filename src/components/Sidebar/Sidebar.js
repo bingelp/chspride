@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
                         <SidebarTab title="Events" icon="fa-calendar-o" tabkey="events">
                             <SidebarTabLink to="http://toasttoequality.com/?utm_source=charleston_pride" title="Toast to Equality" icon="fa-glass" />
                             <SidebarTabLink to="/events/rainbows" title="Rainbows Pride Night" icon="fa-trophy" />
-                            {/* <SidebarTabLink to="/events/pride/festival" title="Festival Information" icon="fa-map-marker" /> */}
+                            <SidebarTabLink to="/events/pride/festival" title="Festival Information" icon="fa-map" />
                             <SidebarTabLink to="/events/pride/parade" title="Parade Information" icon="fa-flag" />
                         </SidebarTab>
                     </ul>

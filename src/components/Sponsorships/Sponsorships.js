@@ -115,14 +115,14 @@ return (
     <div className="row">
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="card card-warning card-body text-center wow zoomInUp animation-delay-3">
-          <h2 className="counter"><CountUp start={0} end={6000} duration={6} />+</h2>
+          <h2 className="counter"><CountUp start={0} end={4000} duration={6} />+</h2>
           <i className="color-warning fa fa-4x fa-group"></i>
           <p className="mt-2 no-mb lead small-caps">Pride Festival Attendees</p>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
-          <h2 className="counter"><CountUp start={0} end={9945} duration={6} /></h2>
+          <h2 className="counter"><CountUp start={0} end={10000} duration={6} />+</h2>
           <i className="color-info fa fa-4x fa-facebook"></i>
           <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
         </div>

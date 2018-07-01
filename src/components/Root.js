@@ -46,7 +46,7 @@ const Root = (props) => {
             <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />
             <Route path="/events/pride-on-the-harbor" component={Cruise} />
-            {/* <Route path="/events/pride/festival" component={Festival} /> */}
+            <Route path="/events/pride/festival" component={Festival} />
             <Route path="/events/pride/parade" component={Parade} />
             {/* <Route path="/events/pride" component={Pride} /> */}
             <Route path="/events/pageant" component={Pageant}/>

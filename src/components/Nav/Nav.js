@@ -45,14 +45,14 @@ class Nav extends React.Component {
                                 <NavDropdownItem to="/events/rainbows" title="Rainbows Pride Night" icon="fa-bullhorn" />
                                 <NavDropdownItem to="/events/pageant" title="Empress and Emperor Pageant" icon="fa-trophy" />
                                 <DropdownDivider />
-                                {/* <NavDropdownItem to="/events/pride/festival" title="Festival Information" icon="fa-map-marker" todo="New" /> */}
+                                <NavDropdownItem to="/events/pride/festival" title="Festival Information" icon="fa-map" />
                                 <NavDropdownItem to="/events/pride/parade" title="Parade Information" icon="fa-flag" />
                             </NavDropdown>
                             
                         </ul>
                         <ul className="navbar-nav ml-auto">
-                            {/* <NavItem background="bg-warning" title="Pride 2018" to="/pride" icon="fa-flag" todo="new"/> */}
-                            <NavItem background="bg-warning" title="Toast To Equality" to="http://toasttoequality.com/?utm_source=charleston_pride" icon="fa-glass"/>
+                            <NavItem background="bg-warning" title="Pride 2018" to="/pride" icon="fa-flag" todo="new"/>
+                            {/* <NavItem background="bg-warning" title="Toast To Equality" to="http://toasttoequality.com/?utm_source=charleston_pride" icon="fa-glass"/> */}
                             <NavItem background="bg-royal" title="Donate" to="/donate" icon="fa-heart-o" />
                         </ul>
                     </div>

@@ -9,6 +9,7 @@ import GetInvoved from '../GetInvolved/GetInvolved'
 
 
 class Home extends React.Component {
+
     componentDidMount() {
         new WOW.WOW({
             live: false
@@ -23,14 +24,17 @@ class Home extends React.Component {
             autoInsertCss: false,
             showCursor: false,
         };
-    
-        new Typed(".typed-class", options);
+        this.typed = new Typed(".typed-class", options);
     };
+    componentWillUnmount() {
+      this.typed.destroy();
+    }
+
     render() {
       return (
       <div>
         <div>
-            <div className="ms-hero-page ms-hero-video ms-hero-img-crowd ms-hero-bg-primary color-white intro-hero-full">
+            <div className="ms-hero-page ms-hero-img-crowd ms-hero-bg-primary color-white intro-hero-full">
                 <div className="intro-hero-full-content">
                     <div className="container text-center">
                         <span className="ms-hero-logo"></span>
@@ -43,13 +47,13 @@ class Home extends React.Component {
             </div>
         </div>
         <Sponsors/>
-              <div className="wrap bg-warning color-dark">
-                  <div className="container">
-                      <h1 className="color-white text-center mb-1">Charleston Pride Week 2018</h1>
-                      <h2 className="color-white text-center mb-1">September 15-22, 2018</h2>
-                      <CountdownClock eventTime="2018-09-15T09:00:00" color="white" />
-                  </div>
-              </div>
+        <div className="wrap ms-hero-bg-success ms-hero-img-stage">
+            <div className="container">
+                <h1 className="color-white text-center mb-1">Charleston Pride Week 2018</h1>
+                <h2 className="color-white text-center mb-1">September 15-22, 2018</h2>
+                <CountdownClock eventTime="2018-09-15T09:00:00" color="white" />
+            </div>
+        </div>
         <UpcomingEvents/>
         <GetInvoved/>
        </div>
