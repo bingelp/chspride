@@ -62,8 +62,8 @@ export default class SponsorHero extends React.Component {
                 <div className="row">
                     {this.state.sponsors && this.state.sponsors.slice(0, 6).map(s => <Sponsor key={s.id} meta={s.meta} />)}
                 </div>
-                <Link to="/sponsorships" className="btn btn-success btn-raised" > <i className="zmdi zmdi-thumb-up"></i>Become a sponsor</Link>
-                <Link to="/sponsors" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Sponsors</Link>
+                <Link to="/become-a-sponsor" className="btn btn-success btn-raised" > <i className="zmdi zmdi-thumb-up"></i>Become a sponsor</Link>
+                <Link to="/our-sponsors" className="btn btn-info btn-raised" > <i className="zmdi zmdi-eye"></i>View All Sponsors</Link>
             </div>)
     }
 }

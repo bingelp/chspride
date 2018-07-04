@@ -19,6 +19,8 @@ export default class Vendors extends Component {
               <h3 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
                 Saturday, September 22nd 2018 @ 10:00am-3:00pm</h3>
               <CountdownClock eventTime="2018-09-22T10:00:00" color="warning" />
+              <Link to="/events/pride/festival" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                  <i className="fa fa-heart"></i> Festival Information</Link>
             </div>
           </div>
         </div>
@@ -31,7 +33,7 @@ export default class Vendors extends Component {
               <p className="wow fadeInUp animation-delay-3">For Pride 2017, we had an estimated <strong>4,000+</strong> attendants!
                These people were not only gay, lesbian, bisexual, or transgender, but also straight individuals who appreciate the values of equality. 
                By being at Charleston Pride Festival, you can increase your organization’s visibility amongst much of Charleston’s citizens.</p>
-              <h4>Discounted Booth Fee with a minimum <strong className="color-success-inverse">Green</strong> level  <Link to="/sponsorships">Sponsorship</Link>!</h4>
+              <h4>Discounted Booth Fee with a minimum <strong className="color-success-inverse">Green</strong> level  <Link to="/become-a-sponsor">Sponsorship</Link>!</h4>
             </div>
             <div className="col-12 col-md-6">
               <img src={vendorMap} alt="Vendor map" className="img-fluid my-3"></img>

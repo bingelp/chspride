@@ -18,10 +18,10 @@ class Level extends React.Component {
                 headerClass += "caution";
                 break;
             case 4:
-                headerClass += "info";
+                headerClass += "success";
                 break;
             case 5:
-                headerClass += "success";
+                headerClass += "info";
                 break;
         
             default:

@@ -2,6 +2,7 @@ import React from "react";
 import CountUp from 'react-countup';
 import './sponsorships.css';
 import LevelTable from "./LevelTable";
+import {Link} from 'react-router-dom'
 
 const levels = [
   {
@@ -111,7 +112,12 @@ const levels = [
 function Stats(props){
 return (
   <div className="container ">
+    <div className="row justify-content-center">
+      <div className="col-10">
+    <h4>                <strong>Charleston Pride</strong> is the Lowcountry’s biggest organization that celebrates the LGBTQ community throughout the year and holds an annual Parade and Festival in downtown Charleston. Throughout the main week of Pride events, participants can attend various events all focused on educating the community and promoting equality.</h4>
     <h2 className="text-center mb-4 wow fadeInUp animation-delay-2">Some Numerical Data</h2>
+    </div>
+    </div>
     <div className="row">
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="card card-warning card-body text-center wow zoomInUp animation-delay-3">
@@ -136,7 +142,7 @@ return (
       </div>
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="card card-danger card-body text-center wow zoomInUp animation-delay-4">
-          <h2 className="counter"><CountUp start={0} end={21} duration={6} /></h2>
+          <h2 className="counter"><CountUp start={0} end={18} duration={6} /></h2>
           <i className="color-danger fa fa-4x fa-comments-o"></i>
           <p className="mt-2 no-mb lead small-caps">Sponsors</p>
         </div>
@@ -154,11 +160,9 @@ class Sponsorships extends React.Component {
             <div className="container">
               <div className="text-center">
                 <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Become a Sponsor</h1>
-                <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-6">A sponsorship is a great way to promote your organization/company’s commitment to equal rights for all people. Additionally, a sponsorship will promote your organization among a deeply diverse group of individuals. <strong>Charleston Pride</strong> is the Lowcountry’s biggest organization that celebrates the LGBTQ community throughout the year and holds an annual Parade and Festival in downtown Charleston. Throughout the main week of Pride events, participants can attend various events all focused on educating the community and promoting equality.</p>
-                <a href="#levels" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
-                  <i className="fa fa-list-ul"></i>Review Packages</a>
-                <a href="#register" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
-                  <i className="fa fa-heart"></i> Become a Sponsor</a>
+                <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-6">A sponsorship is a great way to promote your organization/company’s commitment to equal rights for all people. Additionally, a sponsorship will promote your organization among a deeply diverse group of individuals.</p>
+                <Link to="/our-sponsors" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                  <i className="fa fa-heart"></i> View Our Sponsors</Link>
               </div>
             </div>
           </div>

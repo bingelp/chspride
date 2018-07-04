@@ -43,7 +43,6 @@ export default class Festival extends Component {
     </div>
   </div>)
   }
-
   render() {
     return (
       <div>
@@ -57,6 +56,8 @@ export default class Festival extends Component {
               <h3 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
                 Saturday, September 22nd 2018 @ 10:00am-3:00pm</h3>
               <CountdownClock eventTime="2018-09-22T10:00:00" color="warning" />
+              <Link to="/vendor-registration" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+                <i className="fa fa-heart"></i> Become a Vendor</Link>
             </div>
           </div>
         </div>
@@ -74,8 +75,7 @@ export default class Festival extends Component {
               <p>Note that for the safety of all attendees, bags will be subject to check at the entry gate.</p>
               <p>For more information or any questions, please reach out to us at <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a>.</p>
 
-              <Link to="/vendor-registration" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
-                <i className="fa fa-heart"></i> Become a Vendor</Link>
+              
             </div>
             <div className="col-12 col-md-6">
               <img src={map} alt="Vendor map" className="img-fluid my-3"></img>

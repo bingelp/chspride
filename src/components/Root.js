@@ -32,16 +32,19 @@ const Root = (props) => {
         <App>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/advertising" component={PrideGuideAd}/>
             <Route path="/board-of-directors" component={Board} />
             <Route path="/bylaws" component={Bylaws} />
             <Route path="/board-roles" component={BoardRoles} />
             <Route path="/our-sponsors" component={Sponsors} />
+            <Route path="/sponsorships" component={Sponsorships}/>
             <Route path="/become-a-sponsor" component={Sponsorships} />
             <Route path="/friends-of-pride" component={Friends} />
             <Route path="/join-our-mailing-list" component={MailingList} />
             <Route path="/volunteer" component={Volunteer} />
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
             <Route path="/2017-pride-guide" component={PreviousPrideGuide}/>
+            <Route path="/vendors" component={Vendor}/>
             <Route path="/vendor-registration" component={Vendor} />
             <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />

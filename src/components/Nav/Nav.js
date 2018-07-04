@@ -51,8 +51,8 @@ class Nav extends React.Component {
                             
                         </ul>
                         <ul className="navbar-nav ml-auto">
-                            <NavItem background="bg-warning" title="Pride 2018" to="/pride" icon="fa-flag" todo="new"/>
-                            {/* <NavItem background="bg-warning" title="Toast To Equality" to="http://toasttoequality.com/?utm_source=charleston_pride" icon="fa-glass"/> */}
+                            {/* <NavItem background="bg-warning" title="Pride 2018" to="/pride" icon="fa-flag" todo="new"/> */}
+                            <NavItem background="bg-warning" title="Toast To Equality" to="http://toasttoequality.com/?utm_source=charleston_pride" icon="fa-glass"/>
                             <NavItem background="bg-royal" title="Donate" to="/donate" icon="fa-heart-o" />
                         </ul>
                     </div>
