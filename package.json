@@ -47,7 +47,7 @@
     "wowjs": "^1.1.3"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/components/App/scss -o src/components/App/css",
+    "build-css": "node-sass-chokidar src/App/scss -o src/App/css",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",

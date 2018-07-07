@@ -613,3 +613,21 @@
         }
     }
 }
+
+.initialism {
+    span:nth-child(1n){
+        color: $color-danger;
+    }
+    span:nth-child(2n){
+        color: $color-warning;
+    }
+    span:nth-child(3n){
+        color: $color-caution;
+    }
+    span:nth-child(4n){
+        color: $color-success;
+    }
+    span:nth-child(5n){
+        color: $color-royal;
+    }
+}

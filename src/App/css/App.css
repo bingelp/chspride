@@ -608,18 +608,16 @@ body .container-fluid .jumbotron {
       .input-group-btn .btn.btn-fab.material-icons {
         top: 0px;
         left: 0px; }
-    .btn.btn-fab i, .btn.btn-fab svg,
-    .input-group-btn .btn.btn-fab i,
-    .input-group-btn .btn.btn-fab svg {
+    .btn.btn-fab i,
+    .input-group-btn .btn.btn-fab i {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-12px, -12px);
       line-height: 24px;
       width: 24px; }
-  .btn i, .btn svg,
-  .input-group-btn .btn i,
-  .input-group-btn .btn svg {
+  .btn i,
+  .input-group-btn .btn i {
     vertical-align: middle; }
   .btn.btn-lg,
   .btn-group-lg .btn,
@@ -3586,16 +3584,10 @@ hr.on-light {
     .ms-tag.ms-tag-caution:hover {
       background-color: #ffe608; }
 
-.animate-icon i, .animate-icon svg {
+.animate-icon i {
   transition: all ease 0.5s; }
 
-.animate-icon svg {
-  transition: all ease 0.5s; }
-
-.animate-icon:hover i, .animate-icon:hover svg {
-  transform: translateX(10px); }
-
-.animate-icon:hover svg {
+.animate-icon:hover i {
   transform: translateX(10px); }
 
 .bs-glyphicons-list {
@@ -3692,6 +3684,21 @@ hr.on-light {
       background-color: #424242;
       color: #F5F5F5; }
 
+.initialism span:nth-child(1n) {
+  color: #F44336; }
+
+.initialism span:nth-child(2n) {
+  color: #FF9800; }
+
+.initialism span:nth-child(3n) {
+  color: #FFEB3B; }
+
+.initialism span:nth-child(4n) {
+  color: #4CAF50; }
+
+.initialism span:nth-child(5n) {
+  color: #9C27B0; }
+
 @font-face {
   font-family: 'GothamNarrow Light';
   src: url("../fonts/GothamNarrow-Light.otf"); }
@@ -3706,12 +3713,14 @@ hr.on-light {
 
 html {
   font-size: 10px;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  overflow: auto; }
 
 body {
+  height: auto;
   color: #757575;
   background-color: #F5F5F5;
-  overflow: scroll;
   font-family: 'GothamNarrow Light','Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -4381,7 +4390,7 @@ hr.double {
           display: inline-block; }
       .ms-header .header-right .share-menu:focus .share-menu-list, .ms-header .header-right .share-menu:hover .share-menu-list {
         display: inline-block; }
-    .ms-header .header-right .btn-ms-menu i, .ms-header .header-right .btn-ms-menu svg {
+    .ms-header .header-right .btn-ms-menu i {
       font-size: 2.1rem;
       margin-top: -2px; }
     .ms-header .header-right .search-form {
@@ -4617,9 +4626,8 @@ hr.double {
       .ms-navbar .navbar-collapse .navbar-nav .nav-item,
       .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item {
         display: flex; }
-        .ms-navbar .navbar-collapse .navbar-nav .nav-item i, .ms-navbar .navbar-collapse .navbar-nav .nav-item svg,
-        .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item i,
-        .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item svg {
+        .ms-navbar .navbar-collapse .navbar-nav .nav-item i,
+        .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item i {
           margin-right: 15px;
           transition: background 0.3s; }
         .ms-navbar .navbar-collapse .navbar-nav .nav-item > a,
@@ -4651,9 +4659,8 @@ hr.double {
             left: 0;
             right: 0;
             z-index: -1; }
-          .ms-navbar .navbar-collapse .navbar-nav .nav-item > a > i, .ms-navbar .navbar-collapse .navbar-nav .nav-item > a svg,
-          .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item > a > i,
-          .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item > a svg {
+          .ms-navbar .navbar-collapse .navbar-nav .nav-item > a > i,
+          .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item > a > i {
             margin-left: 10px;
             transition: transform ease .5s;
             will-change: transform; }
@@ -4736,9 +4743,8 @@ hr.double {
                   right: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
-              .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item svg,
-              .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item i,
-              .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item svg {
+              .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item i,
+              .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu li .dropdown-item i {
                 margin-right: 15px;
                 transition: background 0.3s; }
             .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-submenu,
@@ -4824,9 +4830,8 @@ hr.double {
                     border-radius: 0;
                     font-size: 15px;
                     transition: none; }
-                    .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link svg,
-                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link i,
-                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link svg {
+                    .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link i,
+                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .ms-tab-menu .ms-tab-menu-left .nav-item a.nav-link i {
                       will-change: color;
                       margin-left: 0;
                       margin-right: 1.5rem;
@@ -4911,24 +4916,12 @@ hr.double {
             .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover:before,
             .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus:before {
               height: 100%; }
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a svg,
+            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a i,
             .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover i,
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover svg,
             .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus i,
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus svg,
             .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a i,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a svg,
             .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover i,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover svg,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus i,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus svg {
-              transform: rotate(90deg); }
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a svg,
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover svg,
-            .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus svg,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a svg,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:hover svg,
-            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus svg {
+            .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show > a:focus i {
               transform: rotate(90deg); }
           .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu,
           .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu {
@@ -4966,9 +4959,8 @@ hr.double {
                   text-transform: uppercase;
                   padding: 30px 20px 20px 20px;
                   color: #03A9F4; }
-                  .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title svg,
-                  .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i,
-                  .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title svg {
+                  .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i,
+                  .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i {
                     margin: 0 12px 0 0; }
                 .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list,
                 .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list {
@@ -4989,13 +4981,11 @@ hr.double {
                       right: 1.5rem;
                       top: 50%;
                       transform: translateY(-50%); }
-                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge svg,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge i,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge svg {
+                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge i,
+                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a .badge i {
                         transition: all ease .5s; }
-                    .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a svg,
-                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a i,
-                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a svg {
+                    .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a i,
+                    .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a i {
                       transition: all ease 0.3s;
                       margin: 0 12px 0 0; }
                     .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus,
@@ -5003,17 +4993,13 @@ hr.double {
                     .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus {
                       color: #03A9F4;
                       background-color: #EEEEEE; }
-                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover svg, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus svg,
+                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus i,
                       .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover i,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover svg,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus i,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus svg {
+                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus i {
                         margin-right: 25px; }
-                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover .badge i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover .badge svg, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge svg,
+                      .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover .badge i, .ms-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge i,
                       .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover .badge i,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:hover .badge svg,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge i,
-                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge svg {
+                      .ms-lead-navbar .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a:focus .badge i {
                         animation-name: vertical-loop;
                         animation-iteration-count: infinite;
                         animation-duration: 1s; }
@@ -5284,9 +5270,8 @@ hr.double {
       .ms-header-white + .ms-navbar-primary .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title,
       .ms-header-primary + .ms-navbar-white .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title {
         color: #fff; }
-        .ms-header-white + .ms-navbar-primary .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i, .ms-header-white + .ms-navbar-primary .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title svg,
-        .ms-header-primary + .ms-navbar-white .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i,
-        .ms-header-primary + .ms-navbar-white .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title svg {
+        .ms-header-white + .ms-navbar-primary .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i,
+        .ms-header-primary + .ms-navbar-white .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-title i {
           color: #03A9F4; }
       .ms-header-white + .ms-navbar-primary .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a,
       .ms-header-primary + .ms-navbar-white .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-megamenu > li .row .megamenu-col .megamenu-block .megamenu-block-list li a {
@@ -5312,9 +5297,9 @@ hr.double {
   margin-bottom: 20px; }
   .alert > p {
     margin-bottom: 0; }
-  .alert i, .alert svg {
+  .alert i {
     margin-right: 10px; }
-    .alert i.zmdi, .alert svg.zmdi {
+    .alert i.zmdi {
       font-size: 16px; }
   .alert .close {
     color: #fff;
@@ -5450,7 +5435,7 @@ hr.double {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.3px; }
-  .btn > i, .btn svg {
+  .btn > i {
     margin-right: 1rem; }
   .btn > i.right {
     margin-left: 1rem;
@@ -5465,7 +5450,7 @@ hr.double {
       display: table;
       text-transform: none;
       text-align: left; }
-    .btn.btn-app i, .btn.btn-app svg {
+    .btn.btn-app i {
       font-size: 4rem !important;
       display: table-cell;
       padding-right: 2rem; }
@@ -6374,12 +6359,12 @@ pre.line-numbers > code {
   padding-right: 0.8em;
   text-align: right; }
 
-.rotate-icon i, .rotate-icon svg {
+.rotate-icon i {
   transition-duration: .5s;
   transition-property: transform;
   transition-timing-function: ease-in-out; }
 
-.rotate-icon:hover i, .rotate-icon:hover svg {
+.rotate-icon:hover i {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg); }
 
@@ -6599,7 +6584,7 @@ pre.line-numbers > code {
       color: #fff;
       margin: 0;
       font-size: 16px; }
-      .panel .panel-heading .panel-title i, .panel .panel-heading .panel-title svg {
+      .panel .panel-heading .panel-title i {
         margin-right: 1rem; }
   .panel .panel-footer {
     padding: 10px; }
@@ -6708,9 +6693,8 @@ pre.line-numbers > code {
     .list-group .list-group-item:first-child,
     .list-group a.list-group-item:first-child {
       border-top: solid 1px #EEEEEE; }
-    .list-group .list-group-item > i, .list-group .list-group-item svg,
-    .list-group a.list-group-item > i,
-    .list-group a.list-group-item svg {
+    .list-group .list-group-item > i,
+    .list-group a.list-group-item > i {
       margin-right: 1.5rem;
       align-self: center; }
   .list-group a.list-group-item:hover, .list-group a.list-group-item:focus {
@@ -6777,7 +6761,7 @@ pre.line-numbers > code {
     padding: 1.5rem 2rem;
     background-color: #EEEEEE;
     border: 0; }
-    .card .card-header i, .card .card-header svg {
+    .card .card-header i {
       margin-right: 10px; }
     .card .card-header h1,
     .card .card-header h2,
@@ -7040,7 +7024,7 @@ pre.line-numbers > code {
       line-height: 1rem;
       padding: 1.4rem 1.5rem;
       position: relative; }
-      .card-code-header .card-code-title a i, .card-code-header .card-code-title a svg {
+      .card-code-header .card-code-title a i {
         font-size: 1.6rem;
         margin-right: 1rem;
         transition: all ease 0.4s; }
@@ -7054,7 +7038,7 @@ pre.line-numbers > code {
         content: "\f107";
         transform: rotate(0);
         transition: all ease 0.4s; }
-    .card-code-header .card-code-title a.collapsed i, .card-code-header .card-code-title a.collapsed svg {
+    .card-code-header .card-code-title a.collapsed i {
       transform: rotate(180deg); }
     .card-code-header .card-code-title a.collapsed:after {
       transform: rotate(90deg); }
@@ -7095,7 +7079,7 @@ pre.line-numbers > code {
       .btn-group .dropdown-menu li a:hover, .btn-group .dropdown-menu li a:focus {
         background-color: #F5F5F5;
         color: #03A9F4; }
-      .btn-group .dropdown-menu li a i, .btn-group .dropdown-menu li a svg {
+      .btn-group .dropdown-menu li a i {
         margin-right: 15px; }
   .btn-group .dropdown-menu.dropdown-menu-right {
     transform-origin: 100% 0; }
@@ -7259,7 +7243,7 @@ pre.line-numbers > code {
 
 .form-group .input-group-addon {
   padding-left: 2px; }
-  .form-group .input-group-addon i, .form-group .input-group-addon svg {
+  .form-group .input-group-addon i {
     font-size: 18px; }
 
 .form-group label {
@@ -7437,7 +7421,7 @@ label.color-white {
           color: #fff;
           text-transform: uppercase;
           position: relative; }
-          .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title i, .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title svg {
+          .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title i {
             margin-right: 10px; }
           .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title a {
             display: none;
@@ -7447,7 +7431,7 @@ label.color-white {
             left: 0;
             right: 0;
             bottom: 0; }
-            .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title a i, .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title a svg {
+            .ms-paper > .row .ms-paper-menu-left-container .ms-paper-menu-left .ms-paper-menu-title a i {
               position: absolute;
               top: 36%;
               right: 0.7rem;
@@ -7483,7 +7467,7 @@ label.color-white {
         float: right;
         content: '\f2fb';
         transition: all ease .5s; }
-      .ms-collapse-nav li a i, .ms-collapse-nav li a svg {
+      .ms-collapse-nav li a i {
         margin-right: 10px; }
       .ms-collapse-nav li a:hover, .ms-collapse-nav li a:focus, .ms-collapse-nav li a.active {
         background-color: #03A9F4;
@@ -7555,7 +7539,7 @@ label.color-white {
         line-height: 1rem;
         padding: 1.4rem 1.5rem;
         position: relative; }
-        .ms-collapse .card .card-header .card-title a i, .ms-collapse .card .card-header .card-title a svg {
+        .ms-collapse .card .card-header .card-title a i {
           font-size: 1.6rem;
           margin-right: 1rem;
           transition: all ease 0.4s; }
@@ -7571,7 +7555,7 @@ label.color-white {
           transition: all ease 0.4s; }
       .ms-collapse .card .card-header .card-title a.collapsed:after {
         transform: rotate(90deg); }
-      .ms-collapse .card .card-header .card-title.ms-rotate-icon a.collapsed i, .ms-collapse .card .card-header .card-title.ms-rotate-icon a.collapsed svg {
+      .ms-collapse .card .card-header .card-title.ms-rotate-icon a.collapsed i {
         transform: rotate(180deg); }
   .ms-collapse .card-light .card-header {
     padding: 0;
@@ -7663,7 +7647,7 @@ label.color-white {
     padding: 1.5rem 2rem;
     color: rgba(255, 255, 255, 0.8);
     text-align: center; }
-    .nav.nav-tabs li a i, .nav.nav-tabs li a svg {
+    .nav.nav-tabs li a i {
       margin-right: 01rem;
       transition: transform cubic-bezier(0, 0, 0.2, 1) 0.5s; }
     .nav.nav-tabs li a.active {
@@ -7672,7 +7656,7 @@ label.color-white {
       transition: all cubic-bezier(0, 0, 0.2, 1) 0.5s;
       color: #fff;
       background-color: transparent; }
-      .nav.nav-tabs li a.active i, .nav.nav-tabs li a.active svg {
+      .nav.nav-tabs li a.active i {
         transform: rotate(360deg); }
   .nav.nav-tabs.nav-tabs-full {
     width: 100%; }
@@ -7777,7 +7761,7 @@ label.color-white {
     color: #fff !important; }
 
 @media (max-width: 767px) {
-  .nav.nav-tabs li a i, .nav.nav-tabs li a svg {
+  .nav.nav-tabs li a i {
     margin: 0 5px; } }
 
 .nav-tabs-ver-container {
@@ -7789,7 +7773,7 @@ label.color-white {
     .nav-tabs-ver-container .nav-tabs-ver li a {
       color: #424242;
       padding: 1rem; }
-      .nav-tabs-ver-container .nav-tabs-ver li a i, .nav-tabs-ver-container .nav-tabs-ver li a svg {
+      .nav-tabs-ver-container .nav-tabs-ver li a i {
         margin-right: 10px; }
       .nav-tabs-ver-container .nav-tabs-ver li a:hover {
         color: #03A9F4;
@@ -7799,7 +7783,7 @@ label.color-white {
       .nav-tabs-ver-container .nav-tabs-ver li a.active {
         color: #03A9F4;
         background-color: #EEEEEE; }
-        .nav-tabs-ver-container .nav-tabs-ver li a.active i, .nav-tabs-ver-container .nav-tabs-ver li a.active svg {
+        .nav-tabs-ver-container .nav-tabs-ver li a.active i {
           transition: transform ease 0.5s;
           transform: rotateX(360deg); }
     .nav-tabs-ver-container .nav-tabs-ver.nav-tabs-ver-light {
@@ -8707,7 +8691,7 @@ a.img-thumbnail {
         margin-right: 1rem; }
         .ms-hero.ms-hero-material .carousel .carousel-controls a:hover {
           opacity: 1; }
-        .ms-hero.ms-hero-material .carousel .carousel-controls a i, .ms-hero.ms-hero-material .carousel .carousel-controls a svg {
+        .ms-hero.ms-hero-material .carousel .carousel-controls a i {
           vertical-align: top;
           line-height: 20px; }
         .ms-hero.ms-hero-material .carousel .carousel-controls a.right {
@@ -9577,9 +9561,8 @@ a.img-thumbnail {
   text-align: center;
   padding: 0;
   margin: 0; }
-  .carousel-cards .carousel-control-prev i, .carousel-cards .carousel-control-prev svg,
-  .carousel-cards .carousel-control-next i,
-  .carousel-cards .carousel-control-next svg {
+  .carousel-cards .carousel-control-prev i,
+  .carousel-cards .carousel-control-next i {
     margin: 0;
     display: block;
     width: 50px;
@@ -9697,7 +9680,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
       line-height: 4rem;
       transition: all ease 0.3s;
       padding-top: 1rem; }
-    .list-hero li i, .list-hero li svg {
+    .list-hero li i {
       display: table-cell;
       height: 60px;
       width: 60px;
@@ -9708,7 +9691,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
       transition: all ease 0.3s;
       text-align: center;
       vertical-align: middle; }
-    .list-hero li:hover span, .list-hero li:hover i, .list-hero li:hover svg {
+    .list-hero li:hover span, .list-hero li:hover i {
       background-color: rgba(255, 255, 255, 0.15); }
 
 @media (max-width: 767px) {
@@ -10193,7 +10176,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
         margin: 0;
         padding: 8px 0;
         border-bottom: dotted 1px #E0E0E0; }
-        .price-table .price-table-body .price-table-list li i, .price-table .price-table-body .price-table-list li svg {
+        .price-table .price-table-body .price-table-list li i {
           margin-right: 15px; }
   .price-table.price-table-light {
     border-bottom: solid 3px #F5F5F5; }
@@ -10201,13 +10184,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #F5F5F5; }
     .price-table.price-table-light .price-table-body:after {
       background-color: #F5F5F5; }
-    .price-table.price-table-light .price-table-list i, .price-table.price-table-light svg {
+    .price-table.price-table-light .price-table-list i {
       color: #F5F5F5; }
     .price-table.price-table-light:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-light:hover .price-table-body .price-table-list li {
         border-color: white; }
-        .price-table.price-table-light:hover .price-table-body .price-table-list li i, .price-table.price-table-light:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-light:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-light:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10218,13 +10201,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #616161; }
     .price-table.price-table-dark .price-table-body:after {
       background-color: #616161; }
-    .price-table.price-table-dark .price-table-list i, .price-table.price-table-dark svg {
+    .price-table.price-table-dark .price-table-list i {
       color: #616161; }
     .price-table.price-table-dark:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-dark:hover .price-table-body .price-table-list li {
         border-color: #8f8f8f; }
-        .price-table.price-table-dark:hover .price-table-body .price-table-list li i, .price-table.price-table-dark:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-dark:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-dark:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10235,13 +10218,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #03A9F4; }
     .price-table.price-table-primary .price-table-body:after {
       background-color: #03A9F4; }
-    .price-table.price-table-primary .price-table-list i, .price-table.price-table-primary svg {
+    .price-table.price-table-primary .price-table-list i {
       color: #03A9F4; }
     .price-table.price-table-primary:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-primary:hover .price-table-body .price-table-list li {
         border-color: #56c9fd; }
-        .price-table.price-table-primary:hover .price-table-body .price-table-list li i, .price-table.price-table-primary:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-primary:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-primary:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10252,13 +10235,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #00BCD4; }
     .price-table.price-table-info .price-table-body:after {
       background-color: #00BCD4; }
-    .price-table.price-table-info .price-table-list i, .price-table.price-table-info svg {
+    .price-table.price-table-info .price-table-list i {
       color: #00BCD4; }
     .price-table.price-table-info:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-info:hover .price-table-body .price-table-list li {
         border-color: #31e8ff; }
-        .price-table.price-table-info:hover .price-table-body .price-table-list li i, .price-table.price-table-info:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-info:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-info:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10269,13 +10252,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #9C27B0; }
     .price-table.price-table-royal .price-table-body:after {
       background-color: #9C27B0; }
-    .price-table.price-table-royal .price-table-list i, .price-table.price-table-royal svg {
+    .price-table.price-table-royal .price-table-list i {
       color: #9C27B0; }
     .price-table.price-table-royal:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-royal:hover .price-table-body .price-table-list li {
         border-color: #c759da; }
-        .price-table.price-table-royal:hover .price-table-body .price-table-list li i, .price-table.price-table-royal:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-royal:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-royal:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10286,13 +10269,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #FF9800; }
     .price-table.price-table-warning .price-table-body:after {
       background-color: #FF9800; }
-    .price-table.price-table-warning .price-table-list i, .price-table.price-table-warning svg {
+    .price-table.price-table-warning .price-table-list i {
       color: #FF9800; }
     .price-table.price-table-warning:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-warning:hover .price-table-body .price-table-list li {
         border-color: #ffbd5c; }
-        .price-table.price-table-warning:hover .price-table-body .price-table-list li i, .price-table.price-table-warning:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-warning:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-warning:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10303,13 +10286,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #F44336; }
     .price-table.price-table-danger .price-table-body:after {
       background-color: #F44336; }
-    .price-table.price-table-danger .price-table-list i, .price-table.price-table-danger svg {
+    .price-table.price-table-danger .price-table-list i {
       color: #F44336; }
     .price-table.price-table-danger:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-danger:hover .price-table-body .price-table-list li {
         border-color: #f9948d; }
-        .price-table.price-table-danger:hover .price-table-body .price-table-list li i, .price-table.price-table-danger:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-danger:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-danger:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10320,13 +10303,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #4CAF50; }
     .price-table.price-table-success .price-table-body:after {
       background-color: #4CAF50; }
-    .price-table.price-table-success .price-table-list i, .price-table.price-table-success svg {
+    .price-table.price-table-success .price-table-list i {
       color: #4CAF50; }
     .price-table.price-table-success:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-success:hover .price-table-body .price-table-list li {
         border-color: #8acc8d; }
-        .price-table.price-table-success:hover .price-table-body .price-table-list li i, .price-table.price-table-success:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-success:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-success:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10337,13 +10320,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
       background-color: #FFEB3B; }
     .price-table.price-table-caution .price-table-body:after {
       background-color: #FFEB3B; }
-    .price-table.price-table-caution .price-table-list i, .price-table.price-table-caution svg {
+    .price-table.price-table-caution .price-table-list i {
       color: #FFEB3B; }
     .price-table.price-table-caution:hover .price-table-body {
       color: #fff; }
       .price-table.price-table-caution:hover .price-table-body .price-table-list li {
         border-color: #fff497; }
-        .price-table.price-table-caution:hover .price-table-body .price-table-list li i, .price-table.price-table-caution:hover .price-table-body .price-table-list li svg {
+        .price-table.price-table-caution:hover .price-table-body .price-table-list li i {
           color: #fff; }
       .price-table.price-table-caution:hover .price-table-body .btn-raised {
         background-color: #fff;
@@ -10381,7 +10364,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-light .price i, .pricing-table-head-light .price svg {
+    .pricing-table-head-light .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10394,7 +10377,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-light i, svg {
+.pricing-table-description-light i {
   margin: 0 15px 0 5px;
   color: #F5F5F5;
   font-size: 1.1em; }
@@ -10431,7 +10414,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-dark .price i, .pricing-table-head-dark .price svg {
+    .pricing-table-head-dark .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10444,7 +10427,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-dark i, svg {
+.pricing-table-description-dark i {
   margin: 0 15px 0 5px;
   color: #616161;
   font-size: 1.1em; }
@@ -10481,7 +10464,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-primary .price i, .pricing-table-head-primary .price svg {
+    .pricing-table-head-primary .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10494,7 +10477,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-primary i, svg {
+.pricing-table-description-primary i {
   margin: 0 15px 0 5px;
   color: #03A9F4;
   font-size: 1.1em; }
@@ -10531,7 +10514,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-info .price i, .pricing-table-head-info .price svg {
+    .pricing-table-head-info .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10544,7 +10527,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-info i, svg {
+.pricing-table-description-info i {
   margin: 0 15px 0 5px;
   color: #00BCD4;
   font-size: 1.1em; }
@@ -10581,7 +10564,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-royal .price i, .pricing-table-head-royal .price svg {
+    .pricing-table-head-royal .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10594,7 +10577,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-royal i, svg {
+.pricing-table-description-royal i {
   margin: 0 15px 0 5px;
   color: #9C27B0;
   font-size: 1.1em; }
@@ -10631,7 +10614,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-warning .price i, .pricing-table-head-warning .price svg {
+    .pricing-table-head-warning .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10644,7 +10627,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-warning i, svg {
+.pricing-table-description-warning i {
   margin: 0 15px 0 5px;
   color: #FF9800;
   font-size: 1.1em; }
@@ -10681,7 +10664,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-danger .price i, .pricing-table-head-danger .price svg {
+    .pricing-table-head-danger .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10694,7 +10677,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-danger i, svg {
+.pricing-table-description-danger i {
   margin: 0 15px 0 5px;
   color: #F44336;
   font-size: 1.1em; }
@@ -10731,7 +10714,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-success .price i, .pricing-table-head-success .price svg {
+    .pricing-table-head-success .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10744,7 +10727,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-success i, svg {
+.pricing-table-description-success i {
   margin: 0 15px 0 5px;
   color: #4CAF50;
   font-size: 1.1em; }
@@ -10781,7 +10764,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head-caution .price i, .pricing-table-head-caution .price svg {
+    .pricing-table-head-caution .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10794,7 +10777,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description-caution i, svg {
+.pricing-table-description-caution i {
   margin: 0 15px 0 5px;
   color: #FFEB3B;
   font-size: 1.1em; }
@@ -10861,7 +10844,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 52px;
     line-height: 52px;
     text-align: center; }
-    .pricing-table-head .price i, .pricing-table-head .price svg {
+    .pricing-table-head .price i {
       font-style: normal;
       font-size: 32px; }
 
@@ -10874,7 +10857,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .pricing-table-content li:nth-child(2n+1) {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.pricing-table-description i, svg {
+.pricing-table-description i {
   margin: 0 15px 0 5px;
   color: #03A9F4;
   font-size: 1.1em; }
@@ -10975,12 +10958,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
     .three_cols li a {
       display: block;
       padding: 2px 0; }
-      .three_cols li a i, .three_cols li a svg {
+      .three_cols li a i {
         margin-right: 10px;
         width: 15px;
         text-align: center;
         color: #26C6DA; }
-      .three_cols li a:hover i, .three_cols li a:hover svg {
+      .three_cols li a:hover i {
         transition: all ease 0.5s;
         color: #FFA726;
         transform: rotateY(360deg); }
@@ -10995,7 +10978,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     background-image: linear-gradient(#fff, #fff), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) !important; }
   .ms-input-subscribe label {
     color: rgba(255, 255, 255, 0.7) !important; }
-    .ms-input-subscribe label i, .ms-input-subscribe label svg {
+    .ms-input-subscribe label i {
       margin: 0 5px 0 5px; }
 
 .is-focused .ms-input-subscribe label {
@@ -11045,7 +11028,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
   color: #BDBDBD; }
   .ms-footer-media .media-footer span {
     margin-right: 1rem; }
-    .ms-footer-media .media-footer span i, .ms-footer-media .media-footer span svg {
+    .ms-footer-media .media-footer span i {
       margin-left: .1rem;
       margin-right: .5rem; }
 
@@ -11053,7 +11036,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
   margin: 0 0 1rem 1rem;
   background-color: #455A64;
   color: #F5F5F5 !important; }
-  .ms-footbar-social a:hover i, .ms-footbar-social a:hover svg {
+  .ms-footbar-social a:hover i {
     transition: all ease 0.4s;
     transform: rotate(360deg); }
 
@@ -11141,7 +11124,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
         display: table-cell;
         width: 50%;
         padding: 10px 20px; }
-        .ms-slidebar .ms-slidebar-header .ms-slidebar-login a i, .ms-slidebar .ms-slidebar-header .ms-slidebar-login a svg {
+        .ms-slidebar .ms-slidebar-header .ms-slidebar-login a i {
           margin-right: 10px; }
     .ms-slidebar .ms-slidebar-header .ms-slidebar-title {
       position: absolute;
@@ -11270,7 +11253,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
           color: #616161; }
           .ms-slidebar .ms-slidebar-menu > li > a.link:after {
             content: "\f2fb"; }
-        .ms-slidebar .ms-slidebar-menu > li > a > i, .ms-slidebar .ms-slidebar-menu > li > a svg {
+        .ms-slidebar .ms-slidebar-menu > li > a > i {
           margin-right: 15px; }
         .ms-slidebar .ms-slidebar-menu > li > a:hover {
           background-color: #F5F5F5;
@@ -11288,7 +11271,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
           .ms-slidebar .ms-slidebar-menu > li > ul li > a:hover {
             background-color: #F5F5F5;
             color: #03A9F4; }
-          .ms-slidebar .ms-slidebar-menu > li > ul li > a > i, .ms-slidebar .ms-slidebar-menu > li > ul li > a svg {
+          .ms-slidebar .ms-slidebar-menu > li > ul li > a > i {
             margin-right: 15px; }
         .ms-slidebar .ms-slidebar-menu > li > ul li:last-child {
           border-bottom: solid 1px #EEEEEE; }
@@ -11341,12 +11324,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
     margin: 0 !important;
     font-weight: 500;
     padding: 25px 10px 10px 10px !important; }
-    .dropdown-megamenu .megamenu-block .megamenu-block-title i, .dropdown-megamenu .megamenu-block .megamenu-block-title svg {
+    .dropdown-megamenu .megamenu-block .megamenu-block-title i {
       display: none; }
   .dropdown-megamenu .megamenu-block .megamenu-block-list li a {
     font-size: 14px;
     padding: 6px 10px !important; }
-    .dropdown-megamenu .megamenu-block .megamenu-block-list li a i, .dropdown-megamenu .megamenu-block .megamenu-block-list li a svg {
+    .dropdown-megamenu .megamenu-block .megamenu-block-list li a i {
       display: none; }
   .ms-paper {
     animation-name: shadow-retard, slideInUpTiny;
@@ -11402,9 +11385,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     padding-left: 3rem !important; } }
 
 @media (min-width: 768px) {
-  .ms-paper-menu-title a i, .ms-paper-menu-title a svg {
-    right: 3rem !important; }
-  .ms-paper-menu-title a svg {
+  .ms-paper-menu-title a i {
     right: 3rem !important; }
   .dl-horizontal dt {
     float: left;

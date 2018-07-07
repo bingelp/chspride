@@ -26,13 +26,14 @@
 html {
     font-size: 10px;
     -webkit-font-smoothing: antialiased;
-    //-webkit-text-stroke-width: .5px;
+    height: 100%;
+    overflow: auto;
 }
 
 body {
+    height: auto;
     color: $mdc-grey-600;
     background-color: $color-light;
-    overflow: scroll;
 
     font-family: 'GothamNarrow Light','Roboto', sans-serif;
     font-size: 1.5rem;

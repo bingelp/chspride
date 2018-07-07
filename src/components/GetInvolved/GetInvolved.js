@@ -25,10 +25,6 @@ class GetInvolved extends React.Component {
                     <this.Item icon="star" color="info" dest="/friends-of-pride" title="Become a Friend of Pride" />
                     <this.Item icon="envelope" color="warning" dest="/join-our-mailing-list" title="Join Our Mailing List" />
                     <this.Item icon="smile-o" color="success" dest="/volunteer" title="Volunteer with Pride" />
-                    {/* <this.Item icon="user-plus" color="danger" dest="/serve-on-the-board" title="Serve on the Board" />
-                    <this.Item icon="book" color="royal" dest="/purchase-pride-guide-ad" title="Purchase Pride Guide Ad"/>
-                    <this.Item icon="map-marker" color="info" dest="/vendor-registration" title="Register to be a Vendor"/>
-                    <this.Item icon="flag" color="danger" dest="participate-in-parage" title="Participate in Parade" /> */}
                 </div>
             </div>)
     }

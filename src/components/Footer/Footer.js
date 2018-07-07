@@ -7,12 +7,12 @@ const Footer = () => (
       <div className="row">
         <div className="col-md-6 col-lg-3 mt-2">
           <h1 className="footer-chs">Charleston</h1>
-          <h1 className="footer-pride">
-            <span className="p">P</span>
-            <span className="r">R</span>
-            <span className="i">I</span>
-            <span className="d">D</span>
-            <span className="e">E</span>
+          <h1 className="footer-pride initialism">
+            <span>P</span>
+            <span>R</span>
+            <span>I</span>
+            <span>D</span>
+            <span>E</span>
           </h1>
         </div>
         <div className="col-md-6 col-lg-3 order-lg-last text-center">
