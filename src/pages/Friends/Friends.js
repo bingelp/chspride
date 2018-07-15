@@ -1,49 +1,67 @@
 import React from 'react';
 import ETap from '../../components/ETapestryForm'
+import './Friends.css'
 class Friends extends React.Component {
 
-    FriendsMonthly() {
+    RainbowItem(props) {
+        return (<li><i className={"fa fa-" + props.icon}></i> {props.text} {props.super}</li>)
+    }
+
+    Rainbow(props) {
         return (<div className="col-12 col-lg-6">
             <div className="price-table price-table-info wow zoomInUp animation-delay-2">
                 <header className="price-table-header">
-                    <span className="price-table-category">Monthly</span>
-                    <h3><sup>$</sup>10.00 <sub>/mo.</sub></h3>
+                    <span className="price-table-category">Rainbow</span>
+                    <h3><sup>$</sup>20.00 <sub>/mo.</sub></h3>
                 </header>
                 <div className="price-table-body">
                     <ul className="price-table-list">
-                        <li><i className="fa fa-user"></i> Free Festival T-Shirt</li>
-                        <li><i className="fa fa-ticket"></i> Free Admission To Fundraisers</li>
-                        <li><i className="fa fa-address-book"></i>  Acknowledgement in Pride Guide (if desired)</li>
-                        <li><i className="fa fa-star-o"></i> Free Admission to Prism Party</li>
-
+                        {props.children}
                     </ul>
                 </div>
             </div>
         </div>)
     }
-    FriendsYearly() {
+
+    DoubleRainbowItem(props) {
+        if (props.double) {
+            return (<li><i className={"fa fa-" + props.icon}></i> {props.text}<i className="fa fa-times" aria-hidden="true"></i> 2 {props.super}</li>)
+        }
+        return (<li><i className={"fa fa-" + props.icon}></i> {props.text} {props.super}</li>)
+    }
+
+    DoubleRainbow(props) {
         return (<div className="col-12 col-lg-6">
             <div className="price-table price-table-success wow zoomInDown animation-delay-2">
                 <header className="price-table-header">
-                    <span className="price-table-category">Annually</span>
-                    <h3><sup>$</sup>120.00 <sub>/yr.</sub></h3>
+                    <span className="price-table-category">Double Rainbow</span>
+                    <h3><sup>$</sup>30.00 <sub>/mo.</sub></h3>
                 </header>
                 <div className="price-table-body">
                     <ul className="price-table-list">
-                        <li><i className="fa fa-user"></i> Free Festival T-Shirt</li>
-                        <li><i className="fa fa-ticket"></i> Free Admission To Fundraisers</li>
-                        <li><i className="fa fa-address-book"></i>  Acknowledgement in Pride Guide (if desired)</li>
-                        <li><i className="fa fa-star-o"></i> Free Admission to Prism Party</li>
+                        {props.children}
                     </ul>
                 </div>
             </div>
         </div>)
+    }
+
+    FinePrint(props) {
+        return (
+            <div className="col-12">
+                <div className="well">
+                    <p><em>Membership is a 12 month commitment at which point membership becomes month-to-month and can be cancelled anytime after one year.</em></p>
+                    <p><em>* Including but not limited to annual Pride on the Harbor Cruises and Toast to Equality. Tickets can be reserved by emailing <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a>. Tickets must be requested a minimum of 24hrs before start of event and event must not already be sold out.</em></p>
+                    <p><em>&#8224; Acknowledgement will only appear if desired. Membership must be started before the cut off date for the Pride Guide.</em></p>
+                </div>
+            </div>
+        )
     }
 
     render() {
         return (
             <div>
-                <div className="ms-hero-page-override ms-hero-img-parade ms-hero-bg-primary">
+                <div className="ms-hero-page-override ms-hero-img-friends ms-hero-bg-primary">
                     <div className="container">
                         <div className="text-center">
                             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
@@ -53,18 +71,36 @@ class Friends extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="container card-hero">
-                    <div className="bg-white mt-2">
-                        <div className="container">
+                <div className="container card-hero bg-white">
+                    <div className="mt-2">
+                        <div>
                             <div className="text-center">
-                                <h1>Giving Options</h1>
+                                <h1 className="pt-4">Membership Options</h1>
                             </div>
                             <div className="row">
-                                <this.FriendsMonthly />
-                                <this.FriendsYearly />
+                                <this.Rainbow>
+                                    <this.RainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" />
+                                    <this.RainbowItem icon="ticket" text="Free Entry to Official Charleston Pride Events/Fundraisers" super="*" />
+                                    <this.RainbowItem icon="address-book" text="Acknowledgement in Pride Guide" super="&#8224;" />
+                                    <this.RainbowItem icon="glass" text="Access to the VIP Tent at the Festival (Includes Open Bar)" />
+                                    <this.RainbowItem icon="star-o" text="Free Admission to Prism Party" />
+                                    <this.RainbowItem icon="handshake-o" text="Meet and Greet with Entertainment (if avaliable)" />
+                                </this.Rainbow>
+                                <this.DoubleRainbow>
+                                    <this.DoubleRainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" />
+                                    <this.DoubleRainbowItem icon="ticket" text="Free Entry to Official Charleston Pride Events/Fundraisers" double="true" super="*" />
+                                    <this.DoubleRainbowItem icon="address-book" text="Acknowledgement in Pride Guide" super="&#8224;" />
+                                    <this.DoubleRainbowItem icon="glass" text="Access to the VIP Tent at the Festival (Includes Open Bar)" double="true" />
+                                    <this.DoubleRainbowItem icon="star-o" text="Free Admission to Prism Party" double="true" />
+                                    <this.DoubleRainbowItem icon="handshake-o" text="Meet and Greet with Entertainment (if avaliable)" double="true" />
+                                </this.DoubleRainbow>
+
+                            </div>
+                            <div className="row">
+                                <this.FinePrint />
                             </div>
                         </div>
-                        <ETap form="FriendsOfPride" title="friends-of-pride" />
+                        <ETap form="friends" title="friends-of-pride" />
                     </div>
                 </div>
             </div>

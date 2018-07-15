@@ -1,0 +1,11 @@
+.price-table .price-table-body .price-table-list li i{
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.ms-hero-img-friends {
+  background-image: url(parade.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}

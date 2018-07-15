@@ -25,7 +25,7 @@ export default class Pageant extends Component {
                     <div className="container text-center">
                         <div>
                             <h1>Presented By</h1>
-                            <img src={BaddKitty} alt="Badd Kitty Logo" />
+                            <a href="https://www.baddkitty.net/?utm_source=charleston_pride&amp;utm_medium=website&amp;utm_campaign=pageant" target="_blank" rel="noopener noreferrer"><img src={BaddKitty} alt="Badd Kitty Logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ export default class Pageant extends Component {
                             <h3 className="wow zoomInDown">Join Us as We Crown the Empress and Emperor of Charleston Pride 2018!</h3>
                             <p>This year’s pageant will be held at <a target="_blank" rel="noopener noreferrer" href="https://www.midtownproductions.org/">Midtown Theatre</a> on Saturday, August 25th  at 9:00 PM.</p>
                             <p>Our host will guide our contestants through each round while our prestigious judges decide who wins it all.</p>
-                            <p>Our current reigning Empress of Charleston Pride will also be stepping down from her 2017 reign. Make sure not to miss <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bridgette.pharaohs">Bridgette Pharohs</a> as she hands over the crown to our next star! There will also be special performances from previous winners. </p>
+                            <p>Our current reigning Empress of Charleston Pride will also be stepping down from her 2017 reign. Make sure not to miss <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bridgette.pharaohs">Bridgette Pharaohs</a> as she hands over the crown to our next star! There will also be special performances from previous winners. </p>
                             <p> A cover charge of $10 will be going to support Charleston Pride.</p>
                             <p>Potential registrants can fill out the registration form below, and the official application is available for download below. Contestants must be registered by August 20th.</p>
                             <a className="btn btn-info pull-right btn-raised" download="Pageant_App_18.pdf" href={PageantApp}><i className="fa fa-download"></i> Download</a>
@@ -57,7 +57,7 @@ export default class Pageant extends Component {
                                     <tbody>
                                         <tr>
                                             <td>2017</td>
-                                            <td>Bridgette Pharohs</td>
+                                            <td>Bridgette Pharaohs</td>
                                             <td>Vacant</td>
                                         </tr>
                                         <tr>
