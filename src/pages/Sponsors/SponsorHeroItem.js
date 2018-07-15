@@ -10,13 +10,13 @@ export default class SponsorHeroItem extends React.Component {
     }
     handleClick() {
         const campaign = "?utm_source=charleston_pride&utm_medium=website&utm_campaign=sponsors";
-        SponsorHeroItem.openInNewTab(this.props.meta.url+campaign);
+        SponsorHeroItem.openInNewTab(this.props.meta.web+campaign);
     }
     render(props) {
         return <div className={"card col-4 col-md-2 card-" + helper(this.props.meta.level)}>
             <div className="ms-thumbnail-container">
                 <figure className={"ms-thumbnail ms-thumbnail-bottom ms-thumbnail-" + helper(this.props.meta.level)}>
-                    <img src={this.props.meta.logoPath} alt={this.props.meta.logo} className="img-fluid"/>
+                    <img src={"https://d2f908d3j7stzr.cloudfront.net/chspride/sponsors/" + this.props.meta.image} alt={this.props.meta.name + " logo"} className="img-fluid"/>
                     <figcaption className="ms-thumbnail-caption text-center">
                         <div className="ms-thumbnail-caption-content">
                             <h4 className="ms-thumbnail-caption-title">{this.props.meta.name}</h4>
