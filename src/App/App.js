@@ -134,6 +134,12 @@ const navigation =
           "divide": true
         },
         {
+          "key": "cruise",
+          "to": "/events/pride-on-the-harbor",
+          "title": "Pride On The Harbor",
+          "icon": "fa-ship"
+        },
+        {
           "key": "festival",
           "to": "/events/pride/festival",
           "title": "Festival Information",
@@ -156,6 +162,13 @@ const navigation =
       "icon": "fa-glass",
       "background": "warning"
     },
+    // {
+    //   "key": "pride-2018",
+    //   "to": "/pride",
+    //   "title": "Pride 2018",
+    //   "icon": "fa-flag",
+    //   "background": "warning"
+    // },
     {
       "key": "donate",
       "to": "/donate",

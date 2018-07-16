@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import "./Cruise.css";
 import CountdownClock from "../../components/CountdownClock"
-import eTapestry from '../../components/ETapestryForm'
 import ETapestryForm from '../../components/ETapestryForm';
 
 export default class Cruise extends Component {
@@ -13,7 +12,7 @@ export default class Cruise extends Component {
                 </div>
                 <div className="container">
 
-                    <CountdownClock eventTime="2018-06-23T19:00:00" color="warning" />
+                    <CountdownClock eventTime="2018-09-15T19:00:00" color="warning" />
                     <div className="card">
                         <div className="card-body">
                             <ETapestryForm form="cruise" title="Cruise"/>

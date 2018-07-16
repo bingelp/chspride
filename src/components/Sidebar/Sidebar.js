@@ -2,7 +2,6 @@ import React from 'react'
 import './Sidebar.css'
 import SidebarTab from "./SidebarTab"
 import SidebarSocial from "./SidebarSocial"
-import SidebarTabLink from "./SidebarTabLink"
 import { Link } from 'react-router-dom'
 
 class Sidebar extends React.Component {

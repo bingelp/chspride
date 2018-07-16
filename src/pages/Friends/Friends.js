@@ -53,6 +53,7 @@ class Friends extends React.Component {
                     <p><em>Membership is a 12 month commitment at which point membership becomes month-to-month and can be cancelled anytime after one year.</em></p>
                     <p><em>* Including but not limited to annual Pride on the Harbor Cruises and Toast to Equality. Tickets can be reserved by emailing <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a>. Tickets must be requested a minimum of 24hrs before start of event and event must not already be sold out.</em></p>
                     <p><em>&#8224; Acknowledgement will only appear if desired. Membership must be started before the cut off date for the Pride Guide.</em></p>
+                    <p><em>^</em> Exclusive gift is your choice of specially branded hat, visor, or shirt.</p>
                 </div>
             </div>
         )
@@ -79,22 +80,22 @@ class Friends extends React.Component {
                             </div>
                             <div className="row">
                                 <this.Rainbow>
-                                    <this.RainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" />
+
                                     <this.RainbowItem icon="ticket" text="Free Entry to Official Charleston Pride Events/Fundraisers" super="*" />
                                     <this.RainbowItem icon="address-book" text="Acknowledgement in Pride Guide" super="&#8224;" />
                                     <this.RainbowItem icon="glass" text="Access to the VIP Tent at the Festival (Includes Open Bar)" />
                                     <this.RainbowItem icon="star-o" text="Free Admission to Prism Party" />
                                     <this.RainbowItem icon="handshake-o" text="Meet and Greet with Entertainment (if avaliable)" />
+                                    <this.RainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" super="^" />
                                 </this.Rainbow>
                                 <this.DoubleRainbow>
-                                    <this.DoubleRainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" />
                                     <this.DoubleRainbowItem icon="ticket" text="Free Entry to Official Charleston Pride Events/Fundraisers" double="true" super="*" />
                                     <this.DoubleRainbowItem icon="address-book" text="Acknowledgement in Pride Guide" super="&#8224;" />
                                     <this.DoubleRainbowItem icon="glass" text="Access to the VIP Tent at the Festival (Includes Open Bar)" double="true" />
                                     <this.DoubleRainbowItem icon="star-o" text="Free Admission to Prism Party" double="true" />
                                     <this.DoubleRainbowItem icon="handshake-o" text="Meet and Greet with Entertainment (if avaliable)" double="true" />
+                                    <this.DoubleRainbowItem icon="gift" text="Exclusive Gift Only Available to Friends of Pride" super="^" />
                                 </this.DoubleRainbow>
-
                             </div>
                             <div className="row">
                                 <this.FinePrint />

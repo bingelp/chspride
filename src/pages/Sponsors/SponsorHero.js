@@ -1,7 +1,6 @@
 import React from "react";
 import Sponsor from "./SponsorHeroItem"
-import { Link } from 'react-router-dom';
-import firebase from '../../firebase'
+import { Link } from 'react-router-dom'
 
 export default class SponsorHero extends React.Component {
 

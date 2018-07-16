@@ -22,7 +22,8 @@ import PreviousPrideGuide from './pages/PrideGuide/Previous'
 import Events from './pages/Events/Events'
 import Pageant from './pages/Pageant/Pageant'
 import Rainbows from './pages/Rainbows/Rainbows'
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop'
+import Pride from './pages/Pride/Pride'
 
 const Root = (props) => {
   return (
@@ -56,6 +57,7 @@ const Root = (props) => {
             <Route path="/events/rainbows" component={Rainbows} />
             <Route path="/events" component={Events} />
             <Route path="/donate" component={Donate} />
+            <Route path="/pride" component={Pride}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

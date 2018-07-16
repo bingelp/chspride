@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavItem from './NavItem';
 import NavDropdown from './NavDropdown';
-import NavDropdownItem from './NavDropdownItem';
 
 class Nav extends React.Component {
 

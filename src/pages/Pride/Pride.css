@@ -1,0 +1,9 @@
+#pride .ms-hero {
+  background-image: url(pride.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#pride .card-body {
+  min-height: auto;
+}
