@@ -1,5 +1,5 @@
 #pride .ms-hero {
-  background-image: url(pride.jpg);
+  background-image: url(./Assets/pride.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -11,6 +11,9 @@
 #redux {
   max-height: 100px;
   margin: auto;
+}
+#condon {
+  max-height: 100px;
 }
 
 @media (max-width: 767px) {
