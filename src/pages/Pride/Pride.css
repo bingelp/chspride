@@ -7,3 +7,14 @@
 #pride .card-body {
   min-height: auto;
 }
+
+#redux {
+  max-height: 100px;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .timeline-time span.day::before{
+    content: ",";
+  }
+}

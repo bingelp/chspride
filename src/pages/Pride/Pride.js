@@ -9,6 +9,7 @@ import eljefe from './eljefe.jpg'
 import dudleys from './dudleys.jpg'
 import beau from './beau_magazine.jpg'
 import indigo from './indigo.jpg'
+import redux from './redux.png'
 
 class Pride extends Component {
 
@@ -29,16 +30,14 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-15T19:00">September 15
-        <span>Saturday</span>7:00 PM
-          </time>
+          <time className="timeline-time" dateTime="2018-10-15T19:00"><span className="date">September 15<span className="day"> Saturday</span></span> 7:00 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
         <div className="card card-primary">
           <div className="card-header">
             <h3 className="card-title">Pride on the Harbor @ 7:00-10:30pm | Aquarium Wharf</h3>
           </div>
-          <img src={cruise} alt="" className="mb-2"></img>
+          <img src={cruise} alt="Pride on the Harbor Logo" className="mb-2"></img>
           <div className="card-body">
             <div className="row">
               <p>Come sail away with Charleston Pride! The evening will feature hors d’oeuvres, an open bar courtesy of Breakthru Beverage South Carolina, and DJ K spinning the beats on this three hour harbor cruise! This boat features two levels with an air-conditioned floor and an open air top deck. This is an event you won’t want to miss! All you need is a ticket and we will provide the rest! Boarding will begin at 7:00pm at the Aquarium Wharf. The boat will depart at 7:30 pm and will return at 10:30 pm. Space is limited so make sure you get your tickets early. All proceeds benefit Charleston Pride and help to make Pride possible!</p>
@@ -56,9 +55,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T11:00">September 16
-        <span>Sunday</span>11:00am
-          </time>
+          <time className="timeline-time" dateTime="2018-10-16T11:00">September 16<span className="day"> Sunday</span> 11:00 AM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
         <div className="card card-success">
@@ -89,22 +86,22 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T15:00">3:00 PM
-        </time>
+          <time className="timeline-time" dateTime="2018-10-16T15:00">3:00 PM</time>
           <i className="ms-timeline-point bg-danger"></i>
         </div>
         <div className="card card-danger">
           <div className="card-header">
-            <h3 className="card-title">Real Rainbow Row Tour @ 3:00 PM - 5:00PM | TBD </h3>
+            <h3 className="card-title">Real Rainbow Row Tour @ 3:00 PM - 5:00PM | Downtown Charleston </h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <p>Details coming soon</p>
-                <p><Link to="/events/real-rainbow-row-tour" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
-                  <i className="fa fa-ticket"></i> Tickets</Link></p>
+                <p><em>The Real Rainbow Row</em> walking tour is a <strong>fabulous</strong> two-hour interactive exploration of Charleston’s rich, gay history and current LGBTQ community. Highlights include the story of Dawn Langley Hall, one of the first transsexuals in the US, the gay artists that helped create Charleston’s Art Renaissance, the significance of The Battery in LGBT society, The Spoleto Festival, and the historic Charleston landmark where Gertrude Stein and Alice Taklas spent Valentine’s Day. Join Charleston Pride and <ExternalLink to="https://bulldogtours.com/" title="Bulldog Tours"/> as we skip along the cobblestone streets and discover the colorful stories that form a unique part of Charleston’s history.</p>
+                <ExternalLink to="https://goo.gl/maps/ahE6LR7x2M82" title="18 Anson St, Charleston, SC" />
               </div>
             </div>
+            <Link to="/events/pride/real-rainbow-row-tour" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
+              <i className="fa fa-ticket"></i> Tickets</Link>
             <div className="pull-right">
               <h3 ><span className="color-danger">$15</span></h3>
             </div>
@@ -118,8 +115,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T18:00">6:00 PM
-          </time>
+          <time className="timeline-time" dateTime="2018-10-16T18:00">6:00 PM</time>
           <i className="ms-timeline-point bg-royal"></i>
         </div>
         <div className="card card-royal">
@@ -146,19 +142,21 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 17
-        <span>Monday</span> TBD
-        </time>
+          <time className="timeline-time" dateTime="2018-10-17T16:30">September 17<span className="day" > Monday</span> 6:30 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
         <div className="card card-warning">
           <div className="card-header">
-            <h3 className="card-title"><em>Paris is Burning</em> Screening @ TBD | TBD </h3>
+            <h3 className="card-title"><em>Paris is Burning</em> Screening @ 6:30 PM | REDUX, Charleston </h3>
           </div>
           <div className="card-body">
             <div className="row">
-              <p>Details coming soon</p>
+
+              <img id="redux" src={redux} alt="Redux logo" className="img-fluid mb-2"></img>
+                <p>Charleston Pride will host a screening of the culturally-rich documentary, <em>Paris is Burning</em>, and a talkback with ball commentator Junior Labeija and local activist Vanity Reid Deterville. Deterville and Labeija will discuss the film's influence on the stories and lives of queer and transgender people of color, and how the ball scene has evolved since the late '80s. </p>
+                <ExternalLink to="https://goo.gl/maps/ExJArKBVap32" title="1056 King Street, Charleston, SC" />
             </div>
+            <ExternalBtn to="http://reduxstudios.org/" icon="globe" color="warning" title="Redux" />
             <div className="pull-right">
               <h3 ><span className="color-warning">FREE</span></h3>
             </div>
@@ -172,9 +170,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 18
-        <span>Tuesday</span> TBD
-        </time>
+          <time className="timeline-time" dateTime="2018-10-18T18:00">September 18<span className="day"> Tuesday</span> TBD</time>
           <i className="ms-timeline-point bg-info"></i>
         </div>
         <div className="card card-info">
@@ -198,9 +194,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 19
-        <span>Wednesday</span> 6:00 PM
-        </time>
+          <time className="timeline-time" dateTime="2018-10-19T14:00">September 19<span className="day"> Wednesday</span> 6:00 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
         <div className="card card-primary">
@@ -224,8 +218,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T11:00">10:00pm
-          </time>
+          <time className="timeline-time" dateTime="2018-10-19T22:00">10:00 PM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
         <div className="card card-success">
@@ -245,7 +238,36 @@ class Pride extends Component {
             <ExternalBtn to="http://tabbuli.com/" icon="globe" title="Tabbuli" color="success" />
             <div className="pull-right">
               <h3 >Cover: 18+ <span className="color-success">$10</span>, 21+ <span className="color-success">$5</span></h3>
+            </div>
+          </div>
+        </div>
+      </li>
+    )
+  }
 
+  Beau(props) {
+    return (
+      <li className="ms-timeline-item wow materialUp">
+        <div className="ms-timeline-date">
+          <time className="timeline-time" dateTime="2018-10-19T17:00">September 20<span className="day"> Thursday</span> 5:00 PM</time>
+          <i className="ms-timeline-point"></i>
+        </div>
+        <div className="card card-primary">
+          <div className="card-header">
+            <h3 className="card-title">Beau Magazine Happy Hour @ 5:00 PM - 7:00 PM | The Cocktail Club </h3>
+          </div>
+          <div className="card-body">
+            <div className="row">
+              <div className="col-md-4">
+                <img src={beau} alt="Beau Magazine Logo" className="img-fluid mb-2"></img> </div>
+              <div className="col-md-8">
+                <p>Join Charleston's OUT Crowd as we all toast to 2018 Charleston Pride at The Cocktail Club! This event is sponsored by BEAU Magazine so you know it'll be FUN!</p>
+                <ExternalLink to="https://goo.gl/maps/vnVPfGan1542" title="479 King St #200, Charleston, SC" />
+              </div>
+            </div>
+            <ExternalBtn to="https://beau-magazine.com/" icon="globe" title="BEAU Magazine" color="primary" />
+            <div className="pull-right">
+              <h3 ><span className="color-primary">FREE</span></h3>
             </div>
           </div>
         </div>
@@ -257,8 +279,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T11:00">9:00pm
-          </time>
+          <time className="timeline-time" dateTime="2018-10-19T21:00">9:00 PM</time>
           <i className="ms-timeline-point bg-danger"></i>
         </div>
         <div className="card card-danger">
@@ -285,45 +306,11 @@ class Pride extends Component {
     )
   }
 
-  Beau(props) {
-    return (
-      <li className="ms-timeline-item wow materialUp">
-        <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 20
-        <span>Thursday</span> 5:00 PM
-        </time>
-          <i className="ms-timeline-point"></i>
-        </div>
-        <div className="card card-primary">
-          <div className="card-header">
-            <h3 className="card-title">Beau Magazine Happy Hour @ 5:00 PM - 7:00 PM | The Cocktail Club </h3>
-          </div>
-          <div className="card-body">
-            <div className="row">
-              <div className="col-md-4">
-                <img src={beau} alt="Beau Magazine Logo" className="img-fluid mb-2"></img> </div>
-              <div className="col-md-8">
-                <p>Join Charleston's OUT Crowd as we all toast to 2018 Charleston Pride at The Cocktail Club! This event is sponsored by BEAU Magazine so you know it'll be FUN!</p>
-                <ExternalLink to="https://goo.gl/maps/vnVPfGan1542" title="479 King St #200, Charleston, SC" />
-              </div>
-            </div>
-            <ExternalBtn to="https://beau-magazine.com/" icon="globe" title="BEAU Magazine" color="primary" />
-            <div className="pull-right">
-              <h3 ><span className="color-primary">FREE</span></h3>
-            </div>
-          </div>
-        </div>
-      </li>
-    )
-  }
-
   Lol(props) {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 20
-        <span>Thursday</span> 7:00pm
-        </time>
+          <time className="timeline-time" dateTime="2018-10-20T19:00">September 20<span className="day"> Thursday</span> 7:00 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
         <div className="card card-warning">
@@ -333,17 +320,17 @@ class Pride extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <h4>Presented by AFFA and Charleston Pride</h4>
+                <h4>Presented by <abbr title="Alliance For Full Acceptance">AFFA</abbr> and Charleston Pride</h4>
                 <p>Come celebrate humanity and show your PRIDE at a night of comedy featuring some of your favorite stand-up comics, who also just happen to be members of the LGBTQ community.</p>
                 <p>Comedians: Jenn Snyder, Shawna Jarrett, Kevin Delgado, Robyn Scott, Sam Reisman</p>
                 <p>Host: Curt Mariah</p>
                 <p>Also featuring DJ Pat Nasty</p>
               </div>
             </div>
-            <Link to="/events/pride-on-the-harbor" className="btn btn-raised btn-warning animated fadeInUp animation-delay-10">
+            <Link to="/events/pride/lgbtlol" className="btn btn-raised btn-warning animated fadeInUp animation-delay-10">
               <i className="fa fa-ticket"></i> Tickets</Link>
             <div className="pull-right">
-              <h3 ><span className="color-warning">$15</span> / <span className="color-warning">$10</span> with discount code: <strong>affapride</strong></h3>
+              <h3 ><span className="color-warning">$15</span> / <span className="color-warning">$10</span> with code: <span className="color-warning">affapride</span></h3>
             </div>
           </div>
         </div>
@@ -355,8 +342,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T11:00">10:00pm
-          </time>
+          <time className="timeline-time" dateTime="2018-10-20T22:00">10:00 PM</time>
           <i className="ms-timeline-point bg-royal"></i>
         </div>
         <div className="card card-royal">
@@ -386,9 +372,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 21
-        <span>Friday</span> TBD
-        </time>
+          <time className="timeline-time" dateTime="2018-10-21T18:00">September 21<span className="day"> Friday</span> TBD</time>
           <i className="ms-timeline-point bg-info"></i>
         </div>
         <div className="card card-info">
@@ -412,9 +396,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">September 22
-        <span>Saturday</span> 9:00 AM
-        </time>
+          <time className="timeline-time" dateTime="2018-10-22T09:00">September 22<span className="day"> Saturday</span> 9:00 AM</time>
           <i className="ms-timeline-point bg-danger"></i>
         </div>
         <div className="card card-danger">
@@ -440,8 +422,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">11:00 AM
-        </time>
+          <time className="timeline-time" dateTime="2018-10-22T11:00">11:00 AM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
         <div className="card card-success">
@@ -467,8 +448,7 @@ class Pride extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" datetime="2018-10-16T14:00">9:00 PM
-        </time>
+          <time className="timeline-time" dateTime="2018-10-22T21:00">9:00 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
         <div className="card card-warning">
@@ -507,22 +487,22 @@ class Pride extends Component {
   Hotel(props) {
     return (
       <div className="col-lg-4">
-       <h2>Hotel and Accomodations</h2>
-      <div className="card card-royal-inverse">
-        <div className="card-header">
-          <h3 className="card-title">
-            <i className="zmdi zmdi-graduation-cap"></i> Official Hotel of Charleston Pride</h3>
+        <h2>Hotel and Accomodations</h2>
+        <div className="card card-royal-inverse">
+          <div className="card-header">
+            <h3 className="card-title">
+              <i className="fa fa-bed"></i> Official Hotel of Charleston Pride</h3>
+          </div>
+          <div className="withripple zoom-img">
+            <img src={indigo} alt="" className="img-fluid" />
+          </div>
+          <div className="card-body text-center">
+            <h4 className="">Hotel Indigo Mount Pleasant</h4>
+            <p>Situated near the landmark Arthur Ravenel Jr. Bridge, the Hotel Indigo® Mount Pleasant lets you experience the Lowcountry like a local. Our modern, boutique-style accommodations will help ensure a stress-free stay, with such amenities as complimentary Wi-Fi, ample work space and plush bedding.</p>
+            <h3>Get <strong>25% off</strong> when booking through the link below</h3>
+            <ExternalWhiteBtn color="royal" icon="bed" title="Reservations" to="https://www.ihg.com/hotelindigo/hotels/us/en/mount-pleasant/chsmp/hoteldetail?qAAR=ILJT2&amp;qAdlt=1&amp;qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.va.sp.nd.ct&amp;qChld=0&amp;qCpid=786895686&amp;qFRA=1&amp;qGRM=0&amp;qIta=99502056&amp;qPSt=0&amp;qRRSrt=rt&amp;qRef=df&amp;qRms=1&amp;qRpn=1&amp;qRpp=20&amp;qRtP=ILJT2&amp;qSHp=1&amp;qSmP=3&amp;qSrt=sBR&amp;qWch=0&amp;srb_u=1&amp;icdv=99502056&amp;setPMCookies=true" />
+          </div>
         </div>
-        <div className="withripple zoom-img">
-<img src={indigo} alt="" className="img-fluid" />
-        </div>
-        <div className="card-body text-center">
-          <h4 className="">Hotel Indigo Mount Pleasant</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sed labore autem nesciunt ea veniam recusandae necessitatibus reprehenderit.</p>
-
-          <ExternalWhiteBtn color="royal" icon="bed" title="Reservations" to="https://www.ihg.com/hotelindigo/hotels/us/en/mount-pleasant/chsmp/hoteldetail?qAAR=ILJT2&amp;qAdlt=1&amp;qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.va.sp.nd.ct&amp;qChld=0&amp;qCpid=786895686&amp;qFRA=1&amp;qGRM=0&amp;qIta=99502056&amp;qPSt=0&amp;qRRSrt=rt&amp;qRef=df&amp;qRms=1&amp;qRpn=1&amp;qRpp=20&amp;qRtP=ILJT2&amp;qSHp=1&amp;qSmP=3&amp;qSrt=sBR&amp;qWch=0&amp;srb_u=1&amp;icdv=99502056&amp;setPMCookies=true" />
-        </div>
-      </div>
       </div>
     )
   }
@@ -552,7 +532,7 @@ class Pride extends Component {
               <this.Festival />
               <this.Prism />
             </this.Calendar>
-            <this.Hotel/>
+            <this.Hotel />
           </div>
         </div>
       </div>

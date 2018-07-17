@@ -24,6 +24,9 @@ import Pageant from './pages/Pageant/Pageant'
 import Rainbows from './pages/Rainbows/Rainbows'
 import ScrollToTop from './components/ScrollToTop'
 import Pride from './pages/Pride/Pride'
+import Comedy from './pages/Comedy/Comedy'
+import Prism from './pages/Prism/Prism'
+import Tour from './pages/Tour/Tour'
 
 const Root = (props) => {
   return (
@@ -52,6 +55,9 @@ const Root = (props) => {
             <Route path="/events/pride-on-the-harbor" component={Cruise} />
             <Route path="/events/pride/festival" component={Festival} />
             <Route path="/events/pride/parade" component={Parade} />
+            <Route path="/events/pride/lgbtlol" component={Comedy} />
+            <Route path="/events/pride/prism-party" component={Prism} />
+            <Route path="/events/pride/real-rainbow-row-tour" component={Tour} />
             <Route path="/pageant" component={Pageant} />
             <Route path="/events/pageant" component={Pageant} />
             <Route path="/events/rainbows" component={Rainbows} />

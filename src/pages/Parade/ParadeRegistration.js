@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ETap from '../../components/ETapestryForm'
 
 export default class ParadeRegistration extends Component {
-    
+
     render() {
         return (
         <div className="row">
@@ -11,16 +11,14 @@ export default class ParadeRegistration extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <h2 className="color-white text-center mb-4">How to register?</h2>
-                            <p className="lead lead-lg text-center mt-4 col">You can easily register online by filling out the form below. 
+                            <p className="lead lead-lg text-center mt-4 col">You can easily register online by filling out the form below.
                             Walking entries can be registered for only <strong>$15</strong> and vehicle/float entries can be registered for just <strong>$25</strong>.
-                            If you have any questions, please feel free to reach out to us at 
+                            If you have any questions, please feel free to reach out to us at
                             <a className="color-royal" href="mailto:info@charlestonpride.org"> info@charlestonpride.org.</a> </p>
                             <p className="ml-3 text-center"><em>All sales are final.</em></p>
                         </div>
                     </div>
-                    <div className="row">
-                        <ETap title="Parade Registration" form="ParadeRegistration" />
-                    </div>
+                    <ETap title="Parade Registration" form="ParadeRegistration" />
                 </div>
             </div>
         </div>

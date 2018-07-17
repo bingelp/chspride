@@ -16,7 +16,7 @@ export default class ServeOnBoard extends Component {
         <h2>Step 2: Review the Board Roles &amp; Responsibilitites</h2>
         <Link to="/board-roles" className="btn btn-raised btn-primary">Board Roles &amp; Responsibilitites</Link>
         <h2>Step 3: Apply</h2>
-        <p>Todo: Create Form</p>
+        <p>Application form currently unavaliable. To Apply email <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a></p>
         {/* <BoardApplication/> */}
         </div>
       </Section>
