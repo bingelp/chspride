@@ -7,6 +7,7 @@ import robyn from './robyn.jpg'
 import sam from './sam.jpg'
 import shawna from './shawa.png'
 import curt from './curt.jpg'
+import {Link } from 'react-router-dom'
 
 class Comedy extends Component {
 
@@ -20,6 +21,7 @@ class Comedy extends Component {
             <h3 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Thursday, September 20,  @ 8:00 PM | Charleston Music Hall</h3>
             <ExternalBtn to="https://www.ticketfly.com/purchase/event/1734208" icon="ticket" title="Tickets" color="warning" />
             <h4 className="color-white">Use discount code <span className="color-warning"> affapride </span> to get <span className="color-warning">$5 Off</span></h4>
+            <p className="color-white">This event is <strong>Free</strong> for <Link to="/friends-of-pride">Friends of Pride</Link>. Email <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a> to reserve.</p>
           </div>
         </div>
       </div>

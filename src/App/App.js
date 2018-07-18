@@ -165,7 +165,7 @@ const navigation =
     {
       "key": "pride-2018",
       "to": "/pride",
-      "title": "Pride 2018",
+      "title": "Pride Week 2018",
       "icon": "fa-flag",
       "background": "warning"
     },

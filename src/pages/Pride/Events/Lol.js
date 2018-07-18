@@ -22,14 +22,19 @@ class Lol extends Component {
                 <p>Comedians: Jenn Snyder, Shawna Jarrett, Kevin Delgado, Robyn Scott, Sam Reisman</p>
                 <p>Host: Curt Mariah</p>
                 <p>Also featuring DJ Pat Nasty</p>
+                <h3><span className="color-warning">$10</span> with code: <span className="color-warning">affapride</span></h3>
               </div>
             </div>
-            <Link to="/events/pride/lgbtlol" className="btn btn-raised color-warning btn-white animated fadeInUp animation-delay-10">
+            <div className="row">
+              <div className="col">
+              <Link to="/events/pride/lgbtlol" className="btn btn-raised color-warning btn-white animated fadeInUp animation-delay-7">
               <i className="fa fa-info-circle"></i> More Info</Link>
             <ExternalBtn to="https://www.ticketfly.com/purchase/event/1734208" icon="ticket" title="Tickets" color="warning"/>
-            <div className="pull-right">
-              <h3 ><span className="color-warning">$15</span> / <span className="color-warning">$10</span> with code: <span className="color-warning">affapride</span></h3>
+            <h3 className="pull-right"><span className="color-warning">$15</span> </h3>
+              </div>
             </div>
+
+            <p>This event is <strong>FREE</strong> for <Link to="/friends-of-pride">Friends of Pride</Link>.</p>
           </div>
         </div>
       </li>

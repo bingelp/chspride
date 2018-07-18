@@ -23,9 +23,14 @@ class PrideOnHarbor extends Component {
               <ExternalLink to="https://www.google.com/maps/place/360+Concord+St,+Charleston,+SC+29401/" title="360 Concord St, Charleston, SC" />
               </div>
             </div>
+            <div className="row">
+            <div className="col">
             <Link to="/events/pride-on-the-harbor" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
               <i className="fa fa-ticket"></i> Tickets</Link>
             <h3 className="pull-right"><span className="color-primary">$45</span>, 21+</h3>
+            </div>
+            </div>
+            <p>This event is <strong>FREE</strong> for <Link to="/friends-of-pride">Friends of Pride</Link>.</p>
           </div>
         </div>
       </li>);
