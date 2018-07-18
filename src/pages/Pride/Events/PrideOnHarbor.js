@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ExternalLink} from '../../../components/LinkUtil'
 import { Link } from 'react-router-dom'
-import cruise from '../Assets/prideOnHarbor_400x150.jpg'
+// import cruise from '../Assets/prideOnHarbor_400x150.jpg'
 
 class PrideOnHarbor extends Component {
   render() {
@@ -15,7 +15,7 @@ class PrideOnHarbor extends Component {
           <div className="card-header">
             <h3 className="card-title">Pride on the Harbor @ 7:00-10:30pm | Aquarium Wharf</h3>
           </div>
-          <img src={cruise} alt="Pride on the Harbor Logo" className="mb-2"></img>
+          {/* <img src={cruise} alt="Pride on the Harbor Logo" className="mb-2"></img> */}
           <div className="card-body">
             <div className="row">
               <div className="col">

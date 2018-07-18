@@ -6,6 +6,7 @@ import Sponsors from '../Sponsors/SponsorHero';
 import UpcomingEvents from '../Events/UpcomingEvents';
 import CountdownClock from '../../components/CountdownClock'
 import GetInvoved from '../../components/GetInvolved/GetInvolved'
+import {ButtonLink} from '../../components/LinkUtil'
 
 
 class Home extends React.Component {
@@ -33,10 +34,11 @@ class Home extends React.Component {
     Countdown() {
         return (
             <div className="wrap ms-hero-bg-success ms-hero-img-stage">
-                <div className="container">
-                    <h1 className="color-white text-center mb-1">Charleston Pride Week 2018</h1>
-                    <h2 className="color-white text-center mb-1">September 15-22, 2018</h2>
+                <div className="container text-center">
+                    <h1 className="color-white mb-1">Charleston Pride Week 2018</h1>
+                    <h2 className="color-white mb-1">September 15-22, 2018</h2>
                     <CountdownClock eventTime="2018-09-15T09:00:00" color="white" />
+                    <ButtonLink to="/events/pride" icon="calendar-o" color="success">Schedule</ButtonLink>
                 </div>
             </div>)
     }

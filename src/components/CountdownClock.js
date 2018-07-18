@@ -20,9 +20,9 @@ export default class CountdownClock extends Component {
 
     componentWillUnmount() {
         clearTimeout(this.timer);
-    } 
+    }
 
-    tick() {    
+    tick() {
         let currentTimeInMilliseconds = new Date().getTime();
         let targetTimeInMilliseconds = new Date(this.props.eventTime).getTime();
         let timeRemaingInSeconds = (targetTimeInMilliseconds - currentTimeInMilliseconds)/1000;
@@ -46,7 +46,7 @@ export default class CountdownClock extends Component {
             showTime: true
         }));
     }
-    
+
     formatUnitOfTime(unitOfTime) {
         return unitOfTime < 10 ? `0${unitOfTime}` : `${unitOfTime}`;
     }
@@ -59,7 +59,7 @@ export default class CountdownClock extends Component {
 
         <div>
             <ul className={"coming-date color-"+ this.props.color}>
-            
+
                 <li>{this.formatUnitOfTime(this.state.remainingDays)} <span>Days</span></li>
                 <li className="colon">:</li>
                 <li>{this.formatUnitOfTime(this.state.remainingHours)} <span>Hours</span></li>

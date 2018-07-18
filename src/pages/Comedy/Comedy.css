@@ -1,0 +1,14 @@
+.ms-hero-img-lol {
+  background-image: url(lol.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+#lgbtlol .bio {
+  height: 150px;
+  overflow: scroll;
+}
+
+#lgbtlol  .btn-circle-caution {
+  background-color: #FFEB3B;
+}

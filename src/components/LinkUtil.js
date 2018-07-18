@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ExternalBtn extends Component {
   render(props) {
@@ -26,5 +27,13 @@ class ExternalLink extends Component {
   }
 }
 
+class ButtonLink extends Component {
+  render(props){
+    return(
+    <Link to={this.props.to} className={"btn btn-raised animated fadeInUp animation-delay-10 btn-"+ this.props.color}>
+    <i className={"fa fa-" + this.props.icon}></i> {this.props.children}</Link>)
+  }
+}
 
-export  {ExternalLink, ExternalBtn, ExternalWhiteBtn};
+
+export  {ExternalLink, ExternalBtn, ExternalWhiteBtn, ButtonLink};

@@ -3,6 +3,7 @@ import MediaKit from './2018_CHSP_PrideGuideMediaKit.pdf'
 import { Link } from 'react-router-dom'
 import ETap from '../../components/ETapestryForm'
 import './Ad.css'
+import { ExternalBtn } from '../../components/LinkUtil';
 export default class Ad extends Component {
 
   Header(props) {
@@ -149,7 +150,7 @@ export default class Ad extends Component {
         <h1>Purchase an Ad</h1>
         <p>For questions about ad specs or to have Charleston Pride design an ad on your behalf, please contact
           <a href="mailto:sales@charlestonpride.org"> sales@charlestonpride.org</a></p>
-        <ETap title="Pride Guide" form="prideguide" />
+        <em>Ad Registration has ended for this year.</em>
       </div>
       </div>
     )

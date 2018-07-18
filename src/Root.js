@@ -14,7 +14,7 @@ import Parade from './pages/Parade/Parade'
 import Festival from './pages/Festival/Festival'
 import Vendor from './pages/Festival/Vendor/Vendor'
 import Volunteer from './pages/Volunteer/Volunteer';
-import Cruise from './pages/Events/Cruise';
+import Cruise from './pages/Cruise/Cruise'
 import Friends from './pages/Friends/Friends'
 import MailingList from "./pages/MailingList/MailingList";
 import PrideGuideAd from './pages/PrideGuide/Ad'
@@ -61,9 +61,10 @@ const Root = (props) => {
             <Route path="/pageant" component={Pageant} />
             <Route path="/events/pageant" component={Pageant} />
             <Route path="/events/rainbows" component={Rainbows} />
-            <Route path="/events" component={Events} />
+            <Route path="/rainbows" component={Rainbows} />
             <Route path="/donate" component={Donate} />
             <Route path="/pride" component={Pride}/>
+            <Route path="/events/pride" component={Pride}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

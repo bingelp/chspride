@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { ExternalBtn } from '../../../components/LinkUtil'
 
 class Lol extends Component {
   render() {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-20T19:00">September 20<span className="day"> Thursday</span> 7:00 PM</time>
+          <time className="timeline-time" dateTime="2018-10-20T20:00">September 20<span className="day"> Thursday</span> 8:00 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
         <div className="card card-warning">
@@ -23,8 +24,9 @@ class Lol extends Component {
                 <p>Also featuring DJ Pat Nasty</p>
               </div>
             </div>
-            <Link to="/events/pride/lgbtlol" className="btn btn-raised btn-warning animated fadeInUp animation-delay-10">
-              <i className="fa fa-ticket"></i> Tickets</Link>
+            <Link to="/events/pride/lgbtlol" className="btn btn-raised color-warning btn-white animated fadeInUp animation-delay-10">
+              <i className="fa fa-info-circle"></i> More Info</Link>
+            <ExternalBtn to="https://www.ticketfly.com/purchase/event/1734208" icon="ticket" title="Tickets" color="warning"/>
             <div className="pull-right">
               <h3 ><span className="color-warning">$15</span> / <span className="color-warning">$10</span> with code: <span className="color-warning">affapride</span></h3>
             </div>

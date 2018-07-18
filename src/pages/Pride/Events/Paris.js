@@ -18,7 +18,9 @@ class Paris extends Component {
             <div className="row">
               <div className="col text-center">
                 <img id="redux" src={redux} alt="Redux logo" className="img-fluid mb-2"></img>
-                <p>Charleston Pride will host a screening of the culturally-rich documentary, <em>Paris is Burning</em>, and a talkback with ball commentator <strong>Junior Labeija</strong> and local activist <strong>Vanity Reid Deterville</strong>. Deterville and Labeija will discuss the film's influence on the stories and lives of queer and transgender people of color, and how the ball scene has evolved since the late '80s. </p>
+                <p><em>Paris is Burning</em> is an iconic, award-winning documentary about the ball community in New York City in the 1980s. It explores issues of gender, race and class identity facing the LGBTQ community that are as relevant today as they were then.</p>
+                <p>After the screening, please join us for a conversation with <strong>Junior Labeija</strong>, ball commentator and star of <em>Paris is Burning</em>, and <strong>Vanity Reid Deterville</strong>, Charleston PRIDE Director of Outreach, local activist and political science student. They will discuss the film’s influence on the lives of queer and transgender people of color, and how ball culture has evolved since the film’s release.</p>
+                <p>Doors open at 6:00pm, screening starts at 6:30pm.</p>
                 <ExternalLink to="https://goo.gl/maps/ExJArKBVap32" title="1056 King Street, Charleston, SC" />
               </div>
             </div>

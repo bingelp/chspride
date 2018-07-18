@@ -155,20 +155,20 @@ const navigation =
     }
   ],
   "right": [
-    {
-      "key": "toast-to-equality2",
-      "to": "http://toasttoequality .com/?utm_source=charleston_pride",
-      "title": "Toast to Equality",
-      "icon": "fa-glass",
-      "background": "warning"
-    },
     // {
-    //   "key": "pride-2018",
-    //   "to": "/pride",
-    //   "title": "Pride 2018",
-    //   "icon": "fa-flag",
+    //   "key": "toast-to-equality2",
+    //   "to": "http://toasttoequality .com/?utm_source=charleston_pride",
+    //   "title": "Toast to Equality",
+    //   "icon": "fa-glass",
     //   "background": "warning"
     // },
+    {
+      "key": "pride-2018",
+      "to": "/pride",
+      "title": "Pride 2018",
+      "icon": "fa-flag",
+      "background": "warning"
+    },
     {
       "key": "donate",
       "to": "/donate",

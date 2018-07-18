@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ExternalLink} from '../../../components/LinkUtil'
-import { Link } from 'react-router-dom'
+import { ExternalLink, ExternalBtn} from '../../../components/LinkUtil'
+// import { Link } from 'react-router-dom'
 
 class Tour extends Component {
   render() {
@@ -18,12 +18,14 @@ class Tour extends Component {
             <div className="row">
               <div className="col">
                 <p><em>The Real Rainbow Row</em> walking tour is a <strong>fabulous</strong> two-hour interactive exploration of Charleston’s rich, gay history and current LGBTQ community. Highlights include the story of Dawn Langley Hall, one of the first transsexuals in the US, the gay artists that helped create Charleston’s Art Renaissance, the significance of The Battery in LGBT society, The Spoleto Festival, and the historic Charleston landmark where Gertrude Stein and Alice Taklas spent Valentine’s Day. Join Charleston Pride and <ExternalLink to="https://bulldogtours.com/" title="Bulldog Tours"/> as we skip along the cobblestone streets and discover the colorful stories that form a unique part of Charleston’s history.</p>
-                <p>$5 of each ticket sale goes to the LGBTQ History archive at CofC</p>
+                <p>$5 of each ticket sale goes to the LGBTQ History archive at CofC.</p>
                 <ExternalLink to="https://goo.gl/maps/ahE6LR7x2M82" title="18 Anson St, Charleston, SC" />
               </div>
             </div>
-            <Link to="/events/pride/real-rainbow-row-tour" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
-              <i className="fa fa-ticket"></i> Tickets</Link>
+
+            <ExternalBtn to="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/walkingtour.html" title="Tickets" icon="tickets" color="danger" />
+            {/* <Link to="/events/pride/real-rainbow-row-tour" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
+              <i className="fa fa-ticket"></i> Tickets</Link> */}
             <div className="pull-right">
               <h3 ><span className="color-danger">$15</span></h3>
             </div>

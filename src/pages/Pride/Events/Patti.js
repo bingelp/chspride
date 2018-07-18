@@ -23,7 +23,7 @@ class Patti extends Component {
                 <ExternalLink to="https://goo.gl/maps/Jk8Z4Zsapu12" title="42 Ann St, Charleston" />
               </div>
             </div>
-            <ExternalBtn to="https://http://www.dudleysonann.com/" icon="globe" title="Dudley's on Ann" color="royal" />
+            <ExternalBtn to="https://www.dudleysonann.com/" icon="globe" title="Dudley's on Ann" color="royal" />
             <div className="pull-right">
               <h3 ><span className="color-royal">FREE</span>, 21+</h3>
             </div>
