@@ -7,13 +7,21 @@
 .ms-hero-img-serve {
     background-image: url(apply.jpg);
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
     height: 300px;
 }
 
 .ms-hero-img-roles {
     background-image: url(roles.jpg);
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
     height: 300px;
+}
+
+.board-member .card-body{
+    height: 250px;
+}
+.board-member .bio {
+    max-height: 200px;
+    overflow: scroll;
 }

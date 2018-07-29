@@ -8,12 +8,12 @@ class PrideOnHarbor extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-15T19:00"><span className="date">September 15<span className="day"> Saturday</span></span> 7:00 PM</time>
+          <time className="timeline-time" dateTime="2018-10-15T19:30"><span className="date">September 15<span className="day"> Saturday</span></span> 7:30 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
         <div className="card card-primary">
           <div className="card-header">
-            <h3 className="card-title">Pride on the Harbor @ 7:00-10:30pm | Aquarium Wharf</h3>
+            <h3 className="card-title">Pride on the Harbor @ 7:30-11:00pm | Aquarium Wharf</h3>
           </div>
           {/* <img src={cruise} alt="Pride on the Harbor Logo" className="mb-2"></img> */}
           <div className="card-body">

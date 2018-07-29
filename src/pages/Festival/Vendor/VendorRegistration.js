@@ -13,7 +13,7 @@ export default class VendorRegistration extends Component {
                                 <p className="lead lead-lg text-center mt-4 col">You can easily register online by filling out the form below.
                                 The standard fee for vendors is <strong>$150</strong>. If electricity is needed, <strong>$25.00</strong> will be
                                  added to the registration. Nonprofit organizations are entitled to a <strong>50% discount</strong>.
-                                    Proof of nonprofit status must be file with Charleston Pride Festival prior to September 20th.  
+                                    Proof of nonprofit status must be file with Charleston Pride Festival prior to September 20th.
                                  </p>
                                 <p className="lead lead-lg text-center col">Dimensions for vendor booths are <strong>10′ x 10′</strong>. Charleston Pride only provides the plot for a
                                     vendor space and does not supply tents, tables or chairs. Vendor packets will be sent to the email address on file by Thursday, September 20th.

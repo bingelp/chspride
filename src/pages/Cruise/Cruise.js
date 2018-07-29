@@ -15,7 +15,7 @@ export default class Cruise extends Component {
                                 Pride on the Harbor</h1>
                             <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
                                 Come sail away with Charleston Pride!</h2>
-                            <CountdownClock eventTime="2018-09-15T19:00:00" color="warning" />
+                            <CountdownClock eventTime="2018-09-15T19:30:00" color="warning" />
                         </div>
                     </div>
                 </div>
@@ -35,13 +35,14 @@ export default class Cruise extends Component {
                                     <em>This event is 21 and up. You must have your ID ready to present at the dock. We will have your name at the dock along with the number of tickets you purchased. Please arrive at the dock with your group. Everyone in your group must have IDs. All sales are final.</em>
                                 </div>
                             </div>
+                            <div className="row">
+                                <div className="col">
+                                <ETapestryForm form="cruise" title="Cruise" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <ETapestryForm form="cruise" title="Cruise" />
-                        </div>
-                    </div>
+
                 </div>
             </div>
         )

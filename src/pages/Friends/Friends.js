@@ -1,6 +1,10 @@
 import React from 'react';
 import ETap from '../../components/ETapestryForm'
 import './Friends.css'
+import shirt from './shirt.png'
+import hat from './hat.png'
+import visor from './visor.png'
+
 class Friends extends React.Component {
 
     RainbowItem(props) {
@@ -74,7 +78,6 @@ class Friends extends React.Component {
                 </div>
                 <div className="container card-hero bg-white">
                     <div className="mt-2">
-                        <div>
                             <div className="text-center">
                                 <h1 className="pt-4">Membership Options</h1>
                             </div>
@@ -98,9 +101,21 @@ class Friends extends React.Component {
                                 </this.DoubleRainbow>
                             </div>
                             <div className="row">
+                                    <h2 className="text-center col-12">Pick From One of the Following as Your Exclusive Gift</h2>
+
+                                        <div className="col-4">
+                                            <img src={hat} alt="" className="img-fluid"/>
+                                        </div>
+                                        <div className="col-4">
+                                            <img src={shirt} alt="" className="img-fluid"/>
+                                        </div>
+                                        <div className="col-4">
+                                            <img src={visor} alt="" className="img-fluid"/>
+                                        </div>
+                            </div>
+                            <div className="row">
                                 <this.FinePrint />
                             </div>
-                        </div>
                         <ETap form="friends" title="friends-of-pride" />
                     </div>
                 </div>

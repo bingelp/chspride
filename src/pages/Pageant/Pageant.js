@@ -18,6 +18,7 @@ export default class Pageant extends Component {
                                 Midtown Theater | Saturday, August 25th @ 9:00 pm | Doors open @ 8:00 pm</h2>
                             <CountdownClock eventTime="2018-08-25T21:00:00" color="warning" />
                             <a href="#register" className="btn btn-raised btn-royal">Register</a>
+                            <a className="btn btn-raised color-royal btn-white" download="Pageant_App_18.pdf" href={PageantApp}>Sign up to Compete</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,7 @@ export default class Pageant extends Component {
                             <p>Our current reigning Empress of Charleston Pride will also be stepping down from her 2017 reign. Make sure not to miss <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bridgette.pharaohs">Bridgette Pharaohs</a> as she hands over the crown to our next star! There will also be special performances from previous winners. </p>
                             <p> A cover charge of $10 will be going to support Charleston Pride.</p>
                             <p>Potential registrants can fill out the registration form below, and the official application is available for download below. Contestants must be registered by August 20th.</p>
-                            <a className="btn btn-info pull-right btn-raised" download="Pageant_App_18.pdf" href={PageantApp}><i className="fa fa-download"></i> Download</a>
+                            <a className="btn btn-info pull-right btn-raised" download="Pageant_App_18.pdf" href={PageantApp}><i className="fa fa-download"></i> Sign up to Compete</a>
                         </div>
                         <div className="col-12 col-lg-6">
                             <div className="card card-primary">
@@ -104,7 +105,7 @@ export default class Pageant extends Component {
                 <div className="container">
                     <div className="text-center card">
                         <div className="card-body">
-                            <h2 id="register">Pageant Registration</h2>
+                            <h2>Pageant Registration</h2>
                             <ETap title="Pagent Registration" form="pageantregistration" />
                         </div>
                     </div>

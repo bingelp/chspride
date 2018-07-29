@@ -140,6 +140,18 @@ const navigation =
           "icon": "fa-ship"
         },
         {
+          "key": "lgbtlol",
+          "to": "/events/pride/lgbtlol",
+          "title": "LGBTLOL",
+          "icon": "fa-microphone"
+        },
+        {
+          "key": "tour",
+          "to": "/events/pride/real-rainbow-row-tour",
+          "title": "Real Rainbow Row Tour",
+          "icon": "fa-map-marker"
+        },
+        {
           "key": "festival",
           "to": "/events/pride/festival",
           "title": "Festival Information",

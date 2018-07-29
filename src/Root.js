@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 import App from './App/App';
 import Home from './pages/Home/Home'
@@ -19,7 +19,6 @@ import Friends from './pages/Friends/Friends'
 import MailingList from "./pages/MailingList/MailingList";
 import PrideGuideAd from './pages/PrideGuide/Ad'
 import PreviousPrideGuide from './pages/PrideGuide/Previous'
-import Events from './pages/Events/Events'
 import Pageant from './pages/Pageant/Pageant'
 import Rainbows from './pages/Rainbows/Rainbows'
 import ScrollToTop from './components/ScrollToTop'
@@ -34,21 +33,29 @@ const Root = (props) => {
       <ScrollToTop>
         <App>
           <Switch>
+            <Redirect from="/advertising" to="/purchase-pride-guide-ad" />
+            <Redirect from="/sponsorships" to="/become-a-sponsor" />
+            <Redirect from="/prideguide" to="/purchase-pride-guide-ad" />
+            <Redirect from="/vendors" to="/vendor-registration" />
+            <Redirect from="/pageant" to="/events/pageant" />
+            <Redirect from="/cruise" to="/events/pride-on-the-harbor" />
+            <Redirect from="/tour" to="/events/pride/real-rainbow-row-tour" />
+            <Redirect from="/pride" to="/events/pride"/>
+            <Redirect from="/rainbows" to="/events/rainbows" />
+            <Redirect from="/lol" to="/events/pride/lgbtlol" />
+            <Redirect from="/prism" to="/events/pride/prism-party" />
             <Route exact path="/" component={Home} />
-            <Route path="/advertising" component={PrideGuideAd} />
             <Route path="/board-of-directors" component={Board} />
             <Route path="/bylaws" component={Bylaws} />
             <Route path="/board-roles" component={BoardRoles} />
             <Route path="/our-sponsors" component={Sponsors} />
-            <Route path="/sponsorships" component={Sponsorships} />
             <Route path="/become-a-sponsor" component={Sponsorships} />
             <Route path="/friends-of-pride" component={Friends} />
             <Route path="/join-our-mailing-list" component={MailingList} />
             <Route path="/volunteer" component={Volunteer} />
-            <Route path="/prideguide" component={PrideGuideAd} />
+            <Route path="/donate" component={Donate} />
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
             <Route path="/2017-pride-guide" component={PreviousPrideGuide} />
-            <Route path="/vendors" component={Vendor} />
             <Route path="/vendor-registration" component={Vendor} />
             <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />
@@ -58,13 +65,9 @@ const Root = (props) => {
             <Route path="/events/pride/lgbtlol" component={Comedy} />
             <Route path="/events/pride/prism-party" component={Prism} />
             <Route path="/events/pride/real-rainbow-row-tour" component={Tour} />
-            <Route path="/pageant" component={Pageant} />
+            <Route path="/events/pride" component={Pride}/>
             <Route path="/events/pageant" component={Pageant} />
             <Route path="/events/rainbows" component={Rainbows} />
-            <Route path="/rainbows" component={Rainbows} />
-            <Route path="/donate" component={Donate} />
-            <Route path="/pride" component={Pride}/>
-            <Route path="/events/pride" component={Pride}/>
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

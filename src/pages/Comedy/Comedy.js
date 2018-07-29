@@ -97,9 +97,7 @@ class Comedy extends Component {
                   </this.Comedian>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     );

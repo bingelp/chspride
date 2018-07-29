@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import MediaKit from './2018_CHSP_PrideGuideMediaKit.pdf'
 import { Link } from 'react-router-dom'
-import ETap from '../../components/ETapestryForm'
 import './Ad.css'
-import { ExternalBtn } from '../../components/LinkUtil';
 export default class Ad extends Component {
 
   Header(props) {

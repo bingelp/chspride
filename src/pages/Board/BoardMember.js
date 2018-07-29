@@ -1,18 +1,15 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 export default class BoardMember extends React.Component {
 
     render(props) {
         return (
-            <div className="col-12 col-md-6 col-xl-4 ">
+            <div className="col-12 col-md-6 col-xl-4 board-member">
                 <div className="card">
                     <div className="withripple zoom-img">
                         <img src={this.props.photoSrc} alt={this.props.firstName + " " + this.props.lastName} className="img-fluid"></img>
-                    
                     </div>
                     {this.props.exec ? <span className="ml-auto badge badge-warning">Executive Committee</span> : <span className="ml-auto badge badge-default">Board Member</span>}
-
                     <ul className="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-12" role="tablist">
                         <li className="nav-item"><a className="nav-link withoutripple active" href={"#profile-" + this.props.id} aria-controls="profile" role="tab" data-toggle="tab"><i className="zmdi zmdi-home"></i> <span className="d-none d-sm-inline">Profile</span></a></li>
                         <li className="nav-item"><a className="nav-link withoutripple" href={"#bio-" + this.props.id} aria-controls="bio" role="tab" data-toggle="tab"><i className="zmdi zmdi-account"></i> <span className="d-none d-sm-inline">Bio</span></a></li>
@@ -27,7 +24,9 @@ export default class BoardMember extends React.Component {
                                 <em><i className="zmdi zmdi-account mr-1 color-royal"></i> {this.props.pronouns}</em>
                             </div>
                             <div role="tabpanel" className="tab-pane fade" id={"bio-" + this.props.id}>
-                                <ReactMarkdown source={this.props.bio} />
+                                <div className="bio">
+                                    {this.props.children}
+                                </div>
                             </div>
                         </div>
                     </div>

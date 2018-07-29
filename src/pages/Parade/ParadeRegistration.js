@@ -18,7 +18,11 @@ export default class ParadeRegistration extends Component {
                             <p className="ml-3 text-center"><em>All sales are final.</em></p>
                         </div>
                     </div>
-                    <ETap title="Parade Registration" form="ParadeRegistration" />
+                    <div className="row">
+                        <div className="col">
+                        <ETap title="Parade Registration" form="ParadeRegistration" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ExternalLink, ExternalBtn} from '../../../components/LinkUtil'
-// import { Link } from 'react-router-dom'
 
 class Tour extends Component {
   render() {
