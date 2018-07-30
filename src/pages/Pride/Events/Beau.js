@@ -20,7 +20,7 @@ class Beau extends Component {
                 <img src={beau} alt="Beau Magazine Logo" className="img-fluid mb-2"></img> </div>
               <div className="col-md-8">
                 <p>Join Charleston's OUT Crowd as we all toast to 2018 Charleston Pride at South Seas Tiki Lounge! This event is sponsored by BEAU Magazine so you know it'll be FUN!</p>
-                <ExternalLink to="https://goo.gl/maps/xmGTZqBK9pm" title="23 Ann Street (at Camde Depot Plaza), Charleston" />
+                <ExternalLink to="https://goo.gl/maps/xmGTZqBK9pm" title="23 Ann St. (at Camde Depot Plaza), Charleston" />
               </div>
             </div>
             <ExternalBtn to="https://beau-magazine.com/" icon="globe" title="BEAU Magazine" color="primary" />
