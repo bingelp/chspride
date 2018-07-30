@@ -17,8 +17,8 @@ class Poetry extends Component {
             <div className="row">
               <div className="col">
                 <h4>Presented by Condon Family Law and Charleston Pride</h4>
-                <p>Enjoy an evening of spoken word and poetry. This artisitic form cointinues to be a creative outlet for communities across the world and right here in Charleston. Come hear from local talent and share your own work during open mic time. Cocktail hour at 5, show starts at 6</p>
-                <ExternalLink to="https://goo.gl/maps/ExJArKBVap32" title="1056 King Street, Charleston, SC" />
+                <p>Enjoy an evening of spoken word and poetry. This artisitic form continues to be a creative outlet for communities across the world and right here in Charleston. Come hear from local talent and share your own work during open mic time. Cocktail hour at 5 pm, show starts at 6 pm.</p>
+                <ExternalLink to="https://goo.gl/maps/ExJArKBVap32" title="1056 King Street, Charleston" />
               </div>
             </div>
             <ExternalBtn to="http://reduxstudios.org/" icon="globe" color="info" title="Redux" />

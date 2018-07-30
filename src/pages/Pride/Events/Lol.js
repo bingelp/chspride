@@ -18,7 +18,7 @@ class Lol extends Component {
             <div className="row">
               <div className="col">
                 <h4>Presented by <abbr title="Alliance For Full Acceptance">AFFA</abbr> and Charleston Pride</h4>
-                <p>Come celebrate humanity and show your PRIDE at a night of comedy featuring some of your favorite stand-up comics, who also just happen to be members of the LGBTQ community.</p>
+                <p>Come celebrate humanity and show your Pride at a night of comedy featuring some of your favorite stand-up comics, who also just happen to be members of the LGBTQ community.</p>
                 <p>Comedians: Jenn Snyder, Shawna Jarrett, Kevin Delgado, Robyn Scott, Sam Reisman</p>
                 <p>Host: Curt Mariah</p>
                 <p>Also featuring DJ Pat Nasty</p>

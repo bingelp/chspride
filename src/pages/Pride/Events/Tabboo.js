@@ -19,9 +19,9 @@ class Tabboo extends Component {
               <div className="col-md-4">
                 <img src={tabbuli} alt="" className="img-fluid mb-2"></img> </div>
               <div className="col-md-8">
-                <p>Tuesdays are always tabboo at Tabbuli. Don't ever be afraid to be you, Join us tonight and take in the tabbuli experience.</p>
+                <p>Tuesdays are always tabboo at Tabbuli. Don't ever be afraid to be you. Join us tonight and take in the Tabbuli experience.</p>
                 <p>peace love tabbuli</p>
-                <ExternalLink to="https://goo.gl/maps/6vM5HDnfMfw" title="6 N Market St, Charleston, SC" />
+                <ExternalLink to="https://goo.gl/maps/6vM5HDnfMfw" title="6 N Market St, Charleston" />
               </div>
             </div>
             <ExternalBtn to="http://tabbuli.com/" icon="globe" title="Tabbuli" color="success" />

@@ -12,7 +12,7 @@ class Takeover extends Component {
       </div>
       <div className="card card-info">
         <div className="card-header">
-          <h3 className="card-title">Takeover Charleston @ 6:00 PM - 10:00PM | Taco Boy </h3>
+          <h3 className="card-title">Takeover Charleston @ 6:00 PM - 10:00 PM | Taco Boy </h3>
         </div>
         <div className="card-body">
           <div className="row">

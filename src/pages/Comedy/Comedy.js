@@ -60,35 +60,35 @@ class Comedy extends Component {
         <this.Header />
         <div className="container">
           <div className="card">
-            <h3 className="text-center">Come celebrate humanity and show your PRIDE at a night of comedy featuring some of your favorite stand-up comics, who also just happen to be members of the LGBTQ community. </h3>
+            <h3 className="text-center">Come celebrate humanity and show your Pride at a night of comedy featuring some of your favorite stand-up comics, who also just happen to be members of the LGBTQ community. </h3>
             <div className="row">
               <div className="col-12">
                 <this.Comedian name="Jenn Synder" title="Headliner" src={jenn} color="primary"  >
-                  At 5’2, comedian Jenn Snyder packs a whole lot of funny in her one-two punch style of comedy. Topics ranging from her days growing up as a lesbian in a “good ol’ boy” town, to dealing with the public on a daily basis, this comedian will pull you in with her stories and leave you wanting more with her quick wit and hilarious observations. Born and raised in Columbia SC, her ultimate goal is to unite all people through laughter.
+                  At 5’2, comedian Jenn Snyder packs a whole lot of funny in her one-two punch style of comedy. Topics ranging from her days growing up as a lesbian in a “good ol’ boy” town to dealing with the public on a daily basis, Jenn will pull you in with her stories and leave you wanting more with her quick wit and hilarious observations. Born and raised in Columbia South Carolina, her ultimate goal is to unite all people through laughter.
               </this.Comedian>
               </div>
             </div>
             <div className="row">
               <div className="col-12 col-md-6">
                 <this.Comedian name="Curt Mariah" src={curt} color="royal" title="Hosted By">
-                  Food! Sex! Now that she's got your attention, DC-based/Charleston-raised Curt Mariah is going to tell you some truths. Chef by day, comedian by night, Curt's set is always served cold.
+                  Food! Sex! Now that she's got your attention, DC-based, Charleston-raised Curt Mariah is going to tell you some truths. Chef by day, comedian by night, Curt's set is always served cold.
                   </this.Comedian>
               </div>
               <div className="col-12 col-md-6">
                 <this.Comedian name="Shawna Jarrett" title="Featuring" src={shawna} color="success">
-                  Shawna Jarrett is the lead comic on the Charleston Comedy Bus, writes/produces sketch comedy, and hosts the monthly Get Up! Comedy Night at Tin Roof. She's nominated for 2018 Best Local Comic in the Charleston City Paper Best-Of awards and is featured in shows across the southeast. Her material includes topics like gender and sexuality, businesses housed in former Pizza Huts, Venn diagrams, and her home turf of West Ashley. If you grew up in Charleston, there is a 60% chance you’ve bought drugs in her neighborhood at some point.
+                  Shawna Jarrett is the lead comic on the Charleston Comedy Bus, writes and produces sketch comedy, and hosts the monthly Get Up! Comedy Night at Tin Roof. She's nominated for 2018 Best Local Comic in the Charleston City Paper's Best of Charleston awards and is featured in shows across the Southeast. Her material includes topics like gender and sexuality, businesses housed in former Pizza Huts, Venn diagrams, and her home turf of West Ashley. If you grew up in Charleston, there is a 60% chance you’ve bought drugs in her neighborhood at some point.
               </this.Comedian>
               </div>
             </div>
             <div className="row">
               <div className="col-12 col-md-4">
                 <this.Comedian name="Kevin Delgado" src={kevin} color="danger">
-                  Kevin is a stand-up and improv comic whose performances highlight his intelligent, and somewhat sarcastic sense of humor. Kevin trained and performed improv comedy for over 15 years before bringing those sensibilities to stand-up, and his background ensures that no two sets are ever quite the same. Originally from Charlotte NC, Kevin is now based out of Atlanta GA, and offers a humorous take on what it's like being an openly gay and openly Latino man in the southeast.
+                  Kevin is a stand-up and improv comic whose performances highlight his intelligent and somewhat sarcastic sense of humor. Kevin trained and performed improv comedy for over 15 years before bringing those sensibilities to stand-up, and his background ensures that no two sets are ever quite the same. Originally from Charlotte, NC, Kevin is now based out of Atlanta, GA, and offers a humorous take on what it's like being an openly gay and openly Latino man in the Southeast.
                 </this.Comedian>
               </div>
               <div className="col-12 col-md-4">
                 <this.Comedian name="Robyn Scott" src={robyn} color="info">
-                  Robyn Scott is a southern belle that lives a crazy life and has a way of bringing you into her crazy world. Robyn has graced stages across the southeast including the World Famous Laughing Skull, Relapse Theater, and the Comedy Zone.
+                  Robyn Scott is a southern belle, who lives a crazy life and has a way of bringing you into her crazy world. Robyn has graced stages across the Southeast including the World Famous Laughing Skull, Relapse Theater, and the Comedy Zone.
                   </this.Comedian>
               </div>
               <div className="col-12 col-md-4">

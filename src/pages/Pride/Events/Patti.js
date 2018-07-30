@@ -19,7 +19,7 @@ class Patti extends Component {
               <div className="col-md-4">
                 <img src={dudleys} alt="Dudley's Logo" className="img-fluid mb-2"></img> </div>
               <div className="col-md-8">
-                <p>Thursdays mean one thing: The Patti O'Furniture Show LIVE at 11pm. Her mix of drag, comedy, quirky costumes, and quick wit have been entertaining audiences since 1998. Welcome to the world of comedy coture that is the "Yard Sale with Legs!" </p>
+                <p>Thursdays mean one thing: The Patti O'Furniture Show LIVE at 11 pm. Her mix of drag, comedy, quirky costumes, and quick wit have been entertaining audiences since 1998. Welcome to the world of comedy coture that is the "Yard Sale with Legs!" </p>
                 <ExternalLink to="https://goo.gl/maps/Jk8Z4Zsapu12" title="42 Ann St, Charleston" />
               </div>
             </div>

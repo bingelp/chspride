@@ -19,7 +19,7 @@ class Wig extends Component {
               <div className="col-md-4">
                 <img src={eljefe} alt="El Jefe Logo" className="img-fluid mb-2"></img> </div>
               <div className="col-md-8">
-                <p>Come wig out with us on Wednesday night! Every Wednesday night is a different show, a different cast, and it's always a great time! Wig Out Wednesdays at the Drag Factory - Music by DJ Trevor D. Party starts at 9:00pm. Show starts at 10:00pm! </p>
+                <p>Come wig out with us on Wednesday night! Every Wednesday night is a different show, a different cast, and it's always a great time! Wig Out Wednesdays at the Drag Factory - Music by DJ Trevor D. Party starts at 9:00 pm. Show starts at 10:00 pm! </p>
                 <ExternalLink to="https://goo.gl/maps/Jk8Z4Zsapu12" title="468 King St, Charleston" />
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import { ExternalLink } from '../../../components/LinkUtil'
 
 class Prism extends Component {
   render() {
@@ -11,12 +12,14 @@ class Prism extends Component {
         </div>
         <div className="card card-warning">
           <div className="card-header">
-            <h3 className="card-title">Charleston Pride Prism Party @ 9:00 PM - 1:30 AM | Music Farm, Charleston </h3>
+            <h3 className="card-title">Charleston Pride Prism Party @ 9:00 PM - 1:30 AM | Music Farm</h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <p>We painted the town every color of the rainbow this year and it's time to show Charleston how beautiful life can be when those colors come together! You won't want to miss the Charleston Pride Prism Party as we close out a fantastic week of celebrating our Pride" Location Music Farm (32 Ann St. Charleston, SC) Tickets and details coming soon.</p>
+                <p>We painted the town every color of the rainbow this year. Now, it's time to show Charleston how beautiful life can be when those colors come together! You won't want to miss the Charleston Pride Prism Party as we close out a fantastic week of celebrating Pride.</p>
+                <p>Tickets and details coming soon.</p>
+                <ExternalLink to="https://goo.gl/maps/DJ716VWeiSw" title="32 Ann St. Charleston" />
               </div>
             </div>
             <div className="row">

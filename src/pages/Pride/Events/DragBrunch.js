@@ -19,8 +19,8 @@ class DragBrunch extends Component {
               <div className="col-md-4">
                 <img src={tabbuli} alt="" className="img-fluid mb-2"></img> </div>
               <div className="col-md-8">
-                <p>Come kick back with us and sip mimosas, gulp bloody marys, and watch a fabulous drag show hosted by Symone N. O’Bishop.  Enjoy Tabbuli’s fabulous brunch buffet, listen to beat from DJ Beck Danger and take in all the sights and sounds of the Haus of Tabbuli. </p>
-                <ExternalLink to="https://goo.gl/maps/6vM5HDnfMfw" title="6 N Market St, Charleston, SC" />
+                <p>Come kick back with us and sip mimosas, gulp bloody marys, and watch a fabulous drag show hosted by Ava Clear.  Enjoy Tabbuli’s fabulous brunch buffet, listen to beats from DJ Beck Danger and take in all the sights and sounds of the Haus of Tabbuli.</p>
+                <ExternalLink to="https://goo.gl/maps/6vM5HDnfMfw" title="6 N Market St, Charleston" />
               </div>
             </div>
             <ExternalBtn to="http://tabbuli.com/" icon="globe" title="Tabbuli" color="success" />

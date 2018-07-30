@@ -11,12 +11,13 @@ class Festival extends Component {
         </div>
         <div className="card card-success">
           <div className="card-header">
-            <h3 className="card-title">Charleston Pride Festival @ 11:00 AM - 3:00 PM | Brittlebank Park, Charleston </h3>
+            <h3 className="card-title">Charleston Pride Festival @ 11:00 AM - 3:00 PM | Brittlebank Park</h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <p>Headlining: Betty Who and Le1f. Head to Brittlebank Park, beside the beautiful Ashley River, to walk among vendors, food trucks, and beer and alcohol sales, all while taking in entertainment and speakers from the stage. Nothing says Pride like a day in the park. Show your Pride and plan to celebrate! Also featuring entertainment by DJ Beck Danger and the Empress and Emperor of Charleston Pride!</p>
+                <h4>Headlining: Betty Who and Le1f</h4>
+                <p>Head to Brittlebank Park, beside the beautiful Ashley River, to walk among vendors, food trucks, and beer and alcohol sales, all while taking in entertainment and speakers from the stage. Nothing says Pride like a day in the park. Show your Pride and plan to celebrate! Also featuring entertainment by DJ Beck Danger and the Empress and Emperor of Charleston Pride!</p>
               </div>
             </div>
             <Link to="/events/pride/festival" className="btn btn-raised btn-success animated fadeInUp animation-delay-10">

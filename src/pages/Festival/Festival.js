@@ -52,7 +52,7 @@ export default class Festival extends Component {
               <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
                 Pride Festival</h1>
               <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">Brittlebank Park</h2>
-              <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">0 Lockwood Blvd  Charleston, SC 29403</h2>
+              <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">0 Lockwood Blvd, Charleston</h2>
               <h3 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
                 Saturday, September 22nd 2018 @ 10:00am-3:00pm</h3>
               <CountdownClock eventTime="2018-09-22T10:00:00" color="warning" />
@@ -75,7 +75,7 @@ export default class Festival extends Component {
               <p>Note that for the safety of all attendees, bags will be subject to check at the entry gate.</p>
               <p>For more information or any questions, please reach out to us at <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a>.</p>
 
-              
+
             </div>
             <div className="col-12 col-md-6">
               <img src={map} alt="Vendor map" className="img-fluid my-3"></img>
