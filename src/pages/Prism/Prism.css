@@ -1,0 +1,10 @@
+.ms-hero-img-prism {
+  background-image: url(prism.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+}
+
+#prism p {
+  font-size: 1.25em;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { ExternalLink } from '../../../components/LinkUtil'
+import { ExternalLink, ExternalBtn } from '../../../components/LinkUtil'
 
 class Prism extends Component {
   render() {
@@ -12,21 +12,22 @@ class Prism extends Component {
         </div>
         <div className="card card-warning">
           <div className="card-header">
-            <h3 className="card-title">Charleston Pride Prism Party @ 9:00 PM - 1:30 AM | Music Farm</h3>
+            <h3 className="card-title">Prism Party @ 9:00 PM - 1:30 AM | Music Farm</h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
+                <h4>The Official After Party of Charleston Pride</h4>
                 <p>We painted the town every color of the rainbow this year. Now, it's time to show Charleston how beautiful life can be when those colors come together! You won't want to miss the Charleston Pride Prism Party as we close out a fantastic week of celebrating Pride.</p>
-                <p>Tickets and details coming soon.</p>
                 <ExternalLink to="https://goo.gl/maps/DJ716VWeiSw" title="32 Ann St. Charleston" />
               </div>
             </div>
             <div className="row">
               <div className="col">
-              <Link to="/events/pride/prism-party" className="btn btn-raised animated fadeInUp animation-delay-10 disabled">
-              <i className="fa fa-ticket"></i> Tickets</Link>
-              <em>Coming Soon</em>
+              <Link to="/events/pride/prism-party" className="btn btn-raised color-warning btn-white animated fadeInUp animation-delay-7">
+              <i className="fa fa-info-circle"></i> More Info</Link>
+
+            <ExternalBtn to="https://www.etix.com/ticket/p/4283681/prism-party-charleston-the-music-farm-charleston" icon="ticket" title="Tickets" color="warning"/>
               <h3 className="pull-right" ><span className="color-warning">$20</span></h3>
               </div>
             </div>

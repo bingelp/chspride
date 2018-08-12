@@ -115,12 +115,6 @@ const navigation =
       "key": "events",
       "pages": [
         {
-          "key": "toast-to-equality",
-          "to": "http://toasttoequality.com/?utm_source:charleston_pride",
-          "title": "Toast to Equality",
-          "icon": "fa-glass"
-        },
-        {
           "key": "rainbows",
           "to": "/events/rainbows",
           "title": "Rainbows Pride Night",
@@ -152,28 +146,27 @@ const navigation =
           "icon": "fa-map-marker"
         },
         {
+          "key": "parade",
+          "to": "/events/pride/parade",
+          "title": "Pride Parade",
+          "icon": "fa-flag"
+        },
+        {
           "key": "festival",
           "to": "/events/pride/festival",
-          "title": "Festival Information",
+          "title": "Pride Festival",
           "icon": "fa-map"
         },
         {
-          "key": "parade",
-          "to": "/events/pride/parade",
-          "title": "Parade Information",
-          "icon": "fa-flag"
+          "key": "prism",
+          "to": "/events/pride/prism-party",
+          "title": "Prism Party",
+          "icon": "fa-music"
         }
       ]
     }
   ],
   "right": [
-    // {
-    //   "key": "toast-to-equality2",
-    //   "to": "http://toasttoequality .com/?utm_source=charleston_pride",
-    //   "title": "Toast to Equality",
-    //   "icon": "fa-glass",
-    //   "background": "warning"
-    // },
     {
       "key": "pride-2018",
       "to": "/pride",

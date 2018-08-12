@@ -92,7 +92,7 @@ class Comedy extends Component {
                   </this.Comedian>
               </div>
               <div className="col-12 col-md-4">
-                <this.Comedian name="Sam Resiman" src={sam} color="caution">
+                <this.Comedian name="Sam Reisman" src={sam} color="caution">
                   Sam Reisman is a Charleston-bred comedian currently in the process of setting up roots in Boston. Relatively new to stand-up comedy, he has opened for the likes of David Lee Nelson and Jeremy McLellan, and possesses a comedic energy that was once described as “frenetic” by someone who clearly doesn’t know what that word means. Frequent talking points include gay slang, dating, and mental health. When not making his rounds in the stand-up circuit, he also dabbles in improv and writing.
                   </this.Comedian>
               </div>
