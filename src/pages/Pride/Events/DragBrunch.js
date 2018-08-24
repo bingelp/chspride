@@ -10,7 +10,7 @@ class DragBrunch extends Component {
           <time className="timeline-time" dateTime="2018-10-16T11:00">September 16<span className="day"> Sunday</span> 11:00 AM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
-        <div className="card card-success">
+        <div id="drag-brunch" className="card card-success">
           <div className="card-header">
             <h3 className="card-title">Drag Brunch @ 11:00 AM - 2:00 PM | Haus of Tabbuli - Tabbuli Grill </h3>
           </div>

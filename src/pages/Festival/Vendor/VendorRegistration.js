@@ -10,6 +10,7 @@ export default class VendorRegistration extends Component {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <h2 className="color-white text-center mb-4">How to register?</h2>
+                                <h3 className="color-white text-center mb-4">At this time we are no longer accepting applications for food vendors or food trucks</h3>
                                 <p className="lead lead-lg text-center mt-4 col">You can easily register online by filling out the form below.
                                 The standard fee for vendors is <strong>$150</strong>. If electricity is needed, <strong>$25.00</strong> will be
                                  added to the registration. Nonprofit organizations are entitled to a <strong>50% discount</strong>.

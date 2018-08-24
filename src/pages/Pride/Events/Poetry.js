@@ -9,7 +9,7 @@ class Poetry extends Component {
           <time className="timeline-time" dateTime="2018-10-18T17:00">September 18<span className="day"> Tuesday</span> 5:00 PM</time>
           <i className="ms-timeline-point bg-info"></i>
         </div>
-        <div className="card card-info">
+        <div id="poetry" className="card card-info">
           <div className="card-header">
             <h3 className="card-title">OUT Spoken @ 5:00 PM | REDUX, Charleston  </h3>
           </div>

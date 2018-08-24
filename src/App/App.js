@@ -115,12 +115,6 @@ const navigation =
       "key": "events",
       "pages": [
         {
-          "key": "rainbows",
-          "to": "/events/rainbows",
-          "title": "Rainbows Pride Night",
-          "icon": "fa-bullhorn"
-        },
-        {
           "key": "pageant",
           "to": "/events/pageant",
           "title": "Empress and Emperor Pageant",

@@ -18,7 +18,8 @@ import Parade from './Events/Parade'
 import Festival from './Events/Festival'
 import Prism from './Events/Prism'
 import Hotel from './Accomodations/Hotel'
-
+import Toast from './Accomodations/ToastToEquality'
+import {ButtonLink} from '../../components/LinkUtil'
 
 
 class Pride extends Component {
@@ -30,6 +31,7 @@ class Pride extends Component {
           <div className="text-center">
             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Charleston Pride 2018</h1>
             <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">September 15-22, 2018</h2>
+            <ButtonLink to="/pride-guide" icon="book" color="warning">Pride Guide</ButtonLink>
           </div>
         </div>
       </div>
@@ -68,6 +70,7 @@ class Pride extends Component {
       <div className="col-lg-4">
         <h2>Hotel and Accomodations</h2>
         <Hotel/>
+        <Toast/>
       </div>
     )
   }

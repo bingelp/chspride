@@ -18,6 +18,7 @@ import Cruise from './pages/Cruise/Cruise'
 import Friends from './pages/Friends/Friends'
 import MailingList from "./pages/MailingList/MailingList";
 import PrideGuideAd from './pages/PrideGuide/Ad'
+import PrideGuide from './pages/PrideGuide/PrideGuide'
 import PreviousPrideGuide from './pages/PrideGuide/Previous'
 import Pageant from './pages/Pageant/Pageant'
 import Rainbows from './pages/Rainbows/Rainbows'
@@ -35,7 +36,7 @@ const Root = (props) => {
           <Switch>
             <Redirect from="/advertising" to="/purchase-pride-guide-ad" />
             <Redirect from="/sponsorships" to="/become-a-sponsor" />
-            <Redirect from="/prideguide" to="/purchase-pride-guide-ad" />
+            <Redirect from="/prideguide" to="/pride-guide" />
             <Redirect from="/vendors" to="/vendor-registration" />
             <Redirect from="/pageant" to="/events/pageant" />
             <Redirect from="/cruise" to="/events/pride-on-the-harbor" />
@@ -55,6 +56,7 @@ const Root = (props) => {
             <Route path="/volunteer" component={Volunteer} />
             <Route path="/donate" component={Donate} />
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
+            <Route path="/pride-guide" component={PrideGuide} />
             <Route path="/2017-pride-guide" component={PreviousPrideGuide} />
             <Route path="/vendor-registration" component={Vendor} />
             <Route path="/participate-in-parade" component={Parade} />

@@ -24,12 +24,13 @@ export default class CountdownClock extends Component {
 
     tick() {
         let currentTimeInMilliseconds = new Date().getTime();
-        let targetTimeInMilliseconds = new Date(this.props.eventTime).getTime();
+        let targetTimeInMilliseconds = Date.parse(this.props.eventTime);
         let timeRemaingInSeconds = (targetTimeInMilliseconds - currentTimeInMilliseconds)/1000;
         if(timeRemaingInSeconds <= 0){
             this.setState(prevState => ({
                 showTime: false
             }));
+            clearTimeout(this.timer);
             return;
         }
         let seconds = Math.floor(timeRemaingInSeconds % 60);
@@ -53,7 +54,7 @@ export default class CountdownClock extends Component {
 
   render() {
       if(!this.state.showTime){
-          return (<div></div>)
+          return (<div>{this.props.children}</div>)
       }
     return (
 
