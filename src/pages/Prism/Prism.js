@@ -68,6 +68,8 @@ class Prism extends Component {
               <this.Queen name="Jaidyn Diore Fierce" src={jaidynn_diore_fierce} />
               <this.Queen name="Trinity Taylor" src={trinity_the_trick_taylor} />
               <this.Queen name="Yuhua Hamasaki" src={yuhua_hamasaki} />
+              <h3 className="text-center col-12">Queens of Charleston</h3>
+              <h4 className="text-center col-12">Crystal Guysir &middot; Kymmya Starr &middot; Diamond Giavonni &middot; Melody Lucas &middot; Venus Alexander</h4>
             </div>
           </div>
         </div>

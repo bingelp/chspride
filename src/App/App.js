@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import Sidebar from '../components/Sidebar/Sidebar';
+import { ExternalLink} from '../components/LinkUtil'
 
 const navigation =
 {
@@ -115,13 +116,6 @@ const navigation =
       "key": "events",
       "pages": [
         {
-          "key": "pageant",
-          "to": "/events/pageant",
-          "title": "Empress and Emperor Pageant",
-          "icon": "fa-trophy",
-          "divide": true
-        },
-        {
           "key": "cruise",
           "to": "/events/pride-on-the-harbor",
           "title": "Pride On The Harbor",
@@ -178,12 +172,21 @@ const navigation =
   ]
 }
 
+
+
 const App = ({ children }) => {
+
+
   return (
       <div>
         <div className="ms-site-container">
           <Header/>
           <Nav left={navigation.left} right={navigation.right}/>
+          <div className="wrap bg-warning color-dark">
+      <div className="container text-center">
+          <h3>Due to inclement weather in the Charleston area, upcoming Pride Week events are subject to change. Please stay tuned on <ExternalLink color="white" to="https://facebook.com/charlestonpride/">Facebook</ExternalLink>, <ExternalLink color="white" to="https://instagram.com/charlestonpride/">Instagram</ExternalLink>, and <ExternalLink color="white" to="https://twitter.com/charlestonpride/">Twitter</ExternalLink> for the most up to date information on this week's festivities! </h3>
+      </div>
+  </div>
           {children}
           <Footer/>
         </div>

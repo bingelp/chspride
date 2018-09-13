@@ -22,7 +22,7 @@ class ExternalWhiteBtn extends Component {
 class ExternalLink extends Component {
   render() {
     return (
-      <a href={this.props.to} target="_blank" rel="noopener noreferrer">{this.props.title}</a>
+      <a href={this.props.to} className={"color-" + this.props.color  } target="_blank" rel="noopener noreferrer">{this.props.title || this.props.children}</a>
     );
   }
 }

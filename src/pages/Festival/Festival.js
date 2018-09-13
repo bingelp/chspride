@@ -17,15 +17,15 @@ export default class Festival extends Component {
     )
   }
 
-  Entertainer(props){
-    return(
-    <div className="card width-auto">
-    <figure className="ms-thumbnail ms-thumbnail-horizontal">
-      <img src={props.img} alt={props.name} className="img-fluid"></img>
-      <figcaption className="ms-thumbnail-caption text-center">
-        <div className="ms-thumbnail-caption-content">
-          <h4 className="ms-thumbnail-caption-title mb-2">{props.name}</h4>
-          {/* <a href="javascript:void(0)" className="btn-circle btn-circle-raised btn-circle-xs mr-1 btn-circle-white color-danger">
+  Entertainer(props) {
+    return (
+      <div className="card width-auto">
+        <figure className="ms-thumbnail ms-thumbnail-horizontal">
+          <img src={props.img} alt={props.name} className="img-fluid"></img>
+          <figcaption className="ms-thumbnail-caption text-center">
+            <div className="ms-thumbnail-caption-content">
+              <h4 className="ms-thumbnail-caption-title mb-2">{props.name}</h4>
+              {/* <a href="javascript:void(0)" className="btn-circle btn-circle-raised btn-circle-xs mr-1 btn-circle-white color-danger">
             <i className="zmdi zmdi-favorite"></i>
           </a>
           <a href="javascript:void(0)" className="btn-circle btn-circle-raised btn-circle-xs ml-1 mr-1 btn-circle-white color-warning">
@@ -34,14 +34,14 @@ export default class Festival extends Component {
           <a href="javascript:void(0)" className="btn-circle btn-circle-raised btn-circle-xs ml-1 btn-circle-white color-success">
             <i className="zmdi zmdi-share"></i>
           </a> */}
-          <SocialList facebook={props.facebook} twitter={props.twitter} instagram={props.instagram} web={props.web}/>
+              <SocialList facebook={props.facebook} twitter={props.twitter} instagram={props.instagram} web={props.web} />
+            </div>
+          </figcaption>
+        </figure>
+        <div className="text-center">
+          <h4 className="color-warning">{props.name}</h4>
         </div>
-      </figcaption>
-    </figure>
-    <div className="text-center">
-      <h4 className="color-warning">{props.name}</h4>
-    </div>
-  </div>)
+      </div>)
   }
   render() {
     return (
@@ -86,26 +86,39 @@ export default class Festival extends Component {
 
           </div>
           <div className="row text-center">
-              <div className="col-12">
-                <h2>Entertainment</h2>
-              </div>
-              <div className="col-12 col-lg-6">
-                <this.Entertainer name="Betty Who" img={bettyWho} web="http://bettywhomusic.com" facebook="bettywhomusic" instagram="bettywho" twitter="bettywho"/>
-              </div>
-              <div className="col-12 col-lg-6">
-              <this.Entertainer name="Le1f" img={le1f} web="http://riotboi.com" facebook="le1f" instagram="le1f" twitter="le1f"/>
-              </div>
+            <div className="col-12">
+              <h1>Entertainment</h1>
             </div>
-            <div className="row text-center">
-              <div className="col-12">
-                <h2>Emcee</h2>
+            <div className="col-12">
+              <h2 className="color-primary">Headliners</h2>
+            </div>
+            <div className="col-12 col-lg-6">
+              <this.Entertainer name="Betty Who" img={bettyWho} web="http://bettywhomusic.com" facebook="bettywhomusic" instagram="bettywho" twitter="bettywho" />
+            </div>
+            <div className="col-12 col-lg-6">
+              <this.Entertainer name="Le1f" img={le1f} web="http://riotboi.com" facebook="le1f" instagram="le1f" twitter="le1f" />
+            </div>
+          </div>
+          <div className="row text-center">
+            <div className="col-12 col-lg-6">
+              <this.Entertainer name="Emcee - Patti O'Furniture" img={patti} web="http://dudleysonann.com" facebook="allaboutpatti" instagram="allaboutpatti" twitter="allaboutpatti" />
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="card">
+                <div className="card-body">
+                <h2 className="color-primary">Special Performances By</h2>
+              <h3 className="color-warning">The Empress &amp; Emperor of Charleston Pride 2018</h3>
+              <h3>Carmella Monet Monroe &amp; Nytes Deville</h3>
+              <h4 className="color-primary">Guest Performances By the Queens of Charleston</h4>
+              <h4>Misty Daze &middot; Victoria Vixen &middot; Sharises Ses Pieces</h4>
+              <h4>Mercy Madison &middot; Jaclyn Hoff</h4>
+              <h4 className="color-warning">Beats by DJ Beck Danger</h4>
+                </div>
               </div>
-              <div className="col-12 col-lg-6 offset-lg-3">
-                <this.Entertainer name="Patti O'Furniture" img={patti} web="http://dudleysonann.com" facebook="allaboutpatti" instagram="allaboutpatti" twitter="allaboutpatti"/>
-              </div>
-              <h4>Special Guest Performances from the <Link to="/events/pageant">Empress and Emperor of Charleston Pride 2018</Link> and many others while DJ Beck Danger spins the beats!</h4>
 
             </div>
+            {/* <h4>Special Guest Performances from the <Link to="/events/pageant">Empress and Emperor of Charleston Pride 2018</Link> and many others while DJ Beck Danger spins the beats!</h4> */}
+          </div>
         </div>
       </div>
     )

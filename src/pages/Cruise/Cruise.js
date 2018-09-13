@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "./Cruise.css";
-import CountdownClock from "../../components/CountdownClock"
 import ETapestryForm from '../../components/ETapestryForm';
 import {Link } from 'react-router-dom'
 
@@ -15,7 +14,9 @@ export default class Cruise extends Component {
                                 Pride on the Harbor</h1>
                             <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
                                 Come sail away with Charleston Pride!</h2>
-                            <CountdownClock eventTime="2018-09-15T19:30:00" color="warning" />
+                            {/* <CountdownClock eventTime="2018-09-15T19:30:00" color="warning" /> */}
+                            <h2 className="lead lead-lg color-warning text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+                                Due to inclement weather this event has been rescheduled</h2>
                         </div>
                     </div>
                 </div>

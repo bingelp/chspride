@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ExternalLink, ExternalBtn} from '../../../components/LinkUtil'
+import {ExternalLink, ButtonLink } from '../../../components/LinkUtil'
 
 class Tour extends Component {
   render() {
@@ -22,9 +22,7 @@ class Tour extends Component {
               </div>
             </div>
 
-            <ExternalBtn to="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/walkingtour.html" title="Tickets" icon="tickets" color="danger" />
-            {/* <Link to="/events/pride/real-rainbow-row-tour" className="btn btn-raised btn-danger animated fadeInUp animation-delay-10">
-              <i className="fa fa-ticket"></i> Tickets</Link> */}
+            <ButtonLink to="/events/pride/real-rainbow-row-tour" icon="tickets" color="danger" >Tickets</ButtonLink>
             <div className="pull-right">
               <h3 ><span className="color-danger">$15</span></h3>
             </div>

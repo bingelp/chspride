@@ -14,7 +14,7 @@ export default class SponsorHeroItem extends React.Component {
     }
     render(props) {
         return <div className={"card col-4 col-md-2 card-" + helper(this.props.meta.level)}>
-            <div className="ms-thumbnail-container">
+            <div>
                 <figure className={"ms-thumbnail ms-thumbnail-bottom ms-thumbnail-" + helper(this.props.meta.level)}>
                     <img src={"https://d2f908d3j7stzr.cloudfront.net/chspride/sponsors/" + this.props.meta.image} alt={this.props.meta.name + " logo"} className="img-fluid"/>
                     <figcaption className="ms-thumbnail-caption text-center">
