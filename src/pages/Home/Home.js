@@ -3,7 +3,6 @@ import WOW from 'wowjs';
 import Typed from 'typed.js'
 import './Home.css';
 import Sponsors from '../Sponsors/SponsorHero';
-import UpcomingEvents from '../Events/UpcomingEvents';
 import CountdownClock from '../../components/CountdownClock'
 import GetInvoved from '../../components/GetInvolved/GetInvolved'
 import {ButtonLink} from '../../components/LinkUtil'
@@ -84,7 +83,6 @@ class Home extends React.Component {
                 <this.Hero/>
                 <Sponsors />
                 <this.Countdown />
-                <UpcomingEvents />
                 <this.Mission />
                 <GetInvoved />
             </div>

@@ -10,7 +10,7 @@ class Lol extends Component {
           <time className="timeline-time" dateTime="2018-10-20T20:00">September 20<span className="day"> Thursday</span> 8:00 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
-        <div className="card card-warning">
+        <div id="lgbtlol" className="card card-warning">
           <div className="card-header">
             <h3 className="card-title">LGBTLOL @ 8:00 PM | Charleston Music Hall </h3>
           </div>

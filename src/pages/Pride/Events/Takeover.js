@@ -10,7 +10,7 @@ class Takeover extends Component {
         <time className="timeline-time" dateTime="2018-10-21T18:00">September 21<span className="day"> Friday</span> 6:00 PM</time>
         <i className="ms-timeline-point bg-info"></i>
       </div>
-      <div className="card card-info">
+      <div id="takeover" className="card card-info">
         <div className="card-header">
           <h3 className="card-title">Takeover Charleston @ 6:00 PM - 10:00 PM | Taco Boy </h3>
         </div>

@@ -4,7 +4,6 @@ import Header from '../components/Header/Header'
 import Nav from '../components/Nav/Nav';
 import Footer from '../components/Footer/Footer';
 import Sidebar from '../components/Sidebar/Sidebar';
-import { ExternalLink} from '../components/LinkUtil'
 
 const navigation =
 {
@@ -109,50 +108,20 @@ const navigation =
           "icon": "fa-flag"
         }
       ]
-    },
-    {
-      "title": "Events",
-      "icon": "fa-calendar-o",
-      "key": "events",
-      "pages": [
-        {
-          "key": "cruise",
-          "to": "/events/pride-on-the-harbor",
-          "title": "Pride On The Harbor",
-          "icon": "fa-ship"
-        },
-        {
-          "key": "lgbtlol",
-          "to": "/events/pride/lgbtlol",
-          "title": "LGBTLOL",
-          "icon": "fa-microphone"
-        },
-        {
-          "key": "tour",
-          "to": "/events/pride/real-rainbow-row-tour",
-          "title": "Real Rainbow Row Tour",
-          "icon": "fa-map-marker"
-        },
-        {
-          "key": "parade",
-          "to": "/events/pride/parade",
-          "title": "Pride Parade",
-          "icon": "fa-flag"
-        },
-        {
-          "key": "festival",
-          "to": "/events/pride/festival",
-          "title": "Pride Festival",
-          "icon": "fa-map"
-        },
-        {
-          "key": "prism",
-          "to": "/events/pride/prism-party",
-          "title": "Prism Party",
-          "icon": "fa-music"
-        }
-      ]
     }
+    // {
+    //   "title": "Events",
+    //   "icon": "fa-calendar-o",
+    //   "key": "events",
+    //   "pages": [
+    //     {
+    //       "key": "cruise",
+    //       "to": "/events/pride-on-the-harbor",
+    //       "title": "Halloween On The Harbor",
+    //       "icon": "fa-ship"
+    //     }
+    //   ]
+    // }
   ],
   "right": [
     {
@@ -182,11 +151,6 @@ const App = ({ children }) => {
         <div className="ms-site-container">
           <Header/>
           <Nav left={navigation.left} right={navigation.right}/>
-          <div className="wrap bg-warning color-dark">
-      <div className="container text-center">
-          <h3>Due to inclement weather in the Charleston area, upcoming Pride Week events are subject to change. Please stay tuned on <ExternalLink color="white" to="https://facebook.com/charlestonpride/">Facebook</ExternalLink>, <ExternalLink color="white" to="https://instagram.com/charlestonpride/">Instagram</ExternalLink>, and <ExternalLink color="white" to="https://twitter.com/charlestonpride/">Twitter</ExternalLink> for the most up to date information on this week's festivities! </h3>
-      </div>
-  </div>
           {children}
           <Footer/>
         </div>

@@ -11,7 +11,7 @@ class PrideOnHarbor extends Component {
           <time className="timeline-time" dateTime="2018-10-15T20:00"><span className="date">September 15<span className="day"> Saturday</span></span> 8:00 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
-        <div className="card card-primary">
+        <div id="cruise" className="card card-primary">
           <div className="card-header">
             <h3 className="card-title">Pride on the Harbor @ 8:00 PM - 11:00 PM | Aquarium Wharf</h3>
           </div>
@@ -25,11 +25,12 @@ class PrideOnHarbor extends Component {
             </div>
             <div className="row">
             <div className="col">
-            <Link to="/events/pride-on-the-harbor" className="btn btn-raised btn-info animated fadeInUp animation-delay-10">
+            <Link to="/events/pride-on-the-harbor" className="btn btn-raised animated fadeInUp animation-delay-10 disabled">
               <i className="fa fa-ticket"></i> Tickets</Link>
             <h3 className="pull-right"><span className="color-primary">$45</span>, 21+</h3>
             </div>
             </div>
+            <h3 className="color-primary" >Postponed. Details coming soon.</h3>
             <p>This event is <strong>FREE</strong> for <Link to="/friends-of-pride">Friends of Pride</Link>.</p>
           </div>
         </div>

@@ -10,7 +10,7 @@ class Beau extends Component {
           <time className="timeline-time" dateTime="2018-10-19T17:00">September 20<span className="day"> Thursday</span> 5:00 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
-        <div className="card card-primary">
+        <div className="card card-primary" id="beau">
           <div className="card-header">
             <h3 className="card-title">Beau Magazine Happy Hour @ 5:00 PM - 7:00 PM | South Seas Tiki Lounge </h3>
           </div>

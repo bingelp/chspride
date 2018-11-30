@@ -9,7 +9,7 @@ class Parade extends Component {
           <time className="timeline-time" dateTime="2018-10-22T09:00">September 22<span className="day"> Saturday</span> 9:00 AM</time>
           <i className="ms-timeline-point bg-danger"></i>
         </div>
-        <div className="card card-danger">
+        <div id="parade" className="card card-danger">
           <div className="card-header">
             <h3 className="card-title">Charleston Pride Parade @ 9:00 AM | Downtown Charleston </h3>
           </div>

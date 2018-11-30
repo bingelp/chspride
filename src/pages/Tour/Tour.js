@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ExternalLink } from '../../components/LinkUtil'
-import ETap from '../../components/ETapestryForm'
 
 class Tour extends Component {
   render() {
@@ -23,7 +22,7 @@ class Tour extends Component {
             <p><em>The Real Rainbow Row</em> walking tour is a <strong>fabulous</strong> two-hour interactive exploration of Charleston’s rich, gay history and current LGBTQ community. Highlights include the story of Dawn Langley Hall, one of the first transsexuals in the US, the gay artists that helped create Charleston’s Art Renaissance, the significance of The Battery in LGBT society, The Spoleto Festival, and the historic Charleston landmark where Gertrude Stein and Alice Taklas spent Valentine’s Day. Join Charleston Pride and <ExternalLink to="https://bulldogtours.com/" title="Bulldog Tours" /> as we skip along the cobblestone streets and discover the colorful stories that form a unique part of Charleston’s history.</p>
               <h3 className="text-center">$5 of each ticket sale goes to the LGBTQ History archive at CofC.</h3>
 
-              <ETap form="walkingtour" title="walking-tour" />
+              {/* <ETap form="walkingtour" title="walking-tour" /> */}
             </div>
           </div>
         </div>

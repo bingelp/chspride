@@ -10,7 +10,7 @@ class Tabboo extends Component {
           <time className="timeline-time" dateTime="2018-10-19T22:00">10:00 PM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
-        <div className="card card-success">
+        <div id="tabboo" className="card card-success">
           <div className="card-header">
             <h3 className="card-title">Tabboo Tuesday @ 10:00 PM | Haus of Tabbuli - Tabbuli Grill </h3>
           </div>

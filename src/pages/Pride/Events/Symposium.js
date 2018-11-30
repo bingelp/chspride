@@ -9,7 +9,7 @@ class Symposium extends Component {
           <time className="timeline-time" dateTime="2018-10-19T14:00">September 19<span className="day"> Wednesday</span> 6:00 PM</time>
           <i className="ms-timeline-point"></i>
         </div>
-        <div className="card card-primary">
+        <div id="symposium" className="card card-primary">
           <div className="card-header">
             <h3 className="card-title">State of the Community Symposium @ 6:00 PM - 8:00 PM | Hotel Indigo, Mt. Pleasant </h3>
           </div>

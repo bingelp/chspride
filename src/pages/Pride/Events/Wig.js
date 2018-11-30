@@ -10,7 +10,7 @@ class Wig extends Component {
           <time className="timeline-time" dateTime="2018-10-19T21:00">9:00 PM</time>
           <i className="ms-timeline-point bg-danger"></i>
         </div>
-        <div className="card card-danger">
+        <div id="wig" className="card card-danger">
           <div className="card-header">
             <h3 className="card-title">Wig Out Wednesday @ 9:00 PM | The Drag Factory - El Jefe </h3>
           </div>
@@ -25,8 +25,7 @@ class Wig extends Component {
             </div>
             <ExternalBtn to="https://www.eljefechs.com/" icon="globe" title="El Jefe" color="danger" />
             <div className="pull-right">
-              <h3 ><span className="color-danger">FREE</span>, 21+</h3>
-
+            <h3 >18+ <span className="color-danger">Cover</span>, 21+ <span className="color-danger">FREE</span></h3>
             </div>
           </div>
         </div>

@@ -16,7 +16,9 @@ class UpcomingEvents extends React.Component {
         const itemsRef = firebase.database().ref('events').orderByKey();
         itemsRef.once('value', (snapshot) => {
             snapshot.forEach(childSnapShot => {
-                if(new Date(childSnapShot.val().date) < new Date()){
+                var eventDate = new Date(childSnapShot.val().date);
+                eventDate.setHours(23);
+                if(eventDate < new Date()){
                     return;
                 }
                 let event = {id: childSnapShot.key, meta: childSnapShot.val()};
@@ -43,7 +45,19 @@ class UpcomingEvents extends React.Component {
 
     render() {
         let events = this.state.events;
-        events.sort((s1,s2) => new Date(s1.meta.date) - new Date(s2.meta.date));
+        //events.sort((s1,s2) => new Date(s1.meta.date) - new Date(s2.meta.date));
+        events.sort(function(a, b){
+            var dateA = new Date(a.meta.date);
+            var dateB = new Date(b.meta.date);
+            var compare = dateA-dateB;
+            if(compare === 0){
+                if( a.meta.order <= b.meta.order){
+                    return -1;
+                }
+                return 1;
+            }
+            return compare;
+        })
         return (
             <div className="wrap bg-primary color-dark">
                 <div className="container text-center">

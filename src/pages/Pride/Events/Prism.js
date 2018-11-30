@@ -10,7 +10,7 @@ class Prism extends Component {
           <time className="timeline-time" dateTime="2018-10-22T21:00">9:00 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
-        <div className="card card-warning">
+        <div id="prism" className="card card-warning">
           <div className="card-header">
             <h3 className="card-title">Prism Party @ 9:00 PM - 1:30 AM | Music Farm</h3>
           </div>

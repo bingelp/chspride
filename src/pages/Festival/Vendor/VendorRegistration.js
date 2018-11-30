@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ETap from '../../../components/ETapestryForm'
 export default class VendorRegistration extends Component {
 
     render() {
@@ -10,7 +9,7 @@ export default class VendorRegistration extends Component {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <h2 className="color-white text-center mb-4">How to register?</h2>
-                                <h3 className="color-white text-center mb-4">At this time we are no longer accepting applications for food vendors or food trucks</h3>
+                                <h3 className="color-white text-center mb-4">Registration has closed for this year.</h3>
                                 <p className="lead lead-lg text-center mt-4 col">You can easily register online by filling out the form below.
                                 The standard fee for vendors is <strong>$150</strong>. If electricity is needed, <strong>$25.00</strong> will be
                                  added to the registration. Nonprofit organizations are entitled to a <strong>50% discount</strong>.
@@ -26,7 +25,7 @@ export default class VendorRegistration extends Component {
                                 <p className="ml-3 text-center"><em>All sales are final.</em></p>
                             </div>
                         </div>
-                        <ETap form="VendorRegistration" title="parade-registration" />
+                        {/* <ETap form="VendorRegistration" title="parade-registration" /> */}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ETap from '../../components/ETapestryForm'
 
 export default class ParadeRegistration extends Component {
 
@@ -20,7 +19,8 @@ export default class ParadeRegistration extends Component {
                     </div>
                     <div className="row">
                         <div className="col">
-                        <ETap title="Parade Registration" form="ParadeRegistration" />
+                        <h2 className="color-white text-center mb-4">Registration has ended for this year</h2>
+                        {/* <ETap title="Parade Registration" form="ParadeRegistration" /> */}
                         </div>
                     </div>
                 </div>

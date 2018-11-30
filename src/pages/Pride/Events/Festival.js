@@ -9,7 +9,7 @@ class Festival extends Component {
           <time className="timeline-time" dateTime="2018-10-22T11:00">11:00 AM</time>
           <i className="ms-timeline-point bg-success"></i>
         </div>
-        <div className="card card-success">
+        <div id="festival" className="card card-success">
           <div className="card-header">
             <h3 className="card-title">Charleston Pride Festival @ 11:00 AM - 3:00 PM | Brittlebank Park</h3>
           </div>

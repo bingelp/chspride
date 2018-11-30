@@ -9,7 +9,7 @@ class Interfaith extends Component {
           <time className="timeline-time" dateTime="2018-10-16T17:00">5:00 PM</time>
           <i className="ms-timeline-point bg-royal"></i>
         </div>
-        <div className="card card-royal">
+        <div id="interfaith" className="card card-royal">
           <div className="card-header">
             <h3 className="card-title">Pride Interfaith Service @ 5:00 PM | St. Stephen's Episcopal Church </h3>
           </div>
@@ -24,6 +24,7 @@ class Interfaith extends Component {
             <div className="pull-right">
               <h3 ><span className="color-royal">FREE</span></h3>
             </div>
+            <h3 className="color-royal" >Postponed. Details coming soon.</h3>
           </div>
         </div>
       </li>

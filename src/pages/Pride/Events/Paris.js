@@ -10,7 +10,7 @@ class Paris extends Component {
           <time className="timeline-time" dateTime="2018-10-17T16:30">September 17<span className="day" > Monday</span> 6:30 PM</time>
           <i className="ms-timeline-point bg-warning"></i>
         </div>
-        <div className="card card-warning">
+        <div id="paris" className="card card-warning">
           <div className="card-header">
             <h3 className="card-title"><em>Paris is Burning</em> Screening @ 6:30 PM | REDUX, Charleston </h3>
           </div>
