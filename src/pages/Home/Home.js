@@ -16,9 +16,9 @@ class Home extends React.Component {
         }).init();
 
         let options = {
-            strings: ["Love", "Peace", "Equality", "Acceptance", "Respect", "Family", "Community"],
+            strings: ["10 Years of Celebration", "10 Years of Progress", "10 Years of Pride"],
             typeSpeed: 80,
-            startDelay: 2000,
+            startDelay: 1000,
             loop: true,
             backDelay: 1000,
             autoInsertCss: false,
@@ -68,7 +68,7 @@ class Home extends React.Component {
                         <span className="ms-hero-logo"></span>
                         <h1 className="animated fadeInUp animation-delay-12 small-caps">Charleston <span className="initialism"><span>P</span><span>r</span><span>i</span><span>d</span><span>e</span></span></h1>
                         <h1><span className="typed-class typed-block color-primary"></span><span className="typed-cursor color-warning">|</span></h1>
-                        <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">September 15-22, 2018</h2>
+                        <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">2009-2019</h2>
                         <a className="btn btn-warning btn-xlg btn-raised animated flipInX animation-delay-16" href="#getInvolved"><i className="zmdi zmdi-flag"></i> Get Involved<div className="ripple-container"></div></a>
                     </div>
                 </div>

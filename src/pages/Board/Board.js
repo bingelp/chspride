@@ -26,7 +26,7 @@ class Board extends React.Component {
           </div>
         </div>
         <div className="container">
-          <h2 className="text-center">2018 Board of Directors</h2>
+          <h2 className="text-center">2019 Board of Directors</h2>
           <div className="row">
             <BoardMember id="1" exec="true" firstName="Tony" lastName="Williams" elected="February 2016" email="tony.williams" title="Chair / Chief Executive Officer" photoSrc={tony} pronouns="He/Him/His" >
               <p>Tony is a native Charlestonian, College of Charleston graduate, holds a Master’s Degree in Public Administration and an employee at Blackbaud, Inc. Tony began his work with Charleston Pride at its inception, when he served as the Logistics/Park Coordinator. He joined the board in an official capacity, serving as the Treasurer, Vice Chair and Chair. Tony was elected to a third term as Chair in 2017.</p>
