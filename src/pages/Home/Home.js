@@ -36,9 +36,9 @@ class Home extends React.Component {
     return (
       <div className="wrap ms-hero-bg-success ms-hero-img-stage">
         <div className="container text-center">
-          <h1 className="color-white mb-1">Charleston Pride Week 2018</h1>
-          <h2 className="color-white mb-1">September 15-22, 2018</h2>
-          <CountdownClock eventTime="2018-09-15T09:00:00-04:00" color="white">
+          <h1 className="color-white mb-1">Charleston Pride Week 2019</h1>
+          <h2 className="color-white mb-1">September 7-14, 2018</h2>
+          <CountdownClock eventTime="2019-09-7T09:00:00-04:00" color="white">
             <h2 className="color-white mb-1">Happy Pride!</h2>
           </CountdownClock>
           <ButtonLink to="/events/pride" icon="calendar-o" color="success">
