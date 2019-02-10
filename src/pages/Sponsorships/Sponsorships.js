@@ -143,7 +143,7 @@ function Stats(props) {
         <div className="col-lg-3 col-md-6 col-sm-6">
           <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
             <h2 className="counter">
-              <CountUp start={0} end={10000} duration={6} />+
+              <CountUp start={0} end={10600} duration={6} />+
             </h2>
             <i className="color-info fa fa-4x fa-facebook" />
             <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
@@ -152,7 +152,7 @@ function Stats(props) {
         <div className="col-lg-3 col-md-6 col-sm-6">
           <div className="card card-success card-body text-center wow zoomInUp animation-delay-5">
             <h2 className="counter">
-              <CountUp start={0} end={14} duration={6} />
+              <CountUp start={0} end={16} duration={6} />
             </h2>
             <i className="color-success fa fa-4x fa-calendar" />
             <p className="mt-2 no-mb lead small-caps">
@@ -163,10 +163,10 @@ function Stats(props) {
         <div className="col-lg-3 col-md-6 col-sm-6">
           <div className="card card-danger card-body text-center wow zoomInUp animation-delay-4">
             <h2 className="counter">
-              <CountUp start={0} end={18} duration={6} />
+              <CountUp start={0} end={45} duration={6} />
             </h2>
             <i className="color-danger fa fa-4x fa-comments-o" />
-            <p className="mt-2 no-mb lead small-caps">Sponsors</p>
+            <p className="mt-2 no-mb lead small-caps">2018 Sponsors</p>
           </div>
         </div>
       </div>

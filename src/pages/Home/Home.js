@@ -37,16 +37,10 @@ class Home extends React.Component {
       <div className="wrap ms-hero-bg-success ms-hero-img-stage">
         <div className="container text-center">
           <h1 className="color-white mb-1">Charleston Pride Week 2019</h1>
-          <h2 className="color-white mb-1">September 7-14, 2018</h2>
-          <CountdownClock eventTime="2019-09-7T09:00:00-04:00" color="white">
+          <h2 className="color-white mb-1">September 7-14, 2019</h2>
+          <CountdownClock eventTime="2019-09-07T09:00:00-04:00" color="white">
             <h2 className="color-white mb-1">Happy Pride!</h2>
           </CountdownClock>
-          <ButtonLink to="/events/pride" icon="calendar-o" color="success">
-            Schedule
-          </ButtonLink>
-          <ButtonLink to="/pride-guide" icon="book" color="warning">
-            Pride Guide
-          </ButtonLink>
         </div>
       </div>
     );
@@ -85,11 +79,11 @@ class Home extends React.Component {
 
   Center() {
     return (
-      <div className="wrap ms-hero-bg-success ms-hero-img-stage">
+      <div className="wrap ms-hero-bg-danger ms-hero-img-float">
         <div className="container text-center">
           <div className="row">
             <div className="col align-self-center">
-              <h1 className="color-warning text-center m-3 ">Coming Soon</h1>
+              <h1 className="color-danger text-center m-3 ">Coming Soon</h1>
               <h1 className="color-white text-center m-3 ">
                 Charleston's First LGBTQ Community Space
               </h1>
@@ -102,7 +96,7 @@ class Home extends React.Component {
                 the next level, creating positive change throughout the
                 Lowcountry and beyond. Help us make this a reality.
               </h3>
-              <ButtonLink to="/lgbtq-center" icon="star-o" color="success">
+              <ButtonLink to="/lgbtq-center" icon="star-o" color="danger">
                 {" "}
                 More Info
               </ButtonLink>
@@ -157,6 +151,7 @@ class Home extends React.Component {
         <this.Hero />
         <Sponsors />
         <this.Center />
+        <this.Countdown />
         <GetInvoved />
         <this.Mission />
       </div>

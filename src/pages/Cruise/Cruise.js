@@ -60,11 +60,11 @@ export default class Cruise extends Component {
                 </div>
                 <div />
                 <div className="col-lg-3">
-                  <div class="panel panel-primary">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">Details</h3>
+                  <div className="panel panel-primary">
+                    <div className="panel-heading">
+                      <h3 className="panel-title">Details</h3>
                     </div>
-                    <div class="panel-body">
+                    <div className="panel-body">
                       <ul className="list-unstyled">
                         <li>
                           <strong>Date: </strong> Saturday, April 27

@@ -1,13 +1,13 @@
 .ms-hero-img-crowd {
-  background-image: url('crowd.jpg');
+  background-image: url("crowd.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   height: 500px;
 }
 
 .ms-hero-logo {
-  background-image: url('rainbowRoad_150.png');
+  background-image: url("rainbowRoad_150.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,16 +16,23 @@
 }
 
 .ms-hero-img-stage {
-  background-image: url('stage.jpg');
+  background-image: url("stage.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .ms-hero-img-rainbow {
-  background-image: url('rainbow.jpg');
+  background-image: url("rainbow.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 400px;
+}
+
+.ms-hero-img-float {
+  background-image: url("parade_float.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

@@ -122,8 +122,14 @@ const navigation = {
         {
           key: "cruise",
           to: "/events/pride-on-the-harbor",
-          title: "Pride On The Harbor",
+          title: "Pride On The Harbor (4/27)",
           icon: "fa-ship"
+        },
+        {
+          key: "toast",
+          to: "https://toasttoequality.com",
+          title: "Toast to Equality (6/22)",
+          icon: "fa-glass"
         }
       ]
     }
