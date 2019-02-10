@@ -113,20 +113,20 @@ const navigation = {
           icon: "fa-flag"
         }
       ]
+    },
+    {
+      title: "Events",
+      icon: "fa-calendar-o",
+      key: "events",
+      pages: [
+        {
+          key: "cruise",
+          to: "/events/pride-on-the-harbor",
+          title: "Pride On The Harbor",
+          icon: "fa-ship"
+        }
+      ]
     }
-    // {
-    //   "title": "Events",
-    //   "icon": "fa-calendar-o",
-    //   "key": "events",
-    //   "pages": [
-    //     {
-    //       "key": "cruise",
-    //       "to": "/events/pride-on-the-harbor",
-    //       "title": "Halloween On The Harbor",
-    //       "icon": "fa-ship"
-    //     }
-    //   ]
-    // }
   ],
   right: [
     {
