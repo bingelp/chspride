@@ -1,6 +1,5 @@
 import React from "react";
 import BoardMember from "./BoardMember";
-import VacantBoardMember from "./VacantBoardMember";
 import "./Board.css";
 
 class Board extends React.Component {
@@ -21,9 +20,7 @@ class Board extends React.Component {
       })
       .then(data => {
         this.setState({
-          directors: data
-            .filter(d => !d.executive)
-            .sort(d => d.firstName),
+          directors: data.filter(d => !d.executive).sort(d => d.firstName),
           executives: data
             .filter(d => d.executive)
             .sort(d => d.order)
@@ -71,7 +68,7 @@ class Board extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
