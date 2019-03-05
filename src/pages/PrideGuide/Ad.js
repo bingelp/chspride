@@ -136,7 +136,7 @@ export default class Ad extends Component {
                 </ul>
               </div>
               <div>
-                <h2>Premium Inside Cover</h2>
+                <h2>Premium Inside Cover - SOLD OUT</h2>
                 <p>
                   For <strong>$1,000</strong>, your ad can be placed on one of
                   the prominent inside covers, printed on glossy paper. There

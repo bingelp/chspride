@@ -35,11 +35,11 @@ export default class Cruise extends Component {
                   <p>
                     The evening will feature hors d’oeuvres, an open bar
                     courtesy of{" "}
-                    <strong>Breakthru Beverage South Carolina</strong>, and a DJ
-                    spinning the beats on this <strong>three hour</strong>{" "}
-                    harbor cruise! This boat features two levels with an
-                    air-conditioned floor and an open air top deck. This is an
-                    event you won’t want to miss!
+                    <strong>Breakthru Beverage South Carolina</strong>, and DJ
+                    Beck Danger spinning the beats on this{" "}
+                    <strong>three hour</strong> harbor cruise! This boat
+                    features two levels with an air-conditioned floor and an
+                    open air top deck. This is an event you won’t want to miss!
                   </p>
                   <p>
                     All you need is a ticket and we will provide the rest!

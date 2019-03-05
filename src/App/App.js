@@ -64,12 +64,6 @@ const navigation = {
       key: "get-involved",
       pages: [
         {
-          key: "center",
-          to: "/lgbtq-center",
-          title: "Support the LGBTQ Center",
-          icon: "fa-home"
-        },
-        {
           key: "friends-of-pride",
           to: "/friends-of-pride",
           title: "Become a Friend of Pride",
@@ -129,17 +123,24 @@ const navigation = {
           key: "toast",
           to: "https://toasttoequality.com",
           title: "Toast to Equality (6/22)",
-          icon: "fa-glass"
+          icon: "fa-glass",
+          divide: true
+        },
+        {
+          key: "pride-2018",
+          to: "/pride",
+          title: "Pride Week 2018",
+          icon: "fa-flag"
         }
       ]
     }
   ],
   right: [
     {
-      key: "pride-2018",
-      to: "/pride",
-      title: "Pride Week 2018",
-      icon: "fa-flag",
+      key: "lgbtq-center",
+      to: "/lgbtq-center",
+      title: "LGBTQ Community Center",
+      icon: "fa-home",
       background: "warning"
     },
     {
