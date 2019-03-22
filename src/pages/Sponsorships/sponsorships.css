@@ -1,7 +1,10 @@
+.ms-hero-img-sponsorships {
+  background-image: url(sponsorships.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+}
 
-    .ms-hero-img-sponsorships {
-    background-image: url(sponsorships.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
+.pricing-table-container {
+  margin-bottom: 20px;
 }

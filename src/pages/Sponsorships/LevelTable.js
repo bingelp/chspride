@@ -49,7 +49,7 @@ class LevelTable extends React.Component {
                 Pride Sponsor” *
               </li>
               <li>
-                <i className="fa fa-flag" /> Parde Entry Fee Waived
+                <i className="fa fa-flag" /> Parade Entry Fee Waived
               </li>
             </ul>
           </div>
