@@ -3,6 +3,9 @@ import map from "./map.png";
 import CountdownClock from "../../components/CountdownClock";
 import SocialList from "../../components/SocialList/SocialList";
 import { Link } from "react-router-dom";
+import RippleImage from "../../components/RippleImage";
+import patti from "./pat.jpg";
+import todrick from "./todrick.jpg";
 const festivalDate = "Saturday, September 14th 2019";
 
 export default class Festival extends Component {
@@ -22,7 +25,7 @@ export default class Festival extends Component {
                 facebook={props.facebook}
                 twitter={props.twitter}
                 instagram={props.instagram}
-                web={props.web}
+                web={props.web || ""}
               />
             </div>
           </figcaption>
@@ -99,7 +102,7 @@ export default class Festival extends Component {
               </p>
             </div>
             <div className="col-12 col-md-6">
-              <img src={map} alt="Vendor map" className="img-fluid my-3" />
+              <RippleImage src={map} alt="Vendor Map" />
               <h4>Parking</h4>
               <p>
                 Parking in the Brittlebank Park parking area is reserved for
@@ -117,9 +120,44 @@ export default class Festival extends Component {
           <div className="row text-center">
             <div className="col-12">
               <h1>Entertainment</h1>
-              <h2>
-                <em>Details Coming Soon</em>
-              </h2>
+            </div>
+            <div className="col-12">
+              <h2 className="color-primary">Headliner</h2>
+            </div>
+            <div className="col-12 ">
+              <this.Entertainer
+                name="Todrick Hall"
+                img={todrick}
+                facebook="toddyrockstar"
+                instagram="todrick"
+                twitter="todrick"
+              />
+            </div>
+          </div>
+          <div className="row text-center">
+            <div className="col-12 col-lg-6">
+              <this.Entertainer
+                name="Emcee - Patti O'Furniture"
+                img={patti}
+                web="http://dudleysonann.com"
+                facebook="allaboutpatti"
+                instagram="allaboutpatti"
+                twitter="allaboutpatti"
+              />
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="card">
+                <div className="card-body">
+                  <h2 className="color-warning">Beats by DJ Beck Danger</h2>
+                  <h2 className="color-primary">Special Performances By</h2>
+                  <h3 className="color-warning">
+                    The Empress &amp; Emperor of Charleston Pride 2019
+                  </h3>
+                  <h4 className="color-primary">
+                    Guest Performances By the Queens of Charleston
+                  </h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
