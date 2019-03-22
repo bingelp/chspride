@@ -127,22 +127,21 @@ const navigation = {
           divide: true
         },
         {
-          key: "pride-2018",
-          to: "/pride",
-          title: "Pride Week 2018",
+          key: "parade",
+          to: "/events/pride/parade",
+          title: "Pride Parade (9/14)",
           icon: "fa-flag"
+        },
+        {
+          key: "festival",
+          to: "/events/pride/festival",
+          title: "Pride Festival (9/14)",
+          icon: "fa-map"
         }
       ]
     }
   ],
   right: [
-    {
-      key: "lgbtq-center",
-      to: "/lgbtq-center",
-      title: "LGBTQ Community Center",
-      icon: "fa-home",
-      background: "warning"
-    },
     {
       key: "donate",
       to: "/donate",

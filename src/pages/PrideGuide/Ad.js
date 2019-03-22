@@ -10,7 +10,7 @@ export default class Ad extends Component {
             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
               2019 Pride Guide
             </h1>
-            <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+            <p className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
               Spread the word about your business or organization and advertise
               in the Charleston Pride Guide!
             </p>

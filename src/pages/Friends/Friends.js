@@ -1,9 +1,9 @@
 import React from "react";
-import ETap from "../../components/ETapestryForm";
 import "./Friends.css";
 import shirt from "./shirt.png";
 import hat from "./hat.png";
 import visor from "./visor.png";
+import RippleImage from "../../components/RippleImage";
 
 class Friends extends React.Component {
   RainbowItem(props) {
@@ -68,36 +68,88 @@ class Friends extends React.Component {
 
   FinePrint(props) {
     return (
-      <div className="col-12">
-        <div className="well">
-          <p>
-            <em>
-              Membership is a 12 month commitment at which point membership
-              becomes month-to-month and can be cancelled anytime after one
-              year.
-            </em>
-          </p>
-          <p>
-            <em>
-              * Including but not limited to annual Pride on the Harbor Cruises
-              and Toast to Equality. Tickets can be reserved by emailing{" "}
-              <a href="mailto:friends@charlestonpride.org">
+      <div className="container">
+        <div className="card">
+          <div className="card-body">
+            <h3>Terms and Conditions</h3>
+            <p>
+              <em>
+                Membership is a 12 month commitment at which point membership
+                becomes month-to-month and can be cancelled anytime after one
+                year.
+              </em>
+            </p>
+            <p>
+              <em>
+                * Including but not limited to annual Pride on the Harbor
+                Cruises and Toast to Equality. Tickets can be reserved by
+                emailing{" "}
+                <a href="mailto:friends@charlestonpride.org">
+                  friends@charlestonpride.org
+                </a>
+                . Tickets must be requested a minimum of 24hrs before start of
+                event and event must not already be sold out.
+              </em>
+            </p>
+            <p>
+              <em>
+                &#8224; Acknowledgement will only appear if desired. Membership
+                must be started before the cut off date for the Pride Guide.
+              </em>
+            </p>
+            <p>
+              <em>^</em> Exclusive gift is your choice of specially branded hat,
+              visor, or shirt.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  Header() {
+    return (
+      <div className="ms-hero-page-override ms-hero-img-friends ms-hero-bg-primary">
+        <div className="container">
+          <div className="text-center">
+            <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+              Friends of Pride
+            </h1>
+            <p className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+              At Charleston Pride, we believe that we can make a big difference
+              in our community with a little help from our friends.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  Registration() {
+    return (
+      <div className="container">
+        <div className="card">
+          <div className="card-body">
+            <h3>
+              To become a <strong>Friend of Pride</strong>, fill out the form
+              below
+            </h3>
+            <p>
+              If there are any questions, please reach out to us at{" "}
+              <a href="mailto:friends@charlestonrpide.org">
                 friends@charlestonpride.org
               </a>
-              . Tickets must be requested a minimum of 24hrs before start of
-              event and event must not already be sold out.
-            </em>
-          </p>
-          <p>
-            <em>
-              &#8224; Acknowledgement will only appear if desired. Membership
-              must be started before the cut off date for the Pride Guide.
-            </em>
-          </p>
-          <p>
-            <em>^</em> Exclusive gift is your choice of specially branded hat,
-            visor, or shirt.
-          </p>
+            </p>
+            <iframe
+              id="etapIframe"
+              title="friends-of-pride"
+              src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/friends.html"
+            />
+            <script
+              src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"
+              type="text/JavaScript"
+            />
+          </div>
         </div>
       </div>
     );
@@ -106,29 +158,21 @@ class Friends extends React.Component {
   render() {
     return (
       <div>
-        <div className="ms-hero-page-override ms-hero-img-friends ms-hero-bg-primary">
-          <div className="container">
-            <div className="text-center">
-              <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                Friends of Pride
-              </h1>
-              <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-                At Charleston Pride, we believe that we can make a big
-                difference in our community with a little help from our friends.
-                Become an official{" "}
-                <span className="color-warning">Friend of Pride</span> through
+        <this.Header />
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-10">
+              <h4>
+                Become an official <strong>Friend of Pride</strong> through
                 joining our monthly donor program.{" "}
-                <span className="color-warning">Friends of Pride</span> get
-                exclusive access to many of our events and some extra perks
-                along the way.
-              </p>
+                <strong>Friends of Pride</strong> get exclusive access to many
+                of our events and some extra perks along the way.
+              </h4>
             </div>
           </div>
-        </div>
-        <div className="container card-hero bg-white">
-          <div className="mt-2">
+          <div>
             <div className="text-center">
-              <h1 className="pt-4">Membership Options</h1>
+              <h1>Membership Options</h1>
             </div>
             <div className="row">
               <this.Rainbow>
@@ -200,21 +244,19 @@ class Friends extends React.Component {
               </h2>
 
               <div className="col-4">
-                <img src={hat} alt="" className="img-fluid" />
+                <RippleImage src={hat} alt="hat" />
               </div>
               <div className="col-4">
-                <img src={shirt} alt="" className="img-fluid" />
+                <RippleImage src={shirt} alt="shirt" />
               </div>
               <div className="col-4">
-                <img src={visor} alt="" className="img-fluid" />
+                <RippleImage src={visor} alt="visor" />
               </div>
             </div>
-            <div className="row">
-              <this.FinePrint />
-            </div>
-            <ETap form="friends" title="friends-of-pride" />
           </div>
         </div>
+        <this.Registration />
+        <this.FinePrint />
       </div>
     );
   }

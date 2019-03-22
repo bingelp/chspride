@@ -19,8 +19,12 @@ class Board extends React.Component {
         return results.json();
       })
       .then(data => {
+        debugger;
         this.setState({
-          directors: data.filter(d => !d.executive).sort(d => d.firstName),
+          directors: data
+            .filter(d => !d.executive)
+            .sort(d => d.order)
+            .reverse(),
           executives: data
             .filter(d => d.executive)
             .sort(d => d.order)
@@ -36,25 +40,24 @@ class Board extends React.Component {
           <div className="container">
             <div className="text-center">
               <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                Board of Directors
+                2019 Board of Directors
               </h1>
-              <p className="lead lead-sm color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-                The Board of Directors is formed from four permanent positions,
-                including Chief Executive, Chief Operating Officer, Secretary of
-                the Board, and Chief Financial Officer, which form the Executive
-                Committee, and up to nine additional directorship positions
-                which are created and removed at the discretion of the Executive
-                Committee. Elections are held at the beginning of every fiscal
-                year to fill the Executive Committee. The newly elected
-                Executive Committee is then responsible for creating the
-                additional director-level positions to assist in the management
-                and administration of the{" "}
-                <strong>Charleston Pride Festival</strong>.
-              </p>
             </div>
           </div>
         </div>
         <div className="container">
+          <p className="lead text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+            The Board of Directors is formed from four permanent positions,
+            including Chief Executive, Chief Operating Officer, Secretary of the
+            Board, and Chief Financial Officer, which form the Executive
+            Committee, and up to nine additional directorship positions which
+            are created and removed at the discretion of the Executive
+            Committee. Elections are held at the beginning of every fiscal year
+            to fill the Executive Committee. The newly elected Executive
+            Committee is then responsible for creating the additional
+            director-level positions to assist in the management and
+            administration of the <strong>Charleston Pride Festival</strong>.
+          </p>
           <h2 className="text-center">2019 Board of Directors</h2>
           <div className="row">
             {this.state.executives &&
