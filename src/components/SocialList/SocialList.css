@@ -1,3 +1,7 @@
-a.social{
-    margin: 12px;
+a.social {
+  margin: 12px;
+}
+
+a.social .fa {
+  font-size: 36px;
 }
