@@ -52,8 +52,8 @@ export default class Cruise extends Component {
                   <p>
                     This event is <strong>Free</strong> for{" "}
                     <Link to="/friends-of-pride">Friends of Pride</Link>. Email{" "}
-                    <a href="mailto:info@charlestonpride.org">
-                      info@charlestonpride.org
+                    <a href="mailto:friends@charlestonpride.org">
+                      friends@charlestonpride.org
                     </a>{" "}
                     to reserve.
                   </p>

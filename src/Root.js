@@ -34,6 +34,7 @@ import Comedy from "./pages/Comedy/Comedy";
 import Prism from "./pages/Prism/Prism";
 import Tour from "./pages/Tour/Tour";
 import Center from "./pages/Center/Center";
+import Store from "./pages/Store/Store";
 
 const Root = props => {
   return (
@@ -81,6 +82,7 @@ const Root = props => {
             <Route path="/events/pageant" component={Pageant} />
             <Route path="/events/rainbows" component={Rainbows} />
             <Route path="/lgbtq-center" component={Center} />
+            <Route path="/store" component={Store} />
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>

@@ -82,6 +82,12 @@ const navigation = {
           icon: "fa-smile-o"
         },
         {
+          key: "donate",
+          to: "/donate",
+          title: "Donate",
+          icon: "fa-heart"
+        },
+        {
           key: "serve-on-the-board",
           to: "/serve-on-the-board",
           title: "Serve on the Board",
@@ -143,10 +149,10 @@ const navigation = {
   ],
   right: [
     {
-      key: "donate",
-      to: "/donate",
-      title: "Donate",
-      icon: "fa-heart-o",
+      key: "store",
+      to: "/store",
+      title: "Store",
+      icon: "fa-shopping-cart",
       background: "royal"
     }
   ]
