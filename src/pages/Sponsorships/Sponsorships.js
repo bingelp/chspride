@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import "./sponsorships.css";
 import LevelTable from "./LevelTable";
 import { Link } from "react-router-dom";
+import Branding from "./Branding";
 
 const levels = [
   {
@@ -108,6 +109,94 @@ const levels = [
     columns: 1
   }
 ];
+const brandings = [
+  {
+    id: 1,
+    name: "Festival - Presenting Sponsor",
+    event: "Festival",
+    rate: 12500,
+    avaliable: true,
+    level: "red",
+    presenter: "Charleston Pride Festival",
+    details: [
+      "Logo on side banners of the stage",
+      "Logo on entry fence to the Festival",
+      "Hourly acknowledgement on stage at the Festival",
+      "Logo on marketing material for the Festival"
+    ]
+  },
+  {
+    id: 2,
+    name: "Prism Party - Presenting Sponsor",
+    event: "Prism Party",
+    rate: 5500,
+    avaliable: false,
+    level: "yellow",
+    presenter: "Prism Party",
+    details: [
+      "Logo on stage banner",
+      "Logo on bottom banner of stage promoting the Prism Party at Festival"
+    ]
+  },
+  {
+    id: 3,
+    name: "Last Call - Presenting Sponsor",
+    event: "Last Call",
+    rate: 5500,
+    avaliable: true,
+    level: "yellow",
+    presenter: "Last Call",
+    details: [
+      "Logo on stage banner",
+      "Logo on bottom banner of stage promoting Last Call at Festival"
+    ]
+  },
+  {
+    id: 4,
+    name: "Festival Wristbands",
+    event: "Festival",
+    rate: 3000,
+    avaliable: true,
+    level: "green",
+    details: ["Logo on Festival wristbands"]
+  },
+  {
+    id: 5,
+    name: "VIP Tent",
+    event: "Festival",
+    rate: 2750,
+    avaliable: true,
+    level: "green",
+    details: ["Logo on banner for VIP Tent"]
+  },
+  {
+    id: 6,
+    name: "Family Tent",
+    event: "Festival",
+    rate: 2750,
+    avaliable: true,
+    level: "green",
+    details: ["Logo on banner for Family Tent"]
+  },
+  {
+    id: 7,
+    name: "Volunteer Shirts",
+    event: "Festival & Prism Party",
+    rate: 2750,
+    avaliable: true,
+    level: "green",
+    details: ["Logo on back of shirts in white"]
+  },
+  {
+    id: 8,
+    name: "Prism Party Wristbands",
+    event: "Prism Party",
+    rate: 1500,
+    avaliable: true,
+    level: "blue",
+    details: ["Logo on Prism Party wristbands"]
+  }
+];
 class Sponsorships extends React.Component {
   Header() {
     return (
@@ -168,7 +257,7 @@ class Sponsorships extends React.Component {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
               <h2 className="counter">
-                <CountUp start={0} end={10600} duration={6} />+
+                <CountUp start={0} end={10845} duration={6} />+
               </h2>
               <i className="color-info fa fa-4x fa-facebook" />
               <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
@@ -236,7 +325,32 @@ class Sponsorships extends React.Component {
   Levels() {
     return (
       <div id="levels" className="container">
+        <h1 className="text-center">General Sponsorships</h1>
         <LevelTable levels={levels} />
+      </div>
+    );
+  }
+
+  Branding() {
+    return (
+      <div id="branding" className="container">
+        <div className="card">
+          <h1 className="text-center">Branding Opportunities</h1>
+          <div className="row">
+            {brandings.map(b => (
+              <Branding
+                key={b.id}
+                name={b.name}
+                event={b.event}
+                rate={b.rate}
+                avaliable={b.avaliable}
+                presenter={b.presenter}
+                level={b.level}
+                details={b.details}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
@@ -245,6 +359,7 @@ class Sponsorships extends React.Component {
       <div>
         <this.Header />
         <this.Stats />
+        <this.Branding />
         <this.Levels />
         <this.Registration />
       </div>
