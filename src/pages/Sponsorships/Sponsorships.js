@@ -109,95 +109,26 @@ const levels = [
     columns: 1
   }
 ];
-const brandings = [
-  {
-    id: 1,
-    name: "Festival - Presenting Sponsor",
-    event: "Festival",
-    rate: 12500,
-    avaliable: true,
-    level: "red",
-    presenter: "Charleston Pride Festival",
-    details: [
-      "Logo on side banners of the stage",
-      "Logo on entry fence to the Festival",
-      "Hourly acknowledgement on stage at the Festival",
-      "Logo on marketing material for the Festival"
-    ]
-  },
-  {
-    id: 2,
-    name: "Prism Party - Presenting Sponsor",
-    event: "Prism Party",
-    rate: 5500,
-    avaliable: false,
-    level: "yellow",
-    presenter: "Prism Party",
-    details: [
-      "Logo on stage banner",
-      "Logo on bottom banner of stage promoting the Prism Party at Festival"
-    ]
-  },
-  {
-    id: 3,
-    name: "Last Call - Presenting Sponsor",
-    event: "Last Call",
-    rate: 5500,
-    avaliable: true,
-    level: "yellow",
-    presenter: "Last Call",
-    details: [
-      "Logo on stage banner",
-      "Logo on bottom banner of stage promoting Last Call at Festival"
-    ]
-  },
-  {
-    id: 4,
-    name: "Festival Wristbands",
-    event: "Festival",
-    rate: 3000,
-    avaliable: true,
-    level: "green",
-    details: ["Logo on Festival wristbands"]
-  },
-  {
-    id: 5,
-    name: "VIP Tent",
-    event: "Festival",
-    rate: 2750,
-    avaliable: true,
-    level: "green",
-    details: ["Logo on banner for VIP Tent"]
-  },
-  {
-    id: 6,
-    name: "Family Tent",
-    event: "Festival",
-    rate: 2750,
-    avaliable: true,
-    level: "green",
-    details: ["Logo on banner for Family Tent"]
-  },
-  {
-    id: 7,
-    name: "Volunteer Shirts",
-    event: "Festival & Prism Party",
-    rate: 2750,
-    avaliable: true,
-    level: "green",
-    details: ["Logo on back of shirts in white"]
-  },
-  {
-    id: 8,
-    name: "Prism Party Wristbands",
-    event: "Prism Party",
-    rate: 1500,
-    avaliable: true,
-    level: "blue",
-    details: ["Logo on Prism Party wristbands"]
-  }
-];
 class Sponsorships extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      brandings: []
+    };
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://skvfc3ly76.execute-api.us-east-1.amazonaws.com/prod/branding"
+    )
+      .then(results => {
+        return results.json();
+      })
+      .then(data => {
+        this.setState({ brandings: data });
+      });
+  }
+
   Header() {
     return (
       <div className="ms-hero-page-override ms-hero-img-sponsorships ms-hero-bg-info">
@@ -331,13 +262,13 @@ class Sponsorships extends React.Component {
     );
   }
 
-  Branding() {
+  Branding(props) {
     return (
       <div id="branding" className="container">
         <div className="card">
           <h1 className="text-center">Branding Opportunities</h1>
           <div className="row">
-            {brandings.map(b => (
+            {props.brandings.map(b => (
               <Branding
                 key={b.id}
                 name={b.name}
@@ -359,7 +290,7 @@ class Sponsorships extends React.Component {
       <div>
         <this.Header />
         <this.Stats />
-        <this.Branding />
+        <this.Branding brandings={this.state.brandings} />
         <this.Levels />
         <this.Registration />
       </div>

@@ -91,7 +91,13 @@ const navigation = {
           key: "serve-on-the-board",
           to: "/serve-on-the-board",
           title: "Serve on the Board",
-          icon: "fa-user-plus",
+          icon: "fa-user-plus"
+        },
+        {
+          key: "amazon",
+          to: "https://smile.amazon.com/ch/27-4256750",
+          title: "AmazonSmile",
+          icon: "fa-amazon",
           divide: true
         },
         {
@@ -119,12 +125,6 @@ const navigation = {
       icon: "fa-calendar-o",
       key: "events",
       pages: [
-        {
-          key: "cruise",
-          to: "/events/pride-on-the-harbor",
-          title: "Pride On The Harbor (4/27)",
-          icon: "fa-ship"
-        },
         {
           key: "toast",
           to: "https://toasttoequality.com",

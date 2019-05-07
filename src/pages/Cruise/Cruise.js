@@ -5,6 +5,40 @@ import CountdownClock from "../../components/CountdownClock";
 import { Link } from "react-router-dom";
 
 export default class Cruise extends Component {
+  constructor() {
+    super();
+    this.state = {
+      enabled: false
+    };
+  }
+  componentDidMount() {
+    fetch(
+      "https://skvfc3ly76.execute-api.us-east-1.amazonaws.com/prod/settings/647978d7-d6e2-4088-9b08-50dbcf9be188"
+    )
+      .then(results => {
+        return results.json();
+      })
+      .then(data => {
+        this.setState({
+          enabled: data.enabled
+        });
+      });
+  }
+
+  Form(props) {
+    return props.enabled ? (
+      <ETapestryForm form="cruise" title="Cruise" />
+    ) : (
+      <div className="text-center">
+        <h3>Sorry, ticket sales are closed.</h3>
+        <p>
+          Please reach out to us at{" "}
+          <a href="mailto:info@charlestonpride.org">info@charlestonpride.org</a>{" "}
+          if you have any questions/concerns.
+        </p>
+      </div>
+    );
+  }
   render() {
     return (
       <div>
@@ -99,7 +133,7 @@ export default class Cruise extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <ETapestryForm form="cruise" title="Cruise" />
+                  <this.Form enabled={this.state.enabled} />
                 </div>
               </div>
             </div>
