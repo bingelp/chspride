@@ -47,7 +47,7 @@ const navigation = {
         {
           key: "our-sponsors",
           to: "/our-sponsors",
-          title: "2018 Sponsors",
+          title: "Our Sponsors",
           icon: "fa-heart"
         },
         {

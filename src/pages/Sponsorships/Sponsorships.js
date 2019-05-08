@@ -211,7 +211,7 @@ class Sponsorships extends React.Component {
                 <CountUp start={0} end={45} duration={6} />
               </h2>
               <i className="color-danger fa fa-4x fa-comments-o" />
-              <p className="mt-2 no-mb lead small-caps">2018 Sponsors</p>
+              <p className="mt-2 no-mb lead small-caps">Sponsors</p>
             </div>
           </div>
         </div>
