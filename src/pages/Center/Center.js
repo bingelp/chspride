@@ -26,7 +26,7 @@ class Center extends Component {
           <div className="row">
             <div className="col-12 col-md-6">
               <h3 className="color-primary wow fadeInUp animation-delay-2">
-                Charleston's LGBTQ Center
+                Charleston's Equality Hub
               </h3>
               <p className="wow fadeInUp animation-delay-3 lead">
                 For years, many in Charleston have talked and dreamed about the
@@ -85,7 +85,7 @@ class Center extends Component {
             <div className="col-12 col-md-6">
               <p className="lead">
                 In preparation to occupy the new building in{" "}
-                <strong>April 2019</strong>, we are raising{" "}
+                <strong>May 2019</strong>, we are raising{" "}
                 <strong>$12,000</strong> to fulfill a wishlist that includes:
               </p>
               <ul>

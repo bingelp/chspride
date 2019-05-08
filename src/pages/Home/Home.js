@@ -85,7 +85,7 @@ class Home extends React.Component {
             <div className="col align-self-center">
               <h1 className="color-danger text-center m-3 ">Coming Soon</h1>
               <h1 className="color-white text-center m-3 ">
-                Charleston's First LGBTQ Community Space
+                Charleston's Equality Hub
               </h1>
               <h2 className="color-white text-center m-3 ">
                 The Alliance For Full Acceptance (AFFA) &amp; Charleston Pride
@@ -151,8 +151,8 @@ class Home extends React.Component {
         <this.Hero />
         <Sponsors />
         <this.Center />
-        <this.Countdown />
         <GetInvoved />
+        <this.Countdown />
         <this.Mission />
       </div>
     );
