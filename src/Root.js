@@ -53,6 +53,7 @@ const Root = props => {
             <Redirect from="/rainbows" to="/events/rainbows" />
             <Redirect from="/lol" to="/events/pride/lgbtlol" />
             <Redirect from="/prism" to="/events/pride/prism-party" />
+            <Redirect from="/friends" to="/friends-of-pride" />
             <Route exact path="/" component={Home} />
             <Route path="/board-of-directors" component={Board} />
             <Route path="/bylaws" component={Bylaws} />
