@@ -112,7 +112,7 @@ export default class Ad extends Component {
             </div>
             <div className="col-md-6">
               <div>
-                <h2>Premium Center Fold Ad</h2>
+                <h2>Premium Center Fold Ad - SOLD OUT</h2>
                 <p>
                   For, <strong>$1,500</strong>, make a major statement for your
                   business or organization with an exclusive center fold ad in
@@ -124,7 +124,7 @@ export default class Ad extends Component {
                 </ul>
               </div>
               <div>
-                <h2>Premium Back Cover</h2>
+                <h2>Premium Back Cover - SOLD OUT</h2>
                 <p>
                   For <strong>$1,250</strong>, your ad can be placed on the back
                   cover of the Pride Guide, printed on glossy paper. There’s
@@ -136,7 +136,7 @@ export default class Ad extends Component {
                 </ul>
               </div>
               <div>
-                <h2>Premium Inside Cover - SOLD OUT</h2>
+                <h2>Premium Inside Cover</h2>
                 <p>
                   For <strong>$1,000</strong>, your ad can be placed on one of
                   the prominent inside covers, printed on glossy paper. There
