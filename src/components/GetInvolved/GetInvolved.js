@@ -70,7 +70,7 @@ class GetInvolved extends React.Component {
           <this.Item
             icon="shopping-cart"
             color="caution"
-            dest="/volunteer"
+            dest="/store"
             title="Buy Some Swag"
           />
           <this.Item
