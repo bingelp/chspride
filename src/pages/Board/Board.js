@@ -19,7 +19,6 @@ class Board extends React.Component {
         return results.json();
       })
       .then(data => {
-        debugger;
         this.setState({
           directors: data
             .filter(d => !d.executive)

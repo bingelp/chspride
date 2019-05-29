@@ -3,63 +3,42 @@ import React from "react";
 export default class BoardMember extends React.Component {
   render(props) {
     return (
-      <div className="col-12 col-md-6 board-member">
-        <div className="card">
-          <div className="withripple zoom-img">
-            <img
-              src={"https://d2f908d3j7stzr.cloudfront.net/chspride/board/" + this.props.meta.image}
-              alt={this.props.meta.firstName + " " + this.props.meta.lastName}
-              className="img-fluid"
-            />
-          </div>
-          {this.props.meta.executive ? (
-            <span className="ml-auto badge badge-warning">
-              Executive Committee
-            </span>
-          ) : (
-            <span className="ml-auto badge badge-default">Board Member</span>
-          )}
-          <ul
-            className="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-12"
-            role="tablist"
-          >
-            <li className="nav-item">
-              <a
-                className="nav-link withoutripple active"
-                href={"#profile-" + this.props.meta.id}
-                aria-controls="profile"
-                role="tab"
-                data-toggle="tab"
-              >
-                <i className="zmdi zmdi-home" />
-                <span className="d-none d-sm-inline">Profile</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link withoutripple"
-                href={"#bio-" + this.props.meta.id}
-                aria-controls="bio"
-                role="tab"
-                data-toggle="tab"
-              >
-                <i className="zmdi zmdi-account" />
-                <span className="d-none d-sm-inline">Bio</span>
-              </a>
-            </li>
-          </ul>
-          <div className="card-body">
-            <div className="tab-content">
-              <div
-                role="tabpanel"
-                className="tab-pane fade active show"
-                id={"profile-" + this.props.meta.id}
-              >
+      <div className="col-12 board-member">
+        <div
+          className={
+            this.props.meta.executive ? "card card-warning" : "card card-info"
+          }
+        >
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-4 order-lg-2">
+              <div className="withripple zoom-img center">
+                <img
+                  src={
+                    "https://d2f908d3j7stzr.cloudfront.net/chspride/board/2019/" +
+                    this.props.meta.firstName.toLowerCase() +
+                    ".jpeg"
+                  }
+                  alt={
+                    this.props.meta.firstName + " " + this.props.meta.lastName
+                  }
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-8 order-lg-1">
+              <div className="card-body">
                 <h3 className="color-success animated fadeInUp animation-delay-2">
                   {this.props.meta.firstName} {this.props.meta.lastName}
                 </h3>
                 <h4 className="animated zoomInDown fadeInUp-delay-3">
-                  {this.props.meta.title}
+                  {this.props.meta.title}{" "}
+                  {this.props.meta.executive ? (
+                    <span className="badge badge-warning">
+                      Executive Committee
+                    </span>
+                  ) : (
+                    <span className="badge badge-info">Board Member</span>
+                  )}
                 </h4>
                 <p>
                   <i className="zmdi zmdi-email mr-1 color-primary" />
@@ -86,15 +65,10 @@ export default class BoardMember extends React.Component {
                   {capitalizeFirstLetter(this.props.meta.objective)}/
                   {capitalizeFirstLetter(this.props.meta.possessive)}
                 </em>
-              </div>
-              <div
-                role="tabpanel"
-                className="tab-pane fade"
-                id={"bio-" + this.props.meta.id}
-              >
                 <div className="bio">
-                  {this.props.meta.bio &&
-                    this.props.meta.bio.map(b => <p key={b}>{b}</p>)}
+                  {this.props.meta.bio
+                    ? this.props.meta.bio.map(b => <p key={b}>{b}</p>)
+                    : "Bio coming soon."}
                 </div>
               </div>
             </div>

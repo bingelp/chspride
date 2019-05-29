@@ -20,9 +20,10 @@
 }
 
 .board-member .card-body {
-  height: 250px;
+  padding-bottom: 0;
 }
 .board-member .bio {
-  max-height: 200px;
+  height: 200px;
   overflow: scroll;
+  margin: 20px 0;
 }
