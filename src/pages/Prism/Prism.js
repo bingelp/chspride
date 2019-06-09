@@ -134,8 +134,8 @@ class Prism extends Component {
               <ul class="price-table-list">
                 <li>Meet and Greet with Todrick Hall and the Ru Paul Queens</li>
                 <li>
-                  Admission to Last Call at Music Farm - the official late night
-                  dance party of Charleston Pride
+                  Admission to Last Call: the Official After Party of Charleston
+                  Pride
                   <br />
                   <small>(details coming soon)</small>
                 </li>
@@ -193,8 +193,8 @@ class Prism extends Component {
                   <span>s</span>
                   <span>m</span>
                 </span>
-                : <em>The Official Party of Charleston Pride</em> as we close
-                out a fantastic week of celebrating Pride.
+                : <em>The Official Party of Charleston Pride</em> as we
+                celebrate a fantastic week of Pride.
               </h3>
             </div>
           </div>

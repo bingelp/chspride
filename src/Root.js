@@ -52,7 +52,7 @@ const Root = props => {
             <Redirect from="/pride" to="/events/pride" />
             <Redirect from="/rainbows" to="/events/rainbows" />
             <Redirect from="/lol" to="/events/pride/lgbtlol" />
-            <Redirect from="/prism" to="/events/pride/prism-party" />
+            <Redirect from="/prism" to="/events/pride/prism" />
             <Redirect from="/friends" to="/friends-of-pride" />
             <Route exact path="/" component={Home} />
             <Route path="/board-of-directors" component={Board} />
@@ -74,7 +74,7 @@ const Root = props => {
             <Route path="/events/pride/festival" component={Festival} />
             <Route path="/events/pride/parade" component={Parade} />
             <Route path="/events/pride/lgbtlol" component={Comedy} />
-            <Route path="/events/pride/prism-party" component={Prism} />
+            <Route path="/events/pride/prism" component={Prism} />
             <Route
               path="/events/pride/real-rainbow-row-tour"
               component={Tour}

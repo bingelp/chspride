@@ -143,6 +143,12 @@ const navigation = {
           to: "/events/pride/festival",
           title: "Pride Festival (9/14)",
           icon: "fa-map"
+        },
+        {
+          key: "prism",
+          to: "/events/pride/prism",
+          title: "Prism (9/14)",
+          icon: "fa-music"
         }
       ]
     }
