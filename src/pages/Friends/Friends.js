@@ -188,11 +188,15 @@ class Friends extends React.Component {
                 />
                 <this.RainbowItem
                   icon="glass"
+                  text="VIP Access to Toast to Equality"
+                />
+                <this.RainbowItem
+                  icon="flag"
                   text="Access to the VIP Tent at the Festival (Includes Open Bar)"
                 />
                 <this.RainbowItem
                   icon="star-o"
-                  text="Free Admission to Prism Party"
+                  text="VIP Access to Prism &amp; Last Call"
                 />
                 <this.RainbowItem
                   icon="handshake-o"
@@ -218,12 +222,17 @@ class Friends extends React.Component {
                 />
                 <this.DoubleRainbowItem
                   icon="glass"
+                  text="VIP Access to Toast to Equality"
+                  double="true"
+                />
+                <this.DoubleRainbowItem
+                  icon="flag"
                   text="Access to the VIP Tent at the Festival (Includes Open Bar)"
                   double="true"
                 />
                 <this.DoubleRainbowItem
                   icon="star-o"
-                  text="Free Admission to Prism Party"
+                  text="VIP Access to Prism &amp; Last Call"
                   double="true"
                 />
                 <this.DoubleRainbowItem

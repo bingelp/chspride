@@ -1,10 +1,16 @@
 .ms-hero-img-rainbows {
-    background-image: url(rainbows_hero.jpg);
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
+  background-image: url(rainbows_hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
 }
 
 #musc {
-    background-color: #00447c;
+  background-color: #00447c;
+  margin: 20px;
+}
+
+#dtl {
+  max-height: 120px;
+  margin: 20px;
 }

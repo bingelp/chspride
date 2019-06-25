@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ExternalLink } from "../../components/LinkUtil";
 import "./Prism.css";
 import SocialList from "../../components/SocialList/SocialList";
 import { Link } from "react-router-dom";

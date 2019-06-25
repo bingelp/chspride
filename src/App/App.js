@@ -126,10 +126,10 @@ const navigation = {
       key: "events",
       pages: [
         {
-          key: "toast",
-          to: "https://toasttoequality.com",
-          title: "Toast to Equality (6/22)",
-          icon: "fa-glass",
+          key: "rainbows",
+          to: "/events/rainbows",
+          title: "Rainbows Pride Night (8/14)",
+          icon: "fa-bullhorn",
           divide: true
         },
         {

@@ -150,9 +150,8 @@ class Home extends React.Component {
       <div>
         <this.Hero />
         <Sponsors />
-        <this.Center />
-        <GetInvoved />
         <this.Countdown />
+        <GetInvoved />
         <this.Mission />
       </div>
     );
