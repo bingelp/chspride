@@ -3700,15 +3700,15 @@ hr.on-light {
   color: #9C27B0; }
 
 @font-face {
-  font-family: 'GothamNarrow Light';
+  font-family: "GothamNarrow Light";
   src: url("../fonts/GothamNarrow-Light.otf"); }
 
 @font-face {
-  font-family: 'Gotham Bold';
+  font-family: "Gotham Bold";
   src: url("../fonts/GothamHTF-Bold.otf"); }
 
 @font-face {
-  font-family: 'Archer-Semibold';
+  font-family: "Archer-Semibold";
   src: url("../fonts/Archer-Semibold.otf"); }
 
 html {
@@ -3721,7 +3721,7 @@ body {
   height: auto;
   color: #757575;
   background-color: #F5F5F5;
-  font-family: 'GothamNarrow Light','Roboto', sans-serif;
+  font-family: "GothamNarrow Light", "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -3743,11 +3743,9 @@ body {
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus
-input:-webkit-autofill,
+input:-webkit-autofill:focus input:-webkit-autofill,
 textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
@@ -3893,8 +3891,7 @@ a.hover-light:hover, a.hover-light:focus {
 
 iframe {
   min-height: 1000px;
-  margin: auto;
-  width: 80%; }
+  margin: auto; }
 
 h1,
 h2,

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Store.css";
 class Store extends Component {
   componentDidMount() {
     window.addEventListener("message", this.handleMessage(), !1);
@@ -35,23 +35,18 @@ class Store extends Component {
     );
   }
 
-  Registration() {
+  PrintYourCause() {
     return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
-            <iframe
-              id="printYourCauseiFrame"
-              src="https://app.printyourcause.com/campaign/charlestonpride"
-              width="100%"
-              height="500px"
-              frameborder="0"
-              allowfullscreen="allowfullscreen"
-              title="PrintYouCause"
-            />
-            <script type="text/javascript" />
-          </div>
-        </div>
+      <div>
+        <iframe
+          id="printYourCauseiFrame"
+          src="https://app.printyourcause.com/campaign/charlestonpride"
+          width="100%"
+          height="500px"
+          allow="fullscreen"
+          title="PrintYouCause"
+        />
+        <script type="text/javascript" />
       </div>
     );
   }
@@ -60,7 +55,7 @@ class Store extends Component {
     return (
       <div>
         <this.Header />
-        <this.Registration />
+        <this.PrintYourCause />
       </div>
     );
   }
