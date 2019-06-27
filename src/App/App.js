@@ -133,6 +133,12 @@ const navigation = {
           divide: true
         },
         {
+          key: "lgbtlol",
+          to: "lol",
+          title: "LGBTLOL (9/13)",
+          icon: "fa-microphone"
+        },
+        {
           key: "parade",
           to: "/events/pride/parade",
           title: "Pride Parade (9/14)",
