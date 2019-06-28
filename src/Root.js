@@ -35,6 +35,7 @@ import Prism from "./pages/Prism/Prism";
 import Tour from "./pages/Tour/Tour";
 import Center from "./pages/Center/Center";
 import Store from "./pages/Store/Store";
+import LastCall from "./pages/LastCall/LastCall";
 
 const Root = props => {
   return (
@@ -74,6 +75,7 @@ const Root = props => {
             <Route path="/events/pride/parade" component={Parade} />
             <Route path="/lol" component={Comedy} />
             <Route path="/events/pride/prism" component={Prism} />
+            <Route path="/last-call" component={LastCall} />
             <Route
               path="/events/pride/real-rainbow-row-tour"
               component={Tour}
