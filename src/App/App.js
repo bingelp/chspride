@@ -127,34 +127,40 @@ const navigation = {
       pages: [
         {
           key: "rainbows",
-          to: "/events/rainbows",
+          to: "/rainbows",
           title: "Rainbows Pride Night (8/14)",
           icon: "fa-bullhorn",
           divide: true
         },
         {
           key: "lgbtlol",
-          to: "lol",
+          to: "/lol",
           title: "LGBTLOL (9/13)",
           icon: "fa-microphone"
         },
         {
           key: "parade",
-          to: "/events/pride/parade",
+          to: "parade",
           title: "Pride Parade (9/14)",
           icon: "fa-flag"
         },
         {
           key: "festival",
-          to: "/events/pride/festival",
+          to: "/festival",
           title: "Pride Festival (9/14)",
           icon: "fa-map"
         },
         {
           key: "prism",
-          to: "/events/pride/prism",
+          to: "/prism",
           title: "Prism (9/14)",
           icon: "fa-music"
+        },
+        {
+          key: "last-call",
+          to: "/last-call",
+          title: "Last Call (9/14)",
+          icon: "fa-hourglass-end"
         }
       ]
     }

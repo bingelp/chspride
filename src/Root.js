@@ -25,7 +25,6 @@ import Friends from "./pages/Friends/Friends";
 import MailingList from "./pages/MailingList/MailingList";
 import PrideGuideAd from "./pages/PrideGuide/Ad";
 import PrideGuide from "./pages/PrideGuide/PrideGuide";
-import PreviousPrideGuide from "./pages/PrideGuide/Previous";
 import Pageant from "./pages/Pageant/Pageant";
 import Rainbows from "./pages/Rainbows/Rainbows";
 import ScrollToTop from "./components/ScrollToTop";
@@ -47,12 +46,8 @@ const Root = props => {
             <Redirect from="/sponsorships" to="/become-a-sponsor" />
             <Redirect from="/prideguide" to="/pride-guide" />
             <Redirect from="/vendors" to="/vendor-registration" />
-            <Redirect from="/pageant" to="/events/pageant" />
-            <Redirect from="/cruise" to="/events/pride-on-the-harbor" />
-            <Redirect from="/tour" to="/events/pride/real-rainbow-row-tour" />
-            <Redirect from="/pride" to="/events/pride" />
-            <Redirect from="/rainbows" to="/events/rainbows" />
-            <Redirect from="/prism" to="/events/pride/prism" />
+            <Redirect from="/cruise" to="/pride-on-the-harbor" />
+            <Redirect from="/tour" to="/real-rainbow-row-tour" />
             <Redirect from="/friends" to="/friends-of-pride" />
             <Route exact path="/" component={Home} />
             <Route path="/board-of-directors" component={Board} />
@@ -66,23 +61,19 @@ const Root = props => {
             <Route path="/donate" component={Donate} />
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
             <Route path="/pride-guide" component={PrideGuide} />
-            <Route path="/2017-pride-guide" component={PreviousPrideGuide} />
             <Route path="/vendor-registration" component={Vendor} />
             <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />
-            <Route path="/events/pride-on-the-harbor" component={Cruise} />
-            <Route path="/events/pride/festival" component={Festival} />
-            <Route path="/events/pride/parade" component={Parade} />
+            <Route path="/pride-on-the-harbor" component={Cruise} />
+            <Route path="/festival" component={Festival} />
+            <Route path="/parade" component={Parade} />
             <Route path="/lol" component={Comedy} />
-            <Route path="/events/pride/prism" component={Prism} />
+            <Route path="/prism" component={Prism} />
             <Route path="/last-call" component={LastCall} />
-            <Route
-              path="/events/pride/real-rainbow-row-tour"
-              component={Tour}
-            />
-            <Route path="/events/pride" component={Pride} />
-            <Route path="/events/pageant" component={Pageant} />
-            <Route path="/events/rainbows" component={Rainbows} />
+            <Route path="/real-rainbow-row-tour" component={Tour} />
+            <Route path="/pride" component={Pride} />
+            <Route path="/pageant" component={Pageant} />
+            <Route path="/rainbows" component={Rainbows} />
             <Route path="/lgbtq-center" component={Center} />
             <Route path="/store" component={Store} />
             <Route path="*" component={NoMatch} />

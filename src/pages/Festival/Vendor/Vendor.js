@@ -23,7 +23,7 @@ export default class Vendors extends Component {
               </h3>
               <CountdownClock eventTime="2019-09-14T10:00:00" color="warning" />
               <Link
-                to="/events/pride/festival"
+                to="/festival"
                 className="btn btn-raised btn-info animated fadeInUp animation-delay-10"
               >
                 <i className="fa fa-heart" /> Festival Information
