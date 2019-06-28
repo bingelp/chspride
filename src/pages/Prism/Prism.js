@@ -18,15 +18,17 @@ class Prism extends Component {
                 <span>s</span>
                 <span>m</span>
               </span>
-              : <small>The Official Party of Charleston Pride</small>
             </h1>
-            <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-              Saturday, September 14 @ 7:00 PM - 11:00 PM
+            <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-5">
+              The Official Party of Charleston Pride
             </h2>
-            <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+            <h3 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
+              Saturday, September 14 @ 7:00 PM - 11:00 PM
+            </h3>
+            <h3 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
               Charleston Bus Shed <span className="color-warning">&amp;</span>{" "}
               Visitor’s Center
-            </h2>
+            </h3>
           </div>
         </div>
       </div>
@@ -195,6 +197,7 @@ class Prism extends Component {
                 : <em>The Official Party of Charleston Pride</em> as we
                 celebrate a fantastic week of Pride.
               </h3>
+              <h4>This event is 18+</h4>
             </div>
           </div>
         </div>
