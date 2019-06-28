@@ -13,7 +13,7 @@ class Comedy extends Component {
               LGBTLOL
             </h1>
             <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-              Friday Septemper 13, @ 8:00 PM ( Doors 7:00 PM) Hall
+              Friday Septemper 13, @ 8:00 PM ( Doors 7:00 PM)
             </h2>
             <h2 className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
               Charleston Music Hall (37 John Street )
