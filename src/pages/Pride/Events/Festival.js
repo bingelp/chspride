@@ -6,7 +6,7 @@ class Festival extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-22T11:00">
+          <time className="timeline-time" dateTime="2019-10-14T11:00">
             11:00 AM
           </time>
           <i className="ms-timeline-point bg-success" />
@@ -20,7 +20,7 @@ class Festival extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <h4>Headlining: Betty Who and Le1f</h4>
+                <h4>Headlining: Toddrick Hall</h4>
                 <p>
                   Head to Brittlebank Park, beside the beautiful Ashley River,
                   to walk among vendors, food trucks, and beer and alcohol

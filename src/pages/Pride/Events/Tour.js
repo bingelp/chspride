@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import { ExternalLink } from "../../../components/LinkUtil";
+import { ExternalLink, ButtonLink } from "../../../components/LinkUtil";
 
 class Tour extends Component {
   render() {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-16T14:00">
-            2:00 PM
+          <time className="timeline-time" dateTime="2019-10-08T15:00">
+            3:00 PM
           </time>
           <i className="ms-timeline-point bg-danger" />
         </div>
-        <div id="tour" className="card card-danger">
+        <div className="card card-danger">
           <div className="card-header">
             <h3 className="card-title">
-              Real Rainbow Row Tour @ 2:00 PM - 4:00 PM | Downtown Charleston{" "}
+              Real Rainbow Row Tour @ 3:00 PM - 5:00 PM | Downtown Charleston
             </h3>
           </div>
           <div className="card-body">
@@ -48,16 +48,18 @@ class Tour extends Component {
                 />
               </div>
             </div>
-            <a className="btn btn-raised disabled">
-              <i className="fa fa-tickets" />Tickets
-            </a>
-
+            <ButtonLink
+              to="/real-rainbow-row-tour"
+              icon="star-o"
+              color="danger"
+            >
+              Tickets
+            </ButtonLink>
             <div className="pull-right">
               <h3>
                 <span className="color-danger">$15</span>
               </h3>
             </div>
-            <h3 className="color-danger">Postponed. Details coming soon.</h3>
           </div>
         </div>
       </li>

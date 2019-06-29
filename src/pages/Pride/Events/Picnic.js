@@ -1,54 +1,56 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import dudleys from "../Assets/dudleys.jpg";
+import affa from "../Assets/affa.png";
 
-class Patti extends Component {
+class Picnic extends Component {
   render() {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-12T22:00">
-            10:00 PM
+          <time className="timeline-time" dateTime="2019-10-08T13:00">
+            September 8<span className="day"> Sunday</span> 1:00 PM
           </time>
           <i className="ms-timeline-point bg-royal" />
         </div>
-        <div id="patti" className="card card-royal">
+        <div id="picnic" className="card card-royal">
           <div className="card-header">
             <h3 className="card-title">
-              Patti O'Furniture Show @ 10:00 PM | Dudley's on Ann{" "}
+              AFFA Pride Family Picnic @ 1:00 PM - 4:00 PM | RiverFront Park
             </h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={dudleys}
+                  src={affa}
                   alt="Dudley's Logo"
                   className="img-fluid mb-2"
                 />{" "}
               </div>
               <div className="col-md-8">
                 <p>
-                  Thursdays mean one thing: The Patti O'Furniture Show LIVE at
-                  11 pm. Her mix of drag, comedy, quirky costumes, and quick wit
-                  have been entertaining audiences since 1998. Welcome to the
-                  world of comedy coture that is the "Yard Sale with Legs!"{" "}
+                  Families, whether given or chosen, come in all shapes and
+                  sizes. Join the Alliance For Full Acceptance for an afternoon
+                  of fun for all ages as we celebrate the kickoff of Charleston
+                  Pride! There will be games and activities for children and
+                  plenty of time for community members to socialize in a fun and
+                  welcoming
                 </p>
                 <ExternalLink
-                  to="https://goo.gl/maps/Jk8Z4Zsapu12"
-                  title="42 Ann St, Charleston"
+                  to="https://goo.gl/maps/MtEyCWDRaK6hSz136"
+                  title="1061 Everglades Ave, North Charleston"
                 />
               </div>
             </div>
             <ExternalBtn
-              to="https://www.dudleysonann.com/"
+              to="https://www.affa-sc.org/"
               icon="globe"
-              title="Dudley's on Ann"
+              title="AFFA"
               color="royal"
             />
             <div className="pull-right">
               <h3>
-                <span className="color-royal">FREE</span>, 21+
+                <span className="color-royal">FREE</span>
               </h3>
             </div>
           </div>
@@ -58,4 +60,4 @@ class Patti extends Component {
   }
 }
 
-export default Patti;
+export default Picnic;

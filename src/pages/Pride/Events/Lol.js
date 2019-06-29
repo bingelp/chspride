@@ -7,8 +7,8 @@ class Lol extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-20T20:00">
-            September 20<span className="day"> Thursday</span> 8:00 PM
+          <time className="timeline-time" dateTime="2019-10-13T20:00">
+            September 20<span className="day"> Friday</span> 8:00 PM
           </time>
           <i className="ms-timeline-point bg-warning" />
         </div>
@@ -21,27 +21,38 @@ class Lol extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col">
-                <h4>
-                  Presented by{" "}
-                  <abbr title="Alliance For Full Acceptance">AFFA</abbr> and
-                  Charleston Pride
-                </h4>
                 <p>
                   Come celebrate humanity and show your Pride at a night of
                   comedy featuring some of your favorite stand-up comics, who
-                  also just happen to be members of the LGBTQ community.
+                  also happen to be members of the LGBTQ community.
                 </p>
-                <p>
-                  Comedians: Jenn Snyder, Shawna Jarrett, Kevin Delgado, Robyn
-                  Scott, Sam Reisman
-                </p>
-                <p>Host: Curt Mariah</p>
-                <p>Also featuring DJ Pat Nasty</p>
-                <h3>
-                  <span className="color-warning">$10</span> with code:{" "}
-                  <span className="color-warning">affapride</span>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <h2 className="text-center">
+                  <small className="color-warning">Headliner</small>
+                  <br />
+                  Ky Krebs
+                </h2>
+              </div>
+              <div className="col">
+                <h2 className="text-center">
+                  <small className="color-warning">Host</small>
+                  <br />
+                  Jenn Snyder
+                </h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <h3 className="text-center">
+                  Shawna Jarrett, Julie Osborne, Ava Smartt, and Shaine Laine
                 </h3>
               </div>
+            </div>
+            <div className="row">
+              <div className="col" />
             </div>
             <div className="row">
               <div className="col">
@@ -52,21 +63,23 @@ class Lol extends Component {
                   <i className="fa fa-info-circle" /> More Info
                 </Link>
                 <ExternalBtn
-                  to="https://www.ticketfly.com/purchase/event/1734208"
+                  to="https://www.ticketfly.com/purchase/event/1870417"
                   icon="ticket"
                   title="Tickets"
                   color="warning"
                 />
-                <h3 className="pull-right">
-                  <span className="color-warning">$15</span>{" "}
+              </div>
+              <div className="col">
+                <h3 className="text-right">
+                  <span className="color-warning">$10</span> with code:{" "}
+                  <span className="color-warning">chspride</span>
                 </h3>
+                <p className="text-right">
+                  This event is <strong>FREE</strong> for{" "}
+                  <Link to="/friends-of-pride">Friends of Pride</Link>.
+                </p>
               </div>
             </div>
-
-            <p>
-              This event is <strong>FREE</strong> for{" "}
-              <Link to="/friends-of-pride">Friends of Pride</Link>.
-            </p>
           </div>
         </div>
       </li>

@@ -6,12 +6,12 @@ class Parade extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-22T09:00">
-            September 22<span className="day"> Saturday</span> 9:00 AM
+          <time className="timeline-time" dateTime="2019-10-14T09:00">
+            September 14<span className="day"> Saturday</span> 9:00 AM
           </time>
-          <i className="ms-timeline-point bg-danger" />
+          <i className="ms-timeline-point bg-info" />
         </div>
-        <div id="parade" className="card card-danger">
+        <div id="parade" className="card card-info">
           <div className="card-header">
             <h3 className="card-title">
               Charleston Pride Parade @ 9:00 AM | Downtown Charleston{" "}
@@ -31,13 +31,13 @@ class Parade extends Component {
             </div>
             <Link
               to="parade"
-              className="btn btn-raised btn-danger animated fadeInUp animation-delay-10"
+              className="btn btn-raised btn-info animated fadeInUp animation-delay-10"
             >
               <i className="fa fa-flag" /> More Info
             </Link>
             <div className="pull-right">
               <h3>
-                <span className="color-danger">FREE</span>
+                <span className="color-info">FREE</span>
               </h3>
             </div>
           </div>

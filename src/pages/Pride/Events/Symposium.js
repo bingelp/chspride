@@ -1,27 +1,52 @@
-import React, { Component } from 'react';
-import { ExternalLink } from '../../../components/LinkUtil'
+import React, { Component } from "react";
 
 class Symposium extends Component {
   render() {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-19T14:00">September 19<span className="day"> Wednesday</span> 6:00 PM</time>
-          <i className="ms-timeline-point"></i>
+          <time className="timeline-time" dateTime="2018-10-12T18:00">
+            September 12<span className="day"> Thursday</span> 6:00 PM
+          </time>
+          <i className="ms-timeline-point" />
         </div>
         <div id="symposium" className="card card-primary">
           <div className="card-header">
-            <h3 className="card-title">State of the Community Symposium @ 6:00 PM - 8:00 PM | Hotel Indigo, Mt. Pleasant </h3>
+            <h3 className="card-title">
+              Criminal Justice Panel Discussion w/ Latrice Royale &amp; ACLU @
+              7:00 PM - 9:00 PM | TBD
+            </h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
-              <p>For the first time local leaders and activists come together to assess the state of the LGBT community in Charleston. Charleston Pride is proud to be joined by the <ExternalLink to="https://www.affa-sc.org/" title="Alliance For Full Acceptance"/>, <ExternalLink to="http://www.waf.org/" title="We Are Family"/>, <ExternalLink to="http://palmettocommunitycare.org/" title="Palmetto Community Care"/>, and others in exploring the challenges and achievements of the past year while also looking ahead to the future. Following statements from each of the organizations, we invite attendees to participate in a town hall discussion session. Come prepared with any questions you've been wanting to ask!</p>
-              <p>Opening with a review of the history of the LGBT movement led by Dr. Butler of the <ExternalLink to="https://www.ccpl.org/" title="Charleston County Public Library" />, the State of the Community Symposium will be held at the Hotel Indigo in Mt. Pleasant with a cash bar available.</p>
+                <p>
+                  Voting rights and voter suppression has been a hot topic in
+                  the recent election cycle. The consequence of disenfranchising
+                  voters, especially within communities of color have a lasting
+                  impact on issues regarding health care/health inequities,
+                  affordable housing, immigration, LGBTQ rights, and other
+                  discriminations.
+                </p>
+                <p>
+                  Moderated by the ACLU, panelist will include members of the
+                  Charleston community and local activist ranging from topics of
+                  with special guest Timothy Wilcots, better known as RuPaul
+                  Drag Race’s Latrice Royale, who has their own story to tell
+                  about voting rights for the formerly incarcerated and
+                  experiences in prison as an LGBTQ person of color.
+                </p>
+                <p>
+                  This event is free and open to the public. All are welcome.
+                  ACLU will be on hand before and after the event to encourage
+                  voter registration.
+                </p>
               </div>
             </div>
             <div className="pull-right">
-              <h3 ><span className="color-primary">FREE</span></h3>
+              <h3>
+                <span className="color-primary">FREE</span>
+              </h3>
             </div>
           </div>
         </div>
