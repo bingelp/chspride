@@ -41,6 +41,9 @@ class Home extends React.Component {
           <CountdownClock eventTime="2019-09-07T09:00:00-04:00" color="white">
             <h2 className="color-white mb-1">Happy Pride!</h2>
           </CountdownClock>
+          <ButtonLink to="/pride" icon="flag" color="success">
+            More Info
+          </ButtonLink>
         </div>
       </div>
     );
@@ -124,20 +127,19 @@ class Home extends React.Component {
                   <span>e</span>
                 </span>
               </h1>
-              <h1>
+              <h2>
                 <span className="typed-class typed-block color-primary" />
                 <span className="typed-cursor color-warning">|</span>
-              </h1>
+              </h2>
               <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">
                 2009-2019
               </h2>
-              <a
-                className="btn btn-warning btn-xlg btn-raised animated flipInX animation-delay-16"
-                href="#getInvolved"
-              >
-                <i className="zmdi zmdi-flag" /> Get Involved
-                <div className="ripple-container" />
-              </a>
+              <ButtonLink to="/pride" icon="flag" color="success">
+                Pride Week
+              </ButtonLink>
+              <ButtonLink to="#getInvolved" icon="smile-o" color="warning">
+                Get Involved
+              </ButtonLink>
             </div>
           </div>
         </div>

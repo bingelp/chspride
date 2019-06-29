@@ -94,6 +94,12 @@ const navigation = {
           icon: "fa-user-plus"
         },
         {
+          key: "store",
+          to: "/store",
+          title: "Pride Store",
+          icon: "fa-shopping-cart"
+        },
+        {
           key: "amazon",
           to: "https://smile.amazon.com/ch/27-4256750",
           title: "AmazonSmile",
@@ -160,18 +166,26 @@ const navigation = {
           key: "last-call",
           to: "/last-call",
           title: "Last Call (9/14)",
-          icon: "fa-hourglass-end"
+          icon: "fa-hourglass-end",
+          divide: true
+        },
+        {
+          key: "pride",
+          to: "/pride",
+          title: "Pride Week (9/7 - 9/14)",
+          icon: "fa-flag",
+          background: "royal"
         }
       ]
     }
   ],
   right: [
     {
-      key: "store",
-      to: "/store",
-      title: "Store",
-      icon: "fa-shopping-cart",
-      background: "royal"
+      key: "pride-2019",
+      to: "/pride",
+      title: "Pride Week 2019",
+      icon: "fa-flag",
+      background: "warning"
     }
   ]
 };

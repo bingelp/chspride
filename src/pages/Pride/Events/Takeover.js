@@ -15,7 +15,7 @@ class Takeover extends Component {
         <div id="takeover" className="card card-warning">
           <div className="card-header">
             <h3 className="card-title">
-              Week Kickoff Takeover @ 7:00 PM - 11:00 PM | Taco Boy{" "}
+              Pride Week Kickoff Takeover @ 7:00 PM - 11:00 PM | Taco Boy{" "}
             </h3>
           </div>
           <div className="card-body">

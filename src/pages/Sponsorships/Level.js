@@ -70,7 +70,7 @@ class Level extends React.Component {
             <li>
               <NumberIndicator value={this.props.level.prismParty} />
               <span className="d-block d-lg-none">
-                Complimentary Tickets to the Prism Party
+                Complimentary Tickets to the Prism
               </span>
             </li>
             <li>

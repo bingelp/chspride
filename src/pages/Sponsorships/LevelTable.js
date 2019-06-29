@@ -23,7 +23,7 @@ class LevelTable extends React.Component {
               </li>
               <li>
                 <i className="fa fa-ticket" /> Complimentary Tickets to the
-                Prism Party{" "}
+                Prism{" "}
               </li>
               <li>
                 <i className="fa fa-thumbs-up" /> Complimentary Booth at

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
+import { ExternalLink } from "../../../components/LinkUtil";
 
 class Prism extends Component {
   render() {
@@ -15,8 +15,8 @@ class Prism extends Component {
         <div id="prism" className="card card-warning">
           <div className="card-header">
             <h3 className="card-title">
-              Prism Party @ 7:00 PM - 11:00 PM | Charleston Bus Shed &amp;
-              Visitor’s Center
+              Prism @ 7:00 PM - 11:00 PM | Charleston Bus Shed &amp; Visitor’s
+              Center
             </h3>
           </div>
           <div className="card-body">
@@ -27,8 +27,8 @@ class Prism extends Component {
                   We painted the town every color of the rainbow this year. Now,
                   it's time to show Charleston how beautiful life can be when
                   those colors come together! You won't want to miss the
-                  Charleston Pride Prism Party as we close out a fantastic week
-                  of celebrating Pride.
+                  Charleston Pride Prism as we close out a fantastic week of
+                  celebrating Pride.
                 </p>
                 <ExternalLink
                   to="https://goo.gl/maps/tGEDVecd2GeVUmx57"

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
+import { ExternalLink } from "../../../components/LinkUtil";
 
 class LastCall extends Component {
   render() {

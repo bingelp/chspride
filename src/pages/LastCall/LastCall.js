@@ -88,24 +88,24 @@ class LastCall extends Component {
     );
   }
 
-  Sponsor() {
-    return (
-      <div className="col-12 col-md-4 text-center">
-        <h2>Presented By:</h2>
-        <img
-          src="https://d2f908d3j7stzr.cloudfront.net/chspride/lastcall/quietkingz.png"
-          alt="Quiet Kings"
-          className="img-fluid"
-          width="200px"
-        />
-        <h3>QuietKingz</h3>
-      </div>
-    );
-  }
+  // Sponsor() {
+  //   return (
+  //     <div className="col-12 col-md-4 text-center">
+  //       <h2>Presented By:</h2>
+  //       <img
+  //         src="https://d2f908d3j7stzr.cloudfront.net/chspride/lastcall/quietkingz.png"
+  //         alt="Quiet Kings"
+  //         className="img-fluid"
+  //         width="200px"
+  //       />
+  //       <h3>QuietKingz</h3>
+  //     </div>
+  //   );
+  // }
 
   Description(props) {
     return (
-      <div className="col-12 col-md-8">
+      <div className="col">
         <div className="card-body">
           <div className="row">
             <div className="col-12 text-center">
@@ -157,7 +157,6 @@ class LastCall extends Component {
         <div className="container">
           <div class="card">
             <div class="row">
-              <this.Sponsor />
               <this.Description PriceTable={this.PriceTable} />
             </div>
           </div>
@@ -202,6 +201,13 @@ class LastCall extends Component {
                 </div>
               </div>
             </div>
+            <h2 className="text-center">
+              Guest Performances By the Queens of Charleston
+              <br />
+              <small>
+                <em>Coming Soon</em>
+              </small>
+            </h2>
           </div>
         </div>
       </div>

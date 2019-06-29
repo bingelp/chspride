@@ -17,6 +17,17 @@ class Header extends React.Component {
       </a>
     );
   }
+  Store(props) {
+    return (
+      <Link
+        to="/store"
+        className="btn-circle animated zoomInDown animation-delay-5"
+      >
+        <i className="zmdi zmdi-shopping-cart" />
+      </Link>
+    );
+  }
+
   Menu(props) {
     return (
       <a className="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10">
@@ -29,8 +40,7 @@ class Header extends React.Component {
     return (
       <Link to="/" className="animated fadeInLeftBig animation-delay-4">
         <h1>
-          CHS
-          <span className="p">P</span>
+          Charleston <span className="p">P</span>
           <span className="r">R</span>
           <span className="i">I</span>
           <span className="d">D</span>
@@ -51,6 +61,7 @@ class Header extends React.Component {
             <this.SocialLink site="facebook" />
             <this.SocialLink site="twitter" />
             <this.SocialLink site="instagram" />
+            <this.Store />
             <this.Menu />
           </div>
         </div>

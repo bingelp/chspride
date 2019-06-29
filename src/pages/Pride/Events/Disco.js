@@ -57,7 +57,7 @@ class Disco extends Component {
               </div>
             </div>
             <ExternalBtn
-              to="https://www.ticketfly.com/purchase/event/1870417"
+              to="https://www.facebook.com/events/2208879402540673/"
               icon="ticket"
               title="Tickets"
               color="danger"
