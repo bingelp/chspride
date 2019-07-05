@@ -32,7 +32,7 @@ export default class Volunteer extends Component {
             </h3>
             <p>
               If there are any questions please reach out to us at{" "}
-              <a href="mailto:volunteers@charlestonrpide.org">
+              <a href="mailto:volunteers@charlestonpride.org">
                 volunteers@charlestonpride.org
               </a>
             </p>

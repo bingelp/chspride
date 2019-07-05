@@ -25,7 +25,7 @@ class Wig extends Component {
                   src={eljefe}
                   alt="El Jefe Logo"
                   className="img-fluid mb-2"
-                />{" "}
+                />
               </div>
               <div className="col-md-8">
                 <p>

@@ -15,7 +15,7 @@ class Rhapsody extends Component {
         <div id="rhapsody" className="card card-info">
           <div className="card-header">
             <h3 className="card-title">
-              Rhapsody Pride @ 10:30 AM | Rhapsody Crossfit
+              Rhapsody Pride @ 10:30 AM | Rhapsody CrossFit
             </h3>
           </div>
           <div className="card-body">

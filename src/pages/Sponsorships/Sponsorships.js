@@ -188,7 +188,7 @@ class Sponsorships extends React.Component {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
               <h2 className="counter">
-                <CountUp start={0} end={10845} duration={6} />+
+                <CountUp start={0} end={11250} duration={6} />+
               </h2>
               <i className="color-info fa fa-4x fa-facebook" />
               <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
@@ -197,7 +197,7 @@ class Sponsorships extends React.Component {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="card card-success card-body text-center wow zoomInUp animation-delay-5">
               <h2 className="counter">
-                <CountUp start={0} end={16} duration={6} />
+                <CountUp start={0} end={19} duration={6} />
               </h2>
               <i className="color-success fa fa-4x fa-calendar" />
               <p className="mt-2 no-mb lead small-caps">
@@ -233,7 +233,7 @@ class Sponsorships extends React.Component {
                 We offer different sponsorship packages to suit your
                 organization’s needs. If there are any questions or you’d like
                 to craft a custom sponsorship package, please reach out to us at{" "}
-                <a href="mailto:sponsorships@charlestonrpide.org">
+                <a href="mailto:sponsorships@charlestonpride.org">
                   sponsorships@charlestonpride.org
                 </a>
               </p>

@@ -13,13 +13,18 @@ class Symposium extends Component {
         <div id="symposium" className="card card-primary">
           <div className="card-header">
             <h3 className="card-title">
-              Criminal Justice Panel Discussion w/ Latrice Royale &amp; ACLU @
-              7:00 PM - 9:00 PM | TBD
+              Criminal Justice Panel Discussion @ 7:00 PM - 9:00 PM | TBD
             </h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col">
+                <h2 className="text-center">
+                  <small>Special Guest</small>: Latrice Royale
+                </h2>
+                <h2 className="text-center">
+                  <small>Moderated By</small>: ACLU
+                </h2>
                 <p>
                   Voting rights and voter suppression has been a hot topic in
                   the recent election cycle. The consequence of disenfranchising

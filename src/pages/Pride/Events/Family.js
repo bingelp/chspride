@@ -26,11 +26,19 @@ class Family extends Component {
                   alt="Equality Hub Logo"
                   className="img-fluid mb-2"
                 />
-                <ul>
-                  <li>3:00 PM – Photography Sessions, 15 min.</li>
-                  <li>5:30 PM – Light Snacks &amp; Refreshments</li>
-                  <li>6:00 PM – Additional Pride Week Details</li>
-                  <li>6:15 PM – Family Movie Night</li>
+                <ul className="list-group">
+                  <li className="list-group-item">
+                    3:00 PM – Photography Sessions, 15 min.
+                  </li>
+                  <li className="list-group-item">
+                    5:30 PM – Light Snacks &amp; Refreshments
+                  </li>
+                  <li className="list-group-item">
+                    6:00 PM – Additional Pride Week Details
+                  </li>
+                  <li className="list-group-item">
+                    6:15 PM – Family Movie Night
+                  </li>
                 </ul>
               </div>
               <div className="col-md-8">

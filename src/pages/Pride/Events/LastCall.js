@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "../../../components/LinkUtil";
+import latrice from "../Assets/latrice.jpeg";
 
 class LastCall extends Component {
   render() {
@@ -20,7 +21,14 @@ class LastCall extends Component {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col">
+              <div className="col-md-4">
+                <img
+                  src={latrice}
+                  alt="Latrice Royale"
+                  className="img-fluid mb-2"
+                />
+              </div>
+              <div className="col-md-8">
                 <h4>The Official After Party of Charleston Pride</h4>
                 <p>
                   Did you really think we’d stop the party at 11 PM? After you
@@ -40,7 +48,7 @@ class LastCall extends Component {
               <div className="col">
                 <Link
                   to="/last-call"
-                  className="btn btn-raised color-primary btn-white animated fadeInUp animation-delay-7"
+                  className="btn btn-raised btn-primary animated fadeInUp animation-delay-10"
                 >
                   <i className="fa fa-info-circle" /> More Info &amp; Tickets
                 </Link>

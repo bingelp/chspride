@@ -136,7 +136,7 @@ class Friends extends React.Component {
             </h3>
             <p>
               If there are any questions, please reach out to us at{" "}
-              <a href="mailto:friends@charlestonrpide.org">
+              <a href="mailto:friends@charlestonpride.org">
                 friends@charlestonpride.org
               </a>
             </p>

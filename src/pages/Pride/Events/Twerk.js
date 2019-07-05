@@ -6,8 +6,8 @@ class Twerk extends Component {
     return (
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
-          <time className="timeline-time" dateTime="2018-10-12T18:00">
-            September 12<span className="day"> Thursday</span> 6:00 PM
+          <time className="timeline-time" dateTime="2018-10-13T18:00">
+            September 13<span className="day"> Friday</span> 6:00 PM
           </time>
           <i className="ms-timeline-point" />
         </div>

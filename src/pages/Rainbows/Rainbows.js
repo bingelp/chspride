@@ -4,6 +4,7 @@ import Logo from "./Charleston-Rainbows-horizontal.png";
 import Rainbow from "./rainbows.jpg";
 import Musc from "./MUSCDarkLogo.png";
 import Darkness from "./darkness-to-light-logo.svg";
+import { Link } from "react-router-dom";
 
 export default class Rainbows extends Component {
   render() {
@@ -61,13 +62,21 @@ export default class Rainbows extends Component {
               >
                 <i className="fa fa-ticket" /> Get Tickets
               </a>
-
+              <p>
+                This event is <strong>Free</strong> for{" "}
+                <Link to="/friends-of-pride">Friends of Pride</Link>. Email{" "}
+                <a href="mailto:friends@charlestonpride.org">
+                  friends@charlestonpride.org
+                </a>{" "}
+                to reserve.
+              </p>
               <p>
                 Note: For those who would prefer using a gender neutral
                 restroom, please know there is a single user restroom that is
                 available at the stadium. Right outside the press box on the 3rd
                 level (the main concourse is Level 2).{" "}
               </p>
+
               <p>
                 Please reach out to{" "}
                 <a href="mailto:info@charlestonpride.org">

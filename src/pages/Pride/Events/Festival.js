@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import todrick from "../Assets/todrick.jpg";
 
 class Festival extends Component {
   render() {
@@ -19,7 +20,14 @@ class Festival extends Component {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col">
+              <div className="col-md-4">
+                <img
+                  src={todrick}
+                  alt="Todrick Hall"
+                  className="img-fluid mb-2"
+                />
+              </div>
+              <div className="col-md-8">
                 <h4>Headlining: Todrick Hall</h4>
                 <p>
                   Head to Brittlebank Park, beside the beautiful Ashley River,

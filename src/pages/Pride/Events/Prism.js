@@ -40,7 +40,7 @@ class Prism extends Component {
               <div className="col">
                 <Link
                   to="/prism"
-                  className="btn btn-raised color-warning btn-white animated fadeInUp animation-delay-7"
+                  className="btn btn-raised btn-warning animated fadeInUp animation-delay-10"
                 >
                   <i className="fa fa-info-circle" /> More Info &amp; Tickets
                 </Link>
