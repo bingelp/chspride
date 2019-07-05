@@ -4,20 +4,22 @@ import { Link } from "react-router-dom";
 class GetInvolved extends React.Component {
   Item(props) {
     return (
-      <div className="ms-feature col-12 col-md-4 col-lg-2 card flipInX animation-delay-4">
+      <div
+        className={
+          "ms-feature col-12 col-md-4 col-lg-2 flipInX animation-delay-4 card card-" +
+          props.color +
+          "-inverse"
+        }
+      >
         <div className="text-center card-body">
-          <span
-            className={
-              "ms-icon ms-icon-circle ms-icon-xxlg color-" + props.color
-            }
-          >
-            <i className={"fa fa-" + props.icon} />
+          <span className="ms-icon ms-icon-circle ms-icon-xxlg ms-icon-white">
+            <i className={"fa fa-" + props.icon + " color-" + props.color} />
           </span>
-          <h4 className={"color-" + props.color}>{props.title}</h4>
+          <h4>{props.title}</h4>
           {props.dest.startsWith("/") ? (
             <Link
               to={props.dest}
-              className={"btn btn-raised btn-" + props.color}
+              className={"btn btn-raised btn-white color-" + props.color}
             >
               Go!
             </Link>
@@ -26,7 +28,7 @@ class GetInvolved extends React.Component {
               href={props.dest}
               target="_blank"
               rel="noopener noreferrer"
-              className={"btn btn-raised btn-" + props.color}
+              className={"btn btn-raised btn-white color-" + props.color}
             >
               Go!
             </a>
@@ -38,13 +40,13 @@ class GetInvolved extends React.Component {
 
   render() {
     return (
-      <div id="getInvolved" className="container mt-4">
+      <div id="getInvolved" className="mt-4">
         <h2 className="text-center color-primary mb-2  fadeInDown animation-delay-4">
           Get Involved
         </h2>
         <div className="row">
           <this.Item
-            icon="heart-o"
+            icon="heart"
             color="royal"
             dest="/donate"
             title="Make a Donation"
