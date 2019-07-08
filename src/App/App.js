@@ -135,7 +135,13 @@ const navigation = {
           key: "rainbows",
           to: "/rainbows",
           title: "Rainbows Pride Night (8/14)",
-          icon: "fa-bullhorn",
+          icon: "fa-bullhorn"
+        },
+        {
+          key: "pageant",
+          to: "pageant",
+          title: "Empress and Emperor Pageant (8/31)",
+          icon: "fa-trophy",
           divide: true
         },
         {
