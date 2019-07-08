@@ -20,7 +20,7 @@ class Wig extends Component {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 text-center">
                 <img
                   src={eljefe}
                   alt="El Jefe Logo"

@@ -22,16 +22,22 @@ class Disco extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col-md-4">
-                <img
-                  src={cah}
-                  alt="Carolina Ale House's Logo"
-                  className="img-fluid mb-2"
-                />
-                <img
-                  src={quietkingz}
-                  alt="QuietKingz's Logo"
-                  className="img-fluid mb-2"
-                />
+                <div className="row">
+                  <div className="col-6 col-md-12">
+                    <img
+                      src={cah}
+                      alt="Carolina Ale House's Logo"
+                      className="img-fluid mb-2"
+                    />
+                  </div>
+                  <div className="col-6 col-md-12">
+                    <img
+                      src={quietkingz}
+                      alt="QuietKingz's Logo"
+                      className="img-fluid mb-2"
+                    />
+                  </div>
+                </div>
               </div>
               <div className="col-md-8">
                 <h2 className="text-center">
