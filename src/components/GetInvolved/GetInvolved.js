@@ -16,6 +16,8 @@ class GetInvolved extends React.Component {
             <i className={"fa fa-" + props.icon + " color-" + props.color} />
           </span>
           <h4>{props.title}</h4>
+        </div>
+        <div className=" text-center">
           {props.dest.startsWith("/") ? (
             <Link
               to={props.dest}

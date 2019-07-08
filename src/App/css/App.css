@@ -6742,9 +6742,11 @@ pre.line-numbers > code {
   .card .plyr__controls {
     border-left: 0;
     border-right: 0; }
-  .card .card-block, .card .card-body, .card.card-block, .card.card-body {
+  .card .card-block,
+  .card .card-body, .card.card-block, .card.card-body {
     padding: 2rem; }
-    .card .card-block p:last-child, .card .card-body p:last-child, .card.card-block p:last-child, .card.card-body p:last-child {
+    .card .card-block p:last-child,
+    .card .card-body p:last-child, .card.card-block p:last-child, .card.card-body p:last-child {
       margin-bottom: º 0; }
   .card .card-footer {
     padding: 1rem 2rem 0.7rem 2rem;
@@ -6752,7 +6754,8 @@ pre.line-numbers > code {
     border: 0; }
     .card .card-footer p:last-child {
       margin-bottom: 0; }
-  .card .card-block, .card .card-body-big, .card.card-block, .card.card-body-big {
+  .card .card-block,
+  .card .card-body-big, .card.card-block, .card.card-body-big {
     padding: 4rem; }
   .card .card-header {
     padding: 1.5rem 2rem;
@@ -6957,7 +6960,8 @@ pre.line-numbers > code {
     .card.card-light-inverse .card-header,
     .card.card-light-inverse .card-footer {
       color: #424242; }
-  .card .card-block > .ms-icon, .card .card-body > .ms-icon {
+  .card .card-block > .ms-icon,
+  .card .card-body > .ms-icon {
     margin: 1rem 0; }
   .card .list-group {
     border: none; }
@@ -6968,7 +6972,8 @@ pre.line-numbers > code {
   position: relative;
   margin-top: -100px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-  .card-hero > .card-block, .card-hero .card-body {
+  .card-hero > .card-block,
+  .card-hero .card-body {
     padding: 4rem; }
 
 .ms-feature {
@@ -6976,8 +6981,7 @@ pre.line-numbers > code {
   .ms-feature .ms-icon {
     transition: all ease 0.5s; }
   .ms-feature:hover, .ms-feature:focus {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-    background-color: #FAFAFA; }
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12); }
     .ms-feature:hover .ms-icon, .ms-feature:focus .ms-icon {
       transform: rotate(360deg);
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
@@ -7001,9 +7005,11 @@ pre.line-numbers > code {
   position: relative; }
 
 @media (max-width: 767px) {
-  .card .card-block, .card .card-body-big {
+  .card .card-block,
+  .card .card-body-big {
     padding: 2rem; }
-  .card-hero .card-block, .card-hero .card-body {
+  .card-hero .card-block,
+  .card-hero .card-body {
     padding: 2rem; } }
 
 .card-code {
@@ -7015,7 +7021,7 @@ pre.line-numbers > code {
     .card-code-header .card-code-title a {
       display: block;
       color: #fff;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 1rem;
@@ -7031,7 +7037,7 @@ pre.line-numbers > code {
         position: absolute;
         right: 2.5rem;
         top: 1.7rem;
-        font-family: 'FontAwesome';
+        font-family: "FontAwesome";
         content: "\f107";
         transform: rotate(0);
         transition: all ease 0.4s; }
