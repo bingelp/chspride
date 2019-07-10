@@ -36,3 +36,23 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.ms-hero-img-todrick {
+  background-image: url("todrick.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+#todrick h1 {
+  font-size: 4em;
+}
+
+#todrick h2 {
+  font-size: 3em;
+}
+
+#todrick p {
+  font-size: 1.5em;
+}

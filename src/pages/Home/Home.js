@@ -6,6 +6,8 @@ import Sponsors from "../Sponsors/SponsorHero";
 import CountdownClock from "../../components/CountdownClock";
 import GetInvoved from "../../components/GetInvolved/GetInvolved";
 import { ButtonLink } from "../../components/LinkUtil";
+import { Link } from "react-router-dom";
+import todrick from "./todrick.jpg";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -147,12 +149,34 @@ class Home extends React.Component {
     );
   }
 
+  Todrick() {
+    return (
+      <div className="row jumbotron bg-dark" id="todrick">
+        <div className="col-12 col-lg-6">
+          <img src={todrick} className="img-fluid" />
+        </div>
+        <div className="col-12 col-lg-6 text-center">
+          <h1 className="color-info">It's Todrick Hall, Y'all!</h1>
+          <h2>
+            Come see Todrick headline the{" "}
+            <Link to="/festival">Pride Festival</Link>
+          </h2>
+          <p>
+            Pssst... wanna meet Todrick? Become a{" "}
+            <Link to="/friends-of-pride">Friend of Pride</Link> today!
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div>
         <this.Hero />
         <Sponsors />
         <this.Countdown />
+        <this.Todrick />
         <GetInvoved />
         <this.Mission />
       </div>
