@@ -199,15 +199,7 @@ export default class Ad extends Component {
       <div>
         <div className="container text-center">
           <h1>Purchase an Ad</h1>
-          <p>
-            For questions about ad specs or to have Charleston Pride design an
-            ad on your behalf, please contact
-            <a href="mailto:sales@charlestonpride.org">
-              {" "}
-              sales@charlestonpride.org
-            </a>
-          </p>
-          <ETap title="Pride Guide" form="prideguide" />
+          <h2>Ad sales has closed for this year</h2>
         </div>
       </div>
     );
