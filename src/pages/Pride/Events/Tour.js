@@ -48,11 +48,7 @@ class Tour extends Component {
                 />
               </div>
             </div>
-            <ButtonLink
-              to="/real-rainbow-row-tour"
-              icon="star-o"
-              color="danger"
-            >
+            <ButtonLink to="/tour" icon="star-o" color="danger">
               Tickets
             </ButtonLink>
             <div className="pull-right">

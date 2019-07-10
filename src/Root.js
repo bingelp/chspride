@@ -47,7 +47,6 @@ const Root = props => {
             <Redirect from="/prideguide" to="/pride-guide" />
             <Redirect from="/vendors" to="/vendor-registration" />
             <Redirect from="/cruise" to="/pride-on-the-harbor" />
-            <Redirect from="/tour" to="/real-rainbow-row-tour" />
             <Redirect from="/friends" to="/friends-of-pride" />
             <Route exact path="/" component={Home} />
             <Route path="/board-of-directors" component={Board} />
@@ -70,12 +69,26 @@ const Root = props => {
             <Route path="/lol" component={Comedy} />
             <Route path="/prism" component={Prism} />
             <Route path="/last-call" component={LastCall} />
-            <Route path="/real-rainbow-row-tour" component={Tour} />
+            <Route path="/tour" component={Tour} />
             <Route path="/pride" component={Pride} />
             <Route path="/pageant" component={Pageant} />
             <Route path="/rainbows" component={Rainbows} />
             <Route path="/lgbtq-center" component={Center} />
             <Route path="/store" component={Store} />
+            <Route
+              path="/twerk"
+              component={() =>
+                (window.location =
+                  "https://www.eventbrite.com/e/twerk-twirl-101-w-latrice-royale-and-the-holy-city-twirlers-tickets-63672683711")
+              }
+            />
+            <Route
+              path="/colorme"
+              component={() =>
+                (window.location =
+                  "https://www.facebook.com/events/2208879402540673/")
+              }
+            />
             <Route path="*" component={NoMatch} />
           </Switch>
         </App>
