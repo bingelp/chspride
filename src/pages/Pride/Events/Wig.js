@@ -15,7 +15,7 @@ class Wig extends Component {
         <div id="wig" className="card card-danger">
           <div className="card-header">
             <h3 className="card-title">
-              Wig Out Wednesday @ 9:00 PM | The Drag Factory - El Jefe{" "}
+              The Drag Factory @ 9:00 PM | El Jefe{" "}
             </h3>
           </div>
           <div className="card-body">
@@ -29,10 +29,9 @@ class Wig extends Component {
               </div>
               <div className="col-md-8">
                 <p>
-                  Come wig out with us on Wednesday night! Every Wednesday night
-                  is a different show, a different cast, and it's always a great
-                  time! Wig Out Wednesdays at the Drag Factory - Music by DJ
-                  Trevor D. Party starts at 9:00 pm. Show starts at 10:00 pm!{" "}
+                  Come to the Drag Factory on Wednesday night! Every Wednesday
+                  night is a different show, a different cast, and it's always a
+                  great time!
                 </p>
                 <ExternalLink
                   to="https://goo.gl/maps/Jk8Z4Zsapu12"

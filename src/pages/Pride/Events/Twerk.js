@@ -14,7 +14,7 @@ class Twerk extends Component {
         <div id="symposium" className="card card-primary">
           <div className="card-header">
             <h3 className="card-title">
-              Twirl &amp; Twerk 101 @ 6:00 PM | Arthur W. Christopher Community
+              Twerk &amp; Twirl 101 @ 6:00 PM | Arthur W. Christopher Community
               Complex
             </h3>
           </div>
