@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import vendorMap from "../map.png";
+import vendorMap from "../map.jpg";
 import { Link } from "react-router-dom";
 import "./Vendor.css";
 import CountdownClock from "../../../components/CountdownClock";

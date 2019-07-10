@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import map from "./map.png";
+import map from "./map.jpg";
 import CountdownClock from "../../components/CountdownClock";
 import SocialList from "../../components/SocialList/SocialList";
 import { Link } from "react-router-dom";
