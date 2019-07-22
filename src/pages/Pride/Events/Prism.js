@@ -46,7 +46,8 @@ class Prism extends Component {
                 </Link>
                 <h3 className="pull-right">
                   <span className="color-warning">$15</span>,{" "}
-                  <span className="color-warning">$50</span> VIP
+                  <span className="color-warning">$50</span> VIP,{" "}
+                  <span className="color-warning">18+</span>
                 </h3>
               </div>
             </div>

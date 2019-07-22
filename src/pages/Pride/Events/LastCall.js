@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "../../../components/LinkUtil";
-import latrice from "../Assets/latrice.jpeg";
 
 class LastCall extends Component {
   render() {
@@ -23,7 +22,7 @@ class LastCall extends Component {
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={latrice}
+                  src={process.env.REACT_APP_ASSETS + "pride/latrice.jpeg"}
                   alt="Latrice Royale"
                   className="img-fluid mb-2"
                 />
@@ -54,7 +53,8 @@ class LastCall extends Component {
                 </Link>
                 <h3 className="pull-right">
                   <span className="color-primary">$15</span>,{" "}
-                  <span className="color-primary">$20</span> at Door
+                  <span className="color-primary">$20</span> at Door,{" "}
+                  <span className="color-primary">18+</span>
                 </h3>
               </div>
             </div>

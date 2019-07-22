@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { ExternalLink } from "../../../components/LinkUtil";
 import { Link } from "react-router-dom";
-// import cruise from '../Assets/prideOnHarbor_400x150.jpg'
 
 class PrideOnHarbor extends Component {
   render() {

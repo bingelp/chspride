@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import eljefe from "../Assets/eljefe.jpg";
 
 class Wig extends Component {
   render() {
@@ -22,7 +21,7 @@ class Wig extends Component {
             <div className="row">
               <div className="col-md-4 text-center">
                 <img
-                  src={eljefe}
+                  src={process.env.REACT_APP_ASSETS + "pride/eljefe.jpg"}
                   alt="El Jefe Logo"
                   className="img-fluid mb-2"
                 />

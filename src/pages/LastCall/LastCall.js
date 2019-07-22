@@ -37,10 +37,7 @@ class LastCall extends Component {
           }
         >
           <img
-            src={
-              "https://d2f908d3j7stzr.cloudfront.net/chspride/lastcall/" +
-              props.img
-            }
+            src={process.env.REACT_APP_ASSETS + "lastcall/" + props.img}
             alt={props.name}
             className="img-fluid"
           />
@@ -87,21 +84,6 @@ class LastCall extends Component {
       </div>
     );
   }
-
-  // Sponsor() {
-  //   return (
-  //     <div className="col-12 col-md-4 text-center">
-  //       <h2>Presented By:</h2>
-  //       <img
-  //         src="https://d2f908d3j7stzr.cloudfront.net/chspride/lastcall/quietkingz.png"
-  //         alt="Quiet Kings"
-  //         className="img-fluid"
-  //         width="200px"
-  //       />
-  //       <h3>QuietKingz</h3>
-  //     </div>
-  //   );
-  // }
 
   Description(props) {
     return (

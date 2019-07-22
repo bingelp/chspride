@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Ad.css";
-import ETap from "../../components/ETapestryForm";
 export default class Ad extends Component {
   Header(props) {
     return (

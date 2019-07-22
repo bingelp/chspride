@@ -153,7 +153,7 @@ class Home extends React.Component {
     return (
       <div className="row jumbotron bg-dark" id="todrick">
         <div className="col-12 col-lg-6">
-          <img src={todrick} className="img-fluid" />
+          <img src={todrick} className="img-fluid" alt="Todrick Hall" />
         </div>
         <div className="col-12 col-lg-6 text-center">
           <h1 className="color-info">It's Todrick Hall, Y'all!</h1>

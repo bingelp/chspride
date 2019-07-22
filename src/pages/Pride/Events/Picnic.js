@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import affa from "../Assets/affa.png";
 
 class Picnic extends Component {
   render() {
@@ -22,7 +21,7 @@ class Picnic extends Component {
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={affa}
+                  src={process.env.REACT_APP_ASSETS + "pride/affa.png"}
                   alt="Dudley's Logo"
                   className="img-fluid mb-2"
                 />{" "}

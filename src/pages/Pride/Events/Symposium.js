@@ -50,6 +50,12 @@ class Symposium extends Component {
                 />
               </div>
             </div>
+            <ExternalBtn
+              to="https://www.eventbrite.com/e/criminal-justice-panel-discussion-presented-by-aclu-of-south-carolina-tickets-66186630995"
+              icon="envelope"
+              title="RSVP"
+              color="primary"
+            />
             <div className="pull-right">
               <h3>
                 <span className="color-primary">FREE</span>

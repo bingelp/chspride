@@ -14,7 +14,8 @@ export default class BoardMember extends React.Component {
               <div className="withripple zoom-img center">
                 <img
                   src={
-                    "https://d2f908d3j7stzr.cloudfront.net/chspride/board/2019/" +
+                    process.env.REACT_APP_ASSETS +
+                    "board/2019/" +
                     this.props.meta.firstName.toLowerCase() +
                     ".jpeg"
                   }

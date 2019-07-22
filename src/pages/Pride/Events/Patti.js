@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import dudleys from "../Assets/dudleys.jpg";
 
 class Patti extends Component {
   render() {
@@ -15,24 +14,25 @@ class Patti extends Component {
         <div id="patti" className="card card-royal">
           <div className="card-header">
             <h3 className="card-title">
-              Patti O'Furniture Show @ 10:00 PM | Dudley's on Ann{" "}
+              Still Alive! With Brooke Collins @ 10:00 PM | Dudley's on Ann{" "}
             </h3>
           </div>
           <div className="card-body">
             <div className="row">
               <div className="col-md-4 text-center">
                 <img
-                  src={dudleys}
+                  src={process.env.REACT_APP_ASSETS + "pride/dudleys.jpg"}
                   alt="Dudley's Logo"
                   className="img-fluid mb-2"
                 />
               </div>
               <div className="col-md-8">
                 <p>
-                  Thursdays mean one thing: The Patti O'Furniture Show LIVE at
-                  11 pm. Her mix of drag, comedy, quirky costumes, and quick wit
-                  have been entertaining audiences since 1998. Welcome to the
-                  world of comedy coture that is the "Yard Sale with Legs!"{" "}
+                  The legendary Brooke Collins takes to the Dudley’s stage every
+                  Thursday in front of a confused audience who exclaims, “She’s
+                  still ALIVE?!” With gorgeous outfits, amazing headdresses, and
+                  constant comedy, a night with Brooke is the perfect start to
+                  your weekend!
                 </p>
                 <ExternalLink
                   to="https://goo.gl/maps/Jk8Z4Zsapu12"

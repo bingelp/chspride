@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalBtn } from "../../../components/LinkUtil";
-import takeover from "../Assets/takeover.jpg";
 
 class Takeover extends Component {
   render() {
@@ -21,7 +20,11 @@ class Takeover extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col-md-4">
-                <img src={takeover} alt="" className="img-fluid mb-2" />{" "}
+                <img
+                  src={process.env.REACT_APP_ASSETS + "pride/takeover.jpg"}
+                  alt="Takeover"
+                  className="img-fluid mb-2"
+                />{" "}
               </div>
               <div className="col-md-8">
                 <p>

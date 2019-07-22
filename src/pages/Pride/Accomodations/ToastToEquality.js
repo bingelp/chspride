@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import eljefe from "../Assets/eljefe.jpg";
-import ritas from "../Assets/ritas.jpg";
 import { ExternalLink } from "../../../components/LinkUtil";
 
 class ToastToEquality extends Component {
@@ -17,7 +15,11 @@ class ToastToEquality extends Component {
             <div className="row">
               <div className="col">
                 <div className="withripple zoom-img text-center">
-                  <img src={ritas} alt="Ritas" className="img-fluid" />
+                  <img
+                    src={process.env.REACT_APP_ASSETS + "pride/ritas.jpg"}
+                    alt="Ritas"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
               <div className="col">
@@ -28,7 +30,11 @@ class ToastToEquality extends Component {
             <div className="row">
               <div className="col">
                 <div className="withripple zoom-img text-center">
-                  <img src={eljefe} alt="El Jefe" className="img-fluid" />
+                  <img
+                    src={process.env.REACT_APP_ASSETS + "pride/eljefe.jpg"}
+                    alt="El Jefe"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
               <div className="col">

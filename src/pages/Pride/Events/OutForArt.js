@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import miller from "../Assets/miller.png";
 
 class OutForArt extends Component {
   render() {
@@ -23,7 +22,7 @@ class OutForArt extends Component {
               <div className="col text-center">
                 <img
                   id="miller"
-                  src={miller}
+                  src={process.env.REACT_APP_ASSETS + "pride/miller.png"}
                   alt="Miller Gallery logo"
                   className="img-fluid mb-2"
                 />

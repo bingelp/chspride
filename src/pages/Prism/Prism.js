@@ -135,10 +135,11 @@ class Prism extends Component {
               <ul class="price-table-list">
                 <li>Meet and Greet with Todrick Hall and the Ru Paul Queens</li>
                 <li>
-                  Admission to Last Call: the Official After Party of Charleston
-                  Pride
+                  Admission to{" "}
+                  <Link to="/last-call">
+                    Last Call: the Official After Party of Charleston Pride
+                  </Link>
                   <br />
-                  <small>(details coming soon)</small>
                 </li>
               </ul>
             </div>
@@ -257,8 +258,8 @@ class Prism extends Component {
                   card="warning"
                 />
                 <this.Queen
-                  name="Vanessa Vanjie Mateo"
-                  src="https://s3.amazonaws.com/charlestonpride.assets/chspride/prism/vanjie.jpg"
+                  name="Aja"
+                  src="https://s3.amazonaws.com/charlestonpride.assets/chspride/prism/Aja.jpg"
                   card="royal"
                 />
                 <this.Queen

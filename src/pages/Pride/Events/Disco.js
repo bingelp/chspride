@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import cah from "../Assets/cah.png";
-import quietkingz from "../Assets/quietkings.png";
 
 class Disco extends Component {
   render() {
@@ -25,14 +23,16 @@ class Disco extends Component {
                 <div className="row">
                   <div className="col-6 col-md-12">
                     <img
-                      src={cah}
+                      src={process.env.REACT_APP_ASSETS + "pride/cah.png"}
                       alt="Carolina Ale House's Logo"
                       className="img-fluid mb-2"
                     />
                   </div>
                   <div className="col-6 col-md-12">
                     <img
-                      src={quietkingz}
+                      src={
+                        process.env.REACT_APP_ASSETS + "pride/quietkings.png"
+                      }
                       alt="QuietKingz's Logo"
                       className="img-fluid mb-2"
                     />

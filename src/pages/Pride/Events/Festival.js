@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import todrick from "../Assets/todrick.jpg";
 
 class Festival extends Component {
   render() {
@@ -22,7 +21,7 @@ class Festival extends Component {
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={todrick}
+                  src={process.env.REACT_APP_ASSETS + "pride/todrick.jpg"}
                   alt="Todrick Hall"
                   className="img-fluid mb-2"
                 />

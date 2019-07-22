@@ -48,11 +48,7 @@ class Comedy extends Component {
       <div className="card">
         <figure className="ms-thumbnail ms-thumbnail-horizontal">
           <img
-            src={
-              "https://d2f908d3j7stzr.cloudfront.net/chspride/comedy/" +
-              props.src +
-              ".jpg"
-            }
+            src={process.env.REACT_APP_ASSETS + "comedy/" + props.src + ".jpg"}
             alt={props.name}
             className="img-fluid"
           />

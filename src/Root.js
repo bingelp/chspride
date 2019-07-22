@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
   Redirect
 } from "react-router-dom";
 
@@ -48,7 +47,6 @@ const Root = props => {
             <Redirect from="/vendors" to="/vendor-registration" />
             <Redirect from="/cruise" to="/pride-on-the-harbor" />
             <Redirect from="/friends" to="/friends-of-pride" />
-            <Route exact path="/" component={Home} />
             <Route path="/board-of-directors" component={Board} />
             <Route path="/bylaws" component={Bylaws} />
             <Route path="/board-roles" component={BoardRoles} />
@@ -89,40 +87,18 @@ const Root = props => {
                   "https://www.facebook.com/events/2208879402540673/")
               }
             />
-            <Route path="*" component={NoMatch} />
+            <Route
+              path="/familynight"
+              component={() =>
+                (window.location = "https://doodle.com/poll/9g5spazrei5ra55f")
+              }
+            />
+            <Route path="*" component={Home} />
           </Switch>
         </App>
       </ScrollToTop>
     </Router>
   );
 };
-
-const NoMatch = ({ location }) => (
-  <div className="bg-full-page bg-primary back-fixed">
-    <div className="mw-500 absolute-center">
-      <div className="card animated zoomInUp animation-delay-7 color-primary withripple">
-        <div className="card-body">
-          <div className="text-center color-dark">
-            <h1 className="color-primary text-big">Error 404</h1>
-            <h2>Page Not Found</h2>
-            <p className="lead lead-sm">
-              This is a new site and apparently we missed something.
-            </p>
-            <p>
-              If you wouldn&apos;t mind please, send an email to{" "}
-              <a href="mailto:support@charlestonpride.org">
-                support@charlestonpride.org
-              </a>
-              . Thanks!
-            </p>
-            <Link to="/" className="btn btn-primary btn-raised">
-              <i className="zmdi zmdi-home" /> Go Home
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 export default Root;

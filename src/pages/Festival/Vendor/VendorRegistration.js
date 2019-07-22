@@ -42,6 +42,11 @@ export default class VendorRegistration extends Component {
                   </a>
                   .
                 </p>
+                <p className="ml-3 text-center col">
+                  <strong>
+                    Note: Registration for food truck vendors is full.
+                  </strong>
+                </p>
                 <p className="ml-3 text-center">
                   <em>All sales are final.</em>
                 </p>

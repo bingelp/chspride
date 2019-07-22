@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import map from "./map.jpg";
 import CountdownClock from "../../components/CountdownClock";
 import SocialList from "../../components/SocialList/SocialList";
 import { Link } from "react-router-dom";
 import RippleImage from "../../components/RippleImage";
-import patti from "./pat.jpg";
-import todrick from "./todrick.jpg";
+const patti = "festival/pat.jpg";
+const todrick = "festival/todrick.jpg";
+const map = "festival/map.jpg";
 const festivalDate = "Saturday, September 14th 2019";
 
 export default class Festival extends Component {
@@ -102,7 +102,10 @@ export default class Festival extends Component {
               </p>
             </div>
             <div className="col-12 col-md-6">
-              <RippleImage src={map} alt="Vendor Map" />
+              <RippleImage
+                src={process.env.REACT_APP_ASSETS + map}
+                alt="Vendor Map"
+              />
               <h4>Parking</h4>
               <p>
                 Parking in the Brittlebank Park parking area is reserved for
@@ -127,7 +130,7 @@ export default class Festival extends Component {
             <div className="col-12 ">
               <this.Entertainer
                 name="Todrick Hall"
-                img={todrick}
+                img={process.env.REACT_APP_ASSETS + todrick}
                 facebook="toddyrockstar"
                 instagram="todrick"
                 twitter="todrick"
@@ -138,7 +141,7 @@ export default class Festival extends Component {
             <div className="col-12 col-lg-6">
               <this.Entertainer
                 name="Emcee - Patti O'Furniture"
-                img={patti}
+                img={process.env.REACT_APP_ASSETS + patti}
                 web="http://dudleysonann.com"
                 facebook="allaboutpatti"
                 instagram="allaboutpatti"

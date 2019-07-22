@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import hub from "../Assets/EqualityHub.png";
+import {
+  ExternalLink,
+  ExternalBtn,
+  ButtonLink
+} from "../../../components/LinkUtil";
+import { Link } from "react-router-dom";
 
 class Family extends Component {
   render() {
@@ -22,7 +26,7 @@ class Family extends Component {
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={hub}
+                  src={process.env.REACT_APP_ASSETS + "pride/EqualityHub.png"}
                   alt="Equality Hub Logo"
                   className="img-fluid mb-2"
                 />
@@ -60,11 +64,8 @@ class Family extends Component {
                 </p>
                 <p>
                   Please note: At this time, only 12 Mini Session spots are
-                  available; spots must be registered in advance. Send an email
-                  to{" "}
-                  <a href="mailto:info@charlestonpride.org">
-                    info@charlestonpride.org
-                  </a>{" "}
+                  available; spots must be registered in advance.{" "}
+                  <Link to="/familynight">Register</Link>
                   to reserve your spot today. Canceled spots will be filled.
                   Complimentary refreshments will be first come, first serve.
                   All ages are welcome!
@@ -82,6 +83,14 @@ class Family extends Component {
               title="Equality Hub"
               color="primary"
             />
+            <ButtonLink
+              to="/familynight"
+              icon="globe"
+              color="primary"
+              invert={true}
+            >
+              Register for Photos
+            </ButtonLink>
             <div className="pull-right">
               <h3>
                 <span className="color-primary">FREE</span>

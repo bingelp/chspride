@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalBtn, ExternalLink } from "../../../components/LinkUtil";
-import rhapsody from "../Assets/rhapsody.jpg";
 
 class Rhapsody extends Component {
   render() {
@@ -21,7 +20,11 @@ class Rhapsody extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col-md-4">
-                <img src={rhapsody} alt="" className="img-fluid mb-2" />{" "}
+                <img
+                  src={process.env.REACT_APP_ASSETS + "pride/rhapsody.jpg"}
+                  alt="Rhapsody"
+                  className="img-fluid mb-2"
+                />
               </div>
               <div className="col-md-8">
                 <p>

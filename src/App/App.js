@@ -139,7 +139,7 @@ const navigation = {
         },
         {
           key: "pageant",
-          to: "pageant",
+          to: "/pageant",
           title: "Empress and Emperor Pageant (8/31)",
           icon: "fa-trophy",
           divide: true
@@ -152,7 +152,7 @@ const navigation = {
         },
         {
           key: "parade",
-          to: "parade",
+          to: "/parade",
           title: "Pride Parade (9/14)",
           icon: "fa-flag"
         },

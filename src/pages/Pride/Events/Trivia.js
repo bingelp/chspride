@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ExternalLink, ExternalBtn } from "../../../components/LinkUtil";
-import snafu from "../Assets/snafu.jpg";
 
 class Trivia extends Component {
   render() {
@@ -22,7 +21,7 @@ class Trivia extends Component {
             <div className="row">
               <div className="col-md-4">
                 <img
-                  src={snafu}
+                  src={process.env.REACT_APP_ASSETS + "pride/snafu.jpeg"}
                   alt="Snafu Brewing Logo"
                   className="img-fluid mb-2"
                 />{" "}
