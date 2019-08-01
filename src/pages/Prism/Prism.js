@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Prism.css";
 import SocialList from "../../components/SocialList/SocialList";
 import { Link } from "react-router-dom";
-import ETapestryForm from "../../components/ETapestryForm";
+import AftonForm from "../../components/AftonForm/AftonForm";
 
 class Prism extends Component {
   Header(props) {
@@ -274,7 +274,7 @@ class Prism extends Component {
             <h1>Tickets</h1>
             <p>This event is 18+</p>
             <this.PriceTable />
-            <ETapestryForm form="prism" title="Prism" />
+            <AftonForm id="1289" title="Prism Tickets" />
           </div>
         </div>
       </div>

@@ -90,7 +90,8 @@ const Root = props => {
             <Route
               path="/familynight"
               component={() =>
-                (window.location = "https://doodle.com/poll/9g5spazrei5ra55f")
+                (window.location =
+                  "https://chspride.wufoo.com/forms/family-photos-at-the-equality-hub-pride-week-2019/")
               }
             />
             <Route path="*" component={Home} />
