@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ExternalLink, ButtonLink } from "../../../components/LinkUtil";
+import { ExternalLink } from "../../../components/LinkUtil";
 
 class Tour extends Component {
   render() {
@@ -18,6 +18,12 @@ class Tour extends Component {
             </h3>
           </div>
           <div className="card-body">
+            <div className="alert alert-danger alert-light">
+              <h4>
+                <span className="fa fa-exclamation-triangle" /> This event has
+                been postponed due to Hurricane Dorian.
+              </h4>{" "}
+            </div>
             <div className="row">
               <div className="col">
                 <p>
@@ -48,9 +54,7 @@ class Tour extends Component {
                 />
               </div>
             </div>
-            <ButtonLink to="/tour" icon="star-o" color="danger">
-              Tickets
-            </ButtonLink>
+
             <div className="pull-right">
               <h3>
                 <span className="color-danger">$15</span>

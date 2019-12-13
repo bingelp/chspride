@@ -13,7 +13,7 @@ export default class Volunteer extends Component {
           <div className="text-center">
             <h1 className={headerClass}>Volunteer with Charleston Pride</h1>
             <p className={heroClass}>
-              Volunteers dont just do the work - they make it work.
+              Volunteers don't just do the work - they make it work.
             </p>
           </div>
         </div>

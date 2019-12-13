@@ -4,7 +4,7 @@ import Typed from "typed.js";
 import "./Home.css";
 import Sponsors from "../Sponsors/SponsorHero";
 import CountdownClock from "../../components/CountdownClock";
-import GetInvoved from "../../components/GetInvolved/GetInvolved";
+import GetInvolved from "../../components/GetInvolved/GetInvolved";
 import { ButtonLink } from "../../components/LinkUtil";
 import { Link } from "react-router-dom";
 import todrick from "./todrick.jpg";
@@ -45,6 +45,22 @@ class Home extends React.Component {
           </CountdownClock>
           <ButtonLink to="/pride" icon="flag" color="success">
             More Info
+          </ButtonLink>
+        </div>
+      </div>
+    );
+  }
+
+  Apply() {
+    return (
+      <div className="wrap ms-hero-bg-success ms-hero-img-stage">
+        <div className="container text-center">
+          <h1 className="color-white mb-1">
+            Help Make Charleston Pride Week 2020 The Best One Yet!{" "}
+          </h1>
+          <h2 className="color-white mb-1">Serve on the Board</h2>
+          <ButtonLink to="/serve-on-the-board" icon="pencil" color="success">
+            Apply
           </ButtonLink>
         </div>
       </div>
@@ -169,15 +185,55 @@ class Home extends React.Component {
       </div>
     );
   }
+  Dorian() {
+    return (
+      <div className="alert alert-danger">
+        <h1>
+          <span className="fa fa-exclamation-triangle" /> The following events
+          have been canceled due to Hurricane Dorian:
+        </h1>
+        <ul>
+          <li>
+            <h3>AFFA Pride Family Picnic</h3>
+          </li>
+          <li>
+            <h3>Real Rainbow Row Tour</h3>
+          </li>
+          <li>
+            <h3>A Celebration of Pride and Faith</h3>
+          </li>
+        </ul>
+        <h4>
+          Stay tuned to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://www.facebook.com/charlestonpride"}
+          >
+            Facebook
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://www.instagram.com/charlestonpride"}
+          >
+            Instagram
+          </a>{" "}
+          for the latest announcements and please stay safe out there!
+        </h4>
+      </div>
+    );
+  }
 
   render() {
     return (
       <div>
         <this.Hero />
         <Sponsors />
-        <this.Countdown />
+        <this.Apply />
         <this.Todrick />
-        <GetInvoved />
+        <GetInvolved />
         <this.Mission />
       </div>
     );

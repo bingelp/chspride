@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ETap from "../../../components/ETapestryForm";
 const nonProfitDate = "Thursday, September 12th";
 const packetsSent = "Thursday, September 12th";
 
@@ -43,16 +42,13 @@ export default class VendorRegistration extends Component {
                   .
                 </p>
                 <p className="ml-3 text-center col">
-                  <strong>
-                    Note: Registration for food truck vendors is full.
-                  </strong>
+                  <strong>Registration is closed.</strong>
                 </p>
                 <p className="ml-3 text-center">
                   <em>All sales are final.</em>
                 </p>
               </div>
             </div>
-            <ETap form="VendorRegistration" title="parade-registration" />
           </div>
         </div>
       </div>

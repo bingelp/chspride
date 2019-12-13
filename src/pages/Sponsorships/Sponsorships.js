@@ -188,7 +188,7 @@ class Sponsorships extends React.Component {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
               <h2 className="counter">
-                <CountUp start={0} end={11275} duration={6} />+
+                <CountUp start={0} end={11630} duration={6} />+
               </h2>
               <i className="color-info fa fa-4x fa-facebook" />
               <p className="mt-2 no-mb lead small-caps">Likes on Facebook</p>
@@ -208,7 +208,7 @@ class Sponsorships extends React.Component {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="card card-danger card-body text-center wow zoomInUp animation-delay-4">
               <h2 className="counter">
-                <CountUp start={0} end={36} duration={6} />
+                <CountUp start={0} end={44} duration={6} />
               </h2>
               <i className="color-danger fa fa-4x fa-comments-o" />
               <p className="mt-2 no-mb lead small-caps">Sponsors</p>

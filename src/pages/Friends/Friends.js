@@ -93,7 +93,7 @@ class Friends extends React.Component {
             </p>
             <p>
               <em>
-                &#8224; Acknowledgement will only appear if desired. Membership
+                &#8224; Acknowledgment will only appear if desired. Membership
                 must be started before the cut off date for the Pride Guide.
               </em>
             </p>
@@ -183,7 +183,7 @@ class Friends extends React.Component {
                 />
                 <this.RainbowItem
                   icon="address-book"
-                  text="Acknowledgement in Pride Guide"
+                  text="Acknowledgment in Pride Guide"
                   super="&#8224;"
                 />
                 <this.RainbowItem
@@ -200,7 +200,7 @@ class Friends extends React.Component {
                 />
                 <this.RainbowItem
                   icon="handshake-o"
-                  text="Meet and Greet with Entertainment (if avaliable)"
+                  text="Meet and Greet with Entertainment (if available)"
                 />
                 <this.RainbowItem
                   icon="gift"
@@ -217,7 +217,7 @@ class Friends extends React.Component {
                 />
                 <this.DoubleRainbowItem
                   icon="address-book"
-                  text="Acknowledgement in Pride Guide"
+                  text="Acknowledgment in Pride Guide"
                   super="&#8224;"
                 />
                 <this.DoubleRainbowItem
@@ -237,7 +237,7 @@ class Friends extends React.Component {
                 />
                 <this.DoubleRainbowItem
                   icon="handshake-o"
-                  text="Meet and Greet with Entertainment (if avaliable)"
+                  text="Meet and Greet with Entertainment (if available)"
                   double="true"
                 />
                 <this.DoubleRainbowItem

@@ -113,6 +113,47 @@ class Pride extends Component {
     );
   }
 
+  Dorian() {
+    return (
+      <div className="alert alert-danger">
+        <h1>
+          <span className="fa fa-exclamation-triangle" /> The following events
+          have been canceled due to Hurricane Dorian:
+        </h1>
+        <ul>
+          <li>
+            <h3>AFFA Pride Family Picnic</h3>
+          </li>
+          <li>
+            <h3>Real Rainbow Row Tour</h3>
+          </li>
+          <li>
+            <h3>A Celebration of Pride and Faith</h3>
+          </li>
+        </ul>
+        <h4>
+          Stay tuned to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://www.facebook.com/charlestonpride"}
+          >
+            Facebook
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://www.instagram.com/charlestonpride"}
+          >
+            Instagram
+          </a>{" "}
+          for the latest announcements and please stay safe out there!
+        </h4>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div id="pride">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Section from "../../components/Section/Section";
+import Vacancies from "./Vacancies";
 
 export default class ServeOnBoard extends Component {
   Subtitle() {
@@ -15,13 +16,15 @@ export default class ServeOnBoard extends Component {
       >
         <div className="text-center">
           <h2>Step 1: Reviews the Bylaws</h2>
-          <Link to="/bylaws" className="btn btn-raised btn-primary">
+          <Link
+            to="/bylaws"
+            className="btn btn-raised btn-primary"
+            target="_blank"
+          >
             Bylaws
           </Link>
-          <h2>Step 2: Review the Board Roles &amp; Responsibilitites</h2>
-          <Link to="/board-roles" className="btn btn-raised btn-primary">
-            Board Roles &amp; Responsibilitites
-          </Link>
+          <h2>Step 2: Review Openings</h2>
+          <Vacancies />
           <h2>
             Step 3: Submit Resume <em>(Optional)</em>
           </h2>

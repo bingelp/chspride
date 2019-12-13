@@ -8,7 +8,7 @@ class Lol extends Component {
       <li className="ms-timeline-item wow materialUp">
         <div className="ms-timeline-date">
           <time className="timeline-time" dateTime="2019-10-13T20:00">
-            September 20<span className="day"> Friday</span> 8:00 PM
+            September 13<span className="day"> Friday</span> 8:00 PM
           </time>
           <i className="ms-timeline-point bg-warning" />
         </div>

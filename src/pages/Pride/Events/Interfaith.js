@@ -19,6 +19,12 @@ class Interfaith extends Component {
             </h3>
           </div>
           <div className="card-body">
+            <div className="alert alert-royal alert-light">
+              <h4>
+                <span className="fa fa-exclamation-triangle" /> This event has
+                been postponed due to Hurricane Dorian.
+              </h4>{" "}
+            </div>
             <div className="row">
               <div className="col">
                 <p>

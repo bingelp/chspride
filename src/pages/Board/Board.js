@@ -1,6 +1,7 @@
 import React from "react";
 import BoardMember from "./BoardMember";
 import "./Board.css";
+import Vacancies from "./Vacancies";
 
 class Board extends React.Component {
   constructor(props) {
@@ -20,16 +21,24 @@ class Board extends React.Component {
       })
       .then(data => {
         this.setState({
-          directors: data
-            .filter(d => !d.executive)
-            .sort(d => d.order)
-            .reverse(),
-          executives: data
-            .filter(d => d.executive)
-            .sort(d => d.order)
-            .reverse()
+          directors: data.filter(d => !d.executive).sort(this.compare),
+          executives: data.filter(d => d.executive).sort(this.compare)
         });
       });
+  }
+
+  compare(a, b) {
+    debugger;
+    if (a.executive) {
+      if (a.order !== b.order) {
+        return a.order - b.order;
+      }
+    }
+
+    if (a.yearElected !== b.yearElected) {
+      return a.yearElected - b.yearElected;
+    }
+    return a.monthElected - b.monthElected;
   }
 
   render() {
@@ -39,7 +48,7 @@ class Board extends React.Component {
           <div className="container">
             <div className="text-center">
               <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                2019 Board of Directors
+                2020 Board of Directors
               </h1>
             </div>
           </div>
@@ -57,7 +66,7 @@ class Board extends React.Component {
             director-level positions to assist in the management and
             administration of the <strong>Charleston Pride Festival</strong>.
           </p>
-          <h2 className="text-center">2019 Board of Directors</h2>
+          <h2 className="text-center">2020 Board of Directors</h2>
           <div className="row">
             {this.state.executives &&
               this.state.executives.map(b => (
@@ -68,6 +77,10 @@ class Board extends React.Component {
                 <BoardMember key={b.id} meta={b} />
               ))}
           </div>
+          <h2 className="text-center" id="vacancies">
+            Vacancies
+          </h2>
+          <Vacancies showApply="true" />
         </div>
       </div>
     );

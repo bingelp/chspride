@@ -6,7 +6,7 @@ class GetInvolved extends React.Component {
     return (
       <div
         className={
-          "ms-feature col-12 col-md-4 col-lg-2 flipInX animation-delay-4 card card-" +
+          "ms-feature col-12 col-md-4 flipInX animation-delay-4 card card-" +
           props.color +
           "-inverse"
         }

@@ -1,5 +1,4 @@
 import React from "react";
-import rolesPdf from "./CPF-Board-Roles.pdf";
 import "./Board.css";
 
 export default class BoardRoles extends React.Component {
@@ -18,13 +17,6 @@ export default class BoardRoles extends React.Component {
         <div className="container">
           <div className="border-box card-hero">
             <div className="card-body">
-              <a
-                className="btn btn-info pull-right btn-raised"
-                download
-                href={rolesPdf}
-              >
-                <i className="fa fa-download" /> Download
-              </a>
               <Position
                 title="Chair / Chief Executive Officer"
                 description="The Chair of the Board serves as the Chief Executive Officer of Charleston Pride Festival, Inc.
@@ -194,126 +186,6 @@ export default class BoardRoles extends React.Component {
                 </li>
               </Position>
               <Position
-                title="Director of Advertising"
-                description="The Director of Advertising responsibilities include, but are not limited to, the sale of all advertising to
-                                be placed in the annual Charleston Pride Guide (one week prior to the festival), and the development of
-                                a program to promote the sale of ads to be placed on the Charleston Pride Festival website
-                                (charlestonpride.org)."
-              >
-                <li>
-                  Knowledge of and familiarity with the Pride Guide and all of
-                  its previous iterations and ad purchasers.
-                </li>
-                <li>
-                  Knowledge of and familiarity with Charleston Pride’s
-                  advertising offerings
-                </li>
-                <li>
-                  Work independently contacting previous advertisers and
-                  potential new advertisers for the current year’s Pride Guide
-                </li>
-                <li>
-                  Secure artwork from advertisers ahead of the set deadline
-                </li>
-                <li>
-                  Manage relationship with designer and printer and project
-                  manage Pride Guide creation and distribution
-                </li>
-              </Position>
-              <Position
-                title="Director of Communications"
-                description="The Director of Communication’s responsibilities include, but are not limited to, the development and
-                                execution of a marketing and communication’s strategy for the Charleston Pride Festival. The marketing
-                                and communications strategy should include plans for social media, traditional media (print, television,
-                                radio), blog posts, posters/flyers, billboards, street banners, light pole banners, and creation and
-                                distribution of press releases."
-              >
-                <li>
-                  Knowledge of and familiarity with modes of communication
-                  utilized by Charleston Pride in the past.
-                </li>
-                <li>
-                  Develop new and improved modes of communication for Charleston
-                  Pride.
-                </li>
-                <li>
-                  Manage Charleston Pride social media (Facebook, Twitter and
-                  Google+)
-                </li>
-                <li>
-                  Create regular blog posts on charlestonpride.com to promote
-                  Charleston Pride news.
-                </li>
-                <li>
-                  Coordinate Charleston Pride’s relationships with local media
-                  (print, radio and television) to ensure regular coverage of
-                  Charleston Pride news and events.
-                </li>
-                <li>
-                  Coordinate billboards, street banners, light pole banners,
-                  newspaper ads, and other modes ofcommunication as needed
-                  leading up to the festival week.
-                </li>
-                <li>Create and distribute Charleston Pride press releases</li>
-              </Position>
-              <Position
-                title="Director of Entertainment"
-                description="The Director of Entertainment serves as a member of the Board of Director. As Director of
-                                Entertainment, you are charged with securing entertainment for all events and fundraisers, including
-                                the annual Charleston Pride celebration. The Director of Entertainment coordinates closely with the
-                                Chief Executive Officer in establishing plans for entertainment at future events and securing all
-                                subsequent necessary contracts."
-              >
-                <li>
-                  Provide recommendations for entertainment at all fundraiser
-                  events.
-                </li>
-                <li>
-                  Provide recommendations for entertainment during Charleston
-                  Pride.
-                </li>
-                <li>
-                  Secure all necessary and desired entertainment contracts for
-                  events.
-                </li>
-                <li>
-                  Coordinate with the Chief Executive Officer to sign necessary
-                  contracts for entertainment.
-                </li>
-                <li>
-                  Coordinate travel and lodging arrangements for all
-                  entertainment bookings.
-                </li>
-              </Position>
-              <Position
-                title="Director of Events"
-                description="The Director of Events serves as a member of the Board of Director. As Director of Fundraising you are
-                                charged with planning or oversight over all major fundraising events throughout the year with general
-                                oversight from the Board of Directors. These events include all major annual fundraisers, including the
-                                Charleston Rainbow Run, Pride On The Harbor, A Night for Pride, and Charleston Pride Pageant."
-              >
-                <li>
-                  Provide planning and / or oversight over all major fundraising
-                  events, excluding Charleston Pride Week festivities.
-                </li>
-                <li>
-                  Coordinate with the Chief Executive Officer during planning on
-                  all major fundraisers.
-                </li>
-                <li>
-                  Coordinate with the Director of Entertainment to secure
-                  necessary acts and bookings for all major fundraisers.
-                </li>
-                <li>
-                  Provide logistical / financial planning reports to the Board
-                  of Directors prior any major fundraiser.
-                </li>
-                <li>
-                  Secure all necessary service / equipment rentals for
-                  fundraising events.
-                </li>
-              </Position>
-              <Position
                 title="Director of Outreach"
                 description="The Director of Outreach’s responsibilities include, but are not limited to, developing and maintaining
                                 meaningful and productive relationships between Charleston Pride Festival and other local and regional
@@ -348,25 +220,6 @@ export default class BoardRoles extends React.Component {
                   of advertising, solicitation for vendors and parade
                   participants, and other possible efforts.
                 </li>
-              </Position>
-              <Position
-                title="Volunteer Coordinator"
-                description="The Volunteer Coordinator’s responsibilities include, but are not limited to, recruiting volunteers for
-                                events, maintaining a volunteer database, and developing long term relationships with volunteers that
-                                will encourage them to return time and again to volunteer with the Charleston Pride organization."
-              >
-                <li>
-                  Coordinate volunteer needs with other Charleston Pride
-                  Festival board members
-                </li>
-                <li>Recruit volunteers throughout the year</li>
-                <li>
-                  Work with Director of Outreach to recruit volunteers through
-                  our relationship with other organizations
-                </li>
-                <li>Maintain regular communication with volunteer base</li>
-                <li>Create incentives for volunteers</li>
-                <li>Maintain volunteer database</li>
               </Position>
             </div>
           </div>

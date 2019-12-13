@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ETap from "../../components/ETapestryForm";
 
 export default class ParadeRegistration extends Component {
   render() {
@@ -27,13 +26,8 @@ export default class ParadeRegistration extends Component {
                   the form by September 12th.{" "}
                 </p>
                 <p className="ml-3 text-center">
-                  <em>All sales are final.</em>
+                  <strong>Parade registration is closed for this year.</strong>
                 </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <ETap title="Parade Registration" form="ParadeRegistration" />
               </div>
             </div>
           </div>

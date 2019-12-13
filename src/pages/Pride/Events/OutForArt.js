@@ -26,6 +26,19 @@ class OutForArt extends Component {
                   alt="Miller Gallery logo"
                   className="img-fluid mb-2"
                 />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-4">
+                <ul className="list-group">
+                  <li className="list-group-item">
+                    5:30 PM – Cocktail Reception
+                  </li>
+                  <li className="list-group-item">7:00 PM – Film Screening</li>
+                </ul>
+              </div>
+
+              <div className="col-md-8">
                 <p>
                   Celebrate LGBTQIA+ female artists with a special exhibit
                   featuring works by <strong>Jo Hay</strong>, followed by a
