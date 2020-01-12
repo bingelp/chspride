@@ -1,39 +1,11 @@
 import React from "react";
-import WOW from "wowjs";
-import Typed from "typed.js";
 import "./Home.css";
 import Sponsors from "../Sponsors/SponsorHero";
 import CountdownClock from "../../components/CountdownClock";
 import GetInvolved from "../../components/GetInvolved/GetInvolved";
 import { ButtonLink } from "../../components/LinkUtil";
-import { Link } from "react-router-dom";
-import todrick from "./todrick.jpg";
 
 class Home extends React.Component {
-  componentDidMount() {
-    new WOW.WOW({
-      live: false
-    }).init();
-
-    let options = {
-      strings: [
-        "10 Years of Celebration",
-        "10 Years of Progress",
-        "10 Years of Pride"
-      ],
-      typeSpeed: 80,
-      startDelay: 1000,
-      loop: true,
-      backDelay: 1000,
-      autoInsertCss: false,
-      showCursor: false
-    };
-    this.typed = new Typed(".typed-class", options);
-  }
-  componentWillUnmount() {
-    this.typed.destroy();
-  }
-
   Countdown() {
     return (
       <div className="wrap ms-hero-bg-success ms-hero-img-stage">
@@ -135,7 +107,7 @@ class Home extends React.Component {
           <div className="intro-hero-full-content">
             <div className="container text-center">
               <span className="ms-hero-logo" />
-              <h1 className="animated fadeInUp animation-delay-12 small-caps">
+              <h1 className="animated fadeInUp animation-delay-5 small-caps">
                 Charleston{" "}
                 <span className="initialism">
                   <span>P</span>
@@ -145,19 +117,13 @@ class Home extends React.Component {
                   <span>e</span>
                 </span>
               </h1>
-              <h2>
-                <span className="typed-class typed-block color-primary" />
-                <span className="typed-cursor color-warning">|</span>
-              </h2>
-              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInDown animation-delay-7">
-                2009-2019
-              </h2>
-              <ButtonLink to="/pride" icon="flag" color="success">
+
+              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-5">
                 Pride Week
-              </ButtonLink>
-              <ButtonLink to="#getInvolved" icon="smile-o" color="warning">
-                Get Involved
-              </ButtonLink>
+              </h2>
+              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-8">
+                Summer 2020
+              </h2>
             </div>
           </div>
         </div>
@@ -165,26 +131,6 @@ class Home extends React.Component {
     );
   }
 
-  Todrick() {
-    return (
-      <div className="row jumbotron bg-dark" id="todrick">
-        <div className="col-12 col-lg-6">
-          <img src={todrick} className="img-fluid" alt="Todrick Hall" />
-        </div>
-        <div className="col-12 col-lg-6 text-center">
-          <h1 className="color-info">It's Todrick Hall, Y'all!</h1>
-          <h2>
-            Come see Todrick headline the{" "}
-            <Link to="/festival">Pride Festival</Link>
-          </h2>
-          <p>
-            Pssst... wanna meet Todrick? Become a{" "}
-            <Link to="/friends-of-pride">Friend of Pride</Link> today!
-          </p>
-        </div>
-      </div>
-    );
-  }
   Dorian() {
     return (
       <div className="alert alert-danger">
@@ -231,8 +177,6 @@ class Home extends React.Component {
       <div>
         <this.Hero />
         <Sponsors />
-        <this.Apply />
-        <this.Todrick />
         <GetInvolved />
         <this.Mission />
       </div>
