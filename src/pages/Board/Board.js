@@ -1,7 +1,6 @@
 import React from "react";
 import BoardMember from "./BoardMember";
 import "./Board.css";
-import Vacancies from "./Vacancies";
 
 class Board extends React.Component {
   constructor(props) {
@@ -28,7 +27,6 @@ class Board extends React.Component {
   }
 
   compare(a, b) {
-    debugger;
     if (a.executive) {
       if (a.order !== b.order) {
         return a.order - b.order;
@@ -77,10 +75,6 @@ class Board extends React.Component {
                 <BoardMember key={b.id} meta={b} />
               ))}
           </div>
-          <h2 className="text-center" id="vacancies">
-            Vacancies
-          </h2>
-          <Vacancies showApply="true" />
         </div>
       </div>
     );

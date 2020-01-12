@@ -103,10 +103,10 @@ class Pride extends Component {
     );
   }
 
-  Accomodations(props) {
+  Accommodations(props) {
     return (
       <div className="col-lg-4">
-        <h2>Hotel and Accomodations</h2>
+        <h2>Hotel and Accommodations</h2>
         <Hotel />
         <Toast />
       </div>
@@ -159,10 +159,11 @@ class Pride extends Component {
       <div id="pride">
         <this.Header />
         <Sponsors />
+
         <div className="container">
           <div className="row">
             <this.Calendar />
-            <this.Accomodations />
+            <this.Accommodations />
           </div>
         </div>
       </div>
