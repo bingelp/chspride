@@ -7,7 +7,7 @@ export default class Ad extends Component {
         <div className="container">
           <div className="text-center">
             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-              2019 Pride Guide
+              2020 Pride Guide
             </h1>
             <p className="lead color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
               Spread the word about your business or organization and advertise
@@ -39,7 +39,7 @@ export default class Ad extends Component {
                   </li>
                   <li>
                     Distribution to Charleston, Mount Pleasant, James Island,
-                    Johns Island, Edisto, Beaufort, Columbia,Myrtle Beach,
+                    Johns Island, Edisto, Beaufort, Columbia, Myrtle Beach,
                     Greenville, Spartanburg, Savannah, Asheville, and Charlotte
                   </li>
                 </ul>
@@ -47,7 +47,7 @@ export default class Ad extends Component {
               <div>
                 <h3>Added Value</h3>
                 <ul>
-                  <li>Ad space in the 2019 Charleston Pride Guide</li>
+                  <li>Ad space in the 2020 Charleston Pride Guide</li>
                   <li>Digital version on Charleston Pride Website</li>
                 </ul>
               </div>
@@ -57,10 +57,10 @@ export default class Ad extends Component {
                 <h3>Advertising Deadlines</h3>
                 <ul>
                   <li>
-                    Ad reservation deadline: <strong>July 5, 2019</strong>
+                    Ad reservation deadline: <strong>July 5, 2020</strong>
                   </li>
                   <li>
-                    Print ready artwork deadline: <strong>July 8, 2019</strong>
+                    Print ready artwork deadline: <strong>July 8, 2020</strong>
                   </li>
                 </ul>
               </div>
@@ -111,7 +111,7 @@ export default class Ad extends Component {
             </div>
             <div className="col-md-6">
               <div>
-                <h2>Premium Center Fold Ad - SOLD OUT</h2>
+                <h2>Premium Center Fold Ad</h2>
                 <p>
                   For, <strong>$1,500</strong>, make a major statement for your
                   business or organization with an exclusive center fold ad in
@@ -123,7 +123,7 @@ export default class Ad extends Component {
                 </ul>
               </div>
               <div>
-                <h2>Premium Back Cover - SOLD OUT</h2>
+                <h2>Premium Back Cover</h2>
                 <p>
                   For <strong>$1,250</strong>, your ad can be placed on the back
                   cover of the Pride Guide, printed on glossy paper. There’s
@@ -177,7 +177,7 @@ export default class Ad extends Component {
                 <h2>Quarter Page</h2>
                 <p>
                   For <strong>$350</strong>, feature your business in a simple
-                  yet elegant way with a quarterpage ad. This ad size features
+                  yet elegant way with a quarter page ad. This ad size features
                   enough space to highlight your business at a very affordable
                   rate <strong>or</strong> purchase two separate ads for double
                   coverage.
@@ -198,7 +198,7 @@ export default class Ad extends Component {
       <div>
         <div className="container text-center">
           <h1>Purchase an Ad</h1>
-          <h2>Ad sales has closed for this year</h2>
+          <h2>Ad sales have not yet opened for 2020</h2>
         </div>
       </div>
     );
