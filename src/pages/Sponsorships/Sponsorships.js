@@ -174,7 +174,7 @@ class Sponsorships extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-xl-3 col-md-6">
             <div className="card card-warning card-body text-center wow zoomInUp animation-delay-3">
               <h2 className="counter">
                 <CountUp start={0} end={7500} duration={6} />+
@@ -186,7 +186,7 @@ class Sponsorships extends React.Component {
               <small>2019</small>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-xl-3 col-md-6">
             <div className="card card-info card-body text-center wow zoomInUp animation-delay-2">
               <h2 className="counter">
                 <CountUp start={0} end={12140} duration={6} />+
@@ -196,7 +196,7 @@ class Sponsorships extends React.Component {
               <small>Jan. 2020</small>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-xl-3 col-md-6">
             <div className="card card-success card-body text-center wow zoomInUp animation-delay-5">
               <h2 className="counter">
                 <CountUp start={0} end={19} duration={6} />
@@ -208,7 +208,7 @@ class Sponsorships extends React.Component {
               <small>2019</small>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-xl-3 col-md-6">
             <div className="card card-danger card-body text-center wow zoomInUp animation-delay-4">
               <h2 className="counter">
                 <CountUp start={0} end={44} duration={6} />
@@ -260,7 +260,7 @@ class Sponsorships extends React.Component {
   Levels() {
     return (
       <div id="levels" className="container">
-        <h1 className="text-center">2019 General Sponsorships</h1>
+        <h1 className="text-center">2020 General Sponsorships</h1>
         <LevelTable levels={levels} />
       </div>
     );
@@ -270,7 +270,7 @@ class Sponsorships extends React.Component {
     return (
       <div id="branding" className="container">
         <div className="card">
-          <h1 className="text-center">2019 Branding Opportunities</h1>
+          <h1 className="text-center">2020 Branding Opportunities</h1>
           <div className="row">
             {props.brandings.map(b => (
               <Branding
@@ -294,7 +294,7 @@ class Sponsorships extends React.Component {
       <div>
         <this.Header />
         <this.Stats />
-        <this.Branding brandings={this.state.brandings} />
+        {/* <this.Branding brandings={this.state.brandings} /> */}
         <this.Levels />
         <this.Registration />
       </div>

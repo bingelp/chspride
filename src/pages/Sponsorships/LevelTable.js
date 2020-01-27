@@ -8,7 +8,7 @@ class LevelTable extends React.Component {
         <div className="col-md-4 d-none d-lg-block pricing-col col-push-1">
           <div className="pricing-table pricing-table-description">
             <div className="pricing-table-head-dark">
-              <h2>2019</h2>
+              <h2>2020</h2>
               <h3 className="price"> Sponsorship Levels</h3>
             </div>
             <ul className="pricing-table-content">
