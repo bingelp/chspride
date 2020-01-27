@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Parade.css";
 import paradeRoute from "./paradeRoute.png";
 import { Link } from "react-router-dom";
-import CountdownClock from "../../components/CountdownClock";
 import ParadeRegistration from "./ParadeRegistration";
 
 export default class Parade extends Component {
@@ -13,12 +12,12 @@ export default class Parade extends Component {
           <div className="container">
             <div className="text-center">
               <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                Charleston Pride <span>Parade</span>
+                Charleston Pride Parade 2020
               </h1>
               <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-                Saturday, September 14th, 2019 @ 9:00am
+                Date and Time TBD
               </h2>
-              <CountdownClock eventTime="2019-09-14T09:00:00" color="warning" />
+              {/* <CountdownClock eventTime="2019-09-14T09:00:00" color="warning" /> */}
             </div>
           </div>
         </div>

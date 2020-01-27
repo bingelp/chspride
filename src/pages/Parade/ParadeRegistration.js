@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ETap from "../../components/ETapestryForm";
 
 export default class ParadeRegistration extends Component {
   render() {
@@ -21,13 +22,16 @@ export default class ParadeRegistration extends Component {
                   >
                     {" "}
                     info@charlestonpride.org.
-                  </a>{" "}
-                  Parade information will be emailed to the address specified on
-                  the form by September 12th.{" "}
+                  </a>
                 </p>
-                <p className="ml-3 text-center">
+                {/* <p className="ml-3 text-center">
                   <strong>Parade registration is closed for this year.</strong>
-                </p>
+                </p> */}
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <ETap title="Parade Registration" form="ParadeRegistration" />
               </div>
             </div>
           </div>
