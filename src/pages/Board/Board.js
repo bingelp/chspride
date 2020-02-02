@@ -1,42 +1,28 @@
 import React from "react";
 import BoardMember from "./BoardMember";
 import "./Board.css";
+import board from "./Board-3.jpg";
 
 class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       executives: [],
-      directors: []
+      members: []
     };
   }
 
   componentDidMount() {
-    fetch(
-      "https://gaq5vhskv6.execute-api.us-east-1.amazonaws.com/prod/directors"
-    )
+    fetch("https://chspride.azurewebsites.net/api/directors")
       .then(results => {
         return results.json();
       })
       .then(data => {
         this.setState({
-          directors: data.filter(d => !d.executive).sort(this.compare),
-          executives: data.filter(d => d.executive).sort(this.compare)
+          executives: data.executives,
+          members: data.members
         });
       });
-  }
-
-  compare(a, b) {
-    if (a.executive) {
-      if (a.order !== b.order) {
-        return a.order - b.order;
-      }
-    }
-
-    if (a.yearElected !== b.yearElected) {
-      return a.yearElected - b.yearElected;
-    }
-    return a.monthElected - b.monthElected;
   }
 
   render() {
@@ -45,7 +31,7 @@ class Board extends React.Component {
         <div className="ms-hero-page-override ms-hero-img-board ms-hero-bg-primary">
           <div className="container">
             <div className="text-center">
-              <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+              <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-4 animated zoomInDown animation-delay-5">
                 2020 Board of Directors
               </h1>
             </div>
@@ -70,10 +56,21 @@ class Board extends React.Component {
               this.state.executives.map(b => (
                 <BoardMember key={b.id} meta={b} />
               ))}
-            {this.state.directors &&
-              this.state.directors.map(b => (
-                <BoardMember key={b.id} meta={b} />
-              ))}
+            {this.state.members &&
+              this.state.members.map(b => <BoardMember key={b.id} meta={b} />)}
+          </div>
+          <div className="row">
+            <div className="col">
+              <a className="img-thumbnail withripple color-warning">
+                <div className="thumbnail-container">
+                  <img
+                    src={board}
+                    alt="Board of Directors"
+                    className="img-fluid"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

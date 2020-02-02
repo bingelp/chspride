@@ -14,10 +14,9 @@ export default class BoardMember extends React.Component {
               <div className="withripple zoom-img center">
                 <img
                   src={
-                    process.env.REACT_APP_ASSETS +
-                    "board/2019/" +
-                    this.props.meta.firstName.toLowerCase() +
-                    ".jpeg"
+                    "https://chspride.blob.core.windows.net/directors/" +
+                    this.props.meta.id.toLowerCase() +
+                    ".jpg"
                   }
                   alt={
                     this.props.meta.firstName + " " + this.props.meta.lastName
@@ -43,33 +42,32 @@ export default class BoardMember extends React.Component {
                 </h4>
                 <p>
                   <i className="zmdi zmdi-email mr-1 color-primary" />
+                  <strong>Contact: </strong>
                   <a
                     href={
-                      "mailto:" +
-                      this.props.meta.userName +
-                      "@charlestonpride.org"
+                      "mailto:" + this.props.meta.id + "@charlestonpride.org"
                     }
                   >
-                    {this.props.meta.userName}@charlestonpride.org
+                    {this.props.meta.id}@charlestonpride.org
                   </a>
                 </p>
                 <p>
-                  <i className="zmdi zmdi-calendar mr-1 color-info" />{" "}
-                  {"Elected " +
-                    getMonth(this.props.meta.monthElected) +
-                    " " +
-                    this.props.meta.yearElected}
+                  <i className="zmdi zmdi-calendar mr-1 color-info" />
+                  <strong>Elected to Position: </strong>
+                  {this.props.meta.elected}
                 </p>
-                <em>
-                  <i className="zmdi zmdi-account mr-1 color-royal" />
-                  {capitalizeFirstLetter(this.props.meta.subjective)}/
-                  {capitalizeFirstLetter(this.props.meta.objective)}/
-                  {capitalizeFirstLetter(this.props.meta.possessive)}
-                </em>
-                <div className="bio">
-                  {this.props.meta.bio
-                    ? this.props.meta.bio.map(b => <p key={b}>{b}</p>)
-                    : "Bio coming soon."}
+                <p>
+                  <i className="zmdi zmdi-calendar-alt mr-1 color-success" />
+                  <strong>Served on Board Since: </strong>
+                  {this.props.meta.electedToBoard}
+                </p>
+                {Pronouns(this.props)}
+                <div className="bio well">
+                  {this.props.meta.bio ? (
+                    this.props.meta.bioParagraphs.map(b => <p key={b}>{b}</p>)
+                  ) : (
+                    <em>Bio coming soon.</em>
+                  )}
                 </div>
               </div>
             </div>
@@ -84,20 +82,19 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function getMonth(month) {
-  var months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  return months[month - 1];
+function Pronouns(props) {
+  if (!props.meta.pronouns) {
+    return null;
+  }
+  return (
+    <span>
+      <i className="zmdi zmdi-account mr-1 color-royal" />
+      <strong>Pronouns: </strong>
+      <em>
+        {capitalizeFirstLetter(props.meta.pronouns.subjective)}/
+        {capitalizeFirstLetter(props.meta.pronouns.objective)}/
+        {capitalizeFirstLetter(props.meta.pronouns.possessive)}
+      </em>
+    </span>
+  );
 }

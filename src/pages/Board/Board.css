@@ -1,8 +1,8 @@
 .ms-hero-img-board {
-  background-image: url(board.jpg);
+  background-image: url(stingray.jpeg);
   background-size: cover;
-  background-position: center center;
-  height: 300px;
+  background-position: top center;
+  height: 400px;
 }
 
 .ms-hero-img-serve {
