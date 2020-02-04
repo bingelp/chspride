@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./Volunteer.css";
+import ETap from "../../components/ETapestryForm";
 
 export default class Volunteer extends Component {
-  Header() {
+  header() {
     var headerClass =
       "no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5";
     var heroClass =
@@ -21,11 +22,12 @@ export default class Volunteer extends Component {
     );
   }
 
-  Registration() {
+  render() {
     return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
+      <div>
+        <this.header />
+        <div className="container mt-3">
+          <ETap title="Sign up to Volunteer" form="volunteer" color="warning">
             <h3>
               By filling out the form below you are signing up to be contacted
               about volunteer opportunities.
@@ -36,26 +38,8 @@ export default class Volunteer extends Component {
                 volunteers@charlestonpride.org
               </a>
             </p>
-            <iframe
-              id="etapIframe"
-              title="volunteer"
-              src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/volunteer.html"
-            />
-            <script
-              src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"
-              type="text/JavaScript"
-            />
-          </div>
+          </ETap>
         </div>
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <div>
-        <this.Header />
-        <this.Registration />
       </div>
     );
   }

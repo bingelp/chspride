@@ -16,17 +16,21 @@
   padding: 30px 0 50px 0;
 }
 
-#sponsors .card-body{
+#sponsors .card-caution .card-header {
+  color: rgb(65, 63, 63);
+}
+
+#sponsors .card-body {
   min-height: 212px;
 }
 
-.ms-icon.ms-icon-xxlg{
+.ms-icon.ms-icon-xxlg {
   margin-top: 25px;
 }
 
 .ms-hero-img-sponsor {
-    background-image: url(prism.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
+  background-image: url(prism.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
 }

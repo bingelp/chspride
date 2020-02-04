@@ -37,16 +37,18 @@ class Store extends Component {
 
   PrintYourCause() {
     return (
-      <div>
-        <iframe
-          id="printYourCauseiFrame"
-          src="https://app.printyourcause.com/campaign/charlestonpride"
-          width="100%"
-          height="500px"
-          allow="fullscreen"
-          title="PrintYouCause"
-        />
-        <script type="text/javascript" />
+      <div className="card card-warning">
+        <div className="card-body">
+          <iframe
+            id="printYourCauseiFrame"
+            src="https://app.printyourcause.com/campaign/charlestonpride"
+            width="100%"
+            height="500px"
+            allow="fullscreen"
+            title="PrintYouCause"
+          />
+          <script type="text/javascript" />
+        </div>
       </div>
     );
   }
@@ -55,7 +57,9 @@ class Store extends Component {
     return (
       <div>
         <this.Header />
-        <this.PrintYourCause />
+        <div className="container mt-3">
+          <this.PrintYourCause />
+        </div>
       </div>
     );
   }

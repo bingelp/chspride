@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./MailingList.css";
+import ETap from "../../components/ETapestryForm";
 
 export default class MailingList extends Component {
-  Header() {
+  header() {
     var headerClass =
       "no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5";
     var heroClass =
@@ -21,35 +22,18 @@ export default class MailingList extends Component {
     );
   }
 
-  Registration() {
+  render() {
     return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
+      <div>
+        <this.header />
+        <div className="container mt-3">
+          <ETap title="Sign up" form="emailsignup" color="primary">
             <h3>
               By filling out the form below you are signing up to receive our
               newsletter and announcements for upcoming events.
             </h3>
-            <iframe
-              id="etapIframe"
-              title="mailing-list"
-              src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/emailsignup.html"
-            />
-            <script
-              src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"
-              type="text/JavaScript"
-            />
-          </div>
+          </ETap>
         </div>
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <div>
-        <this.Header />
-        <this.Registration />
       </div>
     );
   }

@@ -4,9 +4,10 @@ import shirt from "./shirt.png";
 import hat from "./hat.png";
 import visor from "./visor.png";
 import RippleImage from "../../components/RippleImage";
+import ETap from "../../components/ETapestryForm";
 
 class Friends extends React.Component {
-  RainbowItem(props) {
+  rainbowItem(props) {
     return (
       <li>
         <i className={"fa fa-" + props.icon} /> {props.text} {props.super}
@@ -14,7 +15,7 @@ class Friends extends React.Component {
     );
   }
 
-  Rainbow(props) {
+  rainbow(props) {
     return (
       <div className="col-12 col-lg-6">
         <div className="price-table price-table-info wow zoomInUp animation-delay-2">
@@ -32,7 +33,7 @@ class Friends extends React.Component {
     );
   }
 
-  DoubleRainbowItem(props) {
+  doubleRainbowItem(props) {
     if (props.double) {
       return (
         <li>
@@ -48,7 +49,7 @@ class Friends extends React.Component {
     );
   }
 
-  DoubleRainbow(props) {
+  doubleRainbow(props) {
     return (
       <div className="col-12 col-lg-6">
         <div className="price-table price-table-success wow zoomInDown animation-delay-2">
@@ -66,48 +67,45 @@ class Friends extends React.Component {
     );
   }
 
-  FinePrint(props) {
+  finePrint() {
     return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
-            <h3>Terms and Conditions</h3>
-            <p>
-              <em>
-                Membership is a 12 month commitment at which point membership
-                becomes month-to-month and can be cancelled anytime after one
-                year.
-              </em>
-            </p>
-            <p>
-              <em>
-                * Including but not limited to annual Pride on the Harbor
-                Cruises and Toast to Equality. Tickets can be reserved by
-                emailing{" "}
-                <a href="mailto:friends@charlestonpride.org">
-                  friends@charlestonpride.org
-                </a>
-                . Tickets must be requested a minimum of 24hrs before start of
-                event and event must not already be sold out.
-              </em>
-            </p>
-            <p>
-              <em>
-                &#8224; Acknowledgment will only appear if desired. Membership
-                must be started before the cut off date for the Pride Guide.
-              </em>
-            </p>
-            <p>
-              <em>^</em> Exclusive gift is your choice of specially branded hat,
-              visor, or shirt.
-            </p>
-          </div>
+      <div className="card">
+        <div className="card-body text-center">
+          <h3>Terms and Conditions</h3>
+          <p>
+            <em>
+              Membership is a 12 month commitment at which point membership
+              becomes month-to-month and can be cancelled anytime after one
+              year.
+            </em>
+          </p>
+          <p>
+            <em>
+              * Including but not limited to annual Pride on the Harbor Cruises
+              and Toast to Equality. Tickets can be reserved by emailing{" "}
+              <a href="mailto:friends@charlestonpride.org">
+                friends@charlestonpride.org
+              </a>
+              . Tickets must be requested a minimum of 24hrs before start of
+              event and event must not already be sold out.
+            </em>
+          </p>
+          <p>
+            <em>
+              &#8224; Acknowledgment will only appear if desired. Membership
+              must be started before the cut off date for the Pride Guide.
+            </em>
+          </p>
+          <p>
+            <em>^</em> Exclusive gift is your choice of specially branded hat,
+            visor, or shirt.
+          </p>
         </div>
       </div>
     );
   }
 
-  Header() {
+  header() {
     return (
       <div className="ms-hero-page-override ms-hero-img-friends ms-hero-bg-primary">
         <div className="container">
@@ -125,11 +123,126 @@ class Friends extends React.Component {
     );
   }
 
-  Registration() {
+  gift() {
     return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
+      <div className="card card-warning-inverse">
+        <div className="card-body">
+          <div className="row">
+            <h2 className="text-center col">
+              Pick From One of the Following as Your Exclusive Gift
+            </h2>
+          </div>
+          <div className="row">
+            <div className="col-4">
+              <RippleImage src={hat} alt="hat" />
+            </div>
+            <div className="col-4">
+              <RippleImage src={shirt} alt="shirt" />
+            </div>
+            <div className="col-4">
+              <RippleImage src={visor} alt="visor" />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        <this.header />
+        <div className="container mt-3">
+          <div className="card">
+            <div className="card-body text-center">
+              <h1>Membership Options</h1>
+              <div className="row">
+                <div className="col">
+                  <h4>
+                    Become an official <strong>Friend of Pride</strong> through
+                    joining our monthly donor program.{" "}
+                    <strong>Friends of Pride</strong> get exclusive access to
+                    many of our events and some extra perks along the way.
+                  </h4>
+                </div>
+              </div>
+              <div className="row">
+                <this.rainbow>
+                  <this.rainbowItem
+                    icon="ticket"
+                    text="Free Entry to Official Charleston Pride Events/Fundraisers"
+                    super="*"
+                  />
+                  <this.rainbowItem
+                    icon="address-book"
+                    text="Acknowledgment in Pride Guide"
+                    super="&#8224;"
+                  />
+                  <this.rainbowItem
+                    icon="glass"
+                    text="VIP Access to Toast to Equality"
+                  />
+                  <this.rainbowItem
+                    icon="flag"
+                    text="Access to the VIP Tent at the Festival (Includes Open Bar)"
+                  />
+                  <this.rainbowItem
+                    icon="star-o"
+                    text="VIP Access to Prism &amp; Last Call"
+                  />
+                  <this.rainbowItem
+                    icon="handshake-o"
+                    text="Meet and Greet with Entertainment (if available)"
+                  />
+                  <this.rainbowItem
+                    icon="gift"
+                    text="Exclusive Gift Only Available to Friends of Pride"
+                    super="^"
+                  />
+                </this.rainbow>
+                <this.doubleRainbow>
+                  <this.doubleRainbowItem
+                    icon="ticket"
+                    text="Free Entry to Official Charleston Pride Events/Fundraisers"
+                    double="true"
+                    super="*"
+                  />
+                  <this.doubleRainbowItem
+                    icon="address-book"
+                    text="Acknowledgment in Pride Guide"
+                    super="&#8224;"
+                  />
+                  <this.doubleRainbowItem
+                    icon="glass"
+                    text="VIP Access to Toast to Equality"
+                    double="true"
+                  />
+                  <this.doubleRainbowItem
+                    icon="flag"
+                    text="Access to the VIP Tent at the Festival (Includes Open Bar)"
+                    double="true"
+                  />
+                  <this.doubleRainbowItem
+                    icon="star-o"
+                    text="VIP Access to Prism &amp; Last Call"
+                    double="true"
+                  />
+                  <this.doubleRainbowItem
+                    icon="handshake-o"
+                    text="Meet and Greet with Entertainment (if available)"
+                    double="true"
+                  />
+                  <this.doubleRainbowItem
+                    icon="gift"
+                    text="Exclusive Gift Only Available to Friends of Pride"
+                    super="^"
+                  />
+                </this.doubleRainbow>
+              </div>
+            </div>
+          </div>
+          <this.gift />
+          <ETap title="Become a Friend of Pride" form="friends" color="primary">
             <h3>
               To become a <strong>Friend of Pride</strong>, fill out the form
               below
@@ -140,132 +253,9 @@ class Friends extends React.Component {
                 friends@charlestonpride.org
               </a>
             </p>
-            <iframe
-              id="etapIframe"
-              title="friends-of-pride"
-              src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/friends.html"
-            />
-            <script
-              src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"
-              type="text/JavaScript"
-            />
-          </div>
+          </ETap>
+          <this.finePrint />
         </div>
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <div>
-        <this.Header />
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-10">
-              <h4>
-                Become an official <strong>Friend of Pride</strong> through
-                joining our monthly donor program.{" "}
-                <strong>Friends of Pride</strong> get exclusive access to many
-                of our events and some extra perks along the way.
-              </h4>
-            </div>
-          </div>
-          <div>
-            <div className="text-center">
-              <h1>Membership Options</h1>
-            </div>
-            <div className="row">
-              <this.Rainbow>
-                <this.RainbowItem
-                  icon="ticket"
-                  text="Free Entry to Official Charleston Pride Events/Fundraisers"
-                  super="*"
-                />
-                <this.RainbowItem
-                  icon="address-book"
-                  text="Acknowledgment in Pride Guide"
-                  super="&#8224;"
-                />
-                <this.RainbowItem
-                  icon="glass"
-                  text="VIP Access to Toast to Equality"
-                />
-                <this.RainbowItem
-                  icon="flag"
-                  text="Access to the VIP Tent at the Festival (Includes Open Bar)"
-                />
-                <this.RainbowItem
-                  icon="star-o"
-                  text="VIP Access to Prism &amp; Last Call"
-                />
-                <this.RainbowItem
-                  icon="handshake-o"
-                  text="Meet and Greet with Entertainment (if available)"
-                />
-                <this.RainbowItem
-                  icon="gift"
-                  text="Exclusive Gift Only Available to Friends of Pride"
-                  super="^"
-                />
-              </this.Rainbow>
-              <this.DoubleRainbow>
-                <this.DoubleRainbowItem
-                  icon="ticket"
-                  text="Free Entry to Official Charleston Pride Events/Fundraisers"
-                  double="true"
-                  super="*"
-                />
-                <this.DoubleRainbowItem
-                  icon="address-book"
-                  text="Acknowledgment in Pride Guide"
-                  super="&#8224;"
-                />
-                <this.DoubleRainbowItem
-                  icon="glass"
-                  text="VIP Access to Toast to Equality"
-                  double="true"
-                />
-                <this.DoubleRainbowItem
-                  icon="flag"
-                  text="Access to the VIP Tent at the Festival (Includes Open Bar)"
-                  double="true"
-                />
-                <this.DoubleRainbowItem
-                  icon="star-o"
-                  text="VIP Access to Prism &amp; Last Call"
-                  double="true"
-                />
-                <this.DoubleRainbowItem
-                  icon="handshake-o"
-                  text="Meet and Greet with Entertainment (if available)"
-                  double="true"
-                />
-                <this.DoubleRainbowItem
-                  icon="gift"
-                  text="Exclusive Gift Only Available to Friends of Pride"
-                  super="^"
-                />
-              </this.DoubleRainbow>
-            </div>
-            <div className="row">
-              <h2 className="text-center col-12">
-                Pick From One of the Following as Your Exclusive Gift
-              </h2>
-
-              <div className="col-4">
-                <RippleImage src={hat} alt="hat" />
-              </div>
-              <div className="col-4">
-                <RippleImage src={shirt} alt="shirt" />
-              </div>
-              <div className="col-4">
-                <RippleImage src={visor} alt="visor" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <this.Registration />
-        <this.FinePrint />
       </div>
     );
   }

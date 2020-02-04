@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./GetInvolved.css";
 
 class GetInvolved extends React.Component {
   Item(props) {
@@ -8,20 +9,21 @@ class GetInvolved extends React.Component {
         className={
           "ms-feature col-12 col-md-4 flipInX animation-delay-4 card card-" +
           props.color +
-          "-inverse"
+          "-inverse bg-" +
+          props.icon
         }
       >
         <div className="text-center card-body">
           <span className="ms-icon ms-icon-circle ms-icon-xxlg ms-icon-white">
             <i className={"fa fa-" + props.icon + " color-" + props.color} />
           </span>
-          <h4>{props.title}</h4>
+          <h3>{props.title}</h3>
         </div>
         <div className=" text-center">
           {props.dest.startsWith("/") ? (
             <Link
               to={props.dest}
-              className={"btn btn-raised btn-white color-" + props.color}
+              className={"btn btn-raised font-weight-bold btn-" + props.color}
             >
               Go!
             </Link>
@@ -30,7 +32,7 @@ class GetInvolved extends React.Component {
               href={props.dest}
               target="_blank"
               rel="noopener noreferrer"
-              className={"btn btn-raised btn-white color-" + props.color}
+              className={"btn font-weight-bold btn-raised btn-" + props.color}
             >
               Go!
             </a>
@@ -72,16 +74,16 @@ class GetInvolved extends React.Component {
             title="Volunteer with Pride"
           />
           <this.Item
-            icon="shopping-cart"
-            color="caution"
-            dest="/store"
-            title="Buy Some Swag"
-          />
-          <this.Item
             icon="amazon"
             color="warning"
             dest="https://smile.amazon.com/ch/27-4256750"
             title="Donate via AmazonSmile"
+          />
+          <this.Item
+            icon="shopping-cart"
+            color="primary"
+            dest="/store"
+            title="Buy Some Swag"
           />
         </div>
       </div>

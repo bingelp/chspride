@@ -70,36 +70,6 @@ class Home extends React.Component {
     );
   }
 
-  Center() {
-    return (
-      <div className="wrap ms-hero-bg-danger ms-hero-img-float">
-        <div className="container text-center">
-          <div className="row">
-            <div className="col align-self-center">
-              <h1 className="color-danger text-center m-3 ">Coming Soon</h1>
-              <h1 className="color-white text-center m-3 ">
-                Charleston's Equality Hub
-              </h1>
-              <h2 className="color-white text-center m-3 ">
-                The Alliance For Full Acceptance (AFFA) &amp; Charleston Pride
-                are Partnering to Create a New Community Space
-              </h2>
-              <h3 className="color-white text-center m-3 d-none d-lg-block">
-                This community space will take our LGBTQ community organizing to
-                the next level, creating positive change throughout the
-                Lowcountry and beyond. Help us make this a reality.
-              </h3>
-              <ButtonLink to="/lgbtq-center" icon="star-o" color="danger">
-                {" "}
-                More Info
-              </ButtonLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   Hero() {
     return (
       <div>
@@ -124,50 +94,10 @@ class Home extends React.Component {
               <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-8">
                 Summer 2020
               </h2>
+              <p>(Dates TBD)</p>
             </div>
           </div>
         </div>
-      </div>
-    );
-  }
-
-  Dorian() {
-    return (
-      <div className="alert alert-danger">
-        <h1>
-          <span className="fa fa-exclamation-triangle" /> The following events
-          have been canceled due to Hurricane Dorian:
-        </h1>
-        <ul>
-          <li>
-            <h3>AFFA Pride Family Picnic</h3>
-          </li>
-          <li>
-            <h3>Real Rainbow Row Tour</h3>
-          </li>
-          <li>
-            <h3>A Celebration of Pride and Faith</h3>
-          </li>
-        </ul>
-        <h4>
-          Stay tuned to{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"https://www.facebook.com/charlestonpride"}
-          >
-            Facebook
-          </a>{" "}
-          and{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"https://www.instagram.com/charlestonpride"}
-          >
-            Instagram
-          </a>{" "}
-          for the latest announcements and please stay safe out there!
-        </h4>
       </div>
     );
   }

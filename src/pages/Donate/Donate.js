@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Donate.css";
+import ETap from "../../components/ETapestryForm";
 
 export default class MailingList extends Component {
-  Header() {
+  header() {
     var headerClass =
       "no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5";
     var heroClass =
@@ -20,42 +21,29 @@ export default class MailingList extends Component {
     );
   }
 
-  Registration() {
-    return (
-      <div className="container">
-        <div className="card">
-          <div className="card-body">
-            <h3>
-              A lot of time, effort, and money goes into organizing and putting
-              on <strong>Charleston Pride</strong>.
-              <strong> Charleston Pride Festival, Inc</strong> is funded
-              strictly through sponsors and funds raised at events. Due to this
-              fact, we have to raise money throughout the year in order for{" "}
-              <strong>Charleston Pride</strong> to be successful. If you cannot
-              make it to one of our fundraisers, you can now donate here! Also
-              check out our monthly donor program,{" "}
-              <Link to="/friends-of-pride">Friends of Pride</Link>.
-            </h3>
-            <iframe
-              id="etapIframe"
-              title="donate"
-              src="https://app.etapestry.com/onlineforms/CharlestonPrideFestivalInc/donate.html"
-            />
-            <script
-              src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"
-              type="text/JavaScript"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   render() {
     return (
       <div>
-        <this.Header />
-        <this.Registration />
+        <this.header />
+        <div className="container mt-3">
+          <ETap title="Make a Donation" form="donate" color="success">
+            <p className="lead">
+              A lot of time, effort, and money goes into organizing and putting
+              on <strong>Charleston Pride</strong>.
+            </p>
+            <p className="lead">
+              <strong> Charleston Pride Festival, Inc</strong> is funded
+              strictly through sponsors and funds raised at events.
+            </p>
+            <p className="lead">
+              Due to this fact, we have to raise money throughout the year in
+              order for <strong>Charleston Pride</strong> to be successful. If
+              you cannot make it to one of our fundraisers, you can now donate
+              here! Also check out our monthly donor program,{" "}
+              <Link to="/friends-of-pride">Friends of Pride</Link>.
+            </p>
+          </ETap>
+        </div>
       </div>
     );
   }

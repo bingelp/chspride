@@ -1,0 +1,44 @@
+.bg-heart {
+  background: linear-gradient(
+      rgba(155, 39, 176, 0.75),
+      rgba(155, 39, 176, 0.75)
+    ),
+    url("bg-heart.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-star {
+  background: linear-gradient(rgba(0, 187, 212, 0.75), rgba(0, 187, 212, 0.75)),
+    url("bg-star.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-envelope {
+  background: linear-gradient(rgba(244, 67, 54, 0.75), rgba(244, 67, 54, 0.75)),
+    url("bg-envelope.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-smile-o {
+  background: linear-gradient(rgba(76, 175, 79, 0.75), rgba(76, 175, 79, 0.75)),
+    url("bg-smile.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-shopping-cart {
+  background: linear-gradient(rgba(3, 168, 244, 0.75), rgba(3, 168, 244, 0.75)),
+    url("bg-cart.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-amazon {
+  background: linear-gradient(rgba(255, 153, 0, 0.75), rgba(255, 153, 0, 0.75)),
+    url("bg-amazon.jpg");
+  background-size: cover;
+  background-position: center center;
+}

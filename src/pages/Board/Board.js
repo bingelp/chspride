@@ -25,19 +25,24 @@ class Board extends React.Component {
       });
   }
 
-  render() {
+  header() {
     return (
-      <div>
-        <div className="ms-hero-page-override ms-hero-img-board ms-hero-bg-primary">
-          <div className="container">
-            <div className="text-center">
-              <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-4 animated zoomInDown animation-delay-5">
-                2020 Board of Directors
-              </h1>
-            </div>
+      <div className="ms-hero-page-override ms-hero-img-board ms-hero-bg-primary">
+        <div className="container">
+          <div className="text-center">
+            <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-4 animated zoomInDown animation-delay-5">
+              2020 Board of Directors
+            </h1>
           </div>
         </div>
-        <div className="container">
+      </div>
+    );
+  }
+
+  lead() {
+    return (
+      <div className="card card-primary">
+        <div className="card-body">
           <p className="lead text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
             The Board of Directors is formed from four permanent positions,
             including Chief Executive, Chief Operating Officer, Secretary of the
@@ -50,7 +55,27 @@ class Board extends React.Component {
             director-level positions to assist in the management and
             administration of the <strong>Charleston Pride Festival</strong>.
           </p>
-          <h2 className="text-center">2020 Board of Directors</h2>
+        </div>
+      </div>
+    );
+  }
+
+  group() {
+    return (
+      <a className="img-thumbnail withripple color-warning">
+        <div className="thumbnail-container">
+          <img src={board} alt="Board of Directors" className="img-fluid" />
+        </div>
+      </a>
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        <this.header />
+        <div className="container mt-3">
+          <this.lead />
           <div className="row">
             {this.state.executives &&
               this.state.executives.map(b => (
@@ -61,15 +86,7 @@ class Board extends React.Component {
           </div>
           <div className="row">
             <div className="col">
-              <a className="img-thumbnail withripple color-warning">
-                <div className="thumbnail-container">
-                  <img
-                    src={board}
-                    alt="Board of Directors"
-                    className="img-fluid"
-                  />
-                </div>
-              </a>
+              <this.group />
             </div>
           </div>
         </div>

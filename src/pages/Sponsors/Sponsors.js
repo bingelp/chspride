@@ -24,24 +24,30 @@ export default class Sponsors extends React.Component {
       });
   }
 
-  render(props) {
+  header() {
     return (
-      <div>
-        <div className="ms-hero-sponsors ms-hero-img-sponsor ms-hero-bg-royal">
-          <div className="container">
-            <div className="text-center">
-              <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
-                Our Sponsors Make It Possible
-              </h1>
-              <Link
-                to="/become-a-sponsor"
-                className="btn btn-raised btn-info animated fadeInUp animation-delay-10"
-              >
-                <i className="fa fa-heart" /> Become a Sponsor
-              </Link>
-            </div>
+      <div className="ms-hero-sponsors ms-hero-img-sponsor ms-hero-bg-royal">
+        <div className="container">
+          <div className="text-center">
+            <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+              Our Sponsors Make It Possible
+            </h1>
+            <Link
+              to="/become-a-sponsor"
+              className="btn btn-raised btn-info animated fadeInUp animation-delay-10"
+            >
+              <i className="fa fa-heart" /> Become a Sponsor
+            </Link>
           </div>
         </div>
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        <this.header />
         <div id="sponsors" className="container">
           <SponsorsList
             sponsorshipLevel="Red"

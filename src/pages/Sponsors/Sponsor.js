@@ -3,7 +3,7 @@ import "./Sponsors.css";
 import helper from "../../components/Helper";
 
 export default class Sponsor extends React.Component {
-  render(props) {
+  render() {
     return (
       <div className="ms-thumbnail-container">
         <figure

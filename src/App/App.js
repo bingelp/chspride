@@ -125,65 +125,65 @@ const navigation = {
           icon: "fa-flag"
         }
       ]
-    },
-    {
-      title: "Events",
-      icon: "fa-calendar-o",
-      key: "events",
-      pages: [
-        {
-          key: "rainbows",
-          to: "/rainbows",
-          title: "Rainbows Pride Night (8/14)",
-          icon: "fa-bullhorn"
-        },
-        {
-          key: "pageant",
-          to: "/pageant",
-          title: "Empress and Emperor Pageant (8/31)",
-          icon: "fa-trophy",
-          divide: true
-        },
-        {
-          key: "lgbtlol",
-          to: "/lol",
-          title: "LGBTLOL (9/13)",
-          icon: "fa-microphone"
-        },
-        {
-          key: "parade",
-          to: "/parade",
-          title: "Pride Parade (9/14)",
-          icon: "fa-flag"
-        },
-        {
-          key: "festival",
-          to: "/festival",
-          title: "Pride Festival (9/14)",
-          icon: "fa-map"
-        },
-        {
-          key: "prism",
-          to: "/prism",
-          title: "Prism (9/14)",
-          icon: "fa-music"
-        },
-        {
-          key: "last-call",
-          to: "/last-call",
-          title: "Last Call (9/14)",
-          icon: "fa-hourglass-end",
-          divide: true
-        },
-        {
-          key: "pride",
-          to: "/pride",
-          title: "Pride Week (9/7 - 9/14)",
-          icon: "fa-flag",
-          background: "royal"
-        }
-      ]
     }
+    // {
+    //   title: "Events",
+    //   icon: "fa-calendar-o",
+    //   key: "events",
+    //   pages: [
+    //     {
+    //       key: "rainbows",
+    //       to: "/rainbows",
+    //       title: "Rainbows Pride Night (8/14)",
+    //       icon: "fa-bullhorn"
+    //     },
+    //     {
+    //       key: "pageant",
+    //       to: "/pageant",
+    //       title: "Empress and Emperor Pageant (8/31)",
+    //       icon: "fa-trophy",
+    //       divide: true
+    //     },
+    //     {
+    //       key: "lgbtlol",
+    //       to: "/lol",
+    //       title: "LGBTLOL (9/13)",
+    //       icon: "fa-microphone"
+    //     },
+    //     {
+    //       key: "parade",
+    //       to: "/parade",
+    //       title: "Pride Parade (9/14)",
+    //       icon: "fa-flag"
+    //     },
+    //     {
+    //       key: "festival",
+    //       to: "/festival",
+    //       title: "Pride Festival (9/14)",
+    //       icon: "fa-map"
+    //     },
+    //     {
+    //       key: "prism",
+    //       to: "/prism",
+    //       title: "Prism (9/14)",
+    //       icon: "fa-music"
+    //     },
+    //     {
+    //       key: "last-call",
+    //       to: "/last-call",
+    //       title: "Last Call (9/14)",
+    //       icon: "fa-hourglass-end",
+    //       divide: true
+    //     },
+    //     {
+    //       key: "pride",
+    //       to: "/pride",
+    //       title: "Pride Week (9/7 - 9/14)",
+    //       icon: "fa-flag",
+    //       background: "royal"
+    //     }
+    //   ]
+    // }
   ],
   right: [
     {

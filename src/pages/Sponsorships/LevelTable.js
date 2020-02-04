@@ -4,7 +4,7 @@ import Level from "./Level";
 class LevelTable extends React.Component {
   render() {
     return (
-      <div className="row pricing-table-container justify-content-center">
+      <div className="row justify-content-center">
         <div className="col-md-4 d-none d-lg-block pricing-col col-push-1">
           <div className="pricing-table pricing-table-description">
             <div className="pricing-table-head-dark">
