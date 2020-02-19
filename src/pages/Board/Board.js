@@ -13,7 +13,7 @@ class Board extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://chspride.azurewebsites.net/api/directors")
+    fetch("https://chspride-api.azurewebsites.net/api/directors")
       .then(results => {
         return results.json();
       })

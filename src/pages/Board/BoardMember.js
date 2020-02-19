@@ -6,7 +6,7 @@ export default class BoardMember extends React.Component {
       <div className="withripple zoom-img center m-2">
         <img
           src={
-            "https://chspride.blob.core.windows.net/directors/" +
+            "https://chaspride.blob.core.windows.net/directors/" +
             props.data.id.toLowerCase() +
             ".jpg"
           }
@@ -51,7 +51,7 @@ export default class BoardMember extends React.Component {
         {Pronouns(props.meta)}
         <div className="bio well">
           {props.meta.bio ? (
-            props.meta.bioParagraphs.map(b => <p key={b}>{b}</p>)
+            props.meta.bio.map(b => <p key={b}>{b}</p>)
           ) : (
             <em>Bio coming soon.</em>
           )}
@@ -84,10 +84,6 @@ export default class BoardMember extends React.Component {
   }
 }
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 function Pronouns(props) {
   if (!props.pronouns) {
     return null;
@@ -96,11 +92,7 @@ function Pronouns(props) {
     <span>
       <i className="zmdi zmdi-account mr-1 color-royal" />
       <strong>Pronouns: </strong>
-      <em>
-        {capitalizeFirstLetter(props.pronouns.subjective)}/
-        {capitalizeFirstLetter(props.pronouns.objective)}/
-        {capitalizeFirstLetter(props.pronouns.possessive)}
-      </em>
+      <em>{props.pronouns}</em>
     </span>
   );
 }
