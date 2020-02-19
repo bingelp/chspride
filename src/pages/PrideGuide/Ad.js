@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Ad.css";
+import ETap from "../../components/ETapestryForm";
 export default class Ad extends Component {
   header() {
     return (
@@ -232,7 +233,14 @@ export default class Ad extends Component {
         <div className="container mt-3">
           <this.details />
           <this.rates />
-          <this.form />
+          <ETap
+            title="Purchase an Ad"
+            form="prideguide"
+            color="warning"
+            contact="sales"
+            disabledText="Ad registration is currently closed."
+            enabledText="To purchase an Ad, fill out the form below"
+          />
         </div>
       </div>
     );

@@ -104,35 +104,35 @@ class Prism extends Component {
 
   PriceTable() {
     return (
-      <div class="row no-gutters">
-        <div class="col-lg-4">
-          <div class="price-table price-table-info wow zoomInUp animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">General Admission</span>
+      <div className="row no-gutters">
+        <div className="col-lg-4">
+          <div className="price-table price-table-info wow zoomInUp animation-delay-2">
+            <header className="price-table-header">
+              <span className="price-table-category">General Admission</span>
               <h3>
                 <sup>$</sup>15.00 <sub>Online</sub>
                 <br />
                 <sup>$</sup>20.00 <sub>At Door</sub>
               </h3>
             </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
+            <div className="price-table-body">
+              <ul className="price-table-list">
                 <li>Access to the Party.</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="price-table price-table-success prominent wow zoomInDown animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">VIP</span>
+        <div className="col-lg-4">
+          <div className="price-table price-table-success prominent wow zoomInDown animation-delay-2">
+            <header className="price-table-header">
+              <span className="price-table-category">VIP</span>
               <h3>
                 <sup>$</sup>50.00 <sub />
               </h3>
               General Admission Plus
             </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
+            <div className="price-table-body">
+              <ul className="price-table-list">
                 <li>Meet and Greet with Todrick Hall and the Ru Paul Queens</li>
                 <li>
                   Admission to{" "}
@@ -145,15 +145,15 @@ class Prism extends Component {
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="price-table price-table-warning wow zoomInUp animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">Friends of Pride</span>
+        <div className="col-lg-4">
+          <div className="price-table price-table-warning wow zoomInUp animation-delay-2">
+            <header className="price-table-header">
+              <span className="price-table-category">Friends of Pride</span>
               <h3>Free</h3>
               Same as VIP
             </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
+            <div className="price-table-body">
+              <ul className="price-table-list">
                 <li>
                   As a <Link to="/friends"> Friend of Pride </Link>
                   you get access to both Prism and Last Call. Reserve your
@@ -210,14 +210,14 @@ class Prism extends Component {
       <div id="prism">
         <this.Header />
         <div className="container">
-          <div class="card">
-            <div class="row">
+          <div className="card">
+            <div className="row">
               <this.Dudleys />
               <this.Description PriceTable={this.PriceTable} />
             </div>
           </div>
           <div className="card">
-            <h1 class="text-center">Entertainment</h1>
+            <h1 className="text-center">Entertainment</h1>
             <div className="card-body">
               <div className="row text-center">
                 <div className="col-12 col-lg-6">

@@ -27,12 +27,14 @@ export default class MailingList extends Component {
       <div>
         <this.header />
         <div className="container mt-3">
-          <ETap title="Sign up" form="emailsignup" color="primary">
-            <h3>
-              By filling out the form below you are signing up to receive our
-              newsletter and announcements for upcoming events.
-            </h3>
-          </ETap>
+          <ETap
+            title="Sign up"
+            form="emailsignup"
+            color="primary"
+            disabledText="Signup is currently closed."
+            enabledText="By filling out the form below you are signing up to receive our
+              newsletter and announcements for upcoming events."
+          />
         </div>
       </div>
     );

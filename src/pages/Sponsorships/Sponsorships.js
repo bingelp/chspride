@@ -306,7 +306,13 @@ class Sponsorships extends React.Component {
           <this.stats />
           {/* <this.Branding brandings={this.state.brandings} /> */}
           <this.levels />
-          <ETap title="Register to be a Sponsor" form="sponsorship" />
+          <ETap
+            title="Register to be a Sponsor"
+            form="sponsorship"
+            disabledText="Registration has closed."
+            color="info"
+            enabledText="To become a Sponsor, fill out the form below"
+          />
         </div>
       </div>
     );

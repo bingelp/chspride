@@ -150,6 +150,9 @@ export default class Vendors extends Component {
                 form="VendorRegistration"
                 title="Vendor Registration"
                 color="royal"
+                contact="sales"
+                disabledText="Vendor registration is closed"
+                enabledText="To become a vendor, fill out the form below."
               />
             </div>
           </div>

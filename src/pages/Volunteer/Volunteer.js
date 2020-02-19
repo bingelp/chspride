@@ -27,18 +27,15 @@ export default class Volunteer extends Component {
       <div>
         <this.header />
         <div className="container mt-3">
-          <ETap title="Sign up to Volunteer" form="volunteer" color="warning">
-            <h3>
-              By filling out the form below you are signing up to be contacted
-              about volunteer opportunities.
-            </h3>
-            <p>
-              If there are any questions please reach out to us at{" "}
-              <a href="mailto:volunteers@charlestonpride.org">
-                volunteers@charlestonpride.org
-              </a>
-            </p>
-          </ETap>
+          <ETap
+            title="Sign up to Volunteer"
+            form="volunteer"
+            color="warning"
+            contact="volunteers"
+            disabledText="Signup is currently closed."
+            enabledText="By filling out the form below you are signing up to be contacted
+              about volunteer opportunities."
+          />
         </div>
       </div>
     );

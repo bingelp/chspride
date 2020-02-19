@@ -242,18 +242,15 @@ class Friends extends React.Component {
             </div>
           </div>
           <this.gift />
-          <ETap title="Become a Friend of Pride" form="friends" color="primary">
-            <h3>
-              To become a <strong>Friend of Pride</strong>, fill out the form
-              below
-            </h3>
-            <p>
-              If there are any questions, please reach out to us at{" "}
-              <a href="mailto:friends@charlestonpride.org">
-                friends@charlestonpride.org
-              </a>
-            </p>
-          </ETap>
+          <ETap
+            title="Become a Friend of Pride"
+            form="friends"
+            color="primary"
+            contact="friends"
+            disabledText="Registration is currently closed."
+            enabledText="To become a Friend of Pride, fill out the form
+              below"
+          />
           <this.finePrint />
         </div>
       </div>

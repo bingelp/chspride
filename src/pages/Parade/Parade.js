@@ -133,7 +133,7 @@ export default class Parade extends Component {
     return (
       <div>
         <this.header />
-        <div className="container">
+        <div className="container mt-3">
           <div className="row">
             <div className="col-12 col-md-6">
               <this.info />
@@ -150,6 +150,9 @@ export default class Parade extends Component {
                 title="Parade Registration"
                 form="ParadeRegistration"
                 color="primary"
+                contact="sales"
+                disabledText="Parade registration is closed."
+                enabledText="To participate in the parade, fill out the form below"
               />
             </div>
           </div>
