@@ -137,13 +137,13 @@ class LastCall extends Component {
       <div id="prism">
         <this.Header />
         <div className="container">
-          <div class="card">
-            <div class="row">
+          <div className="card">
+            <div className="row">
               <this.Description PriceTable={this.PriceTable} />
             </div>
           </div>
           <div className="card">
-            <h1 class="text-center">Entertainment</h1>
+            <h1 className="text-center">Entertainment</h1>
             <div className="card-body">
               <div className="row">
                 <div className="col-12">

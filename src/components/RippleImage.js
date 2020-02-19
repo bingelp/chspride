@@ -5,9 +5,13 @@ class RippleImage extends Component {
   render() {
     return (
       // eslint-disable-next-line
-      <a class="img-thumbnail withripple color-dark">
-        <div class="thumbnail-container">
-          <img src={this.props.src} alt={this.props.alt} class="img-fluid" />
+      <a className="img-thumbnail withripple color-dark">
+        <div className="thumbnail-container">
+          <img
+            src={this.props.src}
+            alt={this.props.alt}
+            className="img-fluid"
+          />
         </div>
       </a>
     );
