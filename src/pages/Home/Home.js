@@ -4,6 +4,7 @@ import Sponsors from "../Sponsors/SponsorHero";
 import CountdownClock from "../../components/CountdownClock";
 import GetInvolved from "../../components/GetInvolved/GetInvolved";
 import { ButtonLink } from "../../components/LinkUtil";
+import bridge from "./bridge.png";
 
 class Home extends React.Component {
   Countdown() {
@@ -77,6 +78,7 @@ class Home extends React.Component {
           <div className="intro-hero-full-content">
             <div className="container text-center">
               <span className="ms-hero-logo" />
+              <h1>BRIDGE THE GAP</h1>
               <h1 className="animated fadeInUp animation-delay-5 small-caps">
                 Charleston{" "}
                 <span className="initialism">
@@ -89,13 +91,21 @@ class Home extends React.Component {
               </h1>
 
               <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-5">
-                Pride Week
+                Pride Week: August 22-29 2020
               </h2>
-              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-8">
-                Summer 2020
-              </h2>
-              <p>(Dates TBD)</p>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  Bridge() {
+    return (
+      <div className="container my-5">
+        <div className="row jumbotron bg-white " id="bridge">
+          <div className="col-12 text-center">
+            <img src={bridge} className="img-fluid" alt="Bridge the Gap" />
           </div>
         </div>
       </div>
@@ -108,6 +118,7 @@ class Home extends React.Component {
         <this.Hero />
         <Sponsors />
         <GetInvolved />
+        <this.Bridge />
         <this.Mission />
       </div>
     );

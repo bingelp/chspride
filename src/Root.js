@@ -28,6 +28,7 @@ import Pageant from "./pages/Pageant/Pageant";
 import Rainbows from "./pages/Rainbows/Rainbows";
 import ScrollToTop from "./components/ScrollToTop";
 import Pride from "./pages/Pride/Pride";
+import PreviousPride from "./pages/Pride/Previous";
 import Comedy from "./pages/Comedy/Comedy";
 import Prism from "./pages/Prism/Prism";
 import Tour from "./pages/Tour/Tour";
@@ -69,6 +70,7 @@ const Root = props => {
             <Route path="/last-call" component={LastCall} />
             <Route path="/tour" component={Tour} />
             <Route path="/pride" component={Pride} />
+            <Route path="/pride-2019" component={PreviousPride} />
             <Route path="/pageant" component={Pageant} />
             <Route path="/rainbows" component={Rainbows} />
             <Route path="/lgbtq-center" component={Center} />

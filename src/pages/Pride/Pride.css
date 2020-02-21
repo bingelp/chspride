@@ -4,20 +4,7 @@
   background-position: center center;
 }
 
-#pride .card-body {
-  min-height: auto;
-}
-
-#redux {
-  max-height: 100px;
-  margin: auto;
-}
-#condon {
-  max-height: 100px;
-}
-
-@media (max-width: 767px) {
-  .timeline-time span.day::before{
-    content: ",";
-  }
+#pride h1 {
+  font-family: "Gotham Bold", "Roboto", sans-serif;
+  font-weight: bold;
 }

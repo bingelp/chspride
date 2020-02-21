@@ -42,3 +42,48 @@
   background-size: cover;
   background-position: center center;
 }
+
+.bg-book {
+  background: linear-gradient(rgba(255, 0, 132, 0.75), rgba(255, 0, 132, 0.75)),
+    url("bg-book.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.bg-map-marker {
+  background: linear-gradient(
+      rgba(36, 211, 101, 0.75),
+      rgba(36, 211, 101, 0.75)
+    ),
+    url("bg-map-marker.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.bg-flag {
+  background: linear-gradient(
+      hsla(339, 84%, 68%, 0.75),
+      hsla(339, 84%, 68%, 0.75)
+    ),
+    url("bg-parade.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.color-flickr {
+  color: #ff0084;
+}
+
+.color-whatsapp {
+  color: #78ea1a;
+}
+.color-dribbble {
+  color: #f26798;
+}
+
+#getInvolved .card {
+  margin-bottom: 0;
+}

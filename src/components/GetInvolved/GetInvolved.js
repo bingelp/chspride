@@ -50,6 +50,24 @@ class GetInvolved extends React.Component {
         </h2>
         <div className="row">
           <this.Item
+            icon="book"
+            color="flickr"
+            dest="/purchase-pride-guide-ad"
+            title="Purchase an Ad"
+          />
+          <this.Item
+            icon="map-marker"
+            color="whatsapp"
+            dest="/vendor-registration"
+            title="Become a Vendor"
+          />
+          <this.Item
+            icon="flag"
+            color="dribbble"
+            dest="/participate-in-parade"
+            title="Participate in the Parade"
+          />
+          <this.Item
             icon="heart"
             color="royal"
             dest="/donate"

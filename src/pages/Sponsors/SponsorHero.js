@@ -37,7 +37,7 @@ export default class SponsorHero extends React.Component {
   render() {
     return (
       <div className="container text-center">
-        <h2>Thank You to Our Sponsors</h2>
+        <h2>Thank You to Our 2019 Sponsors</h2>
         <div className="row">
           {this.state.sponsors &&
             this.state.sponsors
@@ -46,11 +46,13 @@ export default class SponsorHero extends React.Component {
         </div>
         <Link to="/become-a-sponsor" className="btn btn-success btn-raised">
           {" "}
-          <i className="zmdi zmdi-thumb-up" />Become a sponsor
+          <i className="zmdi zmdi-thumb-up" />
+          Become a sponsor
         </Link>
         <Link to="/our-sponsors" className="btn btn-info btn-raised">
           {" "}
-          <i className="zmdi zmdi-eye" />View All Sponsors
+          <i className="zmdi zmdi-eye" />
+          View All Sponsors
         </Link>
       </div>
     );

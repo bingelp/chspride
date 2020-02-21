@@ -3,7 +3,7 @@ import vendorMap from "../map.jpg";
 import { Link } from "react-router-dom";
 import "./Vendor.css";
 import ETap from "../../../components/ETapestryForm";
-const festivalDate = "TBD";
+const festivalDate = "Saturday, August 29, 2020";
 export default class Vendors extends Component {
   header() {
     return (

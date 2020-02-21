@@ -187,9 +187,9 @@ const navigation = {
   ],
   right: [
     {
-      key: "pride-2019",
+      key: "pride-2020",
       to: "/pride",
-      title: "Pride Week 2019",
+      title: "Pride Week 2020",
       icon: "fa-flag",
       background: "warning"
     }

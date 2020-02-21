@@ -14,7 +14,7 @@ export default class Parade extends Component {
               Charleston Pride Parade 2020
             </h1>
             <h2 className="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
-              Date and Time TBD
+              Saturday, August 29, 2020
             </h2>
             {/* <CountdownClock eventTime="2019-09-14T09:00:00" color="warning" /> */}
           </div>

@@ -3867,8 +3867,7 @@ a.hover-light:hover, a.hover-light:focus {
 .ms-site-title {
   vertical-align: middle;
   display: inline-block;
-  font-weight: 200;
-  word-spacing: -4px; }
+  font-weight: 200; }
   .ms-site-title span {
     font-weight: 300; }
 
@@ -4359,7 +4358,7 @@ hr.double {
       margin-top: 35px;
       color: #717171; }
       .ms-header .ms-title h1 span {
-        font-family: 'Gotham Bold', 'Roboto', sans-serif;
+        font-family: "Gotham Bold", "Roboto", sans-serif;
         font-weight: bold; }
         .ms-header .ms-title h1 span.p {
           color: #F44336; }
@@ -4371,6 +4370,9 @@ hr.double {
           color: #4CAF50; }
         .ms-header .ms-title h1 span.e {
           color: #9C27B0; }
+      .ms-header .ms-title h1 .bridge {
+        font-family: "Gotham Bold", "Roboto", sans-serif;
+        font-weight: bold; }
   .ms-header .header-right {
     margin-top: 25px;
     float: right; }
@@ -4419,8 +4421,8 @@ hr.double {
         left: 0;
         top: 0;
         z-index: 3;
-        transition: transform ease .5s;
-        transition-delay: .2s; }
+        transition: transform ease 0.5s;
+        transition-delay: 0.2s; }
         .ms-header .header-right .search-form label:before {
           transition: all ease 0.5s;
           border-radius: 150px;
@@ -8687,7 +8689,7 @@ a.img-thumbnail {
         color: #616161;
         text-shadow: none;
         border-radius: 100%;
-        opacity: .7;
+        opacity: 0.7;
         text-align: center;
         cursor: pointer;
         transition: all ease 0.5s;
@@ -8757,7 +8759,12 @@ a.img-thumbnail {
   .wrap.wrap-danger {
     background-color: #F44336;
     color: fff; }
-    .wrap.wrap-danger h1, .wrap.wrap-danger h2, .wrap.wrap-danger h3, .wrap.wrap-danger h4, .wrap.wrap-danger h5, .wrap.wrap-danger h6 {
+    .wrap.wrap-danger h1,
+    .wrap.wrap-danger h2,
+    .wrap.wrap-danger h3,
+    .wrap.wrap-danger h4,
+    .wrap.wrap-danger h5,
+    .wrap.wrap-danger h6 {
       color: #fff; }
 
 @media (max-width: 767px) {
@@ -8797,6 +8804,8 @@ a.img-thumbnail {
   .ms-hero-page h1 {
     font-size: 5rem;
     font-weight: 700; }
+    .ms-hero-page h1.bridge {
+      font-family: "GothamNarrow Light", "Roboto", sans-serif; }
   .ms-hero-page h2 {
     font-size: 3rem;
     font-weight: 700; }
@@ -9154,9 +9163,9 @@ a.img-thumbnail {
 
 @keyframes blinker {
   from {
-    opacity: 1.0; }
+    opacity: 1; }
   to {
-    opacity: 0.0; } }
+    opacity: 0; } }
 
 .modal {
   color: #424242;
