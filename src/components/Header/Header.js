@@ -30,7 +30,10 @@ class Header extends React.Component {
 
   Menu(props) {
     return (
-      <a className="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10">
+      <a
+        className="btn-ms-menu btn-circle btn-circle-primary ms-toggle-left animated zoomInDown animation-delay-10"
+        href="#/"
+      >
         <i className="zmdi zmdi-menu" />
       </a>
     );

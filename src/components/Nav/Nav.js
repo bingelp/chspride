@@ -33,7 +33,7 @@ class Nav extends React.Component {
               ))}
             </ul>
           </div>
-          <a className="ms-toggle-left btn-navbar-menu">
+          <a href="#/" className="ms-toggle-left btn-navbar-menu">
             <i className="zmdi zmdi-menu" />
           </a>
         </div>

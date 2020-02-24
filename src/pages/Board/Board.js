@@ -62,7 +62,7 @@ class Board extends React.Component {
 
   group() {
     return (
-      <a className="img-thumbnail withripple color-warning">
+      <a href="#/" className="img-thumbnail withripple color-warning">
         <div className="thumbnail-container">
           <img src={board} alt="Board of Directors" className="img-fluid" />
         </div>

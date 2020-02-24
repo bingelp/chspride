@@ -22,34 +22,8 @@ import OutForArt from "./Events/OutForArt";
 import Twerk from "./Events/Twerk";
 import Disco from "./Events/Disco";
 import LastCall from "./Events/LastCall";
-import Typed from "typed.js";
-import WOW from "wowjs";
 
 class PreviousPride extends Component {
-  componentDidMount() {
-    new WOW.WOW({
-      live: false
-    }).init();
-
-    let options = {
-      strings: [
-        "10 Years of Celebration",
-        "10 Years of Progress",
-        "10 Years of Pride"
-      ],
-      typeSpeed: 80,
-      startDelay: 1000,
-      loop: true,
-      backDelay: 1000,
-      autoInsertCss: false,
-      showCursor: false
-    };
-    this.typed = new Typed(".typed-class", options);
-  }
-  componentWillUnmount() {
-    this.typed.destroy();
-  }
-
   Header(props) {
     return (
       <div className="ms-hero ms-hero-page-override ms-hero-bg-warning">
