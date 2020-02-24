@@ -5,31 +5,8 @@ import NumberIndicator from "./NumberIndicator";
 class Level extends React.Component {
   constructor(props) {
     super(props);
-
-    let headerClass = "pricing-table-head-";
-    switch (props.level.id) {
-      case 1:
-        headerClass += "danger";
-        break;
-      case 2:
-        headerClass += "warning";
-        break;
-      case 3:
-        headerClass += "caution";
-        break;
-      case 4:
-        headerClass += "success";
-        break;
-      case 5:
-        headerClass += "info";
-        break;
-
-      default:
-        headerClass += "royal";
-        break;
-    }
     this.state = {
-      headerClass: headerClass,
+      headerClass: "pricing-table-head-" + props.level.color,
       headerWidth: "col-md-6 pricing-col col-lg-" + props.level.columns
     };
   }
@@ -38,14 +15,14 @@ class Level extends React.Component {
     return <i className={"fa fa-" + props.value >= 1 ? "check" : "minus"} />;
   }
 
-  render(props) {
+  render() {
     return (
       <div className={this.state.headerWidth}>
         <div className="pricing-table">
           <div className={this.state.headerClass}>
             <h2>{this.props.level.name}</h2>
             <h3 className="price">
-              $<NumberIndicator value={this.props.level.price} />
+              $<NumberIndicator value={this.props.level.rate} />
             </h3>
           </div>
           <ul className="pricing-table-content">

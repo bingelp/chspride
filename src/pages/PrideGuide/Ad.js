@@ -1,7 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Ad.css";
 import ETap from "../../components/ETapestryForm";
-export default class Ad extends Component {
+export class Ad extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rates: undefined
+    };
+  }
+
+  componentDidMount() {
+    fetch("https://chspride-api.azurewebsites.net/api/advertisements/pride")
+      .then(results => {
+        return results.json();
+      })
+      .then(data => {
+        this.setState({ rates: data });
+      });
+  }
+
   header() {
     return (
       <div className="ms-hero-page-override ms-hero-bg-warning ms-hero-img-ad">
@@ -15,6 +32,33 @@ export default class Ad extends Component {
               in the Charleston Pride Guide!
             </p>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  adRate(rate) {
+    return (
+      <div className="card card-warning-inverse">
+        <div className="card-header">
+          <h2 className="card-title">
+            {rate.title}{" "}
+            <span className="pull-right">
+              {rate.available ? "$" + rate.rate : "SOLD OUT"}
+            </span>
+          </h2>
+        </div>
+        <div className="card-body">
+          <p>{rate.description}</p>
+          <ul>
+            <li>
+              {rate.width}" W x {rate.height}" H{" "}
+              {rate.bleed && "(includes bleed)"}
+            </li>
+            {rate.margin && (
+              <li>Keep text {rate.margin}" away from the edges</li>
+            )}
+          </ul>
         </div>
       </div>
     );
@@ -98,7 +142,8 @@ export default class Ad extends Component {
     );
   }
 
-  rates() {
+  rates(rates) {
+    let halfwayThrough = Math.floor(rates.length / 2);
     return (
       <div className="card">
         <div className="card-body">
@@ -107,107 +152,12 @@ export default class Ad extends Component {
               <h1>Advertising Rates</h1>
             </div>
             <div className="col-md-6">
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Premium Center Fold Ad</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For, <strong>$1,500</strong>, make a major statement for
-                    your business or organization with an exclusive center fold
-                    ad in the middle of the Charleston Pride Guide
-                  </p>
-                  <ul>
-                    <li>11.00" W x 8.75" H (includes bleed)</li>
-                    <li>Keep text 0.5" away from the edges</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Premium Back Cover</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For <strong>$1,250</strong>, your ad can be placed on the
-                    back cover of the Pride Guide, printed on glossy paper.
-                    There’s only one back cover, so buy your ad soon!
-                  </p>
-                  <ul>
-                    <li>5.75" W x 8.75" H (includes bleed)</li>
-                    <li>Keep text 0.5" away from the edges</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Premium Inside Cover</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For <strong>$1,000</strong>, your ad can be placed on one of
-                    the prominent inside covers, printed on glossy paper. There
-                    are only two of these coveted spaces so order early to
-                    guarantee your spot.
-                  </p>
-                  <ul>
-                    <li>5.75" W x 8.75" H (includes bleed)</li>
-                    <li>Keep text 0.5" away from the edges</li>
-                  </ul>
-                </div>
-              </div>
+              {rates.slice(0, halfwayThrough).map(r => this.adRate(r))}
             </div>
             <div className="col-md-6">
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Full Page</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For <strong>$750</strong>, you will get a full page ad in
-                    the Charleston Pride Festival Guide. <strong>Great</strong>{" "}
-                    Visibility!
-                  </p>
-                  <ul>
-                    <li>5.75" W x 8.75" H (includes bleed)</li>
-                    <li>Keep text 0.5" away from the edges</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Half Page</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For <strong>$500</strong>, receive a half-page as in the
-                    Charleston Pride Festival Guide. While half-page ads may
-                    share a page with others ads or text, they still give your
-                    business or organization enough space to make a colorful
-                    statement.
-                  </p>
-                  <ul>
-                    <li>4.5" W x 3.785" H</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card card-warning-inverse">
-                <div className="card-header">
-                  <h2 className="card-title">Quarter Page</h2>
-                </div>
-                <div className="card-body">
-                  <p>
-                    For <strong>$350</strong>, feature your business in a simple
-                    yet elegant way with a quarter page ad. This ad size
-                    features enough space to highlight your business at a very
-                    affordable rate <strong>or</strong> purchase two separate
-                    ads for double coverage.
-                  </p>
-                  <ul>
-                    <li>2.16" W x 3.785" H</li>
-                  </ul>
-                </div>
-              </div>
+              {rates
+                .slice(halfwayThrough, rates.length)
+                .map(r => this.adRate(r))}
             </div>
           </div>
         </div>
@@ -232,7 +182,7 @@ export default class Ad extends Component {
         <this.header />
         <div className="container mt-3">
           <this.details />
-          <this.rates />
+          {this.state.rates && this.rates(this.state.rates)}
           <ETap
             title="Purchase an Ad"
             form="prideguide"
@@ -246,3 +196,5 @@ export default class Ad extends Component {
     );
   }
 }
+
+export default Ad;
