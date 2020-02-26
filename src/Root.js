@@ -32,11 +32,10 @@ import PreviousPride from "./pages/Pride/Previous";
 import Comedy from "./pages/Comedy/Comedy";
 import Prism from "./pages/Prism/Prism";
 import Tour from "./pages/Tour/Tour";
-import Center from "./pages/Center/Center";
 import Store from "./pages/Store/Store";
 import LastCall from "./pages/LastCall/LastCall";
 
-const Root = props => {
+const Root = () => {
   return (
     <Router>
       <ScrollToTop>
@@ -73,29 +72,7 @@ const Root = props => {
             <Route path="/pride-2019" component={PreviousPride} />
             <Route path="/pageant" component={Pageant} />
             <Route path="/rainbows" component={Rainbows} />
-            <Route path="/lgbtq-center" component={Center} />
             <Route path="/store" component={Store} />
-            <Route
-              path="/twerk"
-              component={() =>
-                (window.location =
-                  "https://www.eventbrite.com/e/twerk-twirl-101-w-latrice-royale-and-the-holy-city-twirlers-tickets-63672683711")
-              }
-            />
-            <Route
-              path="/colorme"
-              component={() =>
-                (window.location =
-                  "https://www.facebook.com/events/2208879402540673/")
-              }
-            />
-            <Route
-              path="/familynight"
-              component={() =>
-                (window.location =
-                  "https://chspride.wufoo.com/forms/family-photos-at-the-equality-hub-pride-week-2019/")
-              }
-            />
             <Route path="*" component={Home} />
           </Switch>
         </App>
