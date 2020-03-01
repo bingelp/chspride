@@ -76,14 +76,25 @@ export default class Vendors extends Component {
     return (
       <div className="card card-royal-inverse">
         <div className="card-body">
-          <h2 className="text-center mb-4">How to register?</h2>
-          <p className="lead lead-lg text-center mt-4 col">
+          <h2 className="text-center">How to register?</h2>
+          <p className="lead lead-lg text-center col">
             You can easily register online by filling out the form below. The
             standard fee for vendors is <strong>$150</strong>. If electricity is
             needed, <strong>$25.00</strong> will be added to the registration.
             Nonprofit organizations are entitled to a{" "}
             <strong>50% discount</strong>. Proof of nonprofit status must be on
             file with Charleston Pride Festival two weeks prior to the Festival.
+          </p>
+          <h3 className="text-center">Food Vendors</h3>
+          <p className="lead lead-lg text-center col">
+            If interested in being a food vendor, please send an email to
+            <a
+              className="color-white"
+              href="mailto:vendors@charlestonpride.org"
+            >
+              {" "}
+              vendors@charlestonpride.org.
+            </a>
           </p>
         </div>
       </div>
@@ -150,9 +161,9 @@ export default class Vendors extends Component {
                 form="VendorRegistration"
                 title="Vendor Registration"
                 color="royal"
-                contact="sales"
+                contact="vendors"
                 disabledText="Vendor registration is closed"
-                enabledText="To become a vendor, fill out the form below."
+                enabledText="To become a vendor, fill out the form below. This form should not be used by food vendors."
               />
             </div>
           </div>

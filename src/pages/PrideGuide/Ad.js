@@ -10,7 +10,7 @@ export class Ad extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://chspride-api.azurewebsites.net/api/advertisements/pride")
+    fetch("https://chspride-api.azurewebsites.net/api/guide/pride")
       .then(results => {
         return results.json();
       })
@@ -39,7 +39,7 @@ export class Ad extends React.Component {
 
   adRate(rate) {
     return (
-      <div className="card card-warning-inverse">
+      <div className="card card-warning-inverse" key={rate.id}>
         <div className="card-header">
           <h2 className="card-title">
             {rate.title}{" "}

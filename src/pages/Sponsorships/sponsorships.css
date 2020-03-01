@@ -8,3 +8,12 @@
 .color-caution {
   color: #ffc107;
 }
+
+.branding.card.card-danger,
+.branding.card.card-warning,
+.branding.card.card-caution {
+  min-height: 350px;
+}
+.branding.card {
+  min-height: 265px;
+}

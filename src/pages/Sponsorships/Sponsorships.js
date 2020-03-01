@@ -23,9 +23,7 @@ class Sponsorships extends React.Component {
       .then(data => {
         this.setState({ levels: data });
       });
-    fetch(
-      "https://skvfc3ly76.execute-api.us-east-1.amazonaws.com/prod/branding"
-    )
+    fetch("https://chspride-api.azurewebsites.net/api/sponsorships/branding")
       .then(results => {
         return results.json();
       })
@@ -179,19 +177,19 @@ class Sponsorships extends React.Component {
     );
   }
 
-  branding(props) {
+  brandings(brandings) {
     return (
-      <div id="branding" className="container">
-        <div className="card">
+      <div id="branding" className="card">
+        <div className="card-body">
           <h1 className="text-center">2020 Branding Opportunities</h1>
-          <div className="row">
-            {props.brandings.map(b => (
+          <div className="row justify-content-center">
+            {brandings.map(b => (
               <Branding
                 key={b.id}
                 name={b.name}
                 event={b.event}
                 rate={b.rate}
-                avaliable={b.avaliable}
+                available={b.available}
                 presenter={b.presenter}
                 level={b.level}
                 details={b.details}
@@ -208,7 +206,7 @@ class Sponsorships extends React.Component {
         <this.header />
         <div className="container mt-3">
           <this.stats />
-          {/* <this.Branding brandings={this.state.brandings} /> */}
+          {this.brandings(this.state.brandings)}
           <this.levels levels={this.state.levels} />
           <ETap
             title="Register to be a Sponsor"

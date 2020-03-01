@@ -3,53 +3,57 @@ import PropTypes from "prop-types";
 
 class Branding extends Component {
   Price(props) {
-    if (props.avaliable) {
+    if (props.available) {
       return <h3 className="text-center">${props.price}</h3>;
     }
-    return <h3 className="color-warning text-center">SOLD</h3>;
+    return <h3 className="color-info text-center">SOLD</h3>;
   }
 
   render() {
     const colors = new Map([
-      ["red", "color-danger"],
-      ["orange", "color-warning"],
-      ["yellow", "color-caution"],
-      ["green", "color-success"],
-      ["blue", "color-info"],
-      ["purple", "color-royal"]
+      ["red", "-danger"],
+      ["orange", "-warning"],
+      ["yellow", "-caution"],
+      ["green", "-success"],
+      ["blue", "-info"],
+      ["purple", "-royal"]
     ]);
+
     return (
-      <div className="col-md-6">
-        <h2 className="text-center">{this.props.name}</h2>
-        <this.Price
-          price={this.props.rate
-            .toString()
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-          avaliable={this.props.avaliable}
-        />
-        <ul>
-          {this.props.presenter && (
+      <div className={this.props.level === "red" ? "col-lg-8" : "col-lg-6"}>
+        <div className={"branding card card" + colors.get(this.props.level)}>
+          <h2 className="text-center mb-1 mt-3">{this.props.name}</h2>
+          <this.Price
+            price={this.props.rate
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+            available={this.props.available}
+          />
+          <ul>
+            {this.props.presenter && (
+              <li>
+                <strong>Promoted As:</strong>
+                {" " + this.props.presenter + " Presented by "}
+                <strong>YOUR COMPANY</strong>
+              </li>
+            )}
             <li>
-              <strong>Promoted As:</strong>
-              {" " + this.props.presenter + " Presented by "}
-              <strong>YOUR COMPANY</strong>
+              <strong>Event:</strong> {this.props.event}
             </li>
-          )}
-          <li>
-            <strong>Event:</strong> {this.props.event}
-          </li>
-          <li>
-            <strong>Perks:</strong> Everything from{" "}
-            <strong className={colors.get(this.props.level)}>
-              {this.props.level.charAt(0).toUpperCase() +
-                this.props.level.slice(1)}{" "}
-            </strong>
-            Level Plus:
-            <ul>
-              {this.props.details && this.props.details.map(d => <li>{d}</li>)}
-            </ul>
-          </li>
-        </ul>
+            <li>
+              <strong>Perks:</strong> Everything from{" "}
+              <strong className={"color" + colors.get(this.props.level)}>
+                {this.props.level.charAt(0).toUpperCase() +
+                  this.props.level.slice(1)}{" "}
+              </strong>
+              Level Plus:
+              <ul>
+                {this.props.details &&
+                  this.props.details.map(d => <li>{d}</li>)}
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
@@ -59,7 +63,7 @@ Branding.propTypes = {
   name: PropTypes.string.isRequired,
   event: PropTypes.string.isRequired,
   rate: PropTypes.number.isRequired,
-  avaliable: PropTypes.bool.isRequired,
+  available: PropTypes.bool.isRequired,
   presenter: PropTypes.string,
   level: PropTypes.oneOf([
     "red",
