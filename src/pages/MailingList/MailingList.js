@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./MailingList.css";
-import ETap from "../../components/ETapestryForm";
 
 export default class MailingList extends Component {
   header() {
@@ -26,16 +25,11 @@ export default class MailingList extends Component {
     return (
       <div>
         <this.header />
-        <div className="container mt-3">
-          <ETap
-            title="Sign up"
-            form="emailsignup"
-            color="primary"
-            disabledText="Signup is currently closed."
-            enabledText="By filling out the form below you are signing up to receive our
-              newsletter and announcements for upcoming events."
-          />
-        </div>
+        <iframe
+          title="constant-contact"
+          className="container mt-3"
+          src="https://lp.constantcontactpages.com/su/ibqAtRz"
+        ></iframe>
       </div>
     );
   }

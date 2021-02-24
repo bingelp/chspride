@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Section from "../../components/Section/Section";
-import Vacancies from "./Vacancies";
 
 export default class ServeOnBoard extends Component {
   Subtitle() {
@@ -17,26 +16,23 @@ export default class ServeOnBoard extends Component {
         <div className="card card-primary mt-3">
           <div className="card=body">
             <div className="text-center">
-              <h2>Step 1: Reviews the Bylaws</h2>
-              <Link
-                to="/bylaws"
-                className="btn btn-raised btn-primary"
-                target="_blank"
-              >
-                Bylaws
-              </Link>
-              <h2>Step 2: Review Openings</h2>
-              <Vacancies />
+              <h2>
+                Step 1: Reviews the{" "}
+                <Link to="/bylaws" target="_blank">
+                  Bylaws
+                </Link>
+              </h2>
+
+              <h2>Step 2: Apply Below</h2>
               <h2>
                 Step 3: Submit Resume <em>(Optional)</em>
               </h2>
-              <p>
+              <h4>
                 Send your resume to{" "}
                 <a href="mailto:info@charlestonpride.org">
                   info@charlestonpride.org
                 </a>
-              </p>
-              <h2>Step 4: Apply</h2>
+              </h4>
             </div>
           </div>
         </div>

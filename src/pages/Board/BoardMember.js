@@ -41,17 +41,17 @@ export default class BoardMember extends React.Component {
         <p>
           <i className="zmdi zmdi-calendar mr-1 color-info" />
           <strong>Elected to Position: </strong>
-          {props.meta.elected}
+          {props.meta.dateElected}
         </p>
         <p>
           <i className="zmdi zmdi-calendar-alt mr-1 color-success" />
           <strong>Served on Board Since: </strong>
-          {props.meta.electedToBoard}
+          {props.meta.dateElectedToBoard}
         </p>
         {Pronouns(props.meta)}
         <div className="bio well">
           {props.meta.bio ? (
-            props.meta.bio.map(b => <p key={b}>{b}</p>)
+            props.meta.bio.map((b) => <p key={b}>{b}</p>)
           ) : (
             <em>Bio coming soon.</em>
           )}

@@ -18,6 +18,7 @@ import Donate from "./pages/Donate/Donate";
 import Parade from "./pages/Parade/Parade";
 import Festival from "./pages/Festival/Festival";
 import Vendor from "./pages/Festival/Vendor/Vendor";
+import FoodVendor from "./pages/Festival/Vendor/FoodVendor";
 import Volunteer from "./pages/Volunteer/Volunteer";
 import Cruise from "./pages/Cruise/Cruise";
 import Friends from "./pages/Friends/Friends";
@@ -59,6 +60,7 @@ const Root = () => {
             <Route path="/purchase-pride-guide-ad" component={PrideGuideAd} />
             <Route path="/pride-guide" component={PrideGuide} />
             <Route path="/vendor-registration" component={Vendor} />
+            <Route path="/15a3b290" component={FoodVendor} />
             <Route path="/participate-in-parade" component={Parade} />
             <Route path="/serve-on-the-board" component={ServeOnBoard} />
             <Route path="/pride-on-the-harbor" component={Cruise} />

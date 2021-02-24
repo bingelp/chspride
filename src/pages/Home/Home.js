@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-import Sponsors from "../Sponsors/SponsorHero";
 import CountdownClock from "../../components/CountdownClock";
 import GetInvolved from "../../components/GetInvolved/GetInvolved";
 import { ButtonLink } from "../../components/LinkUtil";
 import bridge from "./bridge.png";
+import volunteer from "./volunteer.jpg";
 
 class Home extends React.Component {
   Countdown() {
@@ -29,7 +29,7 @@ class Home extends React.Component {
       <div className="wrap ms-hero-bg-success ms-hero-img-stage">
         <div className="container text-center">
           <h1 className="color-white mb-1">
-            Help Make Charleston Pride Week 2020 The Best One Yet!{" "}
+            Help Make Charleston Pride Week 2021 The Best One Yet!{" "}
           </h1>
           <h2 className="color-white mb-1">Serve on the Board</h2>
           <ButtonLink to="/serve-on-the-board" icon="pencil" color="success">
@@ -90,9 +90,9 @@ class Home extends React.Component {
                 </span>
               </h1>
 
-              <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-5">
+              {/* <h2 className="no-m ms-site-title color-white center-block mt-2 animated zoomInUp animation-delay-5">
                 Pride Week: August 22-29 2020
-              </h2>
+              </h2> */}
             </div>
           </div>
         </div>
@@ -112,11 +112,53 @@ class Home extends React.Component {
     );
   }
 
+  Board() {
+    return (
+      <div className="container my-5">
+        <div className=" text-center">
+          <div class="card card-danger">
+            <div class="card-header">
+              <h1 class="card-title">Volunteer Your Time and Talent</h1>
+            </div>
+            <div class="card-body">
+              <div className="row">
+                <div className="col-12 col-lg-4">
+                  <img src={volunteer} className="img-fluid" alt="volunteer" />
+                </div>
+                <div className="col-12 col-lg-8">
+                  <h3>
+                    Attention Charleston! It’s a new year and a new day to be
+                    proud. We survived 2020 and now is the time to show our
+                    pride! LET US CELEBRATE. We are inviting you to join us in
+                    welcoming a new year and a new term for the Charleston Pride
+                    Board of directors. Do you have a knack for social media?
+                    Technology? Events? Or maybe something new. We are seeking
+                    to add your talents and passions to the 2021 Board of
+                    Directors.
+                  </h3>
+                  <ButtonLink
+                    to="/serve-on-the-board"
+                    icon="pencil"
+                    color="primary"
+                  >
+                    Apply
+                  </ButtonLink>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div>
         <this.Hero />
-        <Sponsors />
+        <this.Board />
         <GetInvolved />
         <this.Bridge />
         <this.Mission />

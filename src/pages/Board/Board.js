@@ -8,19 +8,19 @@ class Board extends React.Component {
     super(props);
     this.state = {
       executives: [],
-      members: []
+      members: [],
     };
   }
 
   componentDidMount() {
     fetch("https://chspride-api.azurewebsites.net/api/directors")
-      .then(results => {
+      .then((results) => {
         return results.json();
       })
-      .then(data => {
+      .then((data) => {
         this.setState({
           executives: data.executives,
-          members: data.members
+          members: data.members,
         });
       });
   }
@@ -31,7 +31,7 @@ class Board extends React.Component {
         <div className="container">
           <div className="text-center">
             <h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-4 animated zoomInDown animation-delay-5">
-              2020 Board of Directors
+              2021 Board of Directors
             </h1>
           </div>
         </div>
@@ -78,11 +78,13 @@ class Board extends React.Component {
           <this.lead />
           <div className="row">
             {this.state.executives &&
-              this.state.executives.map(b => (
+              this.state.executives.map((b) => (
                 <BoardMember key={b.id} meta={b} />
               ))}
             {this.state.members &&
-              this.state.members.map(b => <BoardMember key={b.id} meta={b} />)}
+              this.state.members.map((b) => (
+                <BoardMember key={b.id} meta={b} />
+              ))}
           </div>
           <div className="row">
             <div className="col">

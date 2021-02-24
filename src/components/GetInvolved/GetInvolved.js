@@ -49,7 +49,7 @@ class GetInvolved extends React.Component {
           Get Involved
         </h2>
         <div className="row">
-          <this.Item
+          {/* <this.Item
             icon="book"
             color="flickr"
             dest="/purchase-pride-guide-ad"
@@ -66,7 +66,7 @@ class GetInvolved extends React.Component {
             color="dribbble"
             dest="/participate-in-parade"
             title="Participate in the Parade"
-          />
+          /> */}
           <this.Item
             icon="heart"
             color="royal"

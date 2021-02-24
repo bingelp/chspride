@@ -16,28 +16,28 @@ const navigation = {
           key: "board-of-directors",
           to: "/board-of-directors",
           title: "Board Of Directors",
-          icon: "fa-group"
+          icon: "fa-group",
         },
         {
           key: "bylaws",
           to: "/bylaws",
           title: "Bylaws",
           icon: "fa-legal",
-          divide: true
+          divide: true,
         },
         {
           key: "serve-on-the-board",
           to: "/serve-on-the-board",
           title: "Serve on the Board",
-          icon: "fa-user-plus"
+          icon: "fa-user-plus",
         },
         {
           key: "board-roles",
           to: "/board-roles",
           title: "Board Roles",
-          icon: "fa-puzzle-piece"
-        }
-      ]
+          icon: "fa-puzzle-piece",
+        },
+      ],
     },
     {
       title: "Sponsors",
@@ -48,15 +48,15 @@ const navigation = {
           key: "our-sponsors",
           to: "/our-sponsors",
           title: "Our Sponsors",
-          icon: "fa-heart"
+          icon: "fa-heart",
         },
         {
           key: "become-a-sponsor",
           to: "/become-a-sponsor",
           title: "Become a Sponsor",
-          icon: "fa-handshake-o"
-        }
-      ]
+          icon: "fa-handshake-o",
+        },
+      ],
     },
     {
       title: "Get Involved",
@@ -67,65 +67,67 @@ const navigation = {
           key: "friends-of-pride",
           to: "/friends-of-pride",
           title: "Become a Friend of Pride",
-          icon: "fa-star"
+          icon: "fa-star",
         },
         {
           key: "join-our-mailing-list",
           to: "/join-our-mailing-list",
           title: "Join our Mailing List",
-          icon: "fa-envelope"
+          icon: "fa-envelope",
         },
         {
           key: "volunteer",
           to: "/volunteer",
           title: "Volunteer",
-          icon: "fa-smile-o"
+          icon: "fa-smile-o",
         },
         {
           key: "donate",
           to: "/donate",
           title: "Donate",
-          icon: "fa-heart"
+          icon: "fa-heart",
         },
         {
           key: "serve-on-the-board",
           to: "/serve-on-the-board",
           title: "Serve on the Board",
-          icon: "fa-user-plus"
+          icon: "fa-user-plus",
         },
         {
           key: "store",
           to: "/store",
           title: "Pride Store",
-          icon: "fa-shopping-cart"
+          icon: "fa-shopping-cart",
         },
         {
           key: "amazon",
           to: "https://smile.amazon.com/ch/27-4256750",
           title: "AmazonSmile",
           icon: "fa-amazon",
-          divide: true
         },
-        {
-          key: "purchase-pride-guide-ad",
-          to: "/purchase-pride-guide-ad",
-          title: "Purchase a Pride Guide Ad",
-          icon: "fa-book"
-        },
-        {
-          key: "vendor-registration",
-          to: "/vendor-registration",
-          title: "Register to Be a Vendor",
-          icon: "fa-map-marker"
-        },
-        {
-          key: "participate-in-parade",
-          to: "/participate-in-parade",
-          title: "Partcipate in Parade",
-          icon: "fa-flag"
-        }
-      ]
-    }
+
+        //   divide: true
+        // },
+        // {
+        //   key: "purchase-pride-guide-ad",
+        //   to: "/purchase-pride-guide-ad",
+        //   title: "Purchase a Pride Guide Ad",
+        //   icon: "fa-book"
+        // },
+        // {
+        //   key: "vendor-registration",
+        //   to: "/vendor-registration",
+        //   title: "Register to Be a Vendor",
+        //   icon: "fa-map-marker"
+        // },
+        // {
+        //   key: "participate-in-parade",
+        //   to: "/participate-in-parade",
+        //   title: "Partcipate in Parade",
+        //   icon: "fa-flag"
+        // }
+      ],
+    },
     // {
     //   title: "Events",
     //   icon: "fa-calendar-o",
@@ -186,14 +188,14 @@ const navigation = {
     // }
   ],
   right: [
-    {
-      key: "pride-2020",
-      to: "/pride",
-      title: "Pride Week 2020",
-      icon: "fa-flag",
-      background: "warning"
-    }
-  ]
+    // {
+    //   key: "pride-2020",
+    //   to: "/pride",
+    //   title: "Pride Week 2020",
+    //   icon: "fa-flag",
+    //   background: "warning"
+    // }
+  ],
 };
 
 const App = ({ children }) => {
