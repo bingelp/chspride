@@ -22,14 +22,24 @@
 .board-member .card-body {
   padding-bottom: 0;
 }
+
 .board-member .bio {
-  height: 200px;
-  overflow: scroll;
-  margin: 20px 0;
+  min-height: 200px;
 }
 
 .vacancy .description {
   height: 150px;
   overflow: scroll;
   margin: 20px 0;
+}
+
+.board-member .panel {
+  height: 95%;
+}
+
+.board-member .panel-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
 }
