@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./Volunteer.css";
-import ETap from "../../components/ETapestryForm";
-
 export default class Volunteer extends Component {
   header() {
     var headerClass =
@@ -21,21 +19,22 @@ export default class Volunteer extends Component {
       </div>
     );
   }
-
   render() {
     return (
       <div>
         <this.header />
         <div className="container mt-3">
-          <ETap
-            title="Sign up to Volunteer"
-            form="volunteer"
-            color="warning"
-            contact="volunteers"
-            disabledText="Signup is currently closed."
-            enabledText="By filling out the form below you are signing up to be contacted
-              about volunteer opportunities."
-          />
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfzVngmWTbpu2F65xD50vqYUue4K1UG8wAN9iKHap3qQlvlPA/viewform?embedded=true"
+            width="800"
+            height="1000"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="volunteer signup"
+          >
+            Loading…
+          </iframe>
         </div>
       </div>
     );
